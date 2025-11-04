@@ -169,7 +169,6 @@ export const translations = {
     visionContent: "To be the leading healthcare project delivery partner in Saudi Arabia. Recognized for innovation, reliability, and our ability to enable successful outcomes for healthcare providers, investors, and the community.",
 
     // Who We Are Page
-    whoWeArePageTitle: "WHO WE ARE", // This was the old title, now using a more descriptive one below
     aboutUsPageMainTitle: "Our Story and Expertise", // New key
     aboutUsPageMainDescription: "Sidra Med is a specialized medical services firm based in Saudi Arabia, acting as strategic enablers for healthcare projects from concept to execution.", // New key
     whoWeAreDescription1: "Sidra Med Ltd. is a specialised medical services firm based in Saudi Arabia. We act as strategic enablers for healthcare projects by providing comprehensive services across every project phase from concept to execution.",
@@ -254,7 +253,6 @@ export const translations = {
 
     // FAQ Section (General)
     faqTitle: "Frequently Asked Questions",
-    faqSubtitle: "Find answers to common questions about Sidra Med and our services.",
     faqQ1: "What types of healthcare projects does Sidra Med handle?",
     faqA1: "Sidra Med specializes in a wide range of healthcare projects, including new hospital development, clinic setups, medical center upgrades, laboratory establishments, and digital health initiatives. We provide support from initial concept to operational readiness.",
     faqQ2: "How does Sidra Med ensure regulatory compliance in Saudi Arabia?",
@@ -342,6 +340,48 @@ export const translations = {
     pageNotFoundTitle: "Page Not Found",
     pageNotFoundDescription: "Oops! The page you are looking for does not exist.",
     returnToHome: "Return to Home",
+
+    // New Pages
+    privacyPolicyPageTitle: "Privacy Policy",
+    privacyPolicyIntro: "This Privacy Policy describes how Sidra Med collects, uses, and discloses your personal information when you visit or make a purchase from the Site.",
+    privacyPolicyInfoCollectionTitle: "Information We Collect",
+    privacyPolicyInfoCollectionContent: "When you visit the Site, we collect certain information about your device, your interaction with the Site, and information necessary to process your purchases. We may also collect additional information if you contact us for customer support. In this Privacy Policy, we refer to any information that can uniquely identify an individual (including the information below) as “Personal Information”. See the list below for more information about what Personal Information we collect and why.",
+    privacyPolicyPersonalInfoTypes: [
+      { title: "Device information", details: "Examples of Personal Information collected: version of web browser, IP address, time zone, cookie information, what sites or products you view, search terms, and how you interact with the Site. Purpose of collection: to load the Site accurately for you, and to perform analytics on Site usage to optimize our Site. Source of collection: Collected automatically when you access our Site using cookies, log files, web beacons, tags, or pixels." },
+      { title: "Order information", details: "Examples of Personal Information collected: name, billing address, shipping address, payment information (including credit card numbers), email address, and phone number. Purpose of collection: to provide products or services to you to fulfill our contract, to process your payment information, arrange for shipping, and provide you with invoices and/or order confirmations, communicate with you, screen our orders for potential risk or fraud, and when in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services. Source of collection: collected from you." },
+      { title: "Customer support information", details: "Examples of Personal Information collected: name, email, phone number, and inquiry details. Purpose of collection: to provide customer support. Source of collection: collected from you." }
+    ],
+    privacyPolicySharingTitle: "Sharing Personal Information",
+    privacyPolicySharingContent: "We share your Personal Information with service providers to help us provide our services and fulfill our contracts with you, as described above. For example:",
+    privacyPolicySharingExamples: [
+      "We use Google Analytics to help us understand how our customers use the Site. You can read more about how Google uses your Personal Information here: https://policies.google.com/privacy?hl=en.",
+      "We may share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights."
+    ],
+    privacyPolicyYourRightsTitle: "Your Rights",
+    privacyPolicyYourRightsContent: "If you are a resident of the KSA, you have the right to access the Personal Information we hold about you, to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise this right, please contact us through the contact information below.",
+    privacyPolicyChangesTitle: "Changes",
+    privacyPolicyChangesContent: "We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons.",
+    privacyPolicyContactTitle: "Contact",
+    privacyPolicyContactContent: "For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at amad@sidramed.com.sa.",
+
+    termsOfServicePageTitle: "Terms of Service",
+    termsOfServiceIntro: "Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services.",
+    termsOfServiceSection1Title: "1. General Conditions",
+    termsOfServiceSection1Content: "We reserve the right to refuse service to anyone for any reason at any time. You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us.",
+    termsOfServiceSection2Title: "2. Accuracy, Completeness and Timeliness of Information",
+    termsOfServiceSection2Content: "We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk. This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You agree that it is your responsibility to monitor changes to our site.",
+    termsOfServiceSection3Title: "3. Modifications to the Service and Prices",
+    termsOfServiceSection3Content: "Prices for our services are subject to change without notice. We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time. We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.",
+    termsOfServiceSection4Title: "4. Third-Party Links",
+    termsOfServiceSection4Content: "Certain content, products and services available via our Service may include materials from third-parties. Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or websites, or for any other materials, products, or services of third-parties. We are not liable for any harm or damages related to the purchase or use of goods, services, resources, content, or any other transactions made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you understand them before you engage in any transaction. Complaints, claims, concerns, or questions regarding third-party products should be directed to the third-party.",
+    termsOfServiceSection5Title: "5. User Comments, Feedback and Other Submissions",
+    termsOfServiceSection5Content: "If, at our request, you send certain specific submissions (for example contest entries) or without a request from us you send creative ideas, suggestions, proposals, plans, or other materials, whether online, by email, by postal mail, or otherwise (collectively, 'comments'), you agree that we may, at any time, without restriction, edit, copy, publish, distribute, translate and otherwise use in any medium any comments that you forward to us. We are and shall be under no obligation (1) to maintain any comments in confidence; (2) to pay compensation for any comments; or (3) to respond to any comments. We may, but have no obligation to, monitor, edit or remove content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party’s intellectual property or these Terms of Service. You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other personal or proprietary right. You further agree that your comments will not contain libelous or otherwise unlawful, abusive or obscene material, or contain any computer virus or other malware that could in any way affect the operation of the Service or any related website. You may not use a false e-mail address, pretend to be someone other than yourself, or otherwise mislead us or third-parties as to the origin of any comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for any comments posted by you or any third-party.",
+    termsOfServiceSection6Title: "6. Disclaimer of Warranties; Limitation of Liability",
+    termsOfServiceSection6Content: "We do not guarantee, represent or warrant that your use of our service will be uninterrupted, timely, secure or error-free. We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable. You agree that from time to time we may remove the service for indefinite periods of time or cancel the service at any time, without notice to you. You expressly agree that your use of, or inability to use, the service is at your sole risk. The service and all products and services delivered to you through the service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement. In no case shall Sidra Med, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the service or any products procured using the service, or for any other claim related in any way to your use of the service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the service or any content (or product) posted, transmitted, or otherwise made available via the service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law.",
+    termsOfServiceSection7Title: "7. Governing Law",
+    termsOfServiceSection7Content: "These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of Saudi Arabia.",
+    termsOfServiceSection8Title: "8. Contact Information",
+    termsOfServiceSection8Content: "Questions about the Terms of Service should be sent to us at amad@sidramed.com.sa.",
   },
   ar: {
     // Navbar
@@ -513,7 +553,6 @@ export const translations = {
     visionContent: "أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية. معترف بنا للابتكار والموثوقية وقدرتنا على تحقيق نتائج ناجحة لمقدمي الرعاية الصحية والمستثمرين والمجتمع.",
 
     // Who We Are Page
-    whoWeArePageTitle: "من نحن", // This was the old title, now using a more descriptive one below
     aboutUsPageMainTitle: "قصتنا وخبرتنا", // New key
     aboutUsPageMainDescription: "سدرة ميد هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية، تعمل كممكّن استراتيجي للمشاريع الصحية من المفهوم إلى التنفيذ.", // New key
     whoWeAreDescription1: "سدرة ميد المحدودة هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية. نعمل كممكّنين استراتيجيين للمشاريع الصحية من خلال تقديم خدمات شاملة عبر كل مرحلة من مراحل المشروع من المفهوم إلى التنفيذ.",
@@ -598,7 +637,6 @@ export const translations = {
 
     // FAQ Section (General)
     faqTitle: "الأسئلة الشائعة",
-    faqSubtitle: "ابحث عن إجابات للأسئلة الشائعة حول سدرة ميد وخدماتنا.",
     faqQ1: "ما هي أنواع مشاريع الرعاية الصحية التي تتعامل معها سدرة ميد؟",
     faqA1: "تتخصص سدرة ميد في مجموعة واسعة من مشاريع الرعاية الصحية، بما في ذلك تطوير المستشفيات الجديدة، وإنشاء العيادات، وتحديث المراكز الطبية، وإنشاء المختبرات، ومبادرات الصحة الرقمية. نقدم الدعم من المفهوم الأولي إلى الجاهزية التشغيلية.",
     faqQ2: "كيف تضمن سدرة ميد الامتثال التنظيمي في المملكة العربية السعودية؟",
@@ -686,6 +724,48 @@ export const translations = {
     pageNotFoundTitle: "Page Not Found",
     pageNotFoundDescription: "Oops! The page you are looking for does not exist.",
     returnToHome: "Return to Home",
+
+    // New Pages
+    privacyPolicyPageTitle: "سياسة الخصوصية",
+    privacyPolicyIntro: "تصف سياسة الخصوصية هذه كيف تقوم سدرة ميد بجمع واستخدام والكشف عن معلوماتك الشخصية عند زيارتك أو قيامك بعملية شراء من الموقع.",
+    privacyPolicyInfoCollectionTitle: "المعلومات التي نجمعها",
+    privacyPolicyInfoCollectionContent: "عند زيارتك للموقع، نجمع معلومات معينة حول جهازك، وتفاعلك مع الموقع، والمعلومات الضرورية لمعالجة مشترياتك. قد نجمع أيضًا معلومات إضافية إذا اتصلت بنا للحصول على دعم العملاء. في سياسة الخصوصية هذه، نشير إلى أي معلومات يمكن أن تحدد هوية فرد بشكل فريد (بما في ذلك المعلومات أدناه) باسم 'المعلومات الشخصية'. انظر القائمة أدناه لمزيد من المعلومات حول المعلومات الشخصية التي نجمعها ولماذا.",
+    privacyPolicyPersonalInfoTypes: [
+      { title: "معلومات الجهاز", details: "أمثلة على المعلومات الشخصية التي تم جمعها: إصدار متصفح الويب، عنوان IP، المنطقة الزمنية، معلومات ملفات تعريف الارتباط، المواقع أو المنتجات التي تشاهدها، مصطلحات البحث، وكيف تتفاعل مع الموقع. الغرض من الجمع: لتحميل الموقع بدقة لك، ولإجراء تحليلات على استخدام الموقع لتحسين موقعنا. مصدر الجمع: يتم جمعها تلقائيًا عند وصولك إلى موقعنا باستخدام ملفات تعريف الارتباط، ملفات السجل، إشارات الويب، العلامات، أو وحدات البكسل." },
+      { title: "معلومات الطلب", details: "أمثلة على المعلومات الشخصية التي تم جمعها: الاسم، عنوان الفواتير، عنوان الشحن، معلومات الدفع (بما في ذلك أرقام بطاقات الائتمان)، عنوان البريد الإلكتروني، ورقم الهاتف. الغرض من الجمع: لتقديم المنتجات أو الخدمات لك للوفاء بعقدنا، لمعالجة معلومات الدفع الخاصة بك، وترتيب الشحن، وتزويدك بالفواتير و/أو تأكيدات الطلب، والتواصل معك، وفحص طلباتنا بحثًا عن مخاطر أو احتيال محتمل، وعندما يتماشى ذلك مع التفضيلات التي شاركتها معنا، تزويدك بمعلومات أو إعلانات تتعلق بمنتجاتنا أو خدماتنا. مصدر الجمع: يتم جمعها منك." },
+      { title: "معلومات دعم العملاء", details: "أمثلة على المعلومات الشخصية التي تم جمعها: الاسم، البريد الإلكتروني، رقم الهاتف، وتفاصيل الاستفسار. الغرض من الجمع: لتقديم دعم العملاء. مصدر الجمع: يتم جمعها منك." }
+    ],
+    privacyPolicySharingTitle: "مشاركة المعلومات الشخصية",
+    privacyPolicySharingContent: "نشارك معلوماتك الشخصية مع مزودي الخدمة لمساعدتنا في تقديم خدماتنا والوفاء بعقودنا معك، كما هو موضح أعلاه. على سبيل المثال:",
+    privacyPolicySharingExamples: [
+      "نستخدم Google Analytics لمساعدتنا في فهم كيفية استخدام عملائنا للموقع. يمكنك قراءة المزيد حول كيفية استخدام Google لمعلوماتك الشخصية هنا: https://policies.google.com/privacy?hl=ar.",
+      "قد نشارك معلوماتك الشخصية للامتثال للقوانين واللوائح المعمول بها، أو للاستجابة لأمر استدعاء أو أمر تفتيش أو طلب قانوني آخر للمعلومات التي نتلقاها، أو لحماية حقوقنا بأي طريقة أخرى."
+    ],
+    privacyPolicyYourRightsTitle: "حقوقك",
+    privacyPolicyYourRightsContent: "إذا كنت مقيمًا في المملكة العربية السعودية، فلديك الحق في الوصول إلى المعلومات الشخصية التي نحتفظ بها عنك، ونقلها إلى خدمة جديدة، وطلب تصحيح معلوماتك الشخصية أو تحديثها أو مسحها. إذا كنت ترغب في ممارسة هذا الحق، يرجى الاتصال بنا من خلال معلومات الاتصال أدناه.",
+    privacyPolicyChangesTitle: "التغييرات",
+    privacyPolicyChangesContent: "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس، على سبيل المثال، التغييرات في ممارساتنا أو لأسباب تشغيلية أو قانونية أو تنظيمية أخرى.",
+    privacyPolicyContactTitle: "الاتصال",
+    privacyPolicyContactContent: "لمزيد من المعلومات حول ممارسات الخصوصية لدينا، إذا كانت لديك أسئلة، أو إذا كنت ترغب في تقديم شكوى، يرجى الاتصال بنا عبر البريد الإلكتروني على amad@sidramed.com.sa.",
+
+    termsOfServicePageTitle: "شروط الخدمة",
+    termsOfServiceIntro: "يرجى قراءة شروط الخدمة هذه بعناية قبل الوصول إلى موقعنا أو استخدامه. من خلال الوصول إلى أي جزء من الموقع أو استخدامه، فإنك توافق على الالتزام بشروط الخدمة هذه. إذا كنت لا توافق على جميع شروط وأحكام هذه الاتفاقية، فلا يجوز لك الوصول إلى الموقع أو استخدام أي خدمات.",
+    termsOfServiceSection1Title: "1. الشروط العامة",
+    termsOfServiceSection1Content: "نحتفظ بالحق في رفض الخدمة لأي شخص لأي سبب في أي وقت. أنت تدرك أن المحتوى الخاص بك (باستثناء معلومات بطاقة الائتمان) قد يتم نقله غير مشفر ويتضمن (أ) عمليات نقل عبر شبكات مختلفة؛ و (ب) تغييرات للتوافق والتكيف مع المتطلبات الفنية لشبكات أو أجهزة الاتصال. يتم دائمًا تشفير معلومات بطاقة الائتمان أثناء النقل عبر الشبكات. أنت توافق على عدم إعادة إنتاج أو تكرار أو نسخ أو بيع أو إعادة بيع أو استغلال أي جزء من الخدمة، أو استخدام الخدمة، أو الوصول إلى الخدمة أو أي اتصال على الموقع الذي يتم من خلاله تقديم الخدمة، دون إذن كتابي صريح منا.",
+    termsOfServiceSection2Title: "2. دقة واكتمال وتوقيت المعلومات",
+    termsOfServiceSection2Content: "نحن لسنا مسؤولين إذا كانت المعلومات المتاحة على هذا الموقع غير دقيقة أو كاملة أو حديثة. يتم توفير المواد الموجودة على هذا الموقع للمعلومات العامة فقط ولا ينبغي الاعتماد عليها أو استخدامها كأساس وحيد لاتخاذ القرارات دون استشارة مصادر معلومات أولية أو أكثر دقة أو أكثر اكتمالاً أو في الوقت المناسب. أي اعتماد على المواد الموجودة على هذا الموقع يكون على مسؤوليتك الخاصة. قد يحتوي هذا الموقع على بعض المعلومات التاريخية. المعلومات التاريخية، بالضرورة، ليست حديثة ويتم توفيرها للرجوع إليها فقط. نحتفظ بالحق في تعديل محتويات هذا الموقع في أي وقت، ولكن ليس لدينا أي التزام بتحديث أي معلومات على موقعنا. أنت توافق على أن مسؤوليتك هي مراقبة التغييرات على موقعنا.",
+    termsOfServiceSection3Title: "3. تعديلات على الخدمة والأسعار",
+    termsOfServiceSection3Content: "أسعار خدماتنا قابلة للتغيير دون إشعار. نحتفظ بالحق في أي وقت في تعديل أو إيقاف الخدمة (أو أي جزء أو محتوى منها) دون إشعار في أي وقت. لن نكون مسؤولين تجاهك أو تجاه أي طرف ثالث عن أي تعديل أو تغيير في السعر أو تعليق أو إيقاف للخدمة.",
+    termsOfServiceSection4Title: "4. روابط الطرف الثالث",
+    termsOfServiceSection4Content: "قد تتضمن بعض المحتويات والمنتجات والخدمات المتاحة عبر خدمتنا مواد من أطراف ثالثة. قد توجهك روابط الطرف الثالث على هذا الموقع إلى مواقع ويب تابعة لجهات خارجية غير تابعة لنا. نحن لسنا مسؤولين عن فحص أو تقييم المحتوى أو الدقة ولا نضمن ولن نتحمل أي مسؤولية عن أي مواد أو مواقع ويب تابعة لجهات خارجية، أو عن أي مواد أو منتجات أو خدمات أخرى تابعة لجهات خارجية. نحن لسنا مسؤولين عن أي ضرر أو أضرار تتعلق بشراء أو استخدام السلع أو الخدمات أو الموارد أو المحتوى أو أي معاملات أخرى تتم فيما يتعلق بأي مواقع ويب تابعة لجهات خارجية. يرجى مراجعة سياسات وممارسات الطرف الثالث بعناية والتأكد من فهمها قبل الدخول في أي معاملة. يجب توجيه الشكاوى أو المطالبات أو المخاوف أو الأسئلة المتعلقة بمنتجات الطرف الثالث إلى الطرف الثالث.",
+    termsOfServiceSection5Title: "5. تعليقات المستخدمين والملاحظات والتقديمات الأخرى",
+    termsOfServiceSection5Content: "إذا قمت، بناءً على طلبنا، بإرسال بعض التقديمات المحددة (على سبيل المثال إدخالات المسابقة) أو بدون طلب منا، أرسلت أفكارًا إبداعية أو اقتراحات أو مقترحات أو خططًا أو مواد أخرى، سواء عبر الإنترنت أو عبر البريد الإلكتروني أو عبر البريد العادي أو غير ذلك (يُشار إليها إجمالاً باسم 'التعليقات')، فإنك توافق على أنه يجوز لنا، في أي وقت، دون قيود، تحرير أو نسخ أو نشر أو توزيع أو ترجمة أو استخدام بأي طريقة أخرى في أي وسيط أي تعليقات ترسلها إلينا. نحن ولسنا ملزمين (1) بالحفاظ على سرية أي تعليقات؛ (2) بدفع تعويض عن أي تعليقات؛ أو (3) بالرد على أي تعليقات. يجوز لنا، ولكن ليس لدينا أي التزام، بمراقبة أو تحرير أو إزالة المحتوى الذي نحدده وفقًا لتقديرنا الخاص بأنه غير قانوني أو مسيء أو مهدد أو تشهيري أو افترائي أو إباحي أو فاحش أو غير مقبول بأي شكل آخر أو ينتهك الملكية الفكرية لأي طرف أو شروط الخدمة هذه. أنت توافق على أن تعليقاتك لن تنتهك أي حق لأي طرف ثالث، بما في ذلك حقوق الطبع والنشر أو العلامات التجارية أو الخصوصية أو الشخصية أو أي حق شخصي أو ملكية آخر. أنت توافق كذلك على أن تعليقاتك لن تحتوي على مواد تشهيرية أو غير قانونية أو مسيئة أو فاحشة بأي شكل آخر، أو تحتوي على أي فيروس كمبيوتر أو برامج ضارة أخرى يمكن أن تؤثر بأي شكل من الأشكال على تشغيل الخدمة أو أي موقع ويب ذي صلة. لا يجوز لك استخدام عنوان بريد إلكتروني مزيف، أو التظاهر بأنك شخص آخر غير نفسك، أو تضليلنا أو تضليل أطراف ثالثة بأي شكل آخر فيما يتعلق بأصل أي تعليقات. أنت وحدك المسؤول عن أي تعليقات تقوم بها ودقتها. نحن لا نتحمل أي مسؤولية ولا نتحمل أي التزام عن أي تعليقات تنشرها أنت أو أي طرف ثالث.",
+    termsOfServiceSection6Title: "6. إخلاء المسؤولية عن الضمانات؛ تحديد المسؤولية",
+    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المناسب أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدك. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، على سبيل المثال لا الحصر، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
+    termsOfServiceSection7Title: "7. القانون الحاكم",
+    termsOfServiceSection7Content: "تخضع شروط الخدمة هذه وأي اتفاقيات منفصلة نقدم لك بموجبها الخدمات وتفسر وفقًا لقوانين المملكة العربية السعودية.",
+    termsOfServiceSection8Title: "8. معلومات الاتصال",
+    termsOfServiceSection8Content: "يجب إرسال الأسئلة حول شروط الخدمة إلينا على amad@sidramed.com.sa.",
   },
 };
 

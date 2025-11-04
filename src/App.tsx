@@ -12,7 +12,9 @@ import AboutUsPage from "./pages/AboutUsPage";
 import OurValuesPage from "./pages/OurValuesPage";
 import OurTeamPage from "./pages/OurTeamPage";
 import OurServicesPage from "./pages/OurServicesPage";
-import ContactPage from "./pages/ContactPage"; // Import the new ContactPage
+import ContactPage from "./pages/ContactPage";
+import PrivacyPolicyPage from "./pages/PrivacyPolicyPage"; // Import new page
+import TermsOfServicePage from "./pages/TermsOfServicePage"; // Import new page
 
 const queryClient = new QueryClient();
 
@@ -31,7 +33,9 @@ const App = () => (
               <Route path="/our-values" element={<OurValuesPage />} />
               <Route path="/our-team" element={<OurTeamPage />} />
               <Route path="/services" element={<OurServicesPage />} />
-              <Route path="/contact" element={<ContactPage />} /> {/* New route for ContactPage */}
+              <Route path="/contact" element={<ContactPage />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicyPage />} /> {/* New route */}
+              <Route path="/terms-of-service" element={<TermsOfServicePage />} /> {/* New route */}
               {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
               <Route path="*" element={<NotFound />} />
             </Routes>

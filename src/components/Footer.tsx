@@ -72,8 +72,8 @@ const Footer = () => {
             {t('allRightsReserved')}
           </p>
           <div className="flex items-center gap-x-6 text-sm text-gray-400"> {/* Changed space-x-6 to gap-x-6 */}
-            <Link to="#" className="hover:text-sidraPrimary transition-colors">{t('privacyPolicy')}</Link>
-            <Link to="#" className="hover:text-sidraPrimary transition-colors">{t('termsOfService')}</Link>
+            <Link to="/privacy-policy" className="hover:text-sidraPrimary transition-colors">{t('privacyPolicy')}</Link>
+            <Link to="/terms-of-service" className="hover:text-sidraPrimary transition-colors">{t('termsOfService')}</Link>
           </div>
         </div>
       </div>
