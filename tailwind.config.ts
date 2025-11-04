@@ -62,6 +62,18 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // Custom Sidra Med colors
+        sidraPrimary: '#449CA6',
+        sidraSecondary: '#29A6A6',
+        sidraAccent: '#80A6A6',
+        sidraTeal: '#03A696',
+        sidraLight: '#F2F2F2',
+        sidraPurple: '#8B5CF6',
+        sidraPink: '#EC4899',
+        sidraOrange: '#F97316',
+        sidraEmerald: '#10B981',
+        sidraCyan: '#06B6D4',
+        sidraIndigo: '#6366F1',
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,10 +97,46 @@ export default {
             height: "0",
           },
         },
+        float: {
+          '0%, 100%': { transform: 'translateY(0px)' },
+          '50%': { transform: 'translateY(-20px)' }
+        },
+        'pulse-slow': {
+          '0%, 100%': { opacity: '1' },
+          '50%': { opacity: '.5' }
+        },
+        'bounce-slow': {
+          '0%, 100%': { transform: 'translateY(-25%)' },
+          '50%': { transform: 'none' }
+        },
+        'spin-slow': {
+          from: { transform: 'rotate(0deg)' },
+          to: { transform: 'rotate(360deg)' }
+        },
+        gradient: {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        },
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        'float': 'float 6s ease-in-out infinite',
+        'pulse-slow': 'pulse-slow 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'bounce-slow': 'bounce-slow 3s infinite',
+        'spin-slow': 'spin-slow 8s linear infinite',
+        'gradient': 'gradient 15s ease infinite',
+        'scroll': 'scroll var(--scroll-duration) linear infinite',
       },
     },
   },
