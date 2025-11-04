@@ -19,7 +19,7 @@ const HeroSection = () => {
         <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-white/20 rounded-full animate-float"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
           <div className="mb-6">
             <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold animate-pulse-slow">
@@ -29,7 +29,7 @@ const HeroSection = () => {
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
             <span className="block">{t('heroTitlePart1')}</span>
             {/* Adjusted gradient for better visibility */}
-            <span className="block bg-gradient-to-r from-white via-sidraLight to-white bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
+            <span className="block bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
             <span className="block">{t('heroTitlePart3')}</span>
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed font-light">

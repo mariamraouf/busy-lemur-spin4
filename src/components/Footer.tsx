@@ -6,6 +6,7 @@ import { cn } from '@/lib/utils'; // Import cn for conditional classes
 const Footer = () => {
   const { language, t } = useLanguage();
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary text-white py-16 relative overflow-hidden">
@@ -28,7 +29,7 @@ const Footer = () => {
               <a href={`tel:${phoneNumber}`} className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Call us">
                 <i className="fas fa-phone text-xl"></i>
               </a>
-              <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="WhatsApp us">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="WhatsApp us">
                 <i className="fab fa-whatsapp text-xl"></i>
               </a>
               <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Instagram">

@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils';
 const FullContactSection = () => {
   const { language, t } = useLanguage();
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
 
   // Google Maps embed URL for Jeddah, KSA. You can customize the coordinates and zoom.
   const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.00000000002!2d39.0872629!3d21.5433331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b1185!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus";
@@ -111,7 +112,7 @@ const FullContactSection = () => {
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('phoneNumber')}</h3>
                   <a href={`tel:${phoneNumber}`} className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">{phoneNumber}</a>
-                  <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold mt-1">
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold mt-1">
                     <i className="fab fa-whatsapp mr-2"></i> {t('whatsapp')}
                   </a>
                 </div>

@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
 
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
+  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
 
   const toggleLanguage = () => {
     setLanguage(language === 'en' ? 'ar' : 'en');
@@ -61,22 +62,6 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Social Media and Contact */}
-            <div className="flex items-center gap-x-4">
-              <a href={`tel:${phoneNumber}`} className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="Call us">
-                <i className="fas fa-phone text-xl"></i>
-              </a>
-              <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="WhatsApp us">
-                <i className="fab fa-whatsapp text-xl"></i>
-              </a>
-              <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="Instagram">
-                <i className="fab fa-instagram text-xl"></i>
-              </a>
-              <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="LinkedIn">
-                <i className="fab fa-linkedin-in text-xl"></i>
-              </a>
-            </div>
-
             {/* Language Switcher */}
             <button
               onClick={toggleLanguage}
@@ -121,7 +106,7 @@ const Navbar = () => {
             <a href={`tel:${phoneNumber}`} className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="Call us">
               <i className="fas fa-phone text-2xl"></i>
             </a>
-            <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="WhatsApp us">
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="WhatsApp us">
               <i className="fab fa-whatsapp text-2xl"></i>
             </a>
             <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="Instagram">
