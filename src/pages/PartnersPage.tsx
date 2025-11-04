@@ -31,6 +31,16 @@ const PartnersPage = () => {
     { name: t('partnerPVR'), logo: "/partners/pvr.png" }, // NEW
     { name: t('partnerAllSensesMedicalCenter'), logo: "/partners/all-senses-medical-center.png" }, // NEW
     { name: t('partnerKidneyCareCenter'), logo: "/partners/kidney-care-center.png" }, // NEW
+    { name: t('partnerRadRadiologyPlanning'), logo: "/partners/rad-radiology-planning.png" }, // NEW
+    { name: t('partnerCDLMedicalLaboratories'), logo: "/partners/cdl-medical-laboratories.png" }, // NEW
+    { name: t('partnerAbeer'), logo: "/partners/abeer.png" }, // NEW
+    { name: t('partnerAlMaddahiaHolding'), logo: "/partners/almaddahia-holding.png" }, // NEW
+    { name: t('partnerZmzm'), logo: "/partners/zmzm.png" }, // NEW
+    { name: t('partnerKingdomMedicine'), logo: "/partners/kingdom-medicine.png" }, // NEW
+    { name: t('partnerDoctorsClinic'), logo: "/partners/doctors-clinic.png" }, // NEW
+    { name: t('partnerZaherMedicalComplex'), logo: "/partners/zaher-medical-complex.png" }, // NEW
+    { name: t('partnerAlAmmar'), logo: "/partners/al-ammar.png" }, // NEW
+    { name: t('partnerBunyan'), logo: "/partners/bunyan.png" }, // NEW
   ];
 
   const partnersFaqs = [
