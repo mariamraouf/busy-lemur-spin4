@@ -15,6 +15,7 @@ import OurServicesPage from "./pages/OurServicesPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage"; // Import new page
 import TermsOfServicePage from "./pages/TermsOfServicePage"; // Import new page
+import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate"; // Import the new component
 
 const queryClient = new QueryClient();
 
@@ -26,6 +27,7 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
+            <ScrollToTopOnNavigate /> {/* Add the scroll-to-top component here */}
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/mission-vision" element={<MissionVision />} />
