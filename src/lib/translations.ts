@@ -169,7 +169,9 @@ export const translations = {
     visionContent: "To be the leading healthcare project delivery partner in Saudi Arabia. Recognized for innovation, reliability, and our ability to enable successful outcomes for healthcare providers, investors, and the community.",
 
     // Who We Are Page
-    whoWeArePageTitle: "WHO WE ARE",
+    whoWeArePageTitle: "WHO WE ARE", // This was the old title, now using a more descriptive one below
+    aboutUsPageMainTitle: "Our Story and Expertise", // New key
+    aboutUsPageMainDescription: "Sidra Med is a specialized medical services firm based in Saudi Arabia, acting as strategic enablers for healthcare projects from concept to execution.", // New key
     whoWeAreDescription1: "Sidra Med Ltd. is a specialised medical services firm based in Saudi Arabia. We act as strategic enablers for healthcare projects by providing comprehensive services across every project phase from concept to execution.",
     whoWeAreDescription2: "Whether supporting hospital development, clinics, laboratories, or digital health initiatives, we offer world-class expertise tailored to the Saudi market and its unique regulatory landscape. We integrate medical knowledge, engineering excellence, and operational execution to deliver dependable, scalable healthcare solutions.",
 
@@ -241,11 +243,11 @@ export const translations = {
     approachStep1Title: "1. Assess",
     approachStep1Description: "We evaluate your unique needs and project requirements.",
     approachStep2Title: "2. Plan",
-    approachStep2Description: "We create a tailored strategy with the right service mix.",
+    approachStep2Description: "We create a tailored strategy with the right service mix.", // Corrected key
     approachStep3Title: "3. Execute",
-    approachStep3Description: "We implement solutions with our expert team and partners.",
+    approachStep3Description: "We implement solutions with our expert team and partners.", // Corrected key
     approachStep4Title: "4. Optimize",
-    approachStep4Description: "We continuously improve and adapt to ensure lasting success.",
+    approachStep4Description: "We continuously improve and adapt to ensure lasting success.", // Corrected key
 
     needCustomSolution: "Need a customized solution for your healthcare project?",
     contactUsToday: "Contact us today to discuss your specific needs and how we can help.",
@@ -511,7 +513,9 @@ export const translations = {
     visionContent: "أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية. معترف بنا للابتكار والموثوقية وقدرتنا على تحقيق نتائج ناجحة لمقدمي الرعاية الصحية والمستثمرين والمجتمع.",
 
     // Who We Are Page
-    whoWeArePageTitle: "من نحن",
+    whoWeArePageTitle: "من نحن", // This was the old title, now using a more descriptive one below
+    aboutUsPageMainTitle: "قصتنا وخبرتنا", // New key
+    aboutUsPageMainDescription: "سدرة ميد هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية، تعمل كممكّن استراتيجي للمشاريع الصحية من المفهوم إلى التنفيذ.", // New key
     whoWeAreDescription1: "سدرة ميد المحدودة هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية. نعمل كممكّنين استراتيجيين للمشاريع الصحية من خلال تقديم خدمات شاملة عبر كل مرحلة من مراحل المشروع من المفهوم إلى التنفيذ.",
     whoWeAreDescription2: "سواء كان الدعم لتطوير المستشفيات، العيادات، المختبرات، أو مبادرات الصحة الرقمية، فإننا نقدم خبرة عالمية المستوى مصممة خصيصًا للسوق السعودي وبيئته التنظيمية الفريدة. نحن ندمج المعرفة الطبية، التميز الهندسي، والتنفيذ التشغيلي لتقديم حلول رعاية صحية موثوقة وقابلة للتطوير.",
 
@@ -583,11 +587,11 @@ export const translations = {
     approachStep1Title: "1. التقييم",
     approachStep1Description: "نقوم بتقييم احتياجاتك ومتطلبات مشروعك الفريدة.",
     approachStep2Title: "2. التخطيط",
-    approachStep2Description: "ننشئ استراتيجية مخصصة مع المزيج الصحيح من الخدمات.",
+    approachStep2Description: "ننشئ استراتيجية مخصصة مع المزيج الصحيح من الخدمات.", // Corrected key
     approachStep3Title: "3. التنفيذ",
-    approachStep3Description: "نقوم بتنفيذ الحلول مع فريق الخبراء والشركاء لدينا.",
+    approachStep3Description: "نقوم بتنفيذ الحلول مع فريق الخبراء والشركاء لدينا.", // Corrected key
     approachStep4Title: "4. التحسين",
-    approachStep4Description: "نعمل باستمرار على التحسين والتكيف لضمان النجاح الدائم.",
+    approachStep4Description: "نعمل باستمرار على التحسين والتكيف لضمان النجاح الدائم.", // Corrected key
 
     needCustomSolution: "هل تحتاج إلى حل مخصص لمشروع الرعاية الصحية الخاص بك؟",
     contactUsToday: "اتصل بنا اليوم لمناقشة احتياجاتك المحددة وكيف يمكننا المساعدة.",
@@ -638,7 +642,7 @@ export const translations = {
 
     // Mission & Vision Page FAQs
     missionVisionFaqQ1: "ما هي رسالة سدرة ميد؟",
-    missionVisionFaqA1: "رسالتنا هي تمكين مقدمي الرعاية الصحية في جميع أنحاء المملكة العربية السعودية من خلال تقديم الدعم الاستراتيجي والتشغيلي والفني لضمان نجاح المشاريع الصحية وتحويل تقديم الخدمات الطبية.",
+    missionVisionFaqA1: "رسالتنا هي تمكين مقدمي الرعاية الصحية في جميع أنحاء المملكة العربية السعودية من خلال تقديم الدعم الاستراتيجي والتشغيلي والتقني لضمان نجاح المشاريع الصحية وتحويل تقديم الخدمات الطبية.",
     missionVisionFaqQ2: "ما هي رؤية سدرة ميد للمستقبل؟",
     missionVisionFaqA2: "رؤيتنا هي أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية، معترف بنا للابتكار والموثوقية وقدرتنا على تحقيق نتائج ناجحة لمقدمي الرعاية الصحية والمستثمرين والمجتمع.",
     missionVisionFaqQ3: "كيف توجه الرسالة العمليات اليومية؟",
