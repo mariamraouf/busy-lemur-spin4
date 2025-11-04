@@ -7,6 +7,7 @@ import ScrollToTopButton from '@/components/ScrollToTopButton';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"; // Import shadcn Card components
 
 const OurServicesPage = () => {
   const { language, t } = useLanguage();
@@ -77,7 +78,7 @@ const OurServicesPage = () => {
         <meta name="description" content={t('servicesSummarySubtitle')} />
       </Helmet>
       <Navbar />
-      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Increased pt-24 to pt-32 */}
+      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
         </div>
@@ -121,17 +122,26 @@ const OurServicesPage = () => {
                 <p className="text-gray-700 leading-relaxed mb-8 text-lg">
                   {category.description}
                 </p>
-                <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Adjusted grid for more cards per row */}
                   {category.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start">
-                      <i className={cn(item.icon, "text-sidraTeal text-xl flex-shrink-0 mt-1", language === 'ar' ? 'ml-4' : 'mr-4')}></i>
-                      <div>
-                        <h4 className="text-xl font-semibold text-gray-900 mb-1">{item.title}</h4>
-                        <p className="text-gray-600 text-base">{item.description}</p>
-                      </div>
-                    </li>
+                    <Card
+                      key={itemIndex}
+                      className="group flex flex-col items-start p-6 rounded-xl shadow-md border border-gray-100 transition-all duration-300 hover:shadow-lg hover:border-sidraPrimary/20"
+                    >
+                      <CardHeader className="p-0 mb-4 flex flex-row items-center">
+                        <div className="w-12 h-12 rounded-full flex items-center justify-center bg-sidraTeal/10 text-sidraTeal group-hover:bg-sidraTeal group-hover:text-white transition-all duration-300">
+                          <i className={cn(item.icon, "text-xl")}></i>
+                        </div>
+                        <CardTitle className={cn("text-xl font-bold text-gray-900", language === 'ar' ? 'mr-4' : 'ml-4')}>
+                          {item.title}
+                        </CardTitle>
+                      </CardHeader>
+                      <CardDescription className="text-gray-600 leading-relaxed text-base flex-grow">
+                        {item.description}
+                      </CardDescription>
+                    </Card>
                   ))}
-                </ul>
+                </div>
               </div>
             ))}
           </div>
