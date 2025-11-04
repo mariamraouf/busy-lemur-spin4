@@ -17,9 +17,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-4 mb-6">
-              <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary via-sidraPurple to-sidraPink rounded-2xl flex items-center justify-center">
-                <i className="fas fa-heartbeat text-white text-2xl animate-pulse-slow"></i>
-              </div>
+              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-16 h-16 object-contain" />
               <div>
                 <h3 className="text-3xl font-black bg-gradient-to-r from-sidraCyan via-sidraEmerald to-sidraTeal bg-clip-text text-transparent">Sidra Med</h3>
                 <p className="text-gray-400 font-semibold">{t('healthcareExcellence')}</p>
@@ -48,10 +46,10 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6 text-white">{t('quickLinks')}</h4>
             <ul className="space-y-4">
-              <li><a href="#home" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('home')}</a></li>
-              <li><a href="#about" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('aboutUs')}</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('ourServices')}</a></li>
-              <li><a href="#contact" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('contact')}</a></li>
+              <li><Link to="/" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('home')}</Link></li>
+              <li><Link to="/about-us" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('aboutUs')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('ourServicesFooter')}</Link></li>
+              <li><Link to="/contact" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('contact')}</Link></li>
             </ul>
           </div>
 
@@ -59,10 +57,10 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6 text-white">{t('services')}</h4>
             <ul className="space-y-4">
-              <li><a href="#services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('service1Title')}</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('service2Title')}</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('marketIntegration')}</a></li>
-              <li><a href="#services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('service4Title')}</a></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('service1Title')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('service2Title')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('marketIntegration')}</Link></li>
+              <li><Link to="/services" className="text-gray-300 hover:text-sidraPrimary transition-colors hover:translate-x-2 transform inline-block">{t('service4Title')}</Link></li>
             </ul>
           </div>
         </div>

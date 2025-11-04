@@ -1,46 +1,13 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
   const { t } = useLanguage();
-  const sectionRef = useRef<HTMLElement>(null);
-
-  useEffect(() => {
-    const animateProgressBars = () => {
-      const progressBars = sectionRef.current?.querySelectorAll('.progress-bar');
-      progressBars?.forEach(bar => {
-        const width = bar.getAttribute('data-width');
-        if (width) {
-          setTimeout(() => {
-            (bar as HTMLElement).style.width = width + '%';
-          }, 500);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          animateProgressBars();
-          observer.unobserve(entry.target); // Stop observing once animated
-        }
-      });
-    }, { threshold: 0.3 }); // Trigger when 30% of the section is visible
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
-    }
-
-    return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
-      }
-    };
-  }, []);
 
   return (
-    <section id="about" ref={sectionRef} className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+    <section id="about" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraPurple rounded-full blur-3xl"></div>
         <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraPink to-sidraOrange rounded-full blur-3xl"></div>
@@ -55,47 +22,15 @@ const AboutSection = () => {
               </span>
             </div>
             <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-tight">
-              <span className="block">{t('aboutTitlePart1')}</span>
-              <span className="block bg-gradient-to-r from-sidraPrimary via-sidraPurple to-sidraPink bg-clip-text text-transparent">{t('aboutTitlePart2')}</span>
-              <span className="block">{t('aboutTitlePart3')}</span>
+              {t('aboutSummaryTitle')}
             </h2>
-            <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              {t('aboutDescription1')}
+            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
+              {t('aboutSummaryDescription')}
             </p>
-            <p className="text-lg text-gray-600 mb-10 leading-relaxed">
-              {t('aboutDescription2')}
-            </p>
-
-            {/* Progress Bars */}
-            <div className="space-y-6">
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold text-gray-700">{t('projectSuccessRate')}</span>
-                  <span className="font-bold text-sidraPrimary">98%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-gradient-to-r from-sidraPrimary to-sidraTeal h-3 rounded-full progress-bar" data-width="98"></div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold text-gray-700">{t('clientSatisfaction')}</span>
-                  <span className="font-bold text-sidraPurple">95%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-gradient-to-r from-sidraPurple to-sidraPink h-3 rounded-full progress-bar" data-width="95"></div>
-                </div>
-              </div>
-              <div>
-                <div className="flex justify-between mb-2">
-                  <span className="font-semibold text-gray-700">{t('onTimeDelivery')}</span>
-                  <span className="font-bold text-sidraEmerald">92%</span>
-                </div>
-                <div className="w-full bg-gray-200 rounded-full h-3">
-                  <div className="bg-gradient-to-r from-sidraEmerald to-sidraCyan h-3 rounded-full progress-bar" data-width="92"></div>
-                </div>
-              </div>
-            </div>
+            <Link to="/about-us" className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white font-bold rounded-xl hover:shadow-lg transition-all transform hover:scale-105 text-lg">
+              <span>{t('learnMoreAboutUs')}</span>
+              <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+            </Link>
           </div>
 
           <div className="relative" data-aos="fade-left" data-aos-duration="1000">

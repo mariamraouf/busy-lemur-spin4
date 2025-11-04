@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
   const { t } = useLanguage();
@@ -52,16 +53,14 @@ const ServicesSection = () => {
             {t('whatWeDo')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">
-            <span className="block">{t('servicesTitlePart1')}</span>
-            <span className="block bg-gradient-to-r from-sidraCyan to-sidraEmerald bg-clip-text text-transparent">{t('servicesTitlePart2')}</span>
-            <span className="block">{t('servicesTitlePart3')}</span>
+            <span className="block">{t('servicesSummaryTitle')}</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            {t('servicesSubtitle')}
+            {t('servicesSummarySubtitle')}
           </p>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {services.map((service, index) => (
             <div
               key={index}
@@ -84,15 +83,14 @@ const ServicesSection = () => {
               <p className="text-gray-300 leading-relaxed mb-6">
                 {service.description}
               </p>
-              <div className={cn(
-                "flex items-center font-semibold group-hover:translate-x-2 transition-transform",
-                service.hoverColor
-              )}>
-                <span>{t('learnMore')}</span>
-                <i className="fas fa-arrow-right ml-2"></i>
-              </div>
             </div>
           ))}
+        </div>
+        <div className="text-center" data-aos="fade-up" data-aos-delay="500">
+          <Link to="/services" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl hover:shadow-3xl">
+            <span>{t('exploreAllServices')}</span>
+            <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+          </Link>
         </div>
       </div>
     </section>

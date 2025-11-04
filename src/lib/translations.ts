@@ -9,6 +9,9 @@ export const translations = {
     arabic: "العربية",
     english: "English",
     healthcareExcellence: "Healthcare Excellence",
+    missionVision: "Mission & Vision",
+    ourValues: "Our Values",
+    ourTeam: "Our Team",
 
     // Hero Section
     transformingHealthcare: "🚀 Transforming Healthcare in Saudi Arabia",
@@ -25,27 +28,20 @@ export const translations = {
     yearsExperience: "Years Experience",
     citiesCovered: "Cities Covered",
 
-    // About Section
+    // About Section (Home Page Summary)
     whoWeAre: "Who We Are",
-    aboutTitlePart1: "Sidra Med is a",
-    aboutTitlePart2: "Saudi-based healthcare",
-    aboutTitlePart3: "project company",
-    aboutDescription1: "We help investors, operators, and all healthcare stakeholders plan, launch, and manage medical facilities across the Kingdom.",
-    aboutDescription2: "From initial concept to operational readiness, Sidra Med ensures seamless execution, regulatory alignment, and sustainable outcomes.",
-    projectSuccessRate: "Project Success Rate",
-    clientSatisfaction: "Client Satisfaction",
-    onTimeDelivery: "On-Time Delivery",
-    qualityAssured: "Quality Assured",
-    isoCertified: "ISO Certified",
-    awardWinning: "Award Winning",
-    excellenceInHealthcare: "Excellence in Healthcare",
+    aboutSummaryTitle: "Sidra Med is a Saudi-based healthcare project and service delivery company.",
+    aboutSummaryDescription: "We help investors, operators, and all healthcare stakeholders plan, launch, and manage medical facilities across the Kingdom. From initial concept to operational readiness, Sidra Med ensures seamless execution, regulatory alignment, and sustainable outcomes.",
+    learnMoreAboutUs: "Learn More About Us",
+    qualityAssured: "Quality Assured", // Added missing key
+    isoCertified: "ISO Certified",     // Added missing key
+    awardWinning: "Award Winning",     // Added missing key
+    excellenceInHealthcare: "Excellence in Healthcare", // Added missing key
 
-    // Services Section
+    // Services Section (Home Page Summary)
     whatWeDo: "What We Do",
-    servicesTitlePart1: "We offer a",
-    servicesTitlePart2: "full spectrum",
-    servicesTitlePart3: "of support services",
-    servicesSubtitle: "For healthcare facilities and medical project owners",
+    servicesSummaryTitle: "We offer a full spectrum of support services",
+    servicesSummarySubtitle: "For healthcare facilities and medical project owners",
     service1Title: "Project Support & Execution",
     service1Description: "Assistance across the full project lifecycle—from feasibility and design to operational readiness and compliance.",
     learnMore: "Learn More",
@@ -55,6 +51,7 @@ export const translations = {
     service3Description: "Guiding international firms through local regulations, business practices, and cultural alignment to ensure success in the Saudi market.",
     service4Title: "Strategic Partnerships",
     service4Description: "Through our consortium network, we enable end-to-end project delivery by combining the strengths of specialised partners across various domains.",
+    exploreAllServices: "Explore All Services",
 
     // Why Choose Us Section
     whySidraMed: "Why Sidra Med?",
@@ -144,11 +141,62 @@ export const translations = {
     // Footer
     empoweringHealthcare: "Empowering healthcare stakeholders—providers, investors, operators, and beyond—with strategic, technical, and operational services in Saudi Arabia's evolving healthcare landscape.",
     quickLinks: "Quick Links",
-    ourServices: "Our Services",
+    ourServicesFooter: "Our Services", // Renamed to avoid conflict with Navbar link
     marketIntegration: "Market Integration",
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service",
     allRightsReserved: "© 2025 Sidra Med. All rights reserved.",
+
+    // New Content from Company Profile
+    // Mission & Vision Page
+    missionPageTitle: "Mission & Vision",
+    mission: "Mission", // Added missing key
+    missionContent: "At Sidra Med, our mission is to empower healthcare providers across Saudi Arabia by delivering strategic, operational, and technical support to ensure the success of healthcare projects. We are committed to transforming medical service delivery by enabling excellence in healthcare infrastructure and services.",
+    vision: "Vision", // Added missing key
+    visionContent: "To be the leading healthcare project delivery partner in Saudi Arabia. Recognized for innovation, reliability, and our ability to enable successful outcomes for healthcare providers, investors, and the community.",
+
+    // Who We Are Page
+    whoWeArePageTitle: "WHO WE ARE",
+    whoWeAreDescription1: "Sidra Med Ltd. is a specialised medical services firm based in Saudi Arabia. We act as strategic enablers for healthcare projects by providing comprehensive services across every project phase from concept to execution.",
+    whoWeAreDescription2: "Whether supporting hospital development, clinics, laboratories, or digital health initiatives, we offer world-class expertise tailored to the Saudi market and its unique regulatory landscape. We integrate medical knowledge, engineering excellence, and operational execution to deliver dependable, scalable healthcare solutions.",
+
+    // Our Values Page
+    ourValuesPageTitle: "Our Values",
+    value1Title: "Integrity & Professionalism",
+    value1Description: "We uphold the highest standards of honesty, ethics, and professional conduct.",
+    value2Title: "Collaboration",
+    value2Description: "We believe in the power of partnerships and interdisciplinary teamwork.",
+    value3Title: "Innovation",
+    value3Description: "We continuously seek smarter, more efficient ways to deliver healthcare solutions.",
+    value4Title: "Excellence",
+    value4Description: "We strive for excellence in execution, from planning to implementation.",
+
+    // Our Team Page
+    ourTeamPageTitle: "OUR TEAM",
+    teamRole1: "Healthcare Project Managers",
+    teamRole1Description: "Experts in healthcare-specific project delivery with deep understanding of clinical requirements.",
+    teamRole2: "Clinical & Operations Experts",
+    teamRole2Description: "Seasoned healthcare professionals ensuring operational excellence and clinical best practices.",
+    teamRole3: "Healthcare Architects & Engineers",
+    teamRole3Description: "Specialists in healthcare facility design, construction, and regulatory compliance.",
+    teamRole4: "Strategic and Financial Analysts",
+    teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.",
+
+    // Our Services Page
+    ourServicesPageTitle: "Our services",
+    serviceCategory1Title: "Healthcare Project Management",
+    serviceCategory1Item1: "Turnkey delivery for hospitals, clinics, and labs",
+    serviceCategory1Item2: "Feasibility studies & market assessments",
+    serviceCategory1Item3: "On-site medical services for construction projects",
+    serviceCategory2Title: "Licensing & Regulatory Approvals",
+    serviceCategory2Item1: "MOH licensing & facility registration",
+    serviceCategory2Item2: "Compliance audits and documentation",
+    serviceCategory3Title: "Medical Planning & Architecture Support",
+    serviceCategory3Item1: "Conceptual design and facility planning",
+    serviceCategory3Item2: "Equipment planning and BOQ development",
+    serviceCategory4Title: "Operational Readiness & Strategic Advisory",
+    serviceCategory4Item1: "Recruitment coordination and SOP development",
+    serviceCategory4Item2: "Business modeling and investment strategies",
   },
   ar: {
     // Navbar
@@ -160,6 +208,9 @@ export const translations = {
     arabic: "العربية",
     english: "English",
     healthcareExcellence: "التميز في الرعاية الصحية",
+    missionVision: "الرسالة والرؤية",
+    ourValues: "قيمنا",
+    ourTeam: "فريقنا",
 
     // Hero Section
     transformingHealthcare: "🚀 تحويل الرعاية الصحية في المملكة العربية السعودية",
@@ -176,27 +227,20 @@ export const translations = {
     yearsExperience: "سنة خبرة",
     citiesCovered: "مدينة مغطاة",
 
-    // About Section
+    // About Section (Home Page Summary)
     whoWeAre: "من نحن",
-    aboutTitlePart1: "سدرة ميد هي",
-    aboutTitlePart2: "شركة سعودية متخصصة",
-    aboutTitlePart3: "في المشاريع الصحية",
-    aboutDescription1: "نساعد المستثمرين والمشغلين وجميع أصحاب المصلحة في القطاع الصحي على التخطيط والإطلاق وإدارة المنشآت الطبية في جميع أنحاء المملكة.",
-    aboutDescription2: "من المفهوم الأولي إلى الجاهزية التشغيلية، تضمن سدرة ميد التنفيذ السلس والامتثال التنظيمي والنتائج المستدامة.",
-    projectSuccessRate: "معدل نجاح المشاريع",
-    clientSatisfaction: "رضا العملاء",
-    onTimeDelivery: "التسليم في الوقت المحدد",
-    qualityAssured: "جودة مضمونة",
-    isoCertified: "معتمد من الآيزو",
-    awardWinning: "حائز على جوائز",
-    excellenceInHealthcare: "التميز في الرعاية الصحية",
+    aboutSummaryTitle: "سدرة ميد هي شركة سعودية متخصصة في مشاريع وخدمات الرعاية الصحية.",
+    aboutSummaryDescription: "نساعد المستثمرين والمشغلين وجميع أصحاب المصلحة في القطاع الصحي على التخطيط والإطلاق وإدارة المنشآت الطبية في جميع أنحاء المملكة. من المفهوم الأولي إلى الجاهزية التشغيلية، تضمن سدرة ميد التنفيذ السلس والامتثال التنظيمي والنتائج المستدامة.",
+    learnMoreAboutUs: "اعرف المزيد عنا",
+    qualityAssured: "جودة مضمونة", // Added missing key
+    isoCertified: "معتمد من الآيزو",     // Added missing key
+    awardWinning: "حائز على جوائز",     // Added missing key
+    excellenceInHealthcare: "التميز في الرعاية الصحية", // Added missing key
 
-    // Services Section
+    // Services Section (Home Page Summary)
     whatWeDo: "ما نقدمه",
-    servicesTitlePart1: "نقدم",
-    servicesTitlePart2: "مجموعة كاملة",
-    servicesTitlePart3: "من خدمات الدعم",
-    servicesSubtitle: "للمنشآت الصحية وأصحاب المشاريع الطبية",
+    servicesSummaryTitle: "نقدم مجموعة كاملة من خدمات الدعم",
+    servicesSummarySubtitle: "للمنشآت الصحية وأصحاب المشاريع الطبية",
     service1Title: "دعم وتنفيذ المشاريع",
     service1Description: "المساعدة في جميع مراحل المشروع - من الجدوى والتصميم إلى الجاهزية التشغيلية والامتثال.",
     learnMore: "اعرف المزيد",
@@ -206,6 +250,7 @@ export const translations = {
     service3Description: "توجيه الشركات الدولية من خلال اللوائح المحلية والممارسات التجارية والتوافق الثقافي لضمان النجاح في السوق السعودي.",
     service4Title: "الشراكات الاستراتيجية",
     service4Description: "من خلال شبكة الاتحاد الخاصة بنا، نمكّن تسليم المشاريع من البداية إلى النهاية من خلال الجمع بين نقاط القوة للشركاء المتخصصين في مختلف المجالات.",
+    exploreAllServices: "استكشف جميع الخدمات",
 
     // Why Choose Us Section
     whySidraMed: "لماذا سدرة ميد؟",
@@ -295,11 +340,62 @@ export const translations = {
     // Footer
     empoweringHealthcare: "تمكين أصحاب المصلحة في الرعاية الصحية - مقدمي الخدمات والمستثمرين والمشغلين وما بعدهم - بخدمات استراتيجية وتقنية وتشغيلية في المشهد الصحي المتطور في المملكة العربية السعودية.",
     quickLinks: "روابط سريعة",
-    ourServices: "خدماتنا",
+    ourServicesFooter: "خدماتنا", // Renamed to avoid conflict with Navbar link
     marketIntegration: "التكامل مع السوق",
     privacyPolicy: "سياسة الخصوصية",
     termsOfService: "شروط الخدمة",
     allRightsReserved: "© 2025 سدرة ميد. جميع الحقوق محفوظة.",
+
+    // New Content from Company Profile
+    // Mission & Vision Page
+    missionPageTitle: "الرسالة والرؤية",
+    mission: "الرسالة", // Added missing key
+    missionContent: "في سدرة ميد، مهمتنا هي تمكين مقدمي الرعاية الصحية في جميع أنحاء المملكة العربية السعودية من خلال تقديم الدعم الاستراتيجي والتشغيلي والتقني لضمان نجاح المشاريع الصحية. نحن ملتزمون بتحويل تقديم الخدمات الطبية من خلال تمكين التميز في البنية التحتية والخدمات الصحية.",
+    vision: "الرؤية", // Added missing key
+    visionContent: "أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية. معترف بنا للابتكار والموثوقية وقدرتنا على تحقيق نتائج ناجحة لمقدمي الرعاية الصحية والمستثمرين والمجتمع.",
+
+    // Who We Are Page
+    whoWeArePageTitle: "من نحن",
+    whoWeAreDescription1: "سدرة ميد المحدودة هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية. نعمل كممكّنين استراتيجيين للمشاريع الصحية من خلال تقديم خدمات شاملة عبر كل مرحلة من مراحل المشروع من المفهوم إلى التنفيذ.",
+    whoWeAreDescription2: "سواء كان الدعم لتطوير المستشفيات، العيادات، المختبرات، أو مبادرات الصحة الرقمية، فإننا نقدم خبرة عالمية المستوى مصممة خصيصًا للسوق السعودي وبيئته التنظيمية الفريدة. نحن ندمج المعرفة الطبية، التميز الهندسي، والتنفيذ التشغيلي لتقديم حلول رعاية صحية موثوقة وقابلة للتطوير.",
+
+    // Our Values Page
+    ourValuesPageTitle: "قيمنا",
+    value1Title: "النزاهة والاحترافية",
+    value1Description: "نحن نلتزم بأعلى معايير الصدق والأخلاق والسلوك المهني.",
+    value2Title: "التعاون",
+    value2Description: "نؤمن بقوة الشراكات والعمل الجماعي متعدد التخصصات.",
+    value3Title: "الابتكار",
+    value3Description: "نسعى باستمرار لإيجاد طرق أذكى وأكثر كفاءة لتقديم حلول الرعاية الصحية.",
+    value4Title: "التميز",
+    value4Description: "نسعى جاهدين للتميز في التنفيذ، من التخطيط إلى التطبيق.",
+
+    // Our Team Page
+    ourTeamPageTitle: "فريقنا",
+    teamRole1: "مديرو مشاريع الرعاية الصحية",
+    teamRole1Description: "خبراء في تسليم مشاريع الرعاية الصحية المتخصصة مع فهم عميق للمتطلبات السريرية.",
+    teamRole2: "خبراء العمليات السريرية والتشغيلية",
+    teamRole2Description: "متخصصون في الرعاية الصحية ذوو خبرة يضمنون التميز التشغيلي وأفضل الممارسات السريرية.",
+    teamRole3: "مهندسو ومعماريو الرعاية الصحية",
+    teamRole3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.",
+    teamRole4: "المحللون الاستراتيجيون والماليون",
+    teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
+
+    // Our Services Page
+    ourServicesPageTitle: "خدماتنا",
+    serviceCategory1Title: "إدارة مشاريع الرعاية الصحية",
+    serviceCategory1Item1: "تسليم المشاريع الجاهزة للمستشفيات والعيادات والمختبرات",
+    serviceCategory1Item2: "دراسات الجدوى وتقييمات السوق",
+    serviceCategory1Item3: "الخدمات الطبية في الموقع لمشاريع البناء",
+    serviceCategory2Title: "التراخيص والموافقات التنظيمية",
+    serviceCategory2Item1: "ترخيص وزارة الصحة وتسجيل المنشآت",
+    serviceCategory2Item2: "تدقيقات الامتثال والوثائق",
+    serviceCategory3Title: "التخطيط الطبي ودعم الهندسة المعمارية",
+    serviceCategory3Item1: "التصميم المفاهيمي وتخطيط المنشآت",
+    serviceCategory3Item2: "تخطيط المعدات وتطوير قوائم الكميات",
+    serviceCategory4Title: "الجاهزية التشغيلية والاستشارات الاستراتيجية",
+    serviceCategory4Item1: "تنسيق التوظيف وتطوير إجراءات التشغيل القياسية",
+    serviceCategory4Item2: "نمذجة الأعمال واستراتيجيات الاستثمار",
   },
 };
 

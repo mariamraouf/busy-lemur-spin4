@@ -5,15 +5,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
-import AboutSection from "@/components/AboutSection";
-import ServicesSection from "@/components/ServicesSection";
+import AboutSection from "@/components/AboutSection"; // Updated to be a summary
+import ServicesSection from "@/components/ServicesSection"; // Updated to be a summary
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PartnersSection from "@/components/PartnersSection";
 import CtaSection from "@/components/CtaSection";
 import ContactSection from "@/components/ContactSection";
-import ScrollToTopButton from "@/components/ScrollToTopButton"; // Import the new component
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 const Home = () => {
   const { language, t } = useLanguage();
@@ -30,8 +30,8 @@ const Home = () => {
       <main className="flex-grow">
         <HeroSection />
         <StatsSection />
-        <AboutSection />
-        <ServicesSection />
+        <AboutSection /> {/* Now a summary section */}
+        <ServicesSection /> {/* Now a summary section */}
         <WhyChooseUsSection />
         <SuccessStoriesSection />
         <TestimonialsSection />
@@ -40,7 +40,7 @@ const Home = () => {
         <ContactSection />
       </main>
       <Footer />
-      <ScrollToTopButton /> {/* Add the scroll-to-top button here */}
+      <ScrollToTopButton />
     </div>
   );
 };
