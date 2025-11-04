@@ -14,6 +14,7 @@ import PartnersSection from "@/components/PartnersSection";
 import CtaSection from "@/components/CtaSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import FAQSection from "@/components/FAQSection"; // Import FAQSection
+import ContactDetailsSection from "@/components/ContactDetailsSection"; // Import the new ContactDetailsSection
 
 const Home = () => {
   const { language, t } = useLanguage();
@@ -45,7 +46,7 @@ const Home = () => {
         <TestimonialsSection />
         <PartnersSection />
         <CtaSection />
-        {/* Removed ContactSection as it's now a dedicated page */}
+        <ContactDetailsSection /> {/* Added the new contact details section here */}
         <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} /> {/* Hide subtitle for home page */}
       </main>
       <Footer />

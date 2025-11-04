@@ -41,17 +41,17 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <div className="flex items-center gap-x-3"> {/* Changed space-x-3 to gap-x-3 */}
-              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-12 h-12 object-contain transform group-hover:scale-110 transition-transform duration-300" /> {/* Increased logo size */}
+            <div className="flex items-center gap-x-3">
+              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-16 h-16 object-contain transform group-hover:scale-110 transition-transform duration-300" /> {/* Increased logo size to w-16 h-16 */}
               <div>
-                <h1 className="text-xl font-bold bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">Sidra Med</h1>
-                <p className="text-xs text-gray-500 font-medium">{t('healthcareExcellence')}</p>
+                <h1 className="text-2xl font-bold bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">Sidra Med</h1> {/* Increased text size to text-2xl */}
+                <p className="text-sm text-gray-500 font-medium">{t('healthcareExcellence')}</p> {/* Increased text size to text-sm */}
               </div>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center gap-x-8"> {/* Changed space-x-8 to gap-x-8 */}
+          <div className="hidden lg:flex items-center gap-x-8">
             {navLinks.map((link) => (
               <Link
                 key={link.id}
