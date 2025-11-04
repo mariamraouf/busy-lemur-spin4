@@ -43,10 +43,7 @@ const Navbar = () => {
           <Link to="/" className="flex items-center group">
             <div className="flex items-center gap-x-3">
               <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-16 h-16 object-contain transform group-hover:scale-110 transition-transform duration-300" /> {/* Increased logo size to w-16 h-16 */}
-              <div>
-                <h1 className="text-2xl font-bold bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">Sidra Med</h1> {/* Increased text size to text-2xl */}
-                <p className="text-sm text-gray-500 font-medium">{t('healthcareExcellence')}</p> {/* Increased text size to text-sm */}
-              </div>
+              {/* Removed Sidra Med title and Healthcare Excellence tagline */}
             </div>
           </Link>
 
