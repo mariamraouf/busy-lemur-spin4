@@ -67,6 +67,7 @@ const OurServicesPage = () => {
     { id: "services-faq-3", question: t('faqQ3'), answer: t('faqA3') },
     { id: "services-faq-4", question: t('faqQ4'), answer: t('faqA4') },
     { id: "services-faq-5", question: t('faqQ5'), answer: t('faqA5') },
+    { id: "services-faq-6", question: t('faqQ6'), answer: t('faqA6') },
   ];
 
   return (
@@ -86,9 +87,7 @@ const OurServicesPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('whatWeDo')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
-              {t('ourServicesPageTitle')}
-            </h1>
+            {/* Removed h2 title: {t('ourServicesPageTitle')} */}
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {t('ourServicesPageDescription')}
             </p>
@@ -107,8 +106,9 @@ const OurServicesPage = () => {
               >
                 <div className="flex items-center mb-6">
                   <div className={cn(
-                    "w-20 h-20 rounded-2xl flex items-center justify-center mr-6 transform group-hover:rotate-12 transition-transform duration-300",
-                    `bg-gradient-to-br ${category.gradientFrom} ${category.gradientTo}`
+                    "w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300",
+                    `bg-gradient-to-br ${category.gradientFrom} ${category.gradientTo}`,
+                    language === 'ar' ? 'ml-6' : 'mr-6' // Adjusted for RTL
                   )}>
                     <i className={cn(category.icon, "text-white text-3xl")}></i>
                   </div>
@@ -121,8 +121,8 @@ const OurServicesPage = () => {
                 </p>
                 <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
                   {category.items.map((item, itemIndex) => (
-                    <li key={itemIndex} className="flex items-start space-x-4">
-                      <i className={cn(item.icon, "text-sidraTeal text-xl flex-shrink-0 mt-1")}></i>
+                    <li key={itemIndex} className="flex items-start">
+                      <i className={cn(item.icon, "text-sidraTeal text-xl flex-shrink-0 mt-1", language === 'ar' ? 'ml-4' : 'mr-4')}></i> {/* Adjusted for RTL */}
                       <div>
                         <h4 className="text-xl font-semibold text-gray-900 mb-1">{item.title}</h4>
                         <p className="text-gray-600 text-base">{item.description}</p>
@@ -144,7 +144,7 @@ const OurServicesPage = () => {
             </p>
             <Link to="/contact" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl text-lg">
               <span>{t('contactUsToday')}</span>
-              <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+              <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
             </Link>
           </div>
 

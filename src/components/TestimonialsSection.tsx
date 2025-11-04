@@ -3,7 +3,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
 
 const TestimonialsSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage(); // Destructure language
 
   const testimonials = [
     {
@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
               data-aos-delay={100 * (index + 1)}
             >
               <div className="flex items-center mb-6">
-                <img src={testimonial.avatar} alt={testimonial.author} className="w-16 h-16 rounded-full object-cover mr-4 border-4 border-sidraPrimary group-hover:border-sidraSecondary transition-colors duration-300" />
+                <img src={testimonial.avatar} alt={testimonial.author} className={cn("w-16 h-16 rounded-full object-cover border-4 border-sidraPrimary group-hover:border-sidraSecondary transition-colors duration-300", language === 'ar' ? 'ml-4' : 'mr-4')} /> {/* Adjusted for RTL */}
                 <div>
                   <h4 className="text-xl font-bold text-gray-900">{testimonial.author}</h4>
                   <p className="text-gray-600 text-sm">{testimonial.role}</p>

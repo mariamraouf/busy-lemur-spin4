@@ -4,7 +4,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-import FAQSection from '@/components/FAQSection'; // Import FAQSection
+import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 
 const OurValuesPage = () => {
@@ -13,6 +13,10 @@ const OurValuesPage = () => {
   const ourValuesFaqs = [
     { id: "values-faq-1", question: t('ourValuesFaqQ1'), answer: t('ourValuesFaqA1') },
     { id: "values-faq-2", question: t('ourValuesFaqQ2'), answer: t('ourValuesFaqA2') },
+    { id: "values-faq-3", question: t('ourValuesFaqQ3'), answer: t('ourValuesFaqA3') },
+    { id: "values-faq-4", question: t('ourValuesFaqQ4'), answer: t('ourValuesFaqA4') },
+    { id: "values-faq-5", question: t('ourValuesFaqQ5'), answer: t('ourValuesFaqA5') },
+    { id: "values-faq-6", question: t('ourValuesFaqQ6'), answer: t('ourValuesFaqA6') },
   ];
 
   const values = [

@@ -4,7 +4,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-import FAQSection from '@/components/FAQSection'; // Import FAQSection
+import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +14,10 @@ const AboutUsPage = () => {
   const aboutUsFaqs = [
     { id: "about-faq-1", question: t('aboutUsFaqQ1'), answer: t('aboutUsFaqA1') },
     { id: "about-faq-2", question: t('aboutUsFaqQ2'), answer: t('aboutUsFaqA2') },
+    { id: "about-faq-3", question: t('aboutUsFaqQ3'), answer: t('aboutUsFaqA3') },
+    { id: "about-faq-4", question: t('aboutUsFaqQ4'), answer: t('aboutUsFaqA4') },
+    { id: "about-faq-5", question: t('aboutUsFaqQ5'), answer: t('aboutUsFaqA5') },
+    { id: "about-faq-6", question: t('aboutUsFaqQ6'), answer: t('aboutUsFaqA6') },
   ];
 
   return (
@@ -34,9 +38,7 @@ const AboutUsPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('whoWeAre')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
-              {t('whoWeArePageTitle')}
-            </h1>
+            {/* Removed h1 title: {t('whoWeArePageTitle')} */}
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -59,15 +61,15 @@ const AboutUsPage = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/mission-vision" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraPrimary text-white font-bold rounded-xl hover:bg-sidraSecondary transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('missionVision')}</span>
-                <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i>
               </Link>
               <Link to="/our-values" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraSecondary text-white font-bold rounded-xl hover:bg-sidraAccent transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('ourValues')}</span>
-                <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i>
               </Link>
               <Link to="/our-team" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraTeal text-white font-bold rounded-xl hover:bg-sidraPrimary transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('ourTeam')}</span>
-                <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i>
               </Link>
             </div>
           </div>

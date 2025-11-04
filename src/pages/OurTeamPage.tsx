@@ -4,7 +4,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-import FAQSection from '@/components/FAQSection'; // Import FAQSection
+import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 
 const OurTeamPage = () => {
@@ -13,6 +13,10 @@ const OurTeamPage = () => {
   const ourTeamFaqs = [
     { id: "team-faq-1", question: t('ourTeamFaqQ1'), answer: t('ourTeamFaqA1') },
     { id: "team-faq-2", question: t('ourTeamFaqQ2'), answer: t('ourTeamFaqA2') },
+    { id: "team-faq-3", question: t('ourTeamFaqQ3'), answer: t('ourTeamFaqA3') },
+    { id: "team-faq-4", question: t('ourTeamFaqQ4'), answer: t('ourTeamFaqA4') },
+    { id: "team-faq-5", question: t('ourTeamFaqQ5'), answer: t('ourTeamFaqA5') },
+    { id: "team-faq-6", question: t('ourTeamFaqQ6'), answer: t('ourTeamFaqA6') },
   ];
 
   const teamRoles = [
@@ -80,7 +84,7 @@ const OurTeamPage = () => {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {teamRoles.map((role, index) => (
-                  <div key={index} className="flex items-start space-x-4">
+                  <div key={index} className="flex items-start gap-x-4"> {/* Changed space-x-4 to gap-x-4 */}
                     <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-sidraPrimary to-sidraTeal">
                       <i className={cn(role.icon, "text-white text-xl")}></i>
                     </div>

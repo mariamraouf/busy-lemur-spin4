@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
 const AboutSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage(); // Destructure language
 
   return (
     <section id="about" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
@@ -29,7 +29,7 @@ const AboutSection = () => {
             </p>
             <Link to="/about-us" className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white font-bold rounded-xl hover:shadow-lg transition-all transform hover:scale-105 text-lg">
               <span>{t('learnMoreAboutUs')}</span>
-              <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+              <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
             </Link>
           </div>
 
@@ -39,7 +39,7 @@ const AboutSection = () => {
             </div>
             {/* Floating Cards */}
             <div className="absolute -top-6 -left-6 bg-white p-6 rounded-2xl shadow-xl animate-float z-20">
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center gap-x-3"> {/* Changed space-x-3 to gap-x-3 */}
                 <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-full flex items-center justify-center">
                   <i className="fas fa-check text-white"></i>
                 </div>
@@ -50,7 +50,7 @@ const AboutSection = () => {
               </div>
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl animate-float z-20" style={{ animationDelay: '-2s' }}>
-              <div className="flex items-center space-x-3">
+              <div className="flex items-center gap-x-3"> {/* Changed space-x-3 to gap-x-3 */}
                 <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-full flex items-center justify-center">
                   <i className="fas fa-star text-white"></i>
                 </div>

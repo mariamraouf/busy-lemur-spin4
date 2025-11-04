@@ -4,7 +4,7 @@ import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
 const ServicesSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage(); // Destructure language
 
   const services = [
     {
@@ -89,7 +89,7 @@ const ServicesSection = () => {
         <div className="text-center" data-aos="fade-up" data-aos-delay="500">
           <Link to="/services" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl hover:shadow-3xl">
             <span>{t('exploreAllServices')}</span>
-            <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
+            <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
           </Link>
         </div>
       </div>

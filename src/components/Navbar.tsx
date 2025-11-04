@@ -41,8 +41,8 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <div className="flex items-center space-x-3">
-              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-10 h-10 object-contain transform group-hover:scale-110 transition-transform duration-300" />
+            <div className="flex items-center gap-x-3"> {/* Changed space-x-3 to gap-x-3 */}
+              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-12 h-12 object-contain transform group-hover:scale-110 transition-transform duration-300" /> {/* Increased logo size */}
               <div>
                 <h1 className="text-xl font-bold bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">Sidra Med</h1>
                 <p className="text-xs text-gray-500 font-medium">{t('healthcareExcellence')}</p>
@@ -51,7 +51,7 @@ const Navbar = () => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center gap-x-8"> {/* Changed space-x-8 to gap-x-8 */}
             {navLinks.map((link) => (
               <Link
                 key={link.id}
@@ -66,7 +66,7 @@ const Navbar = () => {
             {/* Language Switcher */}
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-2 px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+              className="flex items-center gap-x-2 px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"
             >
               <i className="fas fa-globe animate-spin-slow"></i>
               <span className="font-semibold">{language === 'en' ? t('arabic') : t('english')}</span>
@@ -104,7 +104,7 @@ const Navbar = () => {
           ))}
           <button
             onClick={() => { toggleLanguage(); setIsMobileMenuOpen(false); }}
-            className="w-full flex items-center justify-center space-x-2 px-6 py-4 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-xl hover:shadow-lg transition-all duration-300"
+            className="w-full flex items-center justify-center gap-x-2 px-6 py-4 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-xl hover:shadow-lg transition-all duration-300"
           >
             <i className="fas fa-globe animate-spin-slow"></i>
             <span className="font-semibold">{language === 'en' ? t('arabic') : t('english')}</span>

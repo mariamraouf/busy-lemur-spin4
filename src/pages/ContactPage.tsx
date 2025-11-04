@@ -30,6 +30,7 @@ const ContactPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('getInTouch')}
             </span>
+            {/* Removed h1 title: {t('discussYourProject')} */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
               {t('discussYourProject')}
             </h1>
@@ -80,14 +81,14 @@ const ContactPage = () => {
 
                 <button type="submit" className="w-full bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent text-white font-bold py-6 rounded-xl hover:shadow-2xl transition-all transform hover:scale-105 text-lg">
                   <span>{t('sendMessage')}</span>
-                  <i className="fas fa-paper-plane ml-3"></i>
+                  <i className={cn("fas fa-paper-plane", language === 'ar' ? 'mr-3' : 'ml-3')}></i> {/* Adjusted for RTL */}
                 </button>
               </form>
             </div>
 
             <div data-aos="fade-left" data-aos-duration="1000">
               <div className="space-y-8 mb-12">
-                <div className="flex items-start space-x-6 group">
+                <div className="flex items-start gap-x-6 group"> {/* Changed space-x-6 to gap-x-6 */}
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <i className="fas fa-map-marker-alt text-white text-xl"></i>
@@ -99,7 +100,7 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-6 group">
+                <div className="flex items-start gap-x-6 group"> {/* Changed space-x-6 to gap-x-6 */}
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <i className="fas fa-envelope text-white text-xl"></i>
@@ -111,7 +112,7 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-6 group">
+                <div className="flex items-start gap-x-6 group"> {/* Changed space-x-6 to gap-x-6 */}
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <i className="fas fa-clock text-white text-xl"></i>

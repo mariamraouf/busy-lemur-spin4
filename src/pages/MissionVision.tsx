@@ -4,7 +4,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-import FAQSection from '@/components/FAQSection'; // Import FAQSection
+import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 
 const MissionVision = () => {
@@ -13,6 +13,10 @@ const MissionVision = () => {
   const missionVisionFaqs = [
     { id: "mv-faq-1", question: t('missionVisionFaqQ1'), answer: t('missionVisionFaqA1') },
     { id: "mv-faq-2", question: t('missionVisionFaqQ2'), answer: t('missionVisionFaqA2') },
+    { id: "mv-faq-3", question: t('missionVisionFaqQ3'), answer: t('missionVisionFaqA3') },
+    { id: "mv-faq-4", question: t('missionVisionFaqQ4'), answer: t('missionVisionFaqA4') },
+    { id: "mv-faq-5", question: t('missionVisionFaqQ5'), answer: t('missionVisionFaqA5') },
+    { id: "mv-faq-6", question: t('missionVisionFaqQ6'), answer: t('missionVisionFaqA6') },
   ];
 
   return (
@@ -40,7 +44,7 @@ const MissionVision = () => {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
-              <div className="flex items-center space-x-4 mb-6">
+              <div className="flex items-center gap-x-4 mb-6"> {/* Changed space-x-4 to gap-x-4 */}
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center">
                   <i className="fas fa-bullseye text-white text-2xl"></i>
                 </div>
@@ -52,7 +56,7 @@ const MissionVision = () => {
             </div>
 
             <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
-              <div className="flex items-center space-x-4 mb-6">
+              <div className="flex items-center gap-x-4 mb-6"> {/* Changed space-x-4 to gap-x-4 */}
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center">
                   <i className="fas fa-eye text-white text-2xl"></i>
                 </div>
