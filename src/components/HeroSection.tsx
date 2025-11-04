@@ -6,7 +6,7 @@ const HeroSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
+    <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden"> {/* Changed pt-20 to pt-32 for consistency */}
       <div className="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop" alt="Healthcare" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraSecondary/80 to-sidraAccent/90"></div>
