@@ -57,7 +57,7 @@ const OurTeamPage = () => {
         <meta name="description" content={t('teamRole1Description')} />
       </Helmet>
       <Navbar />
-      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Changed pt-24 to pt-32 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
@@ -84,7 +84,7 @@ const OurTeamPage = () => {
               </p>
               <div className="grid grid-cols-2 gap-6">
                 {teamRoles.map((role, index) => (
-                  <div key={index} className="flex items-start gap-x-4"> {/* Changed space-x-4 to gap-x-4 */}
+                  <div key={index} className="flex items-start gap-x-4">
                     <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-sidraPrimary to-sidraTeal">
                       <i className={cn(role.icon, "text-white text-xl")}></i>
                     </div>

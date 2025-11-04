@@ -26,7 +26,7 @@ const MissionVision = () => {
         <meta name="description" content={t('missionContent')} />
       </Helmet>
       <Navbar />
-      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Changed pt-24 to pt-32 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
@@ -44,7 +44,7 @@ const MissionVision = () => {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
-              <div className="flex items-center gap-x-4 mb-6"> {/* Changed space-x-4 to gap-x-4 */}
+              <div className="flex items-center gap-x-4 mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center">
                   <i className="fas fa-bullseye text-white text-2xl"></i>
                 </div>
@@ -56,7 +56,7 @@ const MissionVision = () => {
             </div>
 
             <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
-              <div className="flex items-center gap-x-4 mb-6"> {/* Changed space-x-4 to gap-x-4 */}
+              <div className="flex items-center gap-x-4 mb-6">
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center">
                   <i className="fas fa-eye text-white text-2xl"></i>
                 </div>
