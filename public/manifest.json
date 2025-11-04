@@ -1,0 +1,20 @@
+{
+  "name": "Sidra Med",
+  "short_name": "Sidra Med",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#449CA6",
+  "icons": [
+    {
+      "src": "/sidra-med-logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/sidra-med-logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
