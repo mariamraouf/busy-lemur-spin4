@@ -5,10 +5,12 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { cn } from '@/lib/utils';
-import ContactMapSection from '@/components/ContactMapSection'; // Import the new component
 
 const ContactPage = () => {
   const { language, t } = useLanguage();
+
+  // Google Maps embed URL for Jeddah, KSA. You can customize the coordinates and zoom.
+  const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.00000000002!2d39.0872629!3d21.5433331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b1185!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus";
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -23,7 +25,7 @@ const ContactPage = () => {
           <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"> {/* Added py-16 here */}
           <div className="text-center mb-16" data-aos="fade-up">
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('getInTouch')}
@@ -82,8 +84,64 @@ const ContactPage = () => {
                 </button>
               </form>
             </div>
-            {/* The ContactMapSection will be rendered below the form on the ContactPage */}
-            <ContactMapSection hideTitle={true} hideDescription={true} />
+
+            <div data-aos="fade-left" data-aos-duration="1000">
+              <div className="space-y-8 mb-12">
+                <div className="flex items-start gap-x-6 group">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <i className="fas fa-map-marker-alt text-white text-xl"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('location')}</h3>
+                    <p className="text-gray-600 text-lg">{t('jeddahKSA')}</p>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-x-6 group">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <i className="fas fa-envelope text-white text-xl"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('email')}</h3>
+                    <a href="mailto:amad@sidramed.com.sa" className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">amad@sidramed.com.sa</a>
+                  </div>
+                </div>
+
+                <div className="flex items-start gap-x-6 group">
+                  <div className="flex-shrink-0">
+                    <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <i className="fas fa-clock text-white text-xl"></i>
+                    </div>
+                  </div>
+                  <div>
+                    <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('businessHours')}</h3>
+                    <p className="text-gray-600 text-lg">{t('businessHoursTime')}</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Google Maps Embed */}
+              <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden mt-12">
+                <h3 className="text-xl font-bold text-gray-900 p-6 pb-0">{t('ourLocation')}</h3> {/* Added title for map */}
+                <iframe
+                  src={googleMapsEmbedUrl}
+                  width="100%"
+                  height="400"
+                  style={{ border: 0 }}
+                  allowFullScreen={true}
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Jeddah, Saudi Arabia Location"
+                ></iframe>
+              </div>
+              <p className="text-center text-gray-600 mt-6 text-lg">
+                {t('jeddahKSA')}
+              </p>
+            </div>
           </div>
         </div>
       </main>
