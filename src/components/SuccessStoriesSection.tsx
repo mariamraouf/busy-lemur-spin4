@@ -1,12 +1,19 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion"; // Import shadcn/ui Accordion components
 
 const SuccessStoriesSection = () => {
   const { t } = useLanguage();
 
   const stories = [
     {
+      id: "story-1",
       title: t('diagnosticCenterLaunchTitle'),
       location: t('diagnosticCenterLaunchLocation'),
       description: t('diagnosticCenterLaunchDescription'),
@@ -19,6 +26,7 @@ const SuccessStoriesSection = () => {
       gradientTo: "to-sidraTeal",
     },
     {
+      id: "story-2",
       title: t('clinicNetworkOptimizationTitle'),
       location: t('clinicNetworkOptimizationLocation'),
       description: t('clinicNetworkOptimizationDescription'),
@@ -31,6 +39,7 @@ const SuccessStoriesSection = () => {
       gradientTo: "to-sidraAccent",
     },
     {
+      id: "story-3",
       title: t('internationalMarketEntryTitle'),
       location: t('internationalMarketEntryLocation'),
       description: t('internationalMarketEntryDescription'),
@@ -60,39 +69,43 @@ const SuccessStoriesSection = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-3 gap-12">
-          {stories.map((story, index) => (
-            <div
-              key={index}
-              className="group bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
-              data-aos="fade-up"
-              data-aos-delay={100 * (index + 1)}
-            >
-              <div className="flex-grow">
-                <h3 className={cn(
-                  "text-3xl font-black mb-2 leading-tight",
-                  `bg-gradient-to-r ${story.gradientFrom} ${story.gradientTo} bg-clip-text text-transparent`
+        <div data-aos="fade-up" data-aos-delay="200">
+          <Accordion type="single" collapsible className="w-full space-y-6">
+            {stories.map((story, index) => (
+              <AccordionItem
+                key={story.id}
+                value={story.id}
+                className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl"
+              >
+                <AccordionTrigger className={cn(
+                  "flex items-center justify-between p-8 text-left text-gray-900 font-bold text-2xl",
+                  `bg-gradient-to-r ${story.gradientFrom}/10 ${story.gradientTo}/10 hover:bg-gradient-to-r hover:${story.gradientFrom}/20 hover:${story.gradientTo}/20 transition-all duration-300 rounded-t-3xl`
                 )}>
-                  {story.title}
-                </h3>
-                <p className="text-lg font-medium flex items-center text-gray-600 mb-4">
-                  <i className="fas fa-map-marker-alt text-sidraTeal mr-2"></i> {story.location}
-                </p>
-                <p className="text-gray-700 mb-6 leading-relaxed text-base">
-                  {story.description}
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-3 gap-4 text-center border-t border-gray-100 pt-6 mt-6">
-                {story.stats.map((stat, statIndex) => (
-                  <div key={statIndex} className="p-3 bg-gray-50 rounded-xl">
-                    <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                    <div className="text-sm text-gray-500">{stat.label}</div>
+                  <div className="flex flex-col items-start">
+                    <h3 className="text-2xl font-black leading-tight font-sans">
+                      {story.title}
+                    </h3>
+                    <p className="text-lg font-medium flex items-center text-gray-600 mt-2 font-sans">
+                      <i className="fas fa-map-marker-alt text-sidraTeal mr-2"></i> {story.location}
+                    </p>
                   </div>
-                ))}
-              </div>
-            </div>
-          ))}
+                </AccordionTrigger>
+                <AccordionContent className="p-8 pt-0 bg-white rounded-b-3xl">
+                  <p className="text-gray-700 mb-6 leading-relaxed text-base font-sans">
+                    {story.description}
+                  </p>
+                  <div className="grid grid-cols-3 gap-4 text-center border-t border-gray-100 pt-6 mt-6">
+                    {story.stats.map((stat, statIndex) => (
+                      <div key={statIndex} className="p-4 bg-gray-50 rounded-xl">
+                        <div className="text-2xl font-bold text-gray-900 font-sans">{stat.value}</div>
+                        <div className="text-sm text-gray-500 font-sans">{stat.label}</div>
+                      </div>
+                    ))}
+                  </div>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </div>
       </div>
     </section>
