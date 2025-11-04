@@ -80,8 +80,8 @@ export const translations = {
     diagnosticCenterLaunchDescription: "Managed the entire project lifecycle for a new diagnostic center, from feasibility and design to operational readiness and regulatory compliance.",
     diagnosticCenterLaunchStat1: "12-month delivery",
     diagnosticCenterLaunchStat2: "Advanced imaging tech",
-    diagnosticCenterLaunchStat3: "Regulatory compliance", // Shortened
-    
+    diagnosticCenterLaunchStat3: "Full regulatory compliance",
+
     clinicNetworkOptimizationTitle: "Regional Clinic Network Optimization",
     clinicNetworkOptimizationLocation: "Multiple Cities, KSA",
     clinicNetworkOptimizationDescription: "Implemented new IT systems, streamlined procurement, and provided staffing solutions, significantly improving efficiency and patient experience across multiple clinics.",
@@ -92,9 +92,9 @@ export const translations = {
     internationalMarketEntryTitle: "International Market Entry & Partnership",
     internationalMarketEntryLocation: "Jeddah, Saudi Arabia",
     internationalMarketEntryDescription: "Guided a leading international pharmaceutical distributor through Saudi regulations, established key local partnerships, and ensured seamless market integration.",
-    internationalMarketEntryStat1: "Successful market entry", // Shortened
+    internationalMarketEntryStat1: "Successful market entry",
     internationalMarketEntryStat2: "5+ strategic partnerships",
-    internationalMarketEntryStat3: "Regulatory adherence", // Shortened
+    internationalMarketEntryStat3: "Full regulatory adherence",
 
     // Testimonials Section
     whatOurClientsSay: "What Our Clients Say",
@@ -282,8 +282,8 @@ export const translations = {
     diagnosticCenterLaunchDescription: "إدارة دورة حياة المشروع بالكامل لمركز تشخيصي جديد، من دراسات الجدوى والتصميم إلى الجاهزية التشغيلية والامتثال التنظيمي.",
     diagnosticCenterLaunchStat1: "تسليم في 12 شهراً",
     diagnosticCenterLaunchStat2: "تقنية تصوير متقدمة",
-    diagnosticCenterLaunchStat3: "الامتثال التنظيمي", // Shortened
-    
+    diagnosticCenterLaunchStat3: "امتثال تنظيمي كامل",
+
     clinicNetworkOptimizationTitle: "تحسين شبكة العيادات الإقليمية",
     clinicNetworkOptimizationLocation: "مدن متعددة، المملكة العربية السعودية",
     clinicNetworkOptimizationDescription: "تنفيذ أنظمة تكنولوجيا معلومات جديدة، وتبسيط المشتريات، وتوفير حلول التوظيف، مما أدى إلى تحسين كبير في الكفاءة وتجربة المرضى عبر عيادات متعددة.",
@@ -294,9 +294,9 @@ export const translations = {
     internationalMarketEntryTitle: "دخول السوق الدولي والشراكة",
     internationalMarketEntryLocation: "جدة، المملكة العربية السعودية",
     internationalMarketEntryDescription: "توجيه موزع أدوية دولي رائد عبر اللوائح السعودية، وإنشاء شراكات محلية رئيسية، وضمان التكامل السلس في السوق.",
-    internationalMarketEntryStat1: "دخول ناجح للسوق", // Shortened
+    internationalMarketEntryStat1: "دخول ناجح للسوق",
     internationalMarketEntryStat2: "أكثر من 5 شراكات استراتيجية",
-    internationalMarketEntryStat3: "الالتزام التنظيمي", // Shortened
+    internationalMarketEntryStat3: "التزام تنظيمي كامل",
 
     // Testimonials Section
     whatOurClientsSay: "ماذا يقول عملاؤنا",

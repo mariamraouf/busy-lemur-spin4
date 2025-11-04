@@ -15,8 +15,8 @@ const SuccessStoriesSection = () => {
         { label: t('diagnosticCenterLaunchStat2'), value: "Imaging" },
         { label: t('diagnosticCenterLaunchStat3'), value: "Compliance" },
       ],
-      image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // X-ray machine, diagnostic
-      alt: "Advanced X-ray machine in a diagnostic center",
+      image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Modern diagnostic equipment
+      alt: "Advanced Diagnostic Center with modern medical equipment",
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
     },
@@ -29,8 +29,8 @@ const SuccessStoriesSection = () => {
         { label: t('clinicNetworkOptimizationStat2'), value: "EMR" },
         { label: t('clinicNetworkOptimizationStat3'), value: "High" },
       ],
-      image: "https://images.unsplash.com/photo-1551076805-e18690433258?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Doctor consulting patient in a modern clinic
-      alt: "Doctor consulting patient in a modern clinic setting",
+      image: "https://images.unsplash.com/photo-1551076805-e18690433258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Modern clinic interior with patient interaction
+      alt: "Modern clinic interior with healthcare professionals and patients",
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
     },
@@ -43,7 +43,7 @@ const SuccessStoriesSection = () => {
         { label: t('internationalMarketEntryStat2'), value: "5+" },
         { label: t('internationalMarketEntryStat3'), value: "Full" },
       ],
-      image: "https://images.unsplash.com/photo-1521737711867-ee1ab9279f17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Business professionals collaborating
+      image: "https://images.unsplash.com/photo-1521737711867-ee1ab9279f17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Professional business meeting/collaboration
       alt: "Business professionals collaborating in a modern office setting",
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
@@ -93,7 +93,7 @@ const SuccessStoriesSection = () => {
                   {story.stats.map((stat, statIndex) => (
                     <div key={statIndex} className="p-4 bg-gray-100 rounded-xl">
                       <div className="text-2xl font-bold text-gray-900 font-sans">{stat.value}</div>
-                      <div className="text-sm text-gray-500 font-sans break-words">{stat.label}</div>
+                      <div className="text-sm text-gray-500 font-sans">{stat.label}</div>
                     </div>
                   ))}
                 </div>
