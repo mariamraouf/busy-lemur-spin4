@@ -7,41 +7,41 @@ const SuccessStoriesSection = () => {
 
   const stories = [
     {
-      title: t('hospitalLaunchTitle'),
-      location: t('hospitalLaunchLocation'),
-      description: t('hospitalLaunchDescription'),
+      title: t('diagnosticCenterLaunchTitle'),
+      location: t('diagnosticCenterLaunchLocation'),
+      description: t('diagnosticCenterLaunchDescription'),
       stats: [
-        { label: t('hospitalLaunchStat1'), value: "18" },
-        { label: t('hospitalLaunchStat2'), value: "300" },
-        { label: t('hospitalLaunchStat3'), value: "15" },
+        { label: t('diagnosticCenterLaunchStat1'), value: "12" },
+        { label: t('diagnosticCenterLaunchStat2'), value: "Imaging" },
+        { label: t('diagnosticCenterLaunchStat3'), value: "Compliance" },
       ],
-      image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?w=800&h=600&fit=crop", // Keep existing image or find a new one
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
     },
     {
-      title: t('laboratoryExpansionTitle'),
-      location: t('laboratoryExpansionLocation'),
-      description: t('laboratoryExpansionDescription'),
+      title: t('clinicNetworkOptimizationTitle'),
+      location: t('clinicNetworkOptimizationLocation'),
+      description: t('clinicNetworkOptimizationDescription'),
       stats: [
-        { label: t('laboratoryExpansionStat1'), value: "12" },
-        { label: t('laboratoryExpansionStat2'), value: "EMR" },
-        { label: t('laboratoryExpansionStat3'), value: "40%" },
+        { label: t('clinicNetworkOptimizationStat1'), value: "30%" },
+        { label: t('clinicNetworkOptimizationStat2'), value: "EMR" },
+        { label: t('clinicNetworkOptimizationStat3'), value: "High" },
       ],
-      image: "https://images.unsplash.com/photo-1532187863566-d0156217165a?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1532187863566-d0156217165a?w=800&h=600&fit=crop", // Keep existing image or find a new one
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
     },
     {
-      title: t('investmentAdvisoryTitle'),
-      location: t('investmentAdvisoryLocation'),
-      description: t('investmentAdvisoryDescription'),
+      title: t('internationalMarketEntryTitle'),
+      location: t('internationalMarketEntryLocation'),
+      description: t('internationalMarketEntryDescription'),
       stats: [
-        { label: t('investmentAdvisoryStat1'), value: "200M" },
-        { label: t('investmentAdvisoryStat2'), value: "Full" },
-        { label: t('investmentAdvisoryStat3'), value: "Partners" },
+        { label: t('internationalMarketEntryStat1'), value: "Success" },
+        { label: t('internationalMarketEntryStat2'), value: "5+" },
+        { label: t('internationalMarketEntryStat3'), value: "Full" },
       ],
-      image: "https://images.unsplash.com/photo-1588702547919-26089e690806?w=800&h=600&fit=crop",
+      image: "https://images.unsplash.com/photo-1588702547919-26089e690806?w=800&h=600&fit=crop", // Keep existing image or find a new one
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
     },

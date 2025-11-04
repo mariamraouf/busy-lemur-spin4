@@ -74,24 +74,27 @@ export const translations = {
     // Success Stories Section
     ourSuccessStories: "Our Success Stories",
     projectsThatMadeImpact: "Projects that made a real impact in healthcare",
-    hospitalLaunchTitle: "Multi-Specialty Hospital Launch",
-    hospitalLaunchLocation: "Riyadh, Saudi Arabia",
-    hospitalLaunchDescription: "300-bed facility operational in 18 months",
-    hospitalLaunchStat1: "18 months delivery",
-    hospitalLaunchStat2: "300 beds",
-    hospitalLaunchStat3: "15 specialties",
-    laboratoryExpansionTitle: "Laboratory Network Expansion",
-    laboratoryExpansionLocation: "Multiple Cities, KSA",
-    laboratoryExpansionDescription: "12 labs integrated with centralized management",
-    laboratoryExpansionStat1: "12 facilities",
-    laboratoryExpansionStat2: "Centralized EMR",
-    laboratoryExpansionStat3: "40% efficiency gain",
-    investmentAdvisoryTitle: "Healthcare Investment Advisory",
-    investmentAdvisoryLocation: "Jeddah, Saudi Arabia",
-    investmentAdvisoryDescription: "SAR 200M project secured with full compliance",
-    investmentAdvisoryStat1: "SAR 200M value",
-    investmentAdvisoryStat2: "Full licensing",
-    investmentAdvisoryStat3: "Strategic partners",
+    // New Success Stories
+    diagnosticCenterLaunchTitle: "Advanced Diagnostic Center Launch",
+    diagnosticCenterLaunchLocation: "Riyadh, Saudi Arabia",
+    diagnosticCenterLaunchDescription: "Managed the entire project lifecycle for a new diagnostic center, from feasibility and design to operational readiness and regulatory compliance.",
+    diagnosticCenterLaunchStat1: "12-month delivery",
+    diagnosticCenterLaunchStat2: "Advanced imaging tech",
+    diagnosticCenterLaunchStat3: "Full regulatory compliance",
+
+    clinicNetworkOptimizationTitle: "Regional Clinic Network Optimization",
+    clinicNetworkOptimizationLocation: "Multiple Cities, KSA",
+    clinicNetworkOptimizationDescription: "Implemented new IT systems, streamlined procurement, and provided staffing solutions, significantly improving efficiency and patient experience across multiple clinics.",
+    clinicNetworkOptimizationStat1: "30% operational efficiency",
+    clinicNetworkOptimizationStat2: "Integrated EMR system",
+    clinicNetworkOptimizationStat3: "Enhanced patient satisfaction",
+
+    internationalMarketEntryTitle: "International Market Entry & Partnership",
+    internationalMarketEntryLocation: "Jeddah, Saudi Arabia",
+    internationalMarketEntryDescription: "Guided a leading international pharmaceutical distributor through Saudi regulations, established key local partnerships, and ensured seamless market integration.",
+    internationalMarketEntryStat1: "Successful market entry",
+    internationalMarketEntryStat2: "5+ strategic partnerships",
+    internationalMarketEntryStat3: "Full regulatory adherence",
 
     // Testimonials Section
     whatOurClientsSay: "What Our Clients Say",
@@ -182,7 +185,7 @@ export const translations = {
     teamRole4: "Strategic and Financial Analysts",
     teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.",
 
-    // Our Services Page - Simplified to match the 4 core services
+    // Our Services Page
     ourServicesPageTitle: "Our services",
     serviceCategory1Title: "Project Support & Execution",
     serviceCategory1Item1: "Assistance across the full project lifecycle—from feasibility and design to operational readiness and compliance.",
@@ -273,24 +276,27 @@ export const translations = {
     // Success Stories Section
     ourSuccessStories: "قصص نجاحنا",
     projectsThatMadeImpact: "مشاريع أحدثت تأثيراً حقيقياً في الرعاية الصحية",
-    hospitalLaunchTitle: "إطلاق مستشفى متعدد التخصصات",
-    hospitalLaunchLocation: "الرياض، المملكة العربية السعودية",
-    hospitalLaunchDescription: "منشأة بسعة 300 سرير جاهزة للعمل في 18 شهراً",
-    hospitalLaunchStat1: "تسليم في 18 شهراً",
-    hospitalLaunchStat2: "300 سرير",
-    hospitalLaunchStat3: "15 تخصصاً",
-    laboratoryExpansionTitle: "توسيع شبكة المختبرات",
-    laboratoryExpansionLocation: "مدن متعددة، المملكة العربية السعودية",
-    laboratoryExpansionDescription: "12 مختبراً مدمجاً مع إدارة مركزية",
-    laboratoryExpansionStat1: "12 منشأة",
-    laboratoryExpansionStat2: "نظام سجلات طبية إلكترونية مركزي",
-    laboratoryExpansionStat3: "زيادة الكفاءة بنسبة 40%",
-    investmentAdvisoryTitle: "استشارات الاستثمار في الرعاية الصحية",
-    investmentAdvisoryLocation: "جدة، المملكة العربية السعودية",
-    investmentAdvisoryDescription: "مشروع بقيمة 200 مليون ريال سعودي مؤمن بالامتثال الكامل",
-    investmentAdvisoryStat1: "قيمة 200 مليون ريال سعودي",
-    investmentAdvisoryStat2: "ترخيص كامل",
-    investmentAdvisoryStat3: "شركاء استراتيجيون",
+    // New Success Stories
+    diagnosticCenterLaunchTitle: "إطلاق مركز تشخيصي متقدم",
+    diagnosticCenterLaunchLocation: "الرياض، المملكة العربية السعودية",
+    diagnosticCenterLaunchDescription: "إدارة دورة حياة المشروع بالكامل لمركز تشخيصي جديد، من دراسات الجدوى والتصميم إلى الجاهزية التشغيلية والامتثال التنظيمي.",
+    diagnosticCenterLaunchStat1: "تسليم في 12 شهراً",
+    diagnosticCenterLaunchStat2: "تقنية تصوير متقدمة",
+    diagnosticCenterLaunchStat3: "امتثال تنظيمي كامل",
+
+    clinicNetworkOptimizationTitle: "تحسين شبكة العيادات الإقليمية",
+    clinicNetworkOptimizationLocation: "مدن متعددة، المملكة العربية السعودية",
+    clinicNetworkOptimizationDescription: "تنفيذ أنظمة تكنولوجيا معلومات جديدة، وتبسيط المشتريات، وتوفير حلول التوظيف، مما أدى إلى تحسين كبير في الكفاءة وتجربة المرضى عبر عيادات متعددة.",
+    clinicNetworkOptimizationStat1: "كفاءة تشغيلية 30%",
+    clinicNetworkOptimizationStat2: "نظام سجلات طبية إلكترونية متكامل",
+    clinicNetworkOptimizationStat3: "رضا المرضى المحسن",
+
+    internationalMarketEntryTitle: "دخول السوق الدولي والشراكة",
+    internationalMarketEntryLocation: "جدة، المملكة العربية السعودية",
+    internationalMarketEntryDescription: "توجيه موزع أدوية دولي رائد عبر اللوائح السعودية، وإنشاء شراكات محلية رئيسية، وضمان التكامل السلس في السوق.",
+    internationalMarketEntryStat1: "دخول ناجح للسوق",
+    internationalMarketEntryStat2: "أكثر من 5 شراكات استراتيجية",
+    internationalMarketEntryStat3: "التزام تنظيمي كامل",
 
     // Testimonials Section
     whatOurClientsSay: "ماذا يقول عملاؤنا",
@@ -381,7 +387,7 @@ export const translations = {
     teamRole4: "المحللون الاستراتيجيون والماليون",
     teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
 
-    // Our Services Page - Simplified to match the 4 core services
+    // Our Services Page
     ourServicesPageTitle: "خدماتنا",
     serviceCategory1Title: "دعم وتنفيذ المشاريع",
     serviceCategory1Item1: "المساعدة في جميع مراحل المشروع - من الجدوى والتصميم إلى الجاهزية التشغيلية والامتثال.",
