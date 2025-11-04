@@ -214,13 +214,13 @@ export const translations = {
     consortiumDrivenDescription: "As part of a wider healthcare consortium, Sidra Med can activate a full-service delivery model.",
     legalCommercialConsultancyTitle: "Legal and commercial consultancy",
     legalCommercialConsultancyDescription: "Expert advice on healthcare regulations, commercial structuring, and contract negotiations in the Saudi context.",
-    financialPlanningAuditingTitle: "Financial planning and auditing",
+    financialPlanningAuditingTitle: "Financial Planning and Auditing",
     financialPlanningAuditingDescription: "Comprehensive financial services from initial budgeting to ongoing financial management and compliance.",
-    procurementEquipmentPlanningTitle: "Procurement and equipment planning",
+    procurementEquipmentPlanningTitle: "Procurement and Equipment Planning",
     procurementEquipmentPlanningDescription: "Strategic sourcing of medical equipment, supplies, and technology with a focus on value and quality.",
-    facilityDesignConstructionTitle: "Facility design and construction",
+    facilityDesignConstructionTitle: "Facility Design and Construction",
     facilityDesignConstructionDescription: "End-to-end project management of healthcare facility design and construction, aligned with international standards.",
-    accreditationSustainabilityTitle: "Accreditation and sustainability planning",
+    accreditationSustainabilityTitle: "Accreditation and Sustainability Planning",
     accreditationSustainabilityDescription: "Strategic support for achieving national and international healthcare accreditations while implementing sustainable practices.",
 
     customSolutionsTitle: "Custom Solutions for Your Healthcare Project",
@@ -239,7 +239,7 @@ export const translations = {
     needCustomSolution: "Need a customized solution for your healthcare project?",
     contactUsToday: "Contact us today to discuss your specific needs and how we can help.",
 
-    // FAQ Section
+    // FAQ Section (General)
     faqTitle: "Frequently Asked Questions",
     faqSubtitle: "Find answers to common questions about Sidra Med and our services.",
     faqQ1: "What types of healthcare projects does Sidra Med handle?",
@@ -258,6 +258,14 @@ export const translations = {
     homeFaqA1: "Sidra Med combines deep local market insight with international best practices, offering tailored solutions for healthcare project success in Saudi Arabia. Our consortium network provides end-to-end support.",
     homeFaqQ2: "How can Sidra Med help with my healthcare investment?",
     homeFaqA2: "We assist investors from initial concept to operational readiness, ensuring regulatory alignment, strategic planning, and sustainable outcomes for hospitals, clinics, and other medical facilities.",
+    homeFaqQ3: "What is Sidra Med's track record?",
+    homeFaqA3: "We have a proven track record of successful healthcare facility launches and operational optimizations across the Kingdom, working with diverse clients from private investors to large healthcare groups.",
+    homeFaqQ4: "How does Sidra Med ensure project quality?",
+    homeFaqA4: "Our commitment to quality is embedded in our values. We adhere to international standards and local regulations, employing rigorous project management methodologies and continuous quality assurance processes.",
+    homeFaqQ5: "What kind of partnerships does Sidra Med offer?",
+    homeFaqA5: "Through our extensive consortium network, we offer strategic partnerships that enable end-to-end project delivery, combining specialized expertise in areas like legal, financial, design, and construction.",
+    homeFaqQ6: "Is Sidra Med involved in digital health initiatives?",
+    homeFaqA6: "Yes, we actively support digital health initiatives, including healthcare IT implementation, EMR system integration, and leveraging technology to enhance patient care and operational efficiency.",
 
     // About Us Page FAQs
     aboutUsFaqQ1: "What is Sidra Med's core expertise?",
@@ -287,8 +295,6 @@ export const translations = {
     pageNotFoundTitle: "Page Not Found",
     pageNotFoundDescription: "Oops! The page you are looking for does not exist.",
     returnToHome: "Return to Home",
-    // Dummy change to force TS re-evaluation (v3)
-    _dummyKey: "dummyValue",
   },
   ar: {
     // Navbar
@@ -530,7 +536,7 @@ export const translations = {
     needCustomSolution: "هل تحتاج إلى حل مخصص لمشروع الرعاية الصحية الخاص بك؟",
     contactUsToday: "اتصل بنا اليوم لمناقشة احتياجاتك المحددة وكيف يمكننا المساعدة.",
 
-    // FAQ Section
+    // FAQ Section (General)
     faqTitle: "الأسئلة الشائعة",
     faqSubtitle: "ابحث عن إجابات للأسئلة الشائعة حول سدرة ميد وخدماتنا.",
     faqQ1: "ما هي أنواع مشاريع الرعاية الصحية التي تتعامل معها سدرة ميد؟",
@@ -549,6 +555,14 @@ export const translations = {
     homeFaqA1: "تجمع سدرة ميد بين الرؤية العميقة للسوق المحلي وأفضل الممارسات الدولية، وتقدم حلولاً مخصصة لنجاح مشاريع الرعاية الصحية في المملكة العربية السعودية. توفر شبكة تحالفاتنا دعماً شاملاً من البداية إلى النهاية.",
     homeFaqQ2: "كيف يمكن لسدرة ميد المساعدة في استثماري في الرعاية الصحية؟",
     homeFaqA2: "نحن نساعد المستثمرين من المفهوم الأولي إلى الجاهزية التشغيلية، مما يضمن الامتثال التنظيمي والتخطيط الاستراتيجي والنتائج المستدامة للمستشفيات والعيادات والمرافق الطبية الأخرى.",
+    homeFaqQ3: "ما هو سجل سدرة ميد؟",
+    homeFaqA3: "لدينا سجل حافل من إطلاق المنشآت الصحية الناجحة وتحسين العمليات في جميع أنحاء المملكة، والعمل مع عملاء متنوعين من المستثمرين الخاصين إلى المجموعات الصحية الكبيرة.",
+    homeFaqQ4: "كيف تضمن سدرة ميد جودة المشروع؟",
+    homeFaqA4: "التزامنا بالجودة متأصل في قيمنا. نحن نلتزم بالمعايير الدولية واللوائح المحلية، ونستخدم منهجيات إدارة المشاريع الصارمة وعمليات ضمان الجودة المستمرة.",
+    homeFaqQ5: "ما نوع الشراكات التي تقدمها سدرة ميد؟",
+    homeFaqA5: "من خلال شبكة تحالفاتنا الواسعة، نقدم شراكات استراتيجية تمكن من تسليم المشاريع من البداية إلى النهاية، والجمع بين الخبرات المتخصصة في مجالات مثل القانونية والمالية والتصميم والبناء.",
+    homeFaqQ6: "هل تشارك سدرة ميد في مبادرات الصحة الرقمية؟",
+    homeFaqA6: "نعم، نحن ندعم بنشاط مبادرات الصحة الرقمية، بما في ذلك تنفيذ تكنولوجيا المعلومات الصحية، وتكامل أنظمة السجلات الطبية الإلكترونية، والاستفادة من التكنولوجيا لتعزيز رعاية المرضى والكفاءة التشغيلية.",
 
     // About Us Page FAQs
     aboutUsFaqQ1: "ما هي الخبرة الأساسية لسدرة ميد؟",

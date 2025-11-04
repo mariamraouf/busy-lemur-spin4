@@ -12,11 +12,20 @@ import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PartnersSection from "@/components/PartnersSection";
 import CtaSection from "@/components/CtaSection";
-import ContactSection from "@/components/ContactSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import FAQSection from "@/components/FAQSection"; // Import FAQSection
 
 const Home = () => {
   const { language, t } = useLanguage();
+
+  const homeFaqs = [
+    { id: "home-faq-1", question: t('homeFaqQ1'), answer: t('homeFaqA1') },
+    { id: "home-faq-2", question: t('homeFaqQ2'), answer: t('homeFaqA2') },
+    { id: "home-faq-3", question: t('homeFaqQ3'), answer: t('homeFaqA3') },
+    { id: "home-faq-4", question: t('homeFaqQ4'), answer: t('homeFaqA4') },
+    { id: "home-faq-5", question: t('homeFaqQ5'), answer: t('homeFaqA5') },
+    { id: "home-faq-6", question: t('homeFaqQ6'), answer: t('homeFaqA6') }, // Added new FAQ
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -24,8 +33,6 @@ const Home = () => {
         <title>{t('heroTitlePart1')} {t('heroTitlePart2')} {t('heroTitlePart3')} - Sidra Med</title>
         <meta name="description" content={t('heroDescription')} />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-        {/* Fonts are now imported in index.html, but keeping this for consistency if needed elsewhere */}
-        {/* <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" /> */}
       </Helmet>
       <Navbar />
       <main className="flex-grow">
@@ -38,7 +45,8 @@ const Home = () => {
         <TestimonialsSection />
         <PartnersSection />
         <CtaSection />
-        <ContactSection />
+        {/* Removed ContactSection as it's now a dedicated page */}
+        <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} /> {/* Hide subtitle for home page */}
       </main>
       <Footer />
       <ScrollToTopButton />

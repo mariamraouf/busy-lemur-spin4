@@ -7,7 +7,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from '@/lib/utils';
-import { TranslationKey } from '@/lib/translations'; // Import TranslationKey
+import { TranslationKey } from '@/lib/translations';
 
 interface FAQItem {
   id: string;
@@ -17,11 +17,12 @@ interface FAQItem {
 
 interface FAQSectionProps {
   faqs: FAQItem[];
-  titleKey: TranslationKey; // Changed from string to TranslationKey
-  subtitleKey: TranslationKey; // Changed from string to TranslationKey
+  titleKey: TranslationKey;
+  subtitleKey?: TranslationKey; // Made optional
+  hideSubtitle?: boolean; // New prop to hide subtitle
 }
 
-const FAQSection: React.FC<FAQSectionProps> = ({ faqs, titleKey, subtitleKey }) => {
+const FAQSection: React.FC<FAQSectionProps> = ({ faqs, titleKey, subtitleKey, hideSubtitle = false }) => {
   const { t } = useLanguage();
 
   if (!faqs || faqs.length === 0) {
@@ -40,9 +41,11 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs, titleKey, subtitleKey }) 
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t(titleKey)}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
-            <span className="block">{t(subtitleKey)}</span>
-          </h2>
+          {!hideSubtitle && subtitleKey && ( // Conditionally render subtitle
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+              <span className="block">{t(subtitleKey)}</span>
+            </h2>
+          )}
         </div>
 
         <div className="max-w-4xl mx-auto" data-aos="fade-up" data-aos-delay="200">

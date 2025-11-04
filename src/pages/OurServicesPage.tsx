@@ -4,7 +4,7 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
-import FAQSection from '@/components/FAQSection'; // Import the new FAQ section
+import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
@@ -17,10 +17,10 @@ const OurServicesPage = () => {
       title: t('projectTechnicalSupportTitle'),
       description: t('projectTechnicalSupportDescription'),
       items: [
-        { title: t('siteAssessmentsTitle'), description: t('siteAssessmentsDescription') },
-        { title: t('coordArchitecturalTitle'), description: t('coordArchitecturalDescription') },
-        { title: t('licensingCommissioningTitle'), description: t('licensingCommissioningDescription') },
-        { title: t('strategicPlanningTitle'), description: t('strategicPlanningDescription') },
+        { icon: "fas fa-map-marked-alt", title: t('siteAssessmentsTitle'), description: t('siteAssessmentsDescription') },
+        { icon: "fas fa-drafting-compass", title: t('coordArchitecturalTitle'), description: t('coordArchitecturalDescription') },
+        { icon: "fas fa-file-contract", title: t('licensingCommissioningTitle'), description: t('licensingCommissioningDescription') },
+        { icon: "fas fa-lightbulb", title: t('strategicPlanningTitle'), description: t('strategicPlanningDescription') },
       ],
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
@@ -30,10 +30,10 @@ const OurServicesPage = () => {
       title: t('operationalSupportTitle'),
       description: t('operationalSupportDescription'),
       items: [
-        { title: t('facilityOperationsOversightTitle'), description: t('facilityOperationsOversightDescription') },
-        { title: t('healthcareITImplementationTitle'), description: t('healthcareITImplementationDescription') },
-        { title: t('workforceRecruitmentTitle'), description: t('workforceRecruitmentDescription') },
-        { title: t('maintenanceBiomedicalTitle'), description: t('maintenanceBiomedicalDescription') },
+        { icon: "fas fa-eye", title: t('facilityOperationsOversightTitle'), description: t('facilityOperationsOversightDescription') },
+        { icon: "fas fa-laptop-medical", title: t('healthcareITImplementationTitle'), description: t('healthcareITImplementationDescription') },
+        { icon: "fas fa-user-md", title: t('workforceRecruitmentTitle'), description: t('workforceRecruitmentDescription') },
+        { icon: "fas fa-tools", title: t('maintenanceBiomedicalTitle'), description: t('maintenanceBiomedicalDescription') },
       ],
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
@@ -43,11 +43,11 @@ const OurServicesPage = () => {
       title: t('consortiumDrivenTitle'),
       description: t('consortiumDrivenDescription'),
       items: [
-        { title: t('legalCommercialConsultancyTitle'), description: t('legalCommercialConsultancyDescription') },
-        { title: t('financialPlanningAuditingTitle'), description: t('financialPlanningAuditingDescription') },
-        { title: t('procurementEquipmentPlanningTitle'), description: t('procurementEquipmentPlanningDescription') },
-        { title: t('facilityDesignConstructionTitle'), description: t('facilityDesignConstructionDescription') },
-        { title: t('accreditationSustainabilityTitle'), description: t('accreditationSustainabilityDescription') },
+        { icon: "fas fa-gavel", title: t('legalCommercialConsultancyTitle'), description: t('legalCommercialConsultancyDescription') },
+        { icon: "fas fa-chart-pie", title: t('financialPlanningAuditingTitle'), description: t('financialPlanningAuditingDescription') },
+        { icon: "fas fa-truck-medical", title: t('procurementEquipmentPlanningTitle'), description: t('procurementEquipmentPlanningDescription') },
+        { icon: "fas fa-hard-hat", title: t('facilityDesignConstructionTitle'), description: t('facilityDesignConstructionDescription') },
+        { icon: "fas fa-certificate", title: t('accreditationSustainabilityTitle'), description: t('accreditationSustainabilityDescription') },
       ],
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
@@ -100,44 +100,36 @@ const OurServicesPage = () => {
               <div
                 key={index}
                 className={cn(
-                  "grid lg:grid-cols-2 gap-12 items-center p-8 rounded-3xl shadow-2xl border border-gray-100 bg-white", // Lighter background
-                  index % 2 === 0 ? "" : "lg:grid-flow-col-dense" // Alternate image/text order
+                  "p-10 rounded-3xl shadow-2xl border border-gray-100 bg-white", // Lighter background, no grid for image
                 )}
-                data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-                data-aos-duration="1000"
+                data-aos="fade-up"
+                data-aos-delay={100 * (index + 1)}
               >
-                <div className={cn(index % 2 !== 0 && "lg:order-2")}>
+                <div className="flex items-center mb-6">
                   <div className={cn(
-                    "w-20 h-20 rounded-2xl flex items-center justify-center mb-6 transform group-hover:rotate-12 transition-transform duration-300",
+                    "w-20 h-20 rounded-2xl flex items-center justify-center mr-6 transform group-hover:rotate-12 transition-transform duration-300",
                     `bg-gradient-to-br ${category.gradientFrom} ${category.gradientTo}`
                   )}>
                     <i className={cn(category.icon, "text-white text-3xl")}></i>
                   </div>
-                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
+                  <h2 className="text-3xl font-bold text-gray-900">
                     {category.title}
                   </h2>
-                  <p className="text-gray-700 leading-relaxed mb-8 text-lg">
-                    {category.description}
-                  </p>
-                  <ul className="space-y-4">
-                    {category.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="flex items-start space-x-4">
-                        <i className="fas fa-check-circle text-sidraTeal text-xl flex-shrink-0 mt-1"></i>
-                        <div>
-                          <h4 className="text-xl font-semibold text-gray-900 mb-1">{item.title}</h4>
-                          <p className="text-gray-600 text-base">{item.description}</p>
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
-                <div className={cn(index % 2 !== 0 && "lg:order-1")}>
-                  <img
-                    src={`https://images.unsplash.com/photo-1584820927466-09793f96a818?w=800&h=600&fit=crop&q=80&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1920`}
-                    alt={category.title}
-                    className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
+                <p className="text-gray-700 leading-relaxed mb-8 text-lg">
+                  {category.description}
+                </p>
+                <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+                  {category.items.map((item, itemIndex) => (
+                    <li key={itemIndex} className="flex items-start space-x-4">
+                      <i className={cn(item.icon, "text-sidraTeal text-xl flex-shrink-0 mt-1")}></i>
+                      <div>
+                        <h4 className="text-xl font-semibold text-gray-900 mb-1">{item.title}</h4>
+                        <p className="text-gray-600 text-base">{item.description}</p>
+                      </div>
+                    </li>
+                  ))}
+                </ul>
               </div>
             ))}
           </div>
@@ -182,7 +174,7 @@ const OurServicesPage = () => {
             </div>
           </div>
         </div>
-        <FAQSection faqs={servicesFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" /> {/* Integrate the FAQ section here with props */}
+        <FAQSection faqs={servicesFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
       </main>
       <Footer />
       <ScrollToTopButton />

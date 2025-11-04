@@ -12,7 +12,6 @@ import SuccessStoriesSection from "@/components/SuccessStoriesSection";
 import TestimonialsSection from "@/components/TestimonialsSection";
 import PartnersSection from "@/components/PartnersSection";
 import CtaSection from "@/components/CtaSection";
-import ContactSection from "@/components/ContactSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import FAQSection from "@/components/FAQSection"; // Import FAQSection
 
@@ -22,6 +21,10 @@ const Home = () => {
   const homeFaqs = [
     { id: "home-faq-1", question: t('homeFaqQ1'), answer: t('homeFaqA1') },
     { id: "home-faq-2", question: t('homeFaqQ2'), answer: t('homeFaqA2') },
+    { id: "home-faq-3", question: t('homeFaqQ3'), answer: t('homeFaqA3') },
+    { id: "home-faq-4", question: t('homeFaqQ4'), answer: t('homeFaqA4') },
+    { id: "home-faq-5", question: t('homeFaqQ5'), answer: t('homeFaqA5') },
+    { id: "home-faq-6", question: t('homeFaqQ6'), answer: t('homeFaqA6') }, // Added new FAQ
   ];
 
   return (
@@ -42,8 +45,8 @@ const Home = () => {
         <TestimonialsSection />
         <PartnersSection />
         <CtaSection />
-        <ContactSection />
-        <FAQSection faqs={homeFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
+        {/* Removed ContactSection as it's now a dedicated page */}
+        <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} /> {/* Hide subtitle for home page */}
       </main>
       <Footer />
       <ScrollToTopButton />

@@ -18,7 +18,7 @@ const SuccessStoriesSection = () => {
       ],
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
-      image: "https://images.unsplash.com/photo-1584820927466-09793f96a818?w=800&h=600&fit=crop&q=80&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1920"
+      image: "/success-story-1.png" // Updated image path
     },
     {
       id: "story-2",
@@ -32,7 +32,7 @@ const SuccessStoriesSection = () => {
       ],
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
-      image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&h=600&fit=crop&q=80&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1920"
+      image: "/success-story-2.png" // Updated image path
     },
     {
       id: "story-3",
@@ -46,7 +46,7 @@ const SuccessStoriesSection = () => {
       ],
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
-      image: "https://images.unsplash.com/photo-1584820927466-09793f96a818?w=800&h=600&fit=crop&q=80&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1920"
+      image: "/success-story-3.png" // Updated image path
     },
   ];
 
