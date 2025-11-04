@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"; // Using shadcn Card components
 
 const SuccessStoriesSection = () => {
   const { t } = useLanguage();
@@ -12,13 +13,13 @@ const SuccessStoriesSection = () => {
       location: t('diagnosticCenterLaunchLocation'),
       description: t('diagnosticCenterLaunchDescription'),
       stats: [
-        { label: t('diagnosticCenterLaunchStat1'), value: "12", icon: "fas fa-calendar-alt" },
-        { label: t('diagnosticCenterLaunchStat2'), value: "Imaging", icon: "fas fa-microscope" },
-        { label: t('diagnosticCenterLaunchStat3'), value: "Compliance", icon: "fas fa-clipboard-check" },
+        { label: t('diagnosticCenterLaunchStat1'), value: "12", unit: t('months'), icon: "fas fa-calendar-alt" },
+        { label: t('diagnosticCenterLaunchStat2'), value: "Imaging", unit: t('tech'), icon: "fas fa-microscope" },
+        { label: t('diagnosticCenterLaunchStat3'), value: "Full", unit: t('compliance'), icon: "fas fa-clipboard-check" },
       ],
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
-      image: "/success-story-1.png" // Updated image path
+      image: "/success-story-1.png"
     },
     {
       id: "story-2",
@@ -26,13 +27,13 @@ const SuccessStoriesSection = () => {
       location: t('clinicNetworkOptimizationLocation'),
       description: t('clinicNetworkOptimizationDescription'),
       stats: [
-        { label: t('clinicNetworkOptimizationStat1'), value: "30%", icon: "fas fa-chart-line" },
-        { label: t('clinicNetworkOptimizationStat2'), value: "EMR", icon: "fas fa-notes-medical" },
-        { label: t('clinicNetworkOptimizationStat3'), value: "High", icon: "fas fa-smile" },
+        { label: t('clinicNetworkOptimizationStat1'), value: "30%", unit: t('efficiency'), icon: "fas fa-chart-line" },
+        { label: t('clinicNetworkOptimizationStat2'), value: "EMR", unit: t('system'), icon: "fas fa-notes-medical" },
+        { label: t('clinicNetworkOptimizationStat3'), value: "High", unit: t('satisfaction'), icon: "fas fa-smile" },
       ],
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
-      image: "/success-story-2.png" // Updated image path
+      image: "/success-story-2.png"
     },
     {
       id: "story-3",
@@ -40,13 +41,13 @@ const SuccessStoriesSection = () => {
       location: t('internationalMarketEntryLocation'),
       description: t('internationalMarketEntryDescription'),
       stats: [
-        { label: t('internationalMarketEntryStat1'), value: "Success", icon: "fas fa-globe" },
-        { label: t('internationalMarketEntryStat2'), value: "5+", icon: "fas fa-handshake" },
-        { label: t('internationalMarketEntryStat3'), value: "Full", icon: "fas fa-balance-scale" },
+        { label: t('internationalMarketEntryStat1'), value: "Success", unit: t('entry'), icon: "fas fa-globe" },
+        { label: t('internationalMarketEntryStat2'), value: "5+", unit: t('partnerships'), icon: "fas fa-handshake" },
+        { label: t('internationalMarketEntryStat3'), value: "Full", unit: t('adherence'), icon: "fas fa-balance-scale" },
       ],
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
-      image: "/success-story-3.png" // Updated image path
+      image: "/success-story-3.png"
     },
   ];
 
@@ -75,9 +76,9 @@ const SuccessStoriesSection = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
           {stories.map((story, index) => (
-            <div
+            <Card
               key={story.id}
-              className="group bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
@@ -92,16 +93,16 @@ const SuccessStoriesSection = () => {
                   story.gradientFrom, story.gradientTo
                 )}></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white z-10">
-                  <h3 className="text-xl font-black leading-tight mb-1">
+                  <CardTitle className="text-xl font-black leading-tight mb-1 text-white">
                     {story.title}
-                  </h3>
-                  <p className="text-sm font-medium flex items-center text-white/90">
+                  </CardTitle>
+                  <CardDescription className="text-sm font-medium flex items-center text-white/90">
                     <i className="fas fa-map-marker-alt text-white/70 mr-2"></i> {story.location}
-                  </p>
+                  </CardDescription>
                 </div>
               </div>
-              <div className="p-6">
-                <p className="text-gray-700 mb-6 leading-relaxed text-base">
+              <CardContent className="p-6 flex-grow flex flex-col">
+                <p className="text-gray-700 mb-6 leading-relaxed text-base flex-grow">
                   {story.description}
                 </p>
                 <div className="grid grid-cols-3 gap-4 text-center border-t border-gray-100 pt-6 mt-6">
@@ -109,12 +110,12 @@ const SuccessStoriesSection = () => {
                     <div key={statIndex} className="p-2 bg-sidraLight rounded-lg flex flex-col items-center justify-center">
                       <i className={cn(stat.icon, "text-sidraPrimary text-xl mb-1")}></i>
                       <div className="text-md font-bold text-gray-900">{stat.value}</div>
-                      <div className="text-xs text-gray-600">{stat.label}</div>
+                      <div className="text-xs text-gray-600">{stat.unit}</div> {/* Changed label to unit for clarity */}
                     </div>
                   ))}
                 </div>
-              </div>
-            </div>
+              </CardContent>
+            </Card>
           ))}
         </div>
       </div>

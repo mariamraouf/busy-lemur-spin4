@@ -77,7 +77,7 @@ const OurServicesPage = () => {
         <meta name="description" content={t('servicesSummarySubtitle')} />
       </Helmet>
       <Navbar />
-      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Increased pt-24 to pt-32 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
         </div>
@@ -88,7 +88,7 @@ const OurServicesPage = () => {
               {t('whatWeDo')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
-              {t('ourServicesPageTitle')} {/* Re-added the title */}
+              {t('ourServicesPageTitle')}
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {t('ourServicesPageDescription')}
@@ -101,7 +101,7 @@ const OurServicesPage = () => {
               <div
                 key={index}
                 className={cn(
-                  "p-10 rounded-3xl shadow-2xl border border-gray-100 bg-white", // Lighter background, no grid for image
+                  "p-10 rounded-3xl shadow-2xl border border-gray-100 bg-white",
                 )}
                 data-aos="fade-up"
                 data-aos-delay={100 * (index + 1)}
@@ -110,7 +110,7 @@ const OurServicesPage = () => {
                   <div className={cn(
                     "w-20 h-20 rounded-2xl flex items-center justify-center transform group-hover:rotate-12 transition-transform duration-300",
                     `bg-gradient-to-br ${category.gradientFrom} ${category.gradientTo}`,
-                    language === 'ar' ? 'ml-6' : 'mr-6' // Adjusted for RTL
+                    language === 'ar' ? 'ml-6' : 'mr-6'
                   )}>
                     <i className={cn(category.icon, "text-white text-3xl")}></i>
                   </div>
@@ -124,7 +124,7 @@ const OurServicesPage = () => {
                 <ul className="grid sm:grid-cols-2 gap-x-8 gap-y-6">
                   {category.items.map((item, itemIndex) => (
                     <li key={itemIndex} className="flex items-start">
-                      <i className={cn(item.icon, "text-sidraTeal text-xl flex-shrink-0 mt-1", language === 'ar' ? 'ml-4' : 'mr-4')}></i> {/* Adjusted for RTL */}
+                      <i className={cn(item.icon, "text-sidraTeal text-xl flex-shrink-0 mt-1", language === 'ar' ? 'ml-4' : 'mr-4')}></i>
                       <div>
                         <h4 className="text-xl font-semibold text-gray-900 mb-1">{item.title}</h4>
                         <p className="text-gray-600 text-base">{item.description}</p>
@@ -146,7 +146,7 @@ const OurServicesPage = () => {
             </p>
             <Link to="/contact" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl text-lg">
               <span>{t('contactUsToday')}</span>
-              <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
+              <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i>
             </Link>
           </div>
 
@@ -165,7 +165,7 @@ const OurServicesPage = () => {
                 <div key={index} className="text-center p-6 rounded-2xl bg-sidraLight/50 border border-gray-100" data-aos="zoom-in" data-aos-delay={100 * (index + 1)}>
                   <div className={cn(
                     "w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4",
-                    `bg-gradient-to-br from-sidraPrimary to-sidraTeal` // Consistent gradient for approach icons
+                    `bg-gradient-to-br from-sidraPrimary to-sidraTeal`
                   )}>
                     <i className={cn(step.icon, "text-white text-2xl")}></i>
                   </div>

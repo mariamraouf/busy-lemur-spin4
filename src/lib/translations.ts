@@ -81,6 +81,9 @@ export const translations = {
     diagnosticCenterLaunchStat1: "12-month delivery",
     diagnosticCenterLaunchStat2: "Advanced imaging tech",
     diagnosticCenterLaunchStat3: "Full regulatory compliance",
+    months: "months", // New key
+    tech: "tech", // New key
+    compliance: "compliance", // New key
 
     clinicNetworkOptimizationTitle: "Regional Clinic Network Optimization",
     clinicNetworkOptimizationLocation: "Multiple Cities, KSA",
@@ -88,6 +91,9 @@ export const translations = {
     clinicNetworkOptimizationStat1: "30% operational efficiency",
     clinicNetworkOptimizationStat2: "Integrated EMR system",
     clinicNetworkOptimizationStat3: "Enhanced patient satisfaction",
+    efficiency: "efficiency", // New key
+    system: "system", // New key
+    satisfaction: "satisfaction", // New key
 
     internationalMarketEntryTitle: "International Market Entry & Partnership",
     internationalMarketEntryLocation: "Jeddah, Saudi Arabia",
@@ -95,6 +101,9 @@ export const translations = {
     internationalMarketEntryStat1: "Successful market entry",
     internationalMarketEntryStat2: "5+ strategic partnerships",
     internationalMarketEntryStat3: "Full regulatory adherence",
+    entry: "entry", // New key
+    partnerships: "partnerships", // New key
+    adherence: "adherence", // New key
 
     // Testimonials Section
     whatOurClientsSay: "What Our Clients Say",
@@ -140,6 +149,7 @@ export const translations = {
     message: "Message",
     tellUsAboutProject: "Tell us about your project",
     sendMessage: "Send Message",
+    ourLocation: "Our Location", // New key for map title
 
     // Footer
     empoweringHealthcare: "Empowering healthcare stakeholders—providers, investors, operators, and beyond—with strategic, technical, and operational services in Saudi Arabia's evolving healthcare landscape.",
@@ -288,7 +298,7 @@ export const translations = {
     missionVisionFaqQ1: "What is Sidra Med's mission?",
     missionVisionFaqA1: "Our mission is to empower healthcare providers across Saudi Arabia by delivering strategic, operational, and technical support to ensure the success of healthcare projects and transform medical service delivery.",
     missionVisionFaqQ2: "What is Sidra Med's vision for the future?",
-    missionVisionFaqA2: "Our vision is to be the leading healthcare project delivery partner in Saudi Arabia, recognized for innovation, reliability, and enabling successful outcomes for all stakeholders.",
+    missionVisionFaqA2: "Our vision is to be the leading healthcare project delivery partner in Saudi Arabia. Recognized for innovation, reliability, and our ability to enable successful outcomes for healthcare providers, investors, and the community.",
     missionVisionFaqQ3: "How does the mission guide daily operations?",
     missionVisionFaqA3: "Our mission drives every decision, ensuring we focus on empowering clients and delivering excellence in healthcare project execution.",
     missionVisionFaqQ4: "What are the long-term goals of Sidra Med's vision?",
@@ -413,6 +423,9 @@ export const translations = {
     diagnosticCenterLaunchStat1: "تسليم في 12 شهراً",
     diagnosticCenterLaunchStat2: "تقنية تصوير متقدمة",
     diagnosticCenterLaunchStat3: "امتثال تنظيمي كامل",
+    months: "شهر",
+    tech: "تقنية",
+    compliance: "امتثال",
 
     clinicNetworkOptimizationTitle: "تحسين شبكة العيادات الإقليمية",
     clinicNetworkOptimizationLocation: "مدن متعددة، المملكة العربية السعودية",
@@ -420,6 +433,9 @@ export const translations = {
     clinicNetworkOptimizationStat1: "كفاءة تشغيلية 30%",
     clinicNetworkOptimizationStat2: "نظام سجلات طبية إلكترونية متكامل",
     clinicNetworkOptimizationStat3: "رضا المرضى المحسن",
+    efficiency: "كفاءة",
+    system: "نظام",
+    satisfaction: "رضا",
 
     internationalMarketEntryTitle: "دخول السوق الدولي والشراكة",
     internationalMarketEntryLocation: "جدة، المملكة العربية السعودية",
@@ -427,6 +443,9 @@ export const translations = {
     internationalMarketEntryStat1: "دخول ناجح للسوق",
     internationalMarketEntryStat2: "أكثر من 5 شراكات استراتيجية",
     internationalMarketEntryStat3: "التزام تنظيمي كامل",
+    entry: "دخول",
+    partnerships: "شراكات",
+    adherence: "التزام",
 
     // Testimonials Section
     whatOurClientsSay: "ماذا يقول عملاؤنا",
@@ -472,6 +491,7 @@ export const translations = {
     message: "الرسالة",
     tellUsAboutProject: "أخبرنا عن مشروعك",
     sendMessage: "إرسال الرسالة",
+    ourLocation: "موقعنا",
 
     // Footer
     empoweringHealthcare: "تمكين أصحاب المصلحة في الرعاية الصحية - مقدمي الخدمات والمستثمرين والمشغلين وما بعدهم - بخدمات استراتيجية وتقنية وتشغيلية في المشهد الصحي المتطور في المملكة العربية السعودية.",
@@ -511,7 +531,7 @@ export const translations = {
     teamRole1: "مديرو مشاريع الرعاية الصحية",
     teamRole1Description: "خبراء في تسليم مشاريع الرعاية الصحية المتخصصة مع فهم عميق للمتطلبات السريرية.",
     teamRole2: "خبراء العمليات السريرية والتشغيلية",
-    team2Description: "متخصصون في الرعاية الصحية ذوو خبرة يضمنون التميز التشغيلي وأفضل الممارسات السريرية.",
+    teamRole2Description: "متخصصون في الرعاية الصحية ذوو خبرة يضمنون التميز التشغيلي وأفضل الممارسات السريرية.",
     teamRole3: "مهندسو ومعماريو الرعاية الصحية",
     teamRole3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.",
     teamRole4: "المحللون الاستراتيجيون والماليون",
@@ -535,7 +555,7 @@ export const translations = {
     operationalSupportTitle: "الدعم التشغيلي والإدارة",
     operationalSupportDescription: "نقوم بإدارة أو المشاركة في إدارة المنشآت الصحية لضمان الجودة والكفاءة والامتثال.",
     facilityOperationsOversightTitle: "الإشراف على عمليات المنشأة",
-    facilityOperationsOversightDescription: "الإدارة اليومية والإشراف على عمليات المنشآت الصحية لضمان سير العمل بسلاسة.",
+    facilityOperationsOversightDescription: "اليومية والإشراف على عمليات المنشآت الصحية لضمان سير العمل بسلاسة.",
     healthcareITImplementationTitle: "تطبيق تكنولوجيا المعلومات الصحية",
     healthcareITImplementationDescription: "اختيار وتطبيق وإدارة أنظمة معلومات الرعاية الصحية والبنية التحتية التكنولوجية.",
     workforceRecruitmentTitle: "تنسيق توظيف القوى العاملة",

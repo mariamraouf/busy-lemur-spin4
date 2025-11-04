@@ -19,7 +19,7 @@ const ContactPage = () => {
         <meta name="description" content={t('contactDescription')} />
       </Helmet>
       <Navbar />
-      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
+      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden"> {/* Increased pt-24 to pt-32 */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
@@ -87,7 +87,7 @@ const ContactPage = () => {
 
             <div data-aos="fade-left" data-aos-duration="1000">
               <div className="space-y-8 mb-12">
-                <div className="flex items-start gap-x-6 group"> {/* Changed space-x-6 to gap-x-6 */}
+                <div className="flex items-start gap-x-6 group">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <i className="fas fa-map-marker-alt text-white text-xl"></i>
@@ -99,7 +99,7 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-x-6 group"> {/* Changed space-x-6 to gap-x-6 */}
+                <div className="flex items-start gap-x-6 group">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <i className="fas fa-envelope text-white text-xl"></i>
@@ -111,7 +111,7 @@ const ContactPage = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-x-6 group"> {/* Changed space-x-6 to gap-x-6 */}
+                <div className="flex items-start gap-x-6 group">
                   <div className="flex-shrink-0">
                     <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                       <i className="fas fa-clock text-white text-xl"></i>
@@ -126,6 +126,7 @@ const ContactPage = () => {
 
               {/* Google Maps Embed */}
               <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden mt-12">
+                <h3 className="text-xl font-bold text-gray-900 p-6 pb-0">{t('ourLocation')}</h3> {/* Added title for map */}
                 <iframe
                   src={googleMapsEmbedUrl}
                   width="100%"
