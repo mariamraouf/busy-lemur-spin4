@@ -3,7 +3,8 @@ import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
 
 const CtaSection = () => {
-  const { t, language } = useLanguage(); // Destructure language
+  const { t, language } = useLanguage();
+  const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
 
   return (
     <section className="py-24 bg-gradient-to-br from-sidraPrimary via-sidraSecondary to-sidraAccent relative overflow-hidden">
@@ -29,16 +30,17 @@ const CtaSection = () => {
             {t('letsWorkTogether')}
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="200">
-            <a href="#contact" className="group inline-flex items-center justify-center px-12 py-6 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl text-lg">
-              <span>{t('contact')}</span>
-              <i className={cn("fas fa-paper-plane", language === 'ar' ? 'mr-3 group-hover:-translate-x-1 group-hover:-translate-y-1' : 'ml-3 group-hover:translate-x-1 group-hover:-translate-y-1', "transition-transform")}></i> {/* Adjusted for RTL */}
+            {/* Changed to tel: link for automatic call */}
+            <a href={`tel:${phoneNumber}`} className="group inline-flex items-center justify-center px-12 py-6 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl text-lg">
+              <span>{t('callUs')}</span> {/* Using new 'callUs' key */}
+              <i className={cn("fas fa-phone", language === 'ar' ? 'mr-3 group-hover:-translate-x-1 group-hover:-translate-y-1' : 'ml-3 group-hover:translate-x-1 group-hover:-translate-y-1', "transition-transform")}></i>
             </a>
             <a href="#contact" className={cn(
               "group inline-flex items-center justify-center px-12 py-6 bg-transparent border-3 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-sidraPrimary transition-all transform hover:scale-105 text-lg",
               "bg-white/10 backdrop-blur-sm border border-white/20" // glass-effect
             )}>
               <span>{t('getAConsultation')}</span>
-              <i className={cn("fas fa-calendar-alt", language === 'ar' ? 'mr-3' : 'ml-3', "group-hover:rotate-12 transition-transform")}></i> {/* Adjusted for RTL */}
+              <i className={cn("fas fa-calendar-alt", language === 'ar' ? 'mr-3' : 'ml-3', "group-hover:rotate-12 transition-transform")}></i>
             </a>
           </div>
         </div>

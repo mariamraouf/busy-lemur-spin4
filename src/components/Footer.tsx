@@ -5,6 +5,7 @@ import { cn } from '@/lib/utils'; // Import cn for conditional classes
 
 const Footer = () => {
   const { language, t } = useLanguage();
+  const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary text-white py-16 relative overflow-hidden">
@@ -17,26 +18,29 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-x-4 mb-6"> {/* Changed space-x-4 to gap-x-4 */}
-              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-24 h-24 object-contain" /> {/* Increased logo size to w-24 h-24 */}
+            <div className="flex items-center gap-x-4 mb-6">
+              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-24 h-24 object-contain" />
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
               {t('empoweringHealthcare')}
-            </p>
-            <div className="flex gap-x-4"> {/* Changed space-x-4 to gap-x-4 */}
-              <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110">
-                <i className="fab fa-linkedin-in text-xl"></i>
+            </p>            
+            <div className="flex gap-x-4 mb-6"> {/* Added margin-bottom for spacing */}
+              <a href={`tel:${phoneNumber}`} className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Call us">
+                <i className="fas fa-phone text-xl"></i>
               </a>
-              <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110">
-                <i className="fab fa-twitter text-xl"></i>
+              <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="WhatsApp us">
+                <i className="fab fa-whatsapp text-xl"></i>
               </a>
-              <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110">
-                <i className="fab fa-facebook-f text-xl"></i>
-              </a>
-              <a href="#" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110">
+              <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Instagram">
                 <i className="fab fa-instagram text-xl"></i>
               </a>
+              <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="LinkedIn">
+                <i className="fab fa-linkedin-in text-xl"></i>
+              </a>
             </div>
+            <p className="text-gray-300 text-sm">
+              <i className="fas fa-map-marker-alt mr-2"></i> {t('fullAddress')}
+            </p>
           </div>
 
           {/* Quick Links */}
@@ -67,7 +71,7 @@ const Footer = () => {
           <p className="text-gray-400 text-sm mb-4 sm:mb-0">
             {t('allRightsReserved')}
           </p>
-          <div className="flex items-center gap-x-6 text-sm text-gray-400"> {/* Changed space-x-6 to gap-x-6 */}
+          <div className="flex items-center gap-x-6 text-sm text-gray-400">
             <Link to="/privacy-policy" className="hover:text-sidraPrimary transition-colors">{t('privacyPolicy')}</Link>
             <Link to="/terms-of-service" className="hover:text-sidraPrimary transition-colors">{t('termsOfService')}</Link>
           </div>

@@ -3,10 +3,10 @@ import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
 
 const HeroSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   return (
-    <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden"> {/* Changed pt-20 to pt-32 for consistency */}
+    <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop" alt="Healthcare" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraSecondary/80 to-sidraAccent/90"></div>
@@ -28,7 +28,8 @@ const HeroSection = () => {
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
             <span className="block">{t('heroTitlePart1')}</span>
-            <span className="block bg-gradient-to-r from-white via-sidraTeal to-sidraPrimary bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
+            {/* Adjusted gradient for better visibility */}
+            <span className="block bg-gradient-to-r from-white via-sidraLight to-white bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
             <span className="block">{t('heroTitlePart3')}</span>
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed font-light">
@@ -37,14 +38,14 @@ const HeroSection = () => {
           <div className="flex flex-col sm:flex-row gap-6" data-aos="fade-up" data-aos-delay="200">
             <a href="#services" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl hover:shadow-3xl">
               <span>{t('exploreOurServices')}</span>
-              <i className="fas fa-rocket ml-3 group-hover:translate-x-1 transition-transform"></i>
+              <i className={cn("fas fa-rocket", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
             </a>
             <a href="#contact" className={cn(
               "group inline-flex items-center justify-center px-10 py-5 bg-transparent border-3 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-sidraPrimary transition-all transform hover:scale-105",
               "bg-white/10 backdrop-blur-sm border border-white/20" // glass-effect
             )}>
               <span>{t('partnerWithUs')}</span>
-              <i className="fas fa-handshake ml-3 group-hover:rotate-12 transition-transform"></i>
+              <i className={cn("fas fa-handshake", language === 'ar' ? 'mr-3 group-hover:-rotate-12' : 'ml-3 group-hover:rotate-12', "transition-transform")}></i> {/* Adjusted for RTL */}
             </a>
           </div>
         </div>

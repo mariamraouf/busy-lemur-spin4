@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 
 const FullContactSection = () => {
   const { language, t } = useLanguage();
+  const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
 
   // Google Maps embed URL for Jeddah, KSA. You can customize the coordinates and zoom.
   const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.00000000002!2d39.0872629!3d21.5433331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b1185!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus";
@@ -49,7 +50,7 @@ const FullContactSection = () => {
 
               <div>
                 <label className="block text-sm font-bold text-gray-700 mb-3">{t('phoneNumber')}</label>
-                <input type="tel" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} />
+                <input type="tel" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} defaultValue={phoneNumber} />
               </div>
 
               <div>
@@ -85,7 +86,7 @@ const FullContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('location')}</h3>
-                  <p className="text-gray-600 text-lg">{t('jeddahKSA')}</p>
+                  <p className="text-gray-600 text-lg">{t('fullAddress')}</p>
                 </div>
               </div>
 
@@ -104,6 +105,21 @@ const FullContactSection = () => {
               <div className="flex items-start gap-x-6 group">
                 <div className="flex-shrink-0">
                   <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i className="fas fa-phone text-white text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('phoneNumber')}</h3>
+                  <a href={`tel:${phoneNumber}`} className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">{phoneNumber}</a>
+                  <a href={`https://wa.me/${phoneNumber}`} target="_blank" rel="noopener noreferrer" className="flex items-center text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold mt-1">
+                    <i className="fab fa-whatsapp mr-2"></i> {t('whatsapp')}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-x-6 group">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraAccent to-sidraSecondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <i className="fas fa-clock text-white text-xl"></i>
                   </div>
                 </div>
@@ -129,7 +145,7 @@ const FullContactSection = () => {
               ></iframe>
             </div>
             <p className="text-center text-gray-600 mt-6 text-lg">
-              {t('jeddahKSA')}
+              {t('fullAddress')}
             </p>
           </div>
         </div>
