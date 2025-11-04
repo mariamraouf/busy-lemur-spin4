@@ -10,7 +10,8 @@ const TestimonialsSection = () => {
       quote: t('testimonial1'),
       author: t('testimonial1Author'),
       role: t('testimonial1Role'),
-      avatar: "https://randomuser.me/api/portraits/men/32.jpg",
+      // Placeholder for a Saudi man wearing a shemagh - please replace with an actual image
+      avatar: "https://via.placeholder.com/150x150?text=Saudi+Man+Shemagh", 
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
     },
@@ -18,7 +19,8 @@ const TestimonialsSection = () => {
       quote: t('testimonial2'),
       author: t('testimonial2Author'),
       role: t('testimonial2Role'),
-      avatar: "https://randomuser.me/api/portraits/women/44.jpg",
+      // Placeholder for a Saudi woman wearing a hijab - please replace with an actual image
+      avatar: "https://via.placeholder.com/150x150?text=Saudi+Woman+Hijab",
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
     },
@@ -26,7 +28,8 @@ const TestimonialsSection = () => {
       quote: t('testimonial3'),
       author: t('testimonial3Author'),
       role: t('testimonial3Role'),
-      avatar: "https://randomuser.me/api/portraits/men/47.jpg",
+      // Placeholder for a Saudi man wearing a shemagh - please replace with an actual image
+      avatar: "https://via.placeholder.com/150x150?text=Saudi+Man+Shemagh",
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
     },
