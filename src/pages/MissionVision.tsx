@@ -32,7 +32,7 @@ const MissionVision = () => {
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16"> {/* Added py-16 here */}
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16" data-aos="fade-up">
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('missionVision')}
@@ -68,7 +68,7 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
-        <FAQSection faqs={missionVisionFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
+        <FAQSection faqs={missionVisionFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </main>
       <Footer />
       <ScrollToTopButton />

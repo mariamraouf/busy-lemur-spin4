@@ -176,7 +176,7 @@ const OurServicesPage = () => {
             </div>
           </div>
         </div>
-        <FAQSection faqs={servicesFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
+        <FAQSection faqs={servicesFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </main>
       <Footer />
       <ScrollToTopButton />

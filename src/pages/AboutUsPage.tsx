@@ -79,7 +79,7 @@ const AboutUsPage = () => {
             </div>
           </div>
         </div>
-        <FAQSection faqs={aboutUsFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
+        <FAQSection faqs={aboutUsFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </main>
       <Footer />
       <ScrollToTopButton />
