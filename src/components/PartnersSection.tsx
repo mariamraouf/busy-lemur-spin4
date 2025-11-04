@@ -6,16 +6,19 @@ const PartnersSection = () => {
   const { t } = useLanguage();
 
   const partners = [
-    { name: "Noor Al Ain Medical Services", logo: "/placeholder.svg" },
-    { name: "Woman's Health", logo: "/placeholder.svg" },
-    { name: "Dr. Tala Qutub Medical Center", logo: "/placeholder.svg" },
-    { name: "Prince Sattam Bin Abdulaziz University", logo: "/placeholder.svg" },
-    { name: "Dentalia Clinics", logo: "/placeholder.svg" },
-    { name: "SSB Company", logo: "/placeholder.svg" },
-    { name: "Amaz Specialty Hospital", logo: "/placeholder.svg" },
-    { name: "Dr. Osama Alwashiah Clinics", logo: "/placeholder.svg" },
-    { name: "Heart Care Center", logo: "/placeholder.svg" },
-    { name: "KC Medical Center", logo: "/placeholder.svg" },
+    { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" },
+    { name: t('partnerWomanHealth'), logo: "/partners/woman-health.png" },
+    { name: t('partnerDrTalaQutub'), logo: "/partners/dr-tala-qutub.png" },
+    { name: t('partnerPrinceSattamUniversity'), logo: "/partners/prince-sattam-university.png" },
+    { name: t('partnerDentaliaClinics'), logo: "/partners/dentalia-clinics.png" },
+    { name: t('partnerSSBCompany'), logo: "/partners/ssb-company.png" },
+    { name: t('partnerAmazSpecialtyHospital'), logo: "/partners/amaz-specialty-hospital.png" },
+    { name: t('partnerDrOsamaAlwashiah'), logo: "/partners/dr-osama-alwashiah.png" },
+    { name: t('partnerHeartCareCenter'), logo: "/partners/heart-care-center.png" },
+    { name: t('partnerKCMedicalCenter'), logo: "/partners/kc-medical-center.png" },
+    { name: t('partnerKingsCollegeHospital'), logo: "/partners/kings-college-hospital.png" },
+    { name: t('partnerItqan'), logo: "/partners/itqan.png" },
+    { name: t('partnerFizik'), logo: "/partners/fizik.png" },
   ];
 
   // Duplicate partners to create a seamless loop
@@ -28,8 +31,8 @@ const PartnersSection = () => {
           {t('partners')}
         </span>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
-          <span className="block">Our Valued</span>
-          <span className="block bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">Partners</span>
+          <span className="block">{t('ourValued')}</span>
+          <span className="block bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">{t('partnersTitle')}</span>
         </h2>
       </div>
 

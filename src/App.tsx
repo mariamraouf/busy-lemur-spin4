@@ -12,6 +12,7 @@ import AboutUsPage from "./pages/AboutUsPage";
 import OurValuesPage from "./pages/OurValuesPage";
 import OurTeamPage from "./pages/OurTeamPage";
 import OurServicesPage from "./pages/OurServicesPage";
+import PartnersPage from "./pages/PartnersPage"; // Import new page
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage"; // Import new page
 import TermsOfServicePage from "./pages/TermsOfServicePage"; // Import new page
@@ -35,6 +36,7 @@ const App = () => (
               <Route path="/our-values" element={<OurValuesPage />} />
               <Route path="/our-team" element={<OurTeamPage />} />
               <Route path="/services" element={<OurServicesPage />} />
+              <Route path="/partners" element={<PartnersPage />} /> {/* New route */}
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/privacy-policy" element={<PrivacyPolicyPage />} /> {/* New route */}
               <Route path="/terms-of-service" element={<TermsOfServicePage />} /> {/* New route */}

@@ -57,9 +57,9 @@ const OurServicesPage = () => {
 
   const approachSteps = [
     { icon: "fas fa-search", title: t('approachStep1Title'), description: t('approachStep1Description'), color: "text-sidraPrimary" },
-    { icon: "fas fa-lightbulb", title: t('approachStep2Title'), description: t('approachStep2Description'), color: "text-sidraSecondary" },
-    { icon: "fas fa-cogs", title: t('approachStep3Title'), description: t('approachStep3Description'), color: "text-sidraTeal" },
-    { icon: "fas fa-chart-line", title: t('approachStep4Title'), description: t('approachStep4Description'), color: "text-sidraAccent" },
+    { icon: "fas fa-lightbulb", title: t('approachStep2Title'), description: t('approach2Description'), color: "text-sidraSecondary" }, // Corrected key
+    { icon: "fas fa-cogs", title: t('approachStep3Title'), description: t('approach3Description'), color: "text-sidraTeal" }, // Corrected key
+    { icon: "fas fa-chart-line", title: t('approachStep4Title'), description: t('approach4Description'), color: "text-sidraAccent" }, // Corrected key
   ];
 
   const servicesFaqs = [
