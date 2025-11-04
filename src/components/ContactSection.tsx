@@ -5,6 +5,9 @@ import { cn } from '@/lib/utils';
 const ContactSection = () => {
   const { t } = useLanguage();
 
+  // Google Maps embed URL for Jeddah, KSA. You can customize the coordinates and zoom.
+  const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.00000000002!2d39.0872629!3d21.5433331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b1185!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus";
+
   return (
     <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
@@ -109,6 +112,28 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
+        </div>
+
+        {/* Google Maps Embed */}
+        <div className="mt-24" data-aos="fade-up" data-aos-delay="100">
+          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 text-center mb-12">
+            {t('location')}
+          </h2>
+          <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
+            <iframe
+              src={googleMapsEmbedUrl}
+              width="100%"
+              height="500"
+              style={{ border: 0 }}
+              allowFullScreen={true}
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+              title="Jeddah, Saudi Arabia Location"
+            ></iframe>
+          </div>
+          <p className="text-center text-gray-600 mt-6 text-lg">
+            {t('jeddahKSA')}
+          </p>
         </div>
       </div>
     </section>

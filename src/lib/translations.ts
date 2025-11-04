@@ -185,16 +185,73 @@ export const translations = {
     teamRole4: "Strategic and Financial Analysts",
     teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.",
 
-    // Our Services Page
-    ourServicesPageTitle: "Our services",
-    serviceCategory1Title: "Project Support & Execution",
-    serviceCategory1Item1: "Assistance across the full project lifecycle—from feasibility and design to operational readiness and compliance.",
-    serviceCategory2Title: "Facility Operations & Management",
-    serviceCategory2Item1: "Supporting clinical and non-clinical operations, including IT systems, staffing, procurement, and logistics.",
-    serviceCategory3Title: "Local Market Integration",
-    serviceCategory3Item1: "Guiding international firms through local regulations, business practices, and cultural alignment to ensure success in the Saudi market.",
-    serviceCategory4Title: "Strategic Partnerships",
-    serviceCategory4Item1: "Through our consortium network, we enable end-to-end project delivery by combining the strengths of specialised partners across various domains.",
+    // Our Services Page (Detailed Content)
+    ourServicesPageDescription: "Sidra Med offers practical, strategic, and technical support across all stages of healthcare project development. Whether you're launching a new clinic, upgrading an existing hospital, managing healthcare investments, or planning for long-term operations, we provide the tools and expertise to ensure success.",
+
+    projectTechnicalSupportTitle: "Project & Technical Support",
+    projectTechnicalSupportDescription: "We help clients assess feasibility, plan facility layouts, and ensure alignment with local regulatory requirements.",
+    siteAssessmentsTitle: "Site assessments and operational planning",
+    siteAssessmentsDescription: "Comprehensive evaluation of potential locations and operational requirements for healthcare facilities.",
+    coordArchitecturalTitle: "Coordination with architectural and engineering teams",
+    coordArchitecturalDescription: "Seamless integration with design and construction teams to ensure healthcare-specific requirements are met.",
+    licensingCommissioningTitle: "Licensing and commissioning support",
+    licensingCommissioningDescription: "Expert guidance through Saudi Arabia's healthcare facility licensing process and operational commissioning.",
+    strategicPlanningTitle: "Strategic planning and investment alignment",
+    strategicPlanningDescription: "Ensure your healthcare project aligns with both business goals and Saudi Vision 2030 healthcare priorities.",
+
+    operationalSupportTitle: "Operational Support & Management",
+    operationalSupportDescription: "We manage or co-manage healthcare facilities to ensure quality, efficiency, and compliance.",
+    facilityOperationsOversightTitle: "Facility operations oversight",
+    facilityOperationsOversightDescription: "Day-to-day management and oversight of healthcare facility operations to ensure smooth functioning.",
+    healthcareITImplementationTitle: "Healthcare IT implementation",
+    healthcareITImplementationDescription: "Selection, implementation, and management of healthcare information systems and technology infrastructure.",
+    workforceRecruitmentTitle: "Workforce recruitment coordination",
+    workforceRecruitmentDescription: "Strategic staffing solutions to address the unique challenges of healthcare professional recruitment in Saudi Arabia.",
+    maintenanceBiomedicalTitle: "Maintenance and biomedical equipment services",
+    maintenanceBiomedicalDescription: "Comprehensive maintenance planning and execution for facility infrastructure and specialized medical equipment.",
+
+    consortiumDrivenTitle: "Consortium-Driven Full-Service Delivery",
+    consortiumDrivenDescription: "As part of a wider healthcare consortium, Sidra Med can activate a full-service delivery model.",
+    legalCommercialConsultancyTitle: "Legal and commercial consultancy",
+    legalCommercialConsultancyDescription: "Expert advice on healthcare regulations, commercial structuring, and contract negotiations in the Saudi context.",
+    financialPlanningAuditingTitle: "Financial planning and auditing",
+    financialPlanningAuditingDescription: "Comprehensive financial services from initial budgeting to ongoing financial management and compliance.",
+    procurementEquipmentPlanningTitle: "Procurement and equipment planning",
+    procurementEquipmentPlanningDescription: "Strategic sourcing of medical equipment, supplies, and technology with a focus on value and quality.",
+    facilityDesignConstructionTitle: "Facility design and construction",
+    facilityDesignConstructionDescription: "End-to-end project management of healthcare facility design and construction, aligned with international standards.",
+    accreditationSustainabilityTitle: "Accreditation and sustainability planning",
+    accreditationSustainabilityDescription: "Strategic support for achieving national and international healthcare accreditations while implementing sustainable practices.",
+
+    customSolutionsTitle: "Custom Solutions for Your Healthcare Project",
+    customSolutionsDescription: "Each project is custom-scoped to ensure the right mix of partners and services.",
+
+    ourApproachTitle: "Our Approach",
+    approachStep1Title: "1. Assess",
+    approach1Description: "We evaluate your unique needs and project requirements.", // Corrected key name
+    approachStep2Title: "2. Plan",
+    approach2Description: "We create a tailored strategy with the right service mix.", // Corrected key name
+    approachStep3Title: "3. Execute",
+    approach3Description: "We implement solutions with our expert team and partners.", // Corrected key name
+    approachStep4Title: "4. Optimize",
+    approach4Description: "We continuously improve and adapt to ensure lasting success.", // Corrected key name
+
+    needCustomSolution: "Need a customized solution for your healthcare project?",
+    contactUsToday: "Contact us today to discuss your specific needs and how we can help.",
+
+    // FAQ Section
+    faqTitle: "Frequently Asked Questions",
+    faqSubtitle: "Find answers to common questions about Sidra Med and our services.",
+    faqQ1: "What types of healthcare projects does Sidra Med handle?",
+    faqA1: "Sidra Med specializes in a wide range of healthcare projects, including new hospital development, clinic setups, medical center upgrades, laboratory establishments, and digital health initiatives. We provide support from initial concept to operational readiness.",
+    faqQ2: "How does Sidra Med ensure regulatory compliance in Saudi Arabia?",
+    faqA2: "Our team has deep expertise in Saudi Arabia's healthcare regulatory landscape. We provide expert guidance through licensing, commissioning, and ensure all project phases align with local and international quality standards.",
+    faqQ3: "Can Sidra Med assist international companies entering the Saudi healthcare market?",
+    faqA3: "Absolutely. We offer comprehensive local market integration services, guiding international firms through local regulations, business practices, and cultural alignment to ensure a successful and seamless entry into the Saudi market.",
+    faqQ4: "What is Sidra Med's approach to project management?",
+    faqA4: "Our approach involves four key steps: Assess (evaluate needs), Plan (tailor strategy), Execute (implement solutions), and Optimize (continuous improvement). This ensures dependable, scalable, and sustainable healthcare solutions.",
+    faqQ5: "How can I get a consultation for my project?",
+    faqA5: "You can easily get a consultation by visiting our Contact Us section and filling out the inquiry form, or by reaching out to us directly via email or phone. We look forward to discussing your specific needs.",
 
     // Not Found Page
     pageNotFoundTitle: "Page Not Found",
@@ -387,16 +444,74 @@ export const translations = {
     teamRole4: "المحللون الاستراتيجيون والماليون",
     teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
 
-    // Our Services Page
-    ourServicesPageTitle: "خدماتنا",
-    serviceCategory1Title: "دعم وتنفيذ المشاريع",
-    serviceCategory1Item1: "المساعدة في جميع مراحل المشروع - من الجدوى والتصميم إلى الجاهزية التشغيلية والامتثال.",
-    serviceCategory2Title: "عمليات وإدارة المنشآت",
-    serviceCategory2Item1: "دعم العمليات السريرية وغير السريرية، بما في ذلك أنظمة تكنولوجيا المعلومات والتوظيف والمشتريات والخدمات اللوجستية.",
-    serviceCategory3Title: "التكامل مع السوق المحلي",
-    serviceCategory3Item1: "توجيه الشركات الدولية من خلال اللوائح المحلية والممارسات التجارية والتوافق الثقافي لضمان النجاح في السوق السعودي.",
-    serviceCategory4Title: "الشراكات الاستراتيجية",
-    serviceCategory4Item1: "من خلال شبكة الاتحاد الخاصة بنا، نمكّن تسليم المشاريع من البداية إلى النهاية من خلال الجمع بين نقاط القوة للشركاء المتخصصين في مختلف المجالات.",
+    // Our Services Page (Detailed Content)
+    ourServicesPageDescription: "تقدم سدرة ميد الدعم العملي والاستراتيجي والتقني في جميع مراحل تطوير مشاريع الرعاية الصحية. سواء كنت تطلق عيادة جديدة، أو تقوم بترقية مستشفى قائم، أو تدير استثمارات الرعاية الصحية، أو تخطط للعمليات طويلة الأجل، فإننا نوفر الأدوات والخبرة لضمان النجاح.",
+
+    projectTechnicalSupportTitle: "الدعم الفني للمشاريع",
+    projectTechnicalSupportDescription: "نساعد العملاء في تقييم الجدوى، وتخطيط تصميم المنشآت، وضمان التوافق مع المتطلبات التنظيمية المحلية.",
+    siteAssessmentsTitle: "تقييمات المواقع والتخطيط التشغيلي",
+    siteAssessmentsDescription: "تقييم شامل للمواقع المحتملة والمتطلبات التشغيلية للمنشآت الصحية.",
+    coordArchitecturalTitle: "التنسيق مع فرق الهندسة المعمارية والهندسية",
+    coordArchitecturalDescription: "التكامل السلس مع فرق التصميم والبناء لضمان تلبية المتطلبات الخاصة بالرعاية الصحية.",
+    licensingCommissioningTitle: "دعم الترخيص والتشغيل",
+    licensingCommissioningDescription: "إرشادات الخبراء خلال عملية ترخيص المنشآت الصحية في المملكة العربية السعودية والتشغيل الأولي.",
+    strategicPlanningTitle: "التخطيط الاستراتيجي ومواءمة الاستثمار",
+    strategicPlanningDescription: "ضمان توافق مشروع الرعاية الصحية الخاص بك مع أهداف العمل وأولويات رؤية السعودية 2030 للرعاية الصحية.",
+
+    operationalSupportTitle: "الدعم التشغيلي والإدارة",
+    operationalSupportDescription: "نقوم بإدارة أو المشاركة في إدارة المنشآت الصحية لضمان الجودة والكفاءة والامتثال.",
+    facilityOperationsOversightTitle: "الإشراف على عمليات المنشأة",
+    facilityOperationsOversightDescription: "الإدارة اليومية والإشراف على عمليات المنشآت الصحية لضمان سير العمل بسلاسة.",
+    healthcareITImplementationTitle: "تطبيق تكنولوجيا المعلومات الصحية",
+    healthcareITImplementationDescription: "اختيار وتطبيق وإدارة أنظمة معلومات الرعاية الصحية والبنية التحتية التكنولوجية.",
+    workforceRecruitmentTitle: "تنسيق توظيف القوى العاملة",
+    workforceRecruitmentDescription: "حلول توظيف استراتيجية لمعالجة التحديات الفريدة لتوظيف المتخصصين في الرعاية الصحية في المملكة العربية السعودية.",
+    maintenanceBiomedicalTitle: "خدمات الصيانة والمعدات الطبية الحيوية",
+    maintenanceBiomedicalDescription: "تخطيط وتنفيذ شامل للصيانة للبنية التحتية للمنشأة والمعدات الطبية المتخصصة.",
+
+    consortiumDrivenTitle: "تقديم خدمة متكاملة مدفوعة بالتحالف",
+    consortiumDrivenDescription: "كجزء من تحالف رعاية صحية أوسع، يمكن لسدرة ميد تفعيل نموذج تقديم خدمة متكاملة.",
+    legalCommercialConsultancyTitle: "الاستشارات القانونية والتجارية",
+    legalCommercialConsultancyDescription: "مشورة الخبراء بشأن لوائح الرعاية الصحية، والهيكلة التجارية، ومفاوضات العقود في السياق السعودي.",
+    financialPlanningAuditingTitle: "التخطيط المالي والتدقيق",
+    financialPlanningAuditingDescription: "خدمات مالية شاملة من الميزانية الأولية إلى الإدارة المالية المستمرة والامتثال.",
+    procurementEquipmentPlanningTitle: "تخطيط المشتريات والمعدات",
+    procurementEquipmentPlanningDescription: "تحديد المصادر الاستراتيجية للمعدات الطبية، والإمدادات، والتكنولوجيا مع التركيز على القيمة والجودة.",
+    facilityDesignConstructionTitle: "تصميم وبناء المنشآت",
+    facilityDesignConstructionDescription: "إدارة مشاريع تصميم وبناء منشآت الرعاية الصحية من البداية إلى النهاية، بما يتماشى مع المعايير الدولية.",
+    accreditationSustainabilityTitle: "التخطيط للاعتماد والاستدامة",
+    accreditationSustainabilityDescription: "دعم استراتيجي لتحقيق الاعتمادات الوطنية والدولية للرعاية الصحية مع تطبيق ممارسات مستدامة.",
+
+    customSolutionsTitle: "حلول مخصصة لمشروع الرعاية الصحية الخاص بك",
+    customSolutionsDescription: "يتم تحديد نطاق كل مشروع بشكل مخصص لضمان المزيج الصحيح من الشركاء والخدمات.",
+
+    ourApproachTitle: "نهجنا",
+    approachStep1Title: "1. التقييم",
+    approach1Description: "نقوم بتقييم احتياجاتك ومتطلبات مشروعك الفريدة.", // Corrected key name
+    approachStep2Title: "2. التخطيط",
+    approach2Description: "ننشئ استراتيجية مخصصة مع المزيج الصحيح من الخدمات.", // Corrected key name
+    approachStep3Title: "3. التنفيذ",
+    approach3Description: "نقوم بتنفيذ الحلول مع فريق الخبراء والشركاء لدينا.", // Corrected key name
+    approachStep4Title: "4. التحسين",
+    approach4Description: "نعمل باستمرار على التحسين والتكيف لضمان النجاح الدائم.", // Corrected key name
+
+    needCustomSolution: "هل تحتاج إلى حل مخصص لمشروع الرعاية الصحية الخاص بك؟",
+    contactUsToday: "اتصل بنا اليوم لمناقشة احتياجاتك المحددة وكيف يمكننا المساعدة.",
+
+    // FAQ Section
+    faqTitle: "الأسئلة الشائعة",
+    faqSubtitle: "ابحث عن إجابات للأسئلة الشائعة حول سدرة ميد وخدماتنا.",
+    faqQ1: "ما هي أنواع مشاريع الرعاية الصحية التي تتعامل معها سدرة ميد؟",
+    faqA1: "تتخصص سدرة ميد في مجموعة واسعة من مشاريع الرعاية الصحية، بما في ذلك تطوير المستشفيات الجديدة، وإنشاء العيادات، وتحديث المراكز الطبية، وإنشاء المختبرات، ومبادرات الصحة الرقمية. نقدم الدعم من المفهوم الأولي إلى الجاهزية التشغيلية.",
+    faqQ2: "كيف تضمن سدرة ميد الامتثال التنظيمي في المملكة العربية السعودية؟",
+    faqA2: "يتمتع فريقنا بخبرة عميقة في المشهد التنظيمي للرعاية الصحية في المملكة العربية السعودية. نقدم إرشادات الخبراء خلال الترخيص والتشغيل، ونضمن توافق جميع مراحل المشروع مع معايير الجودة المحلية والدولية.",
+    faqQ3: "هل يمكن لسدرة ميد مساعدة الشركات الدولية التي تدخل سوق الرعاية الصحية السعودي؟",
+    faqA3: "بالتأكيد. نقدم خدمات تكامل شاملة للسوق المحلي، ونوجه الشركات الدولية خلال اللوائح المحلية، والممارسات التجارية، والتوافق الثقافي لضمان دخول ناجح وسلس إلى السوق السعودي.",
+    faqQ4: "ما هو نهج سدرة ميد في إدارة المشاريع؟",
+    faqA4: "يتضمن نهجنا أربع خطوات رئيسية: التقييم (تقييم الاحتياجات)، التخطيط (تخصيص الاستراتيجية)، التنفيذ (تطبيق الحلول)، والتحسين (التحسين المستمر). وهذا يضمن حلول رعاية صحية موثوقة وقابلة للتطوير ومستدامة.",
+    faqQ5: "كيف يمكنني الحصول على استشارة لمشروعي؟",
+    faqA5: "يمكنك بسهولة الحصول على استشارة من خلال زيارة قسم اتصل بنا وملء نموذج الاستفسار، أو عن طريق التواصل معنا مباشرة عبر البريد الإلكتروني أو الهاتف. نتطلع إلى مناقشة احتياجاتك المحددة.",
+    ourServicesPageTitle: "خدماتنا", // This key is correctly defined.
   },
 };
 
