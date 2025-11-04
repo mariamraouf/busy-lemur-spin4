@@ -33,10 +33,10 @@ export const translations = {
     aboutSummaryTitle: "Sidra Med is a Saudi-based healthcare project and service delivery company.",
     aboutSummaryDescription: "We help investors, operators, and all healthcare stakeholders plan, launch, and manage medical facilities across the Kingdom. From initial concept to operational readiness, Sidra Med ensures seamless execution, regulatory alignment, and sustainable outcomes.",
     learnMoreAboutUs: "Learn More About Us",
-    qualityAssured: "Quality Assured", // Added missing key
-    isoCertified: "ISO Certified",     // Added missing key
-    awardWinning: "Award Winning",     // Added missing key
-    excellenceInHealthcare: "Excellence in Healthcare", // Added missing key
+    qualityAssured: "Quality Assured",
+    isoCertified: "ISO Certified",
+    awardWinning: "Award Winning",
+    excellenceInHealthcare: "Excellence in Healthcare",
 
     // Services Section (Home Page Summary)
     whatWeDo: "What We Do",
@@ -150,9 +150,9 @@ export const translations = {
     // New Content from Company Profile
     // Mission & Vision Page
     missionPageTitle: "Mission & Vision",
-    mission: "Mission", // Added missing key
+    mission: "Mission",
     missionContent: "At Sidra Med, our mission is to empower healthcare providers across Saudi Arabia by delivering strategic, operational, and technical support to ensure the success of healthcare projects. We are committed to transforming medical service delivery by enabling excellence in healthcare infrastructure and services.",
-    vision: "Vision", // Added missing key
+    vision: "Vision",
     visionContent: "To be the leading healthcare project delivery partner in Saudi Arabia. Recognized for innovation, reliability, and our ability to enable successful outcomes for healthcare providers, investors, and the community.",
 
     // Who We Are Page
@@ -197,6 +197,11 @@ export const translations = {
     serviceCategory4Title: "Operational Readiness & Strategic Advisory",
     serviceCategory4Item1: "Recruitment coordination and SOP development",
     serviceCategory4Item2: "Business modeling and investment strategies",
+
+    // Not Found Page
+    pageNotFoundTitle: "Page Not Found",
+    pageNotFoundDescription: "Oops! The page you are looking for does not exist.",
+    returnToHome: "Return to Home",
   },
   ar: {
     // Navbar
@@ -232,10 +237,10 @@ export const translations = {
     aboutSummaryTitle: "سدرة ميد هي شركة سعودية متخصصة في مشاريع وخدمات الرعاية الصحية.",
     aboutSummaryDescription: "نساعد المستثمرين والمشغلين وجميع أصحاب المصلحة في القطاع الصحي على التخطيط والإطلاق وإدارة المنشآت الطبية في جميع أنحاء المملكة. من المفهوم الأولي إلى الجاهزية التشغيلية، تضمن سدرة ميد التنفيذ السلس والامتثال التنظيمي والنتائج المستدامة.",
     learnMoreAboutUs: "اعرف المزيد عنا",
-    qualityAssured: "جودة مضمونة", // Added missing key
-    isoCertified: "معتمد من الآيزو",     // Added missing key
-    awardWinning: "حائز على جوائز",     // Added missing key
-    excellenceInHealthcare: "التميز في الرعاية الصحية", // Added missing key
+    qualityAssured: "جودة مضمونة",
+    isoCertified: "معتمد من الآيزو",
+    awardWinning: "حائز على جوائز",
+    excellenceInHealthcare: "التميز في الرعاية الصحية",
 
     // Services Section (Home Page Summary)
     whatWeDo: "ما نقدمه",
@@ -349,9 +354,9 @@ export const translations = {
     // New Content from Company Profile
     // Mission & Vision Page
     missionPageTitle: "الرسالة والرؤية",
-    mission: "الرسالة", // Added missing key
+    mission: "الرسالة",
     missionContent: "في سدرة ميد، مهمتنا هي تمكين مقدمي الرعاية الصحية في جميع أنحاء المملكة العربية السعودية من خلال تقديم الدعم الاستراتيجي والتشغيلي والتقني لضمان نجاح المشاريع الصحية. نحن ملتزمون بتحويل تقديم الخدمات الطبية من خلال تمكين التميز في البنية التحتية والخدمات الصحية.",
-    vision: "الرؤية", // Added missing key
+    vision: "الرؤية",
     visionContent: "أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية. معترف بنا للابتكار والموثوقية وقدرتنا على تحقيق نتائج ناجحة لمقدمي الرعاية الصحية والمستثمرين والمجتمع.",
 
     // Who We Are Page
@@ -396,6 +401,11 @@ export const translations = {
     serviceCategory4Title: "الجاهزية التشغيلية والاستشارات الاستراتيجية",
     serviceCategory4Item1: "تنسيق التوظيف وتطوير إجراءات التشغيل القياسية",
     serviceCategory4Item2: "نمذجة الأعمال واستراتيجيات الاستثمار",
+
+    // Not Found Page
+    pageNotFoundTitle: "الصفحة غير موجودة",
+    pageNotFoundDescription: "عذراً! الصفحة التي تبحث عنها غير موجودة.",
+    returnToHome: "العودة إلى الرئيسية",
   },
 };
 
