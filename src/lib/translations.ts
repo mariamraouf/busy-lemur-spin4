@@ -186,6 +186,7 @@ export const translations = {
     teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.",
 
     // Our Services Page (Detailed Content)
+    ourServicesPageTitle: "Our Comprehensive Healthcare Services", // Added this line
     ourServicesPageDescription: "Sidra Med offers practical, strategic, and technical support across all stages of healthcare project development. Whether you're launching a new clinic, upgrading an existing hospital, managing healthcare investments, or planning for long-term operations, we provide the tools and expertise to ensure success.",
 
     projectTechnicalSupportTitle: "Project & Technical Support",
@@ -483,6 +484,7 @@ export const translations = {
     teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
 
     // Our Services Page (Detailed Content)
+    ourServicesPageTitle: "خدماتنا الشاملة للرعاية الصحية", // Added this line
     ourServicesPageDescription: "تقدم سدرة ميد الدعم العملي والاستراتيجي والتقني في جميع مراحل تطوير مشاريع الرعاية الصحية. سواء كنت تطلق عيادة جديدة، أو تقوم بترقية مستشفى قائم، أو تدير استثمارات الرعاية الصحية، أو تخطط للعمليات طويلة الأجل، فإننا نوفر الأدوات والخبرة لضمان النجاح.",
 
     projectTechnicalSupportTitle: "الدعم الفني للمشاريع",
