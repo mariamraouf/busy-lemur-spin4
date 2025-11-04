@@ -15,7 +15,7 @@ const SuccessStoriesSection = () => {
         { label: t('diagnosticCenterLaunchStat2'), value: "Imaging" },
         { label: t('diagnosticCenterLaunchStat3'), value: "Compliance" },
       ],
-      image: "https://picsum.photos/seed/diagnostic/800/600", // Updated image
+      image: "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Medical imaging/diagnostic center
       alt: "Advanced Diagnostic Center",
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
@@ -29,7 +29,7 @@ const SuccessStoriesSection = () => {
         { label: t('clinicNetworkOptimizationStat2'), value: "EMR" },
         { label: t('clinicNetworkOptimizationStat3'), value: "High" },
       ],
-      image: "https://picsum.photos/seed/clinic/800/600", // Updated image
+      image: "https://images.unsplash.com/photo-1532187863566-d0156217165a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Modern clinic interior/network
       alt: "Regional Clinic Network",
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
@@ -43,7 +43,7 @@ const SuccessStoriesSection = () => {
         { label: t('internationalMarketEntryStat2'), value: "5+" },
         { label: t('internationalMarketEntryStat3'), value: "Full" },
       ],
-      image: "https://picsum.photos/seed/partnership/800/600", // Updated image
+      image: "https://images.unsplash.com/photo-1588702547919-26089e690806?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Business meeting/partnership
       alt: "International Market Entry",
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
@@ -88,7 +88,7 @@ const SuccessStoriesSection = () => {
                 </div>
               </div>
               <div className="p-6">
-                <p className="text-gray-700 mb-6 leading-relaxed text-base">{story.description}</p> {/* Added text-base for consistent body text size */}
+                <p className="text-gray-700 mb-6 leading-relaxed text-base">{story.description}</p>
                 <div className="grid grid-cols-3 gap-4 text-center">
                   {story.stats.map((stat, statIndex) => (
                     <div key={statIndex} className="p-4 bg-gray-100 rounded-xl">

@@ -18,6 +18,10 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ['Poppins', 'sans-serif'], // Default for English
+        arabic: ['Tajawal', 'sans-serif'], // Specific for Arabic
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
