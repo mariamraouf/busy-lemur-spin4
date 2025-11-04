@@ -24,6 +24,13 @@ const PartnersPage = () => {
     { name: t('partnerKingsCollegeHospital'), logo: "/partners/kings-college-hospital.png" },
     { name: t('partnerItqan'), logo: "/partners/itqan.png" },
     { name: t('partnerFizik'), logo: "/partners/fizik.png" },
+    { name: t('partnerDrSolimanFakeehHospital'), logo: "/partners/dr-soliman-fakeeh-hospital.png" }, // NEW
+    { name: t('partnerInma'), logo: "/partners/inma.png" }, // NEW
+    { name: t('partnerBClinic'), logo: "/partners/b-clinic.png" }, // NEW
+    { name: t('partnerKPMG'), logo: "/partners/kpmg.png" }, // NEW
+    { name: t('partnerPVR'), logo: "/partners/pvr.png" }, // NEW
+    { name: t('partnerAllSensesMedicalCenter'), logo: "/partners/all-senses-medical-center.png" }, // NEW
+    { name: t('partnerKidneyCareCenter'), logo: "/partners/kidney-care-center.png" }, // NEW
   ];
 
   const partnersFaqs = [

@@ -192,9 +192,11 @@ export const translations = {
     teamRole2: "Clinical & Operations Experts",
     team2Description: "Seasoned healthcare professionals ensuring operational excellence and clinical best practices.",
     teamRole3: "Healthcare Architects & Engineers",
-    teamRole3Description: "Specialists in healthcare facility design, construction, and regulatory compliance.",
+    team3Description: "Specialists in healthcare facility design, construction, and regulatory compliance.",
     teamRole4: "Strategic and Financial Analysts",
-    teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.",
+    team4Description: "Professionals ensuring project viability and long-term financial sustainability.",
+    teamRole3Description: "Specialists in healthcare facility design, construction, and regulatory compliance.", // NEW
+    teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.", // NEW
 
     // Our Services Page (Detailed Content)
     ourServicesPageTitle: "Our Comprehensive Healthcare Services", // Added this line
@@ -397,6 +399,13 @@ export const translations = {
     partnerKingsCollegeHospital: "King's College Hospital London",
     partnerItqan: "Itqan",
     partnerFizik: "Fizik Physical Therapy & Rehabilitation",
+    partnerDrSolimanFakeehHospital: "Dr. Soliman Fakeeh Hospital", // NEW
+    partnerInma: "Inma", // NEW
+    partnerBClinic: "B Clinic", // NEW
+    partnerKPMG: "KPMG", // NEW
+    partnerPVR: "PVR", // NEW
+    partnerAllSensesMedicalCenter: "All Senses Medical Center", // NEW
+    partnerKidneyCareCenter: "Kidney Care Center", // NEW
 
     // Partners Page
     partnersPageTitle: "Our Esteemed Partners",
@@ -611,9 +620,11 @@ export const translations = {
     teamRole2: "خبراء العمليات السريرية والتشغيلية",
     team2Description: "متخصصون في الرعاية الصحية ذوو خبرة يضمنون التميز التشغيلي وأفضل الممارسات السريرية.",
     teamRole3: "مهندسو ومعماريو الرعاية الصحية",
-    teamRole3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.",
+    team3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.",
     teamRole4: "المحللون الاستراتيجيون والماليون",
-    teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
+    team4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
+    teamRole3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.", // NEW
+    teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.", // NEW
 
     // Our Services Page (Detailed Content)
     ourServicesPageTitle: "خدماتنا الشاملة للرعاية الصحية", // Added this line
@@ -714,46 +725,46 @@ export const translations = {
     aboutUsFaqA6: "نعم، نحن نقدم دعماً تشغيلياً مستمراً وخدمات تحسين لضمان النجاح والاستدامة على المدى الطويل للمنشآت الصحية.",
 
     // Mission & Vision Page FAQs
-    missionVisionFaqQ1: "ما هي رسالة سدرة ميد؟",
-    missionVisionFaqA1: "رسالتنا هي تمكين مقدمي الرعاية الصحية في جميع أنحاء المملكة العربية السعودية من خلال تقديم الدعم الاستراتيجي والتشغيلي والتقني لضمان نجاح المشاريع الصحية وتحويل تقديم الخدمات الطبية.",
-    missionVisionFaqQ2: "ما هي رؤية سدرة ميد للمستقبل؟",
-    missionVisionFaqA2: "رؤيتنا هي أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية، معترف بنا للابتكار والموثوقية وقدرتنا على تحقيق نتائج ناجحة لمقدمي الرعاية الصحية والمستثمرين والمجتمع.",
-    missionVisionFaqQ3: "كيف توجه الرسالة العمليات اليومية؟",
-    missionVisionFaqA3: "رسالتنا تدفع كل قرار، مما يضمن تركيزنا على تمكين العملاء وتقديم التميز في تنفيذ مشاريع الرعاية الصحية.",
-    missionVisionFaqQ4: "ما هي الأهداف طويلة المدى لرؤية سدرة ميد؟",
-    missionVisionF4: "الأهداف طويلة المدى لرؤية سدرة ميد هي الابتكار المستمر، وتوسيع تأثيرنا، ووضع معايير جديدة لتقديم مشاريع الرعاية الصحية في المنطقة.",
-    missionVisionFaqQ5: "كيف تقيس سدرة ميد النجاح مقابل رسالتها ورؤيتها؟",
-    missionVisionFaqA5: "يتم قياس النجاح من خلال رضا العملاء، ونتائج المشاريع، والامتثال التنظيمي، والتأثير الإيجابي على خدمات الرعاية الصحية في المملكة العربية السعودية.",
-    missionVisionFaqQ6: "هل يتم مراجعة الرسالة والرؤية بانتظام؟",
-    missionVisionFaqA6: "نعم، يقوم فريق القيادة لدينا بمراجعة وتحديث رسالتنا ورؤيتنا بانتظام لضمان بقائها ذات صلة وملهمة.",
+    missionVisionFaqQ1: "What is Sidra Med's mission?",
+    missionVisionFaqA1: "Our mission is to empower healthcare providers across Saudi Arabia by delivering strategic, operational, and technical support to ensure the success of healthcare projects and transform medical service delivery.",
+    missionVisionFaqQ2: "What is Sidra Med's vision for the future?",
+    missionVisionFaqA2: "Our vision is to be the leading healthcare project delivery partner in Saudi Arabia. Recognized for innovation, reliability, and our ability to enable successful outcomes for healthcare providers, investors, and the community.",
+    missionVisionFaqQ3: "How does the mission guide daily operations?",
+    missionVisionFaqA3: "Our mission drives every decision, ensuring we focus on empowering clients and delivering excellence in healthcare project execution.",
+    missionVisionFaqQ4: "What are the long-term goals of Sidra Med's vision?",
+    missionVisionF4: "The long-term goals of Sidra Med's vision are to continuously innovate, expand our impact, and set new benchmarks for healthcare project delivery in the region.",
+    missionVisionFaqQ5: "How does Sidra Med measure success against its mission and vision?",
+    missionVisionFaqA5: "Success is measured by client satisfaction, project outcomes, regulatory compliance, and the positive impact on healthcare services in Saudi Arabia.",
+    missionVisionFaqQ6: "Is the mission and vision regularly reviewed?",
+    missionVisionFaqA6: "Yes, our leadership team regularly reviews and updates our mission and vision to ensure they remain relevant and inspiring.",
 
     // Our Values Page FAQs
-    ourValuesFaqQ1: "ما هي المبادئ التوجيهية لسدرة ميد؟",
-    ourValuesFaqA1: "مبادئنا التوجيهية هي النزاهة والاحترافية، التعاون، الابتكار، والتميز، والتي تدفع التزامنا بالجودة والسلوك الأخلاقي.",
-    ourValuesFaqQ2: "كيف تعزز سدرة ميد التعاون؟",
-    ourValuesFaqA2: "نؤمن بقوة الشراكات والعمل الجماعي متعدد التخصصات، ونسعى بنشاط للجمع بين نقاط القوة مع الشركاء المتخصصين لتقديم مشاريع شاملة.",
-    ourValuesFaqQ3: "كيف يتم الحفاظ على النزاهة في جميع المشاريع؟",
-    ourValuesFaqA3: "من خلال التواصل الشفاف، واتخاذ القرارات الأخلاقية، والالتزام الصارم بالمعايير واللوائح المهنية.",
-    ourValuesFaqQ4: "ما هو الدور الذي يلعبه الابتكار في خدمات سدرة ميد؟",
-    ourValuesFaqA4: "الابتكار هو مفتاح نهجنا، حيث نسعى باستمرار لإيجاد طرق أذكى وأكثر كفاءة وتطوراً تكنولوجياً لتقديم حلول الرعاية الصحية.",
-    ourValuesFaqQ5: "كيف تضمن سدرة ميد التميز في خدماتها؟",
-    ourValuesFaqA5: "من خلال الحفاظ على معايير عالية في التخطيط والتنفيذ والتحسين المستمر، مما يضمن أن كل مشروع يلبي أو يتجاوز توقعات العميل.",
-    ourValuesFaqQ6: "هل يتم مشاركة هذه القيم مع الشركاء؟",
-    ourValuesFaqA6: "نعم، نحن نسعى بنشاط إلى الشركاء الذين يشاركوننا قيمنا الأساسية لضمان بيئة تعاونية متماسكة وفعالة.",
+    ourValuesFaqQ1: "What are the guiding principles of Sidra Med?",
+    ourValuesFaqA1: "Our guiding principles are Integrity & Professionalism, Collaboration, Innovation, and Excellence, which drive our commitment to quality and ethical conduct.",
+    ourValuesFaqQ2: "How does Sidra Med foster collaboration?",
+    ourValuesFaqA2: "We believe in the power of partnerships and interdisciplinary teamwork, actively seeking to combine strengths with specialized partners for comprehensive project delivery.",
+    ourValuesFaqQ3: "How is integrity maintained in all projects?",
+    ourValuesFaqA3: "Through transparent communication, ethical decision-making, and strict adherence to professional standards and regulations.",
+    ourValuesFaqQ4: "What role does innovation play in Sidra Med's services?",
+    ourValuesFaqA4: "Innovation is key to our approach, as we continuously seek smarter, more efficient, and technologically advanced ways to deliver healthcare solutions.",
+    ourValuesFaqQ5: "How does Sidra Med ensure excellence in its services?",
+    ourValuesFaqA5: "By maintaining high standards in planning, execution, and continuous improvement, ensuring every project meets or exceeds client expectations.",
+    ourValuesFaqQ6: "Are these values shared with partners?",
+    ourValuesFaqA6: "Yes, we actively seek partners who share our core values to ensure a cohesive and effective collaborative environment.",
 
     // Our Team Page FAQs
-    ourTeamFaqQ1: "ما نوع الخبراء الموجودين في فريق سدرة ميد؟",
-    ourTeamFaqA1: "يتألف فريقنا من مديري مشاريع الرعاية الصحية، وخبراء العمليات السريرية والتشغيلية، ومهندسي ومعماريي الرعاية الصحية، والمحللين الاستراتيجيين والماليين، وجميعهم مكرسون لنجاح المشروع.",
-    ourTeamFaqQ2: "كيف تضمن سدرة ميد التميز التشغيلي؟",
-    ourTeamFaqA2: "يضمن خبراء العمليات السريرية والتشغيلية لدينا، جنباً إلى جنب مع مديري المشاريع لدينا، دمج التميز التشغيلي وأفضل الممارسات السريرية في كل مشروع.",
-    ourTeamFaqQ3: "ما هو مستوى خبرة فريق سدرة ميد؟",
-    ourTeamFaqA3: "يتمتع أعضاء فريقنا بخبرة واسعة من مختلف قطاعات صناعة الرعاية الصحية، محلياً ودولياً.",
-    ourTeamFaqQ4: "كيف يظل الفريق على اطلاع دائم باتجاهات الصناعة؟",
-    ourTeamFaqA4: "من خلال التطوير المهني المستمر، والمشاركة في المؤتمرات الصناعية، والمشاركة النشطة في ابتكارات الرعاية الصحية.",
-    ourTeamFaqQ5: "هل يضم فريق سدرة ميد متخصصين في مجالات طبية محددة؟",
-    ourTeamFaqA5: "نعم، تشمل شبكتنا متخصصين في مختلف المجالات الطبية، مما يتيح لنا تكييف الخبرة لتلبية متطلبات المشروع المحددة.",
-    ourTeamFaqQ6: "كيف تعزز سدرة ميد العمل الجماعي والتعاون داخل فريقها؟",
-    ourTeamFaqA6: "نحن نعزز ثقافة التعاون من خلال المشاريع متعددة الوظائف، وجلسات تبادل المعرفة المنتظمة، وأنشطة بناء الفريق.",
+    ourTeamFaqQ1: "What kind of experts are on the Sidra Med team?",
+    ourTeamFaqA1: "Our team comprises Healthcare Project Managers, Clinical & Operations Experts, Healthcare Architects & Engineers, and Strategic and Financial Analysts, all dedicated to project success.",
+    ourTeamFaqQ2: "How does Sidra Med ensure operational excellence?",
+    ourTeamFaqA2: "Our Clinical & Operations Experts, along with our Project Managers, ensure operational excellence and clinical best practices are integrated into every project.",
+    ourTeamFaqQ3: "What is the experience level of Sidra Med's team?",
+    ourTeamFaqA3: "Our team members bring extensive experience from various sectors of the healthcare industry, both locally and internationally.",
+    ourTeamFaqQ4: "How does the team stay updated with industry trends?",
+    ourTeamFaqA4: "Through continuous professional development, participation in industry conferences, and active engagement with healthcare innovation.",
+    ourTeamFaqQ5: "Does Sidra Med's team include specialists for specific medical fields?",
+    ourTeamFaqA5: "Yes, our network includes specialists across various medical fields, allowing us to tailor expertise to specific project requirements.",
+    ourTeamFaqQ6: "How does Sidra Med foster teamwork and collaboration within its team?",
+    ourTeamFaqA6: "We promote a collaborative culture through cross-functional projects, regular knowledge sharing sessions, and team-building activities.",
 
     // Not Found Page
     pageNotFoundTitle: "Page Not Found",
@@ -770,37 +781,37 @@ export const translations = {
       { title: "Order information", details: "Examples of Personal Information collected: name, billing address, shipping address, payment information (including credit card numbers), email address, and phone number. Purpose of collection: to provide products or services to you to fulfill our contract, to process your payment information, arrange for shipping, and provide you with invoices and/or order confirmations, communicate with you, screen our orders for potential risk or fraud, and when in line with the preferences you have shared with us, provide you with information or advertising relating to our products or services. Source of collection: collected from you." },
       { title: "Customer support information", details: "Examples of Personal Information collected: name, email, phone number, and inquiry details. Purpose of collection: to provide customer support. Source of collection: collected from you." }
     ],
-    privacyPolicySharingTitle: "Sharing Personal Information",
-    privacyPolicySharingContent: "We share your Personal Information with service providers to help us provide our services and fulfill our contracts with you, as described above. For example:",
+    privacyPolicySharingTitle: "مشاركة المعلومات الشخصية",
+    privacyPolicySharingContent: "نشارك معلوماتك الشخصية مع مزودي الخدمة لمساعدتنا في تقديم خدماتنا والوفاء بعقودنا معك، كما هو موضح أعلاه. على سبيل المثال:",
     privacyPolicySharingExamples: [
-      "We use Google Analytics to help us understand how our customers use the Site. You can read more about how Google uses your Personal Information here: https://policies.google.com/privacy?hl=en.",
-      "We may share your Personal Information to comply with applicable laws and regulations, to respond to a subpoena, search warrant or other lawful request for information we receive, or to otherwise protect our rights."
+      "نستخدم Google Analytics لمساعدتنا في فهم كيفية استخدام عملائنا للموقع. يمكنك قراءة المزيد حول كيفية استخدام Google لمعلوماتك الشخصية هنا: https://policies.google.com/privacy?hl=ar.",
+      "قد نشارك معلوماتك الشخصية للامتثال للقوانين واللوائح المعمول بها، أو للاستجابة لأمر استدعاء أو أمر تفتيش أو طلب قانوني آخر للمعلومات التي نتلقاها، أو لحماية حقوقنا بأي طريقة أخرى."
     ],
-    privacyPolicyYourRightsTitle: "Your Rights",
-    privacyPolicyYourRightsContent: "If you are a resident of the KSA, you have the right to access the Personal Information we hold about you, to port it to a new service, and to ask that your Personal Information be corrected, updated, or erased. If you would like to exercise this right, please contact us through the contact information below.",
-    privacyPolicyChangesTitle: "Changes",
-    privacyPolicyChangesContent: "We may update this Privacy Policy from time to time in order to reflect, for example, changes to our practices or for other operational, legal, or regulatory reasons.",
-    privacyPolicyContactTitle: "Contact",
-    privacyPolicyContactContent: "For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by e-mail at amad@sidramed.com.sa.",
+    privacyPolicyYourRightsTitle: "حقوقك",
+    privacyPolicyYourRightsContent: "إذا كنت مقيمًا في المملكة العربية السعودية، فلديك الحق في الوصول إلى المعلومات الشخصية التي نحتفظ بها عنك، ونقلها إلى خدمة جديدة، وطلب تصحيح معلوماتك الشخصية أو تحديثها أو مسحها. إذا كنت ترغب في ممارسة هذا الحق، يرجى الاتصال بنا من خلال معلومات الاتصال أدناه.",
+    privacyPolicyChangesTitle: "التغييرات",
+    privacyPolicyChangesContent: "قد نقوم بتحديث سياسة الخصوصية هذه من وقت لآخر لتعكس، على سبيل المثال، التغييرات في ممارساتنا أو لأسباب تشغيلية أو قانونية أو تنظيمية أخرى.",
+    privacyPolicyContactTitle: "الاتصال",
+    privacyPolicyContactContent: "لمزيد من المعلومات حول ممارسات الخصوصية لدينا، إذا كانت لديك أسئلة، أو إذا كنت ترغب في تقديم شكوى، يرجى الاتصال بنا عبر البريد الإلكتروني على amad@sidramed.com.sa.",
 
-    termsOfServicePageTitle: "Terms of Service",
-    termsOfServiceIntro: "Please read these Terms of Service carefully before accessing or using our website. By accessing or using any part of the site, you agree to be bound by these Terms of Service. If you do not agree to all the terms and conditions of this agreement, then you may not access the website or use any services.",
-    termsOfServiceSection1Title: "1. General Conditions",
-    termsOfServiceSection1Content: "We reserve the right to refuse service to anyone for any reason at any time. You understand that your content (not including credit card information), may be transferred unencrypted and involve (a) transmissions over various networks; and (b) changes to conform and adapt to technical requirements of connecting networks or devices. Credit card information is always encrypted during transfer over networks. You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion of the Service, use of the Service, or access to the Service or any contact on the website through which the service is provided, without express written permission by us.",
-    termsOfServiceSection2Title: "2. Accuracy, Completeness and Timeliness of Information",
-    termsOfServiceSection2Content: "We are not responsible if information made available on this site is not accurate, complete or current. The material on this site is provided for general information only and should not be relied upon or used as the sole basis for making decisions without consulting primary, more accurate, more complete or more timely sources of information. Any reliance on the material on this site is at your own risk. This site may contain certain historical information. Historical information, necessarily, is not current and is provided for your reference only. We reserve the right to modify the contents of this site at any time, but we have no obligation to update any information on our site. You agree that it is your responsibility to monitor changes to our site.",
-    termsOfServiceSection3Title: "3. Modifications to the Service and Prices",
-    termsOfServiceSection3Content: "Prices for our services are subject to change without notice. We reserve the right at any time to modify or discontinue the Service (or any part or content thereof) without notice at any time. We shall not be liable to you or to any third-party for any modification, price change, suspension or discontinuance of the Service.",
-    termsOfServiceSection4Title: "4. Third-Party Links",
-    termsOfServiceSection4Content: "Certain content, products and services available via our Service may include materials from third-parties. Third-party links on this site may direct you to third-party websites that are not affiliated with us. We are not responsible for examining or evaluating the content or accuracy and we do not warrant and will not have any liability or responsibility for any third-party materials or websites, or for any other materials, products, or services of third-parties. We are not liable for any harm or damages related to the purchase or use of goods, services, resources, content, or any other transactions made in connection with any third-party websites. Please review carefully the third-party's policies and practices and make sure you understand them before you engage in any transaction. Complaints, claims, concerns, or questions regarding third-party products should be directed to the third-party.",
-    termsOfServiceSection5Title: "5. User Comments, Feedback and Other Submissions",
-    termsOfServiceSection5Content: "If, at our request, you send certain specific submissions (for example contest entries) or without a request from us you send creative ideas, suggestions, proposals, plans, or other materials, whether online, by email, by postal mail, or otherwise (collectively, 'comments'), you agree that we may, at any time, without restriction, edit, copy, publish, distribute, translate and otherwise use in any medium any comments that you forward to us. We are and shall be under no obligation (1) to maintain any comments in confidence; (2) to pay compensation for any comments; or (3) to respond to any comments. We may, but have no obligation to, monitor, edit or remove content that we determine in our sole discretion are unlawful, offensive, threatening, libelous, defamatory, pornographic, obscene or otherwise objectionable or violates any party’s intellectual property or these Terms of Service. You agree that your comments will not violate any right of any third-party, including copyright, trademark, privacy, personality or other personal or proprietary right. You further agree that your comments will not contain libelous or otherwise unlawful, abusive or obscene material, or contain any computer virus or other malware that could in any way affect the operation of the Service or any related website. You may not use a false e-mail address, pretend to be someone other than yourself, or otherwise mislead us or third-parties as to the origin of any comments. You are solely responsible for any comments you make and their accuracy. We take no responsibility and assume no liability for any comments posted by you or any third-party.",
-    termsOfServiceSection6Title: "6. Disclaimer of Warranties; Limitation of Liability",
-    termsOfServiceSection6Content: "We do not guarantee, represent or warrant that your use of our service will be uninterrupted, timely, secure or error-free. We do not warrant that the results that may be obtained from the use of the service will be accurate or reliable. You agree that from time to time we may remove the service for indefinite periods of time or cancel the service at any time, without notice to you. You expressly agree that your use of, or inability to use, the service is at your sole risk. The service and all products and services delivered to you through the service are (except as expressly stated by us) provided 'as is' and 'as available' for your use, without any representation, warranties or conditions of any kind, either express or implied, including all implied warranties or conditions of merchantability, merchantable quality, fitness for a particular purpose, durability, title, and non-infringement. In no case shall Sidra Med, our directors, officers, employees, affiliates, agents, contractors, interns, suppliers, service providers or licensors be liable for any injury, loss, claim, or any direct, indirect, incidental, punitive, special, or consequential damages of any kind, including, without limitation lost profits, lost revenue, lost savings, loss of data, replacement costs, or any similar damages, whether based in contract, tort (including negligence), strict liability or otherwise, arising from your use of any of the service or any products procured using the service, or for any other claim related in any way to your use of the service or any product, including, but not limited to, any errors or omissions in any content, or any loss or damage of any kind incurred as a result of the use of the service or any content (or product) posted, transmitted, or otherwise made available via the service, even if advised of their possibility. Because some states or jurisdictions do not allow the exclusion or the limitation of liability for consequential or incidental damages, in such states or jurisdictions, our liability shall be limited to the maximum extent permitted by law.",
-    termsOfServiceSection7Title: "7. Governing Law",
-    termsOfServiceSection7Content: "These Terms of Service and any separate agreements whereby we provide you Services shall be governed by and construed in accordance with the laws of Saudi Arabia.",
-    termsOfServiceSection8Title: "8. Contact Information",
-    termsOfServiceSection8Content: "Questions about the Terms of Service should be sent to us at amad@sidramed.com.sa.",
+    termsOfServicePageTitle: "شروط الخدمة",
+    termsOfServiceIntro: "يرجى قراءة شروط الخدمة هذه بعناية قبل الوصول إلى موقعنا أو استخدامه. من خلال الوصول إلى أي جزء من الموقع أو استخدامه، فإنك توافق على الالتزام بشروط الخدمة هذه. إذا كنت لا توافق على جميع شروط وأحكام هذه الاتفاقية، فلا يجوز لك الوصول إلى الموقع أو استخدام أي خدمات.",
+    termsOfServiceSection1Title: "1. الشروط العامة",
+    termsOfServiceSection1Content: "نحتفظ بالحق في رفض الخدمة لأي شخص لأي سبب في أي وقت. أنت تدرك أن المحتوى الخاص بك (باستثناء معلومات بطاقة الائتمان)، قد يتم نقله غير مشفر ويتضمن (أ) عمليات نقل عبر شبكات مختلفة؛ و (ب) تغييرات للتوافق والتكيف مع المتطلبات الفنية لشبكات أو أجهزة الاتصال. يتم دائمًا تشفير معلومات بطاقة الائتمان أثناء النقل عبر الشبكات. أنت توافق على عدم إعادة إنتاج أو تكرار أو نسخ أو بيع أو إعادة بيع أو استغلال أي جزء من الخدمة، أو استخدام الخدمة، أو الوصول إلى الخدمة أو أي اتصال على الموقع الذي يتم من خلاله تقديم الخدمة، دون إذن كتابي صريح منا.",
+    termsOfServiceSection2Title: "2. دقة واكتمال وتوقيت المعلومات",
+    termsOfServiceSection2Content: "نحن لسنا مسؤولين إذا كانت المعلومات المتاحة على هذا الموقع غير دقيقة أو كاملة أو حديثة. يتم توفير المواد الموجودة على هذا الموقع للمعلومات العامة فقط ولا ينبغي الاعتماد عليها أو استخدامها كأساس وحيد لاتخاذ القرارات دون استشارة مصادر معلومات أولية أو أكثر دقة أو أكثر اكتمالاً أو في الوقت المناسب. أي اعتماد على المواد الموجودة على هذا الموقع يكون على مسؤوليتك الخاصة. قد يحتوي هذا الموقع على بعض المعلومات التاريخية. المعلومات التاريخية، بالضرورة، ليست حديثة ويتم توفيرها للرجوع إليها فقط. نحتفظ بالحق في تعديل محتويات هذا الموقع في أي وقت، ولكن ليس لدينا أي التزام بتحديث أي معلومات على موقعنا. أنت توافق على أن مسؤوليتك هي مراقبة التغييرات على موقعنا.",
+    termsOfServiceSection3Title: "3. تعديلات على الخدمة والأسعار",
+    termsOfServiceSection3Content: "أسعار خدماتنا قابلة للتغيير دون إشعار. نحتفظ بالحق في أي وقت في تعديل أو إيقاف الخدمة (أو أي جزء أو محتوى منها) دون إشعار في أي وقت. لن نكون مسؤولين تجاهك أو تجاه أي طرف ثالث عن أي تعديل أو تغيير في السعر أو تعليق أو إيقاف للخدمة.",
+    termsOfServiceSection4Title: "4. روابط الطرف الثالث",
+    termsOfServiceSection4Content: "قد تتضمن بعض المحتويات والمنتجات والخدمات المتاحة عبر خدمتنا مواد من أطراف ثالثة. قد توجهك روابط الطرف الثالث على هذا الموقع إلى مواقع ويب تابعة لجهات خارجية غير تابعة لنا. نحن لسنا مسؤولين عن فحص أو تقييم المحتوى أو الدقة ولا نضمن ولن نتحمل أي مسؤولية عن أي مواد أو مواقع ويب تابعة لجهات خارجية، أو عن أي مواد أو منتجات أو خدمات أخرى تابعة لجهات خارجية. نحن لسنا مسؤولين عن أي ضرر أو أضرار تتعلق بشراء أو استخدام السلع أو الخدمات أو الموارد أو المحتوى أو أي معاملات أخرى تتم فيما يتعلق بأي مواقع ويب تابعة لجهات خارجية. يرجى مراجعة سياسيات وممارسات الطرف الثالث بعناية والتأكد من فهمها قبل الدخول في أي معاملة. يجب توجيه الشكاوى أو المطالبات أو المخاوف أو الأسئلة المتعلقة بمنتجات الطرف الثالث إلى الطرف الثالث.",
+    termsOfServiceSection5Title: "5. تعليقات المستخدمين والملاحظات والتقديمات الأخرى",
+    termsOfServiceSection5Content: "إذا قمت، بناءً على طلبنا، بإرسال بعض التقديمات المحددة (على سبيل المثال إدخالات المسابقة) أو بدون طلب منا، أرسلت أفكارًا إبداعية أو اقتراحات أو مقترحات أو خططًا أو مواد أخرى، سواء عبر الإنترنت أو عبر البريد الإلكتروني أو عبر البريد العادي أو غير ذلك (يُشار إليها إجمالاً باسم 'التعليقات')، فإنك توافق على أنه يجوز لنا، في أي وقت، دون قيود، تحرير أو نسخ أو نشر أو توزيع أو ترجمة أو استخدام بأي طريقة أخرى في أي وسيط أي تعليقات ترسلها إلينا. نحن ولسنا ملزمين (1) بالحفاظ على سرية أي تعليقات؛ (2) بدفع تعويض عن أي تعليقات؛ أو (3) بالرد على أي تعليقات. يجوز لنا، ولكن ليس لدينا أي التزام، بمراقبة أو تحرير أو إزالة المحتوى الذي نحدده وفقًا لتقديرنا الخاص بأنه غير قانوني أو مسيء أو مهدد أو تشهيري أو افترائي أو إباحي أو فاحش أو غير مقبول بأي شكل آخر أو ينتهك الملكية الفكرية لأي طرف أو شروط الخدمة هذه. أنت توافق على أن تعليقاتك لن تنتهك أي حق لأي طرف ثالث، بما في ذلك حقوق الطبع والنشر أو العلامات التجارية أو الخصوصية أو الشخصية أو أي حق شخصي أو ملكية آخر. أنت توافق كذلك على أن تعليقاتك لن تحتوي على مواد تشهيرية أو غير قانونية أو مسيئة أو فاحشة بأي شكل آخر، أو تحتوي على أي فيروس كمبيوتر أو برامج ضارة أخرى يمكن أن تؤثر بأي شكل من الأشكال على تشغيل الخدمة أو أي موقع ويب ذي صلة. لا يجوز لك استخدام عنوان بريد إلكتروني مزيف، أو التظاهر بأنك شخص آخر غير نفسك، أو تضليلنا أو تضليل أطراف ثالثة بأي شكل آخر فيما يتعلق بأصل أي تعليقات. أنت وحدك المسؤول عن أي تعليقات تقوم بها ودقتها. نحن لا نتحمل أي مسؤولية ولا نتحمل أي التزام عن أي تعليقات تنشرها أنت أو أي طرف ثالث.",
+    termsOfServiceSection6Title: "6. إخلاء المسؤولية عن الضمانات؛ تحديد المسؤولية",
+    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المناسب أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدك. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، ولكن لا تقتصر على، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
+    termsOfServiceSection7Title: "7. القانون الحاكم",
+    termsOfServiceSection7Content: "تخضع شروط الخدمة هذه وأي اتفاقيات منفصلة نقدم لك بموجبها الخدمات وتفسر وفقًا لقوانين المملكة العربية السعودية.",
+    termsOfServiceSection8Title: "8. معلومات الاتصال",
+    termsOfServiceSection8Content: "يجب إرسال الأسئلة حول شروط الخدمة إلينا على amad@sidramed.com.sa.",
 
     // New Partner Names
     partnerNoorAlAin: "شركة نور العين للخدمات الطبية",
@@ -816,6 +827,13 @@ export const translations = {
     partnerKingsCollegeHospital: "مستشفى كينغز كوليدج لندن",
     partnerItqan: "إتقان",
     partnerFizik: "فيزيك للعلاج الطبيعي والتأهيل",
+    partnerDrSolimanFakeehHospital: "مستشفى د.سليمان فقيه", // NEW
+    partnerInma: "إنماء", // NEW
+    partnerBClinic: "بي كلينك", // NEW
+    partnerKPMG: "كي بي إم جي", // NEW
+    partnerPVR: "بي في آر", // NEW
+    partnerAllSensesMedicalCenter: "مركز كل الحواس الطبي", // NEW
+    partnerKidneyCareCenter: "مركز العناية بالكلى", // NEW
 
     // Partners Page
     partnersPageTitle: "شركاؤنا الكرام",
