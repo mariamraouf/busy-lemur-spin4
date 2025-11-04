@@ -228,13 +228,13 @@ export const translations = {
 
     ourApproachTitle: "Our Approach",
     approachStep1Title: "1. Assess",
-    approach1Description: "We evaluate your unique needs and project requirements.", // Corrected key name
+    approachStep1Description: "We evaluate your unique needs and project requirements.",
     approachStep2Title: "2. Plan",
-    approach2Description: "We create a tailored strategy with the right service mix.", // Corrected key name
+    approachStep2Description: "We create a tailored strategy with the right service mix.",
     approachStep3Title: "3. Execute",
-    approach3Description: "We implement solutions with our expert team and partners.", // Corrected key name
+    approachStep3Description: "We implement solutions with our expert team and partners.",
     approachStep4Title: "4. Optimize",
-    approach4Description: "We continuously improve and adapt to ensure lasting success.", // Corrected key name
+    approachStep4Description: "We continuously improve and adapt to ensure lasting success.",
 
     needCustomSolution: "Need a customized solution for your healthcare project?",
     contactUsToday: "Contact us today to discuss your specific needs and how we can help.",
@@ -253,10 +253,42 @@ export const translations = {
     faqQ5: "How can I get a consultation for my project?",
     faqA5: "You can easily get a consultation by visiting our Contact Us section and filling out the inquiry form, or by reaching out to us directly via email or phone. We look forward to discussing your specific needs.",
 
+    // Home Page FAQs
+    homeFaqQ1: "What makes Sidra Med unique in the Saudi healthcare market?",
+    homeFaqA1: "Sidra Med combines deep local market insight with international best practices, offering tailored solutions for healthcare project success in Saudi Arabia. Our consortium network provides end-to-end support.",
+    homeFaqQ2: "How can Sidra Med help with my healthcare investment?",
+    homeFaqA2: "We assist investors from initial concept to operational readiness, ensuring regulatory alignment, strategic planning, and sustainable outcomes for hospitals, clinics, and other medical facilities.",
+
+    // About Us Page FAQs
+    aboutUsFaqQ1: "What is Sidra Med's core expertise?",
+    aboutUsFaqA1: "Our core expertise lies in strategic, operational, and technical support for healthcare projects, integrating medical knowledge, engineering excellence, and operational execution.",
+    aboutUsFaqQ2: "How does Sidra Med contribute to Saudi Vision 2030?",
+    aboutUsFaqA2: "We align our projects with Saudi Vision 2030 healthcare priorities, focusing on transforming medical service delivery and enabling excellence in healthcare infrastructure and services.",
+
+    // Mission & Vision Page FAQs
+    missionVisionFaqQ1: "What is Sidra Med's mission?",
+    missionVisionFaqA1: "Our mission is to empower healthcare providers across Saudi Arabia by delivering strategic, operational, and technical support to ensure the success of healthcare projects and transform medical service delivery.",
+    missionVisionFaqQ2: "What is Sidra Med's vision for the future?",
+    missionVisionFaqA2: "Our vision is to be the leading healthcare project delivery partner in Saudi Arabia, recognized for innovation, reliability, and enabling successful outcomes for all stakeholders.",
+
+    // Our Values Page FAQs
+    ourValuesFaqQ1: "What are the guiding principles of Sidra Med?",
+    ourValuesFaqA1: "Our guiding principles are Integrity & Professionalism, Collaboration, Innovation, and Excellence, which drive our commitment to quality and ethical conduct.",
+    ourValuesFaqQ2: "How does Sidra Med foster collaboration?",
+    ourValuesFaqA2: "We believe in the power of partnerships and interdisciplinary teamwork, actively seeking to combine strengths with specialized partners for comprehensive project delivery.",
+
+    // Our Team Page FAQs
+    ourTeamFaqQ1: "What kind of experts are on the Sidra Med team?",
+    ourTeamFaqA1: "Our team comprises Healthcare Project Managers, Clinical & Operations Experts, Healthcare Architects & Engineers, and Strategic and Financial Analysts, all dedicated to project success.",
+    ourTeamFaqQ2: "How does Sidra Med ensure operational excellence?",
+    ourTeamFaqA2: "Our Clinical & Operations Experts, along with our Project Managers, ensure operational excellence and clinical best practices are integrated into every project.",
+
     // Not Found Page
     pageNotFoundTitle: "Page Not Found",
     pageNotFoundDescription: "Oops! The page you are looking for does not exist.",
     returnToHome: "Return to Home",
+    // Dummy change to force TS re-evaluation (v3)
+    _dummyKey: "dummyValue",
   },
   ar: {
     // Navbar
@@ -487,13 +519,13 @@ export const translations = {
 
     ourApproachTitle: "نهجنا",
     approachStep1Title: "1. التقييم",
-    approach1Description: "نقوم بتقييم احتياجاتك ومتطلبات مشروعك الفريدة.", // Corrected key name
+    approachStep1Description: "نقوم بتقييم احتياجاتك ومتطلبات مشروعك الفريدة.",
     approachStep2Title: "2. التخطيط",
-    approach2Description: "ننشئ استراتيجية مخصصة مع المزيج الصحيح من الخدمات.", // Corrected key name
+    approachStep2Description: "ننشئ استراتيجية مخصصة مع المزيج الصحيح من الخدمات.",
     approachStep3Title: "3. التنفيذ",
-    approach3Description: "نقوم بتنفيذ الحلول مع فريق الخبراء والشركاء لدينا.", // Corrected key name
+    approachStep3Description: "نقوم بتنفيذ الحلول مع فريق الخبراء والشركاء لدينا.",
     approachStep4Title: "4. التحسين",
-    approach4Description: "نعمل باستمرار على التحسين والتكيف لضمان النجاح الدائم.", // Corrected key name
+    approachStep4Description: "نعمل باستمرار على التحسين والتكيف لضمان النجاح الدائم.",
 
     needCustomSolution: "هل تحتاج إلى حل مخصص لمشروع الرعاية الصحية الخاص بك؟",
     contactUsToday: "اتصل بنا اليوم لمناقشة احتياجاتك المحددة وكيف يمكننا المساعدة.",
@@ -511,7 +543,36 @@ export const translations = {
     faqA4: "يتضمن نهجنا أربع خطوات رئيسية: التقييم (تقييم الاحتياجات)، التخطيط (تخصيص الاستراتيجية)، التنفيذ (تطبيق الحلول)، والتحسين (التحسين المستمر). وهذا يضمن حلول رعاية صحية موثوقة وقابلة للتطوير ومستدامة.",
     faqQ5: "كيف يمكنني الحصول على استشارة لمشروعي؟",
     faqA5: "يمكنك بسهولة الحصول على استشارة من خلال زيارة قسم اتصل بنا وملء نموذج الاستفسار، أو عن طريق التواصل معنا مباشرة عبر البريد الإلكتروني أو الهاتف. نتطلع إلى مناقشة احتياجاتك المحددة.",
-    ourServicesPageTitle: "خدماتنا", // This key is correctly defined.
+
+    // Home Page FAQs
+    homeFaqQ1: "ما الذي يميز سدرة ميد في سوق الرعاية الصحية السعودي؟",
+    homeFaqA1: "تجمع سدرة ميد بين الرؤية العميقة للسوق المحلي وأفضل الممارسات الدولية، وتقدم حلولاً مخصصة لنجاح مشاريع الرعاية الصحية في المملكة العربية السعودية. توفر شبكة تحالفاتنا دعماً شاملاً من البداية إلى النهاية.",
+    homeFaqQ2: "كيف يمكن لسدرة ميد المساعدة في استثماري في الرعاية الصحية؟",
+    homeFaqA2: "نحن نساعد المستثمرين من المفهوم الأولي إلى الجاهزية التشغيلية، مما يضمن الامتثال التنظيمي والتخطيط الاستراتيجي والنتائج المستدامة للمستشفيات والعيادات والمرافق الطبية الأخرى.",
+
+    // About Us Page FAQs
+    aboutUsFaqQ1: "ما هي الخبرة الأساسية لسدرة ميد؟",
+    aboutUsFaqA1: "تكمن خبرتنا الأساسية في الدعم الاستراتيجي والتشغيلي والفني لمشاريع الرعاية الصحية، ودمج المعرفة الطبية والتميز الهندسي والتنفيذ التشغيلي.",
+    aboutUsFaqQ2: "كيف تساهم سدرة ميد في رؤية السعودية 2030؟",
+    aboutUsFaqA2: "نحن نواءم مشاريعنا مع أولويات رؤية السعودية 2030 للرعاية الصحية، مع التركيز على تحويل تقديم الخدمات الطبية وتمكين التميز في البنية التحتية والخدمات الصحية.",
+
+    // Mission & Vision Page FAQs
+    missionVisionFaqQ1: "ما هي رسالة سدرة ميد؟",
+    missionVisionFaqA1: "رسالتنا هي تمكين مقدمي الرعاية الصحية في جميع أنحاء المملكة العربية السعودية من خلال تقديم الدعم الاستراتيجي والتشغيلي والفني لضمان نجاح المشاريع الصحية وتحويل تقديم الخدمات الطبية.",
+    missionVisionFaqQ2: "ما هي رؤية سدرة ميد للمستقبل؟",
+    missionVisionFaqA2: "رؤيتنا هي أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية، معترف بنا للابتكار والموثوقية وتمكين النتائج الناجحة لجميع أصحاب المصلحة.",
+
+    // Our Values Page FAQs
+    ourValuesFaqQ1: "ما هي المبادئ التوجيهية لسدرة ميد؟",
+    ourValuesFaqA1: "مبادئنا التوجيهية هي النزاهة والاحترافية، التعاون، الابتكار، والتميز، والتي تدفع التزامنا بالجودة والسلوك الأخلاقي.",
+    ourValuesFaqQ2: "كيف تعزز سدرة ميد التعاون؟",
+    ourValuesFaqA2: "نحن نؤمن بقوة الشراكات والعمل الجماعي متعدد التخصصات، ونسعى بنشاط للجمع بين نقاط القوة مع الشركاء المتخصصين لتقديم مشاريع شاملة.",
+
+    // Our Team Page FAQs
+    ourTeamFaqQ1: "ما نوع الخبراء الموجودين في فريق سدرة ميد؟",
+    ourTeamFaqA1: "يتألف فريقنا من مديري مشاريع الرعاية الصحية، وخبراء العمليات السريرية والتشغيلية، ومهندسي ومعماريي الرعاية الصحية، والمحللين الاستراتيجيين والماليين، وجميعهم مكرسون لنجاح المشروع.",
+    ourTeamFaqQ2: "كيف تضمن سدرة ميد التميز التشغيلي؟",
+    ourTeamFaqA2: "يضمن خبراء العمليات السريرية والتشغيلية لدينا، جنباً إلى جنب مع مديري المشاريع لدينا، دمج التميز التشغيلي وأفضل الممارسات السريرية في كل مشروع.",
   },
 };
 

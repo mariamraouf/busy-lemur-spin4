@@ -1,12 +1,6 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion"; // Import shadcn/ui Accordion components
 
 const SuccessStoriesSection = () => {
   const { t } = useLanguage();
@@ -24,6 +18,7 @@ const SuccessStoriesSection = () => {
       ],
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
+      image: "https://images.unsplash.com/photo-1584820927466-09793f96a818?w=800&h=600&fit=crop&q=80&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1920"
     },
     {
       id: "story-2",
@@ -37,6 +32,7 @@ const SuccessStoriesSection = () => {
       ],
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
+      image: "https://images.unsplash.com/photo-1530026405186-ed1f139313f8?w=800&h=600&fit=crop&q=80&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1920"
     },
     {
       id: "story-3",
@@ -50,6 +46,7 @@ const SuccessStoriesSection = () => {
       ],
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
+      image: "https://images.unsplash.com/photo-1584820927466-09793f96a818?w=800&h=600&fit=crop&q=80&auto=format&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&w=1920"
     },
   ];
 
@@ -76,45 +73,49 @@ const SuccessStoriesSection = () => {
           </h2>
         </div>
 
-        <div data-aos="fade-up" data-aos-delay="200">
-          <Accordion type="single" collapsible className="w-full space-y-6">
-            {stories.map((story, index) => (
-              <AccordionItem
-                key={story.id}
-                value={story.id}
-                className="bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl"
-              >
-                <AccordionTrigger className={cn(
-                  "flex items-center justify-between p-8 text-left text-white font-bold text-2xl",
-                  `bg-gradient-to-r ${story.gradientFrom} ${story.gradientTo} transition-all duration-300 rounded-t-3xl`,
-                  "data-[state=open]:rounded-b-none" // Remove bottom border radius when open
-                )}>
-                  <div className="flex flex-col items-start">
-                    <h3 className="text-2xl font-black leading-tight font-sans">
-                      {story.title}
-                    </h3>
-                    <p className="text-lg font-medium flex items-center text-white/90 mt-2 font-sans">
-                      <i className="fas fa-map-marker-alt text-white/70 mr-2"></i> {story.location}
-                    </p>
-                  </div>
-                </AccordionTrigger>
-                <AccordionContent className="p-8 pt-0 bg-white rounded-b-3xl">
-                  <p className="text-gray-800 mb-6 leading-relaxed text-base font-sans">
-                    {story.description}
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+          {stories.map((story, index) => (
+            <div
+              key={story.id}
+              className="group bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              data-aos="fade-up"
+              data-aos-delay={100 * (index + 1)}
+            >
+              <div className="relative h-48 overflow-hidden">
+                <img
+                  src={story.image}
+                  alt={story.title}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className={cn(
+                  "absolute inset-0 bg-gradient-to-br opacity-80 transition-opacity duration-300",
+                  story.gradientFrom, story.gradientTo
+                )}></div>
+                <div className="absolute bottom-4 left-4 right-4 text-white z-10">
+                  <h3 className="text-xl font-black leading-tight mb-1">
+                    {story.title}
+                  </h3>
+                  <p className="text-sm font-medium flex items-center text-white/90">
+                    <i className="fas fa-map-marker-alt text-white/70 mr-2"></i> {story.location}
                   </p>
-                  <div className="grid sm:grid-cols-3 gap-4 text-center border-t border-gray-100 pt-6 mt-6">
-                    {story.stats.map((stat, statIndex) => (
-                      <div key={statIndex} className="p-4 bg-sidraLight rounded-xl flex flex-col items-center justify-center">
-                        <i className={cn(stat.icon, "text-sidraPrimary text-2xl mb-2")}></i>
-                        <div className="text-xl font-bold text-gray-900 font-sans">{stat.value}</div>
-                        <div className="text-sm text-gray-600 font-sans">{stat.label}</div>
-                      </div>
-                    ))}
-                  </div>
-                </AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
+                </div>
+              </div>
+              <div className="p-6">
+                <p className="text-gray-700 mb-6 leading-relaxed text-base">
+                  {story.description}
+                </p>
+                <div className="grid grid-cols-3 gap-4 text-center border-t border-gray-100 pt-6 mt-6">
+                  {story.stats.map((stat, statIndex) => (
+                    <div key={statIndex} className="p-2 bg-sidraLight rounded-lg flex flex-col items-center justify-center">
+                      <i className={cn(stat.icon, "text-sidraPrimary text-xl mb-1")}></i>
+                      <div className="text-md font-bold text-gray-900">{stat.value}</div>
+                      <div className="text-xs text-gray-600">{stat.label}</div>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </div>
     </section>

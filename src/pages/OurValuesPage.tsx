@@ -4,10 +4,16 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import FAQSection from '@/components/FAQSection'; // Import FAQSection
 import { cn } from '@/lib/utils';
 
 const OurValuesPage = () => {
   const { language, t } = useLanguage();
+
+  const ourValuesFaqs = [
+    { id: "values-faq-1", question: t('ourValuesFaqQ1'), answer: t('ourValuesFaqA1') },
+    { id: "values-faq-2", question: t('ourValuesFaqQ2'), answer: t('ourValuesFaqA2') },
+  ];
 
   const values = [
     {
@@ -87,6 +93,7 @@ const OurValuesPage = () => {
             ))}
           </div>
         </div>
+        <FAQSection faqs={ourValuesFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
       </main>
       <Footer />
       <ScrollToTopButton />

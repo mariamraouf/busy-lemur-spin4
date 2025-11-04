@@ -7,37 +7,26 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { cn } from '@/lib/utils';
+import { TranslationKey } from '@/lib/translations'; // Import TranslationKey
 
-const FAQSection = () => {
+interface FAQItem {
+  id: string;
+  question: string;
+  answer: string;
+}
+
+interface FAQSectionProps {
+  faqs: FAQItem[];
+  titleKey: TranslationKey; // Changed from string to TranslationKey
+  subtitleKey: TranslationKey; // Changed from string to TranslationKey
+}
+
+const FAQSection: React.FC<FAQSectionProps> = ({ faqs, titleKey, subtitleKey }) => {
   const { t } = useLanguage();
 
-  const faqs = [
-    {
-      id: "faq-1",
-      question: t('faqQ1'),
-      answer: t('faqA1'),
-    },
-    {
-      id: "faq-2",
-      question: t('faqQ2'),
-      answer: t('faqA2'),
-    },
-    {
-      id: "faq-3",
-      question: t('faqQ3'),
-      answer: t('faqA3'),
-    },
-    {
-      id: "faq-4",
-      question: t('faqQ4'),
-      answer: t('faqA4'),
-    },
-    {
-      id: "faq-5",
-      question: t('faqQ5'),
-      answer: t('faqA5'),
-    },
-  ];
+  if (!faqs || faqs.length === 0) {
+    return null; // Don't render if no FAQs are provided
+  }
 
   return (
     <section id="faq" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
@@ -49,10 +38,10 @@ const FAQSection = () => {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16" data-aos="fade-up">
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
-            {t('faqTitle')}
+            {t(titleKey)}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
-            <span className="block">{t('faqSubtitle')}</span>
+            <span className="block">{t(subtitleKey)}</span>
           </h2>
         </div>
 

@@ -16,58 +16,20 @@ const ContactSection = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16" data-aos="fade-up">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            {t('getInTouch')}
+          </span>
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+            {t('discussYourProject')}
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            {t('contactDescription')}
+          </p>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-16">
-          <div data-aos="fade-right" data-aos-duration="1000">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
-              {t('getInTouch')}
-            </span>
-            <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-8">
-              {t('discussYourProject')}
-            </h2>
-            <p className="text-xl text-gray-600 mb-10 leading-relaxed">
-              {t('contactDescription')}
-            </p>
-
-            <div className="space-y-8">
-              <div className="flex items-start space-x-6 group">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <i className="fas fa-map-marker-alt text-white text-xl"></i>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('location')}</h3>
-                  <p className="text-gray-600 text-lg">{t('jeddahKSA')}</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 group">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <i className="fas fa-envelope text-white text-xl"></i>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('email')}</h3>
-                  <a href="mailto:amad@sidramed.com.sa" className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">amad@sidramed.com.sa</a>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-6 group">
-                <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <i className="fas fa-clock text-white text-xl"></i>
-                  </div>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('businessHours')}</h3>
-                  <p className="text-gray-600 text-lg">{t('businessHoursTime')}</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
+          <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
             <form className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
@@ -112,28 +74,63 @@ const ContactSection = () => {
               </button>
             </form>
           </div>
-        </div>
 
-        {/* Google Maps Embed */}
-        <div className="mt-24" data-aos="fade-up" data-aos-delay="100">
-          <h2 className="text-4xl sm:text-5xl font-black text-gray-900 text-center mb-12">
-            {t('location')}
-          </h2>
-          <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden">
-            <iframe
-              src={googleMapsEmbedUrl}
-              width="100%"
-              height="500"
-              style={{ border: 0 }}
-              allowFullScreen={true}
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              title="Jeddah, Saudi Arabia Location"
-            ></iframe>
+          <div data-aos="fade-left" data-aos-duration="1000">
+            <div className="space-y-8 mb-12">
+              <div className="flex items-start space-x-6 group">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i className="fas fa-map-marker-alt text-white text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('location')}</h3>
+                  <p className="text-gray-600 text-lg">{t('jeddahKSA')}</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-6 group">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i className="fas fa-envelope text-white text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('email')}</h3>
+                  <a href="mailto:amad@sidramed.com.sa" className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">amad@sidramed.com.sa</a>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-6 group">
+                <div className="flex-shrink-0">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                    <i className="fas fa-clock text-white text-xl"></i>
+                  </div>
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg">{t('businessHours')}</h3>
+                  <p className="text-gray-600 text-lg">{t('businessHoursTime')}</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Google Maps Embed */}
+            <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden mt-12">
+              <iframe
+                src={googleMapsEmbedUrl}
+                width="100%"
+                height="400"
+                style={{ border: 0 }}
+                allowFullScreen={true}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                title="Jeddah, Saudi Arabia Location"
+              ></iframe>
+            </div>
+            <p className="text-center text-gray-600 mt-6 text-lg">
+              {t('jeddahKSA')}
+            </p>
           </div>
-          <p className="text-center text-gray-600 mt-6 text-lg">
-            {t('jeddahKSA')}
-          </p>
         </div>
       </div>
     </section>

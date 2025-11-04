@@ -4,10 +4,16 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import FAQSection from '@/components/FAQSection'; // Import FAQSection
 import { cn } from '@/lib/utils';
 
 const MissionVision = () => {
   const { language, t } = useLanguage();
+
+  const missionVisionFaqs = [
+    { id: "mv-faq-1", question: t('missionVisionFaqQ1'), answer: t('missionVisionFaqA1') },
+    { id: "mv-faq-2", question: t('missionVisionFaqQ2'), answer: t('missionVisionFaqA2') },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -58,6 +64,7 @@ const MissionVision = () => {
             </div>
           </div>
         </div>
+        <FAQSection faqs={missionVisionFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
       </main>
       <Footer />
       <ScrollToTopButton />

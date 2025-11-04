@@ -4,11 +4,17 @@ import { useLanguage } from '@/context/LanguageContext';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ScrollToTopButton from '@/components/ScrollToTopButton';
+import FAQSection from '@/components/FAQSection'; // Import FAQSection
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
 
 const AboutUsPage = () => {
   const { language, t } = useLanguage();
+
+  const aboutUsFaqs = [
+    { id: "about-faq-1", question: t('aboutUsFaqQ1'), answer: t('aboutUsFaqA1') },
+    { id: "about-faq-2", question: t('aboutUsFaqQ2'), answer: t('aboutUsFaqA2') },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -66,6 +72,7 @@ const AboutUsPage = () => {
             </div>
           </div>
         </div>
+        <FAQSection faqs={aboutUsFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
       </main>
       <Footer />
       <ScrollToTopButton />

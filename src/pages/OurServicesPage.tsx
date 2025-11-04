@@ -61,6 +61,14 @@ const OurServicesPage = () => {
     { icon: "fas fa-chart-line", title: t('approachStep4Title'), description: t('approachStep4Description'), color: "text-sidraAccent" },
   ];
 
+  const servicesFaqs = [
+    { id: "services-faq-1", question: t('faqQ1'), answer: t('faqA1') },
+    { id: "services-faq-2", question: t('faqQ2'), answer: t('faqA2') },
+    { id: "services-faq-3", question: t('faqQ3'), answer: t('faqA3') },
+    { id: "services-faq-4", question: t('faqQ4'), answer: t('faqA4') },
+    { id: "services-faq-5", question: t('faqQ5'), answer: t('faqA5') },
+  ];
+
   return (
     <div className="min-h-screen flex flex-col">
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
@@ -68,9 +76,9 @@ const OurServicesPage = () => {
         <meta name="description" content={t('servicesSummarySubtitle')} />
       </Helmet>
       <Navbar />
-      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary relative overflow-hidden">
+      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraSecondary/10 to-sidraAccent/10"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -78,10 +86,10 @@ const OurServicesPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('whatWeDo')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
               {t('ourServicesPageTitle')}
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {t('ourServicesPageDescription')}
             </p>
           </div>
@@ -92,8 +100,8 @@ const OurServicesPage = () => {
               <div
                 key={index}
                 className={cn(
-                  "grid lg:grid-cols-2 gap-12 items-center p-8 rounded-3xl shadow-2xl",
-                  index % 2 === 0 ? "bg-white/10 backdrop-blur-md border border-white/20" : "bg-white/5 backdrop-blur-sm border border-white/10"
+                  "grid lg:grid-cols-2 gap-12 items-center p-8 rounded-3xl shadow-2xl border border-gray-100 bg-white", // Lighter background
+                  index % 2 === 0 ? "" : "lg:grid-flow-col-dense" // Alternate image/text order
                 )}
                 data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
                 data-aos-duration="1000"
@@ -105,10 +113,10 @@ const OurServicesPage = () => {
                   )}>
                     <i className={cn(category.icon, "text-white text-3xl")}></i>
                   </div>
-                  <h2 className="text-3xl font-bold text-white mb-4">
+                  <h2 className="text-3xl font-bold text-gray-900 mb-4">
                     {category.title}
                   </h2>
-                  <p className="text-gray-300 leading-relaxed mb-8 text-lg">
+                  <p className="text-gray-700 leading-relaxed mb-8 text-lg">
                     {category.description}
                   </p>
                   <ul className="space-y-4">
@@ -116,8 +124,8 @@ const OurServicesPage = () => {
                       <li key={itemIndex} className="flex items-start space-x-4">
                         <i className="fas fa-check-circle text-sidraTeal text-xl flex-shrink-0 mt-1"></i>
                         <div>
-                          <h4 className="text-xl font-semibold text-white mb-1">{item.title}</h4>
-                          <p className="text-gray-400 text-base">{item.description}</p>
+                          <h4 className="text-xl font-semibold text-gray-900 mb-1">{item.title}</h4>
+                          <p className="text-gray-600 text-base">{item.description}</p>
                         </div>
                       </li>
                     ))}
@@ -135,11 +143,11 @@ const OurServicesPage = () => {
           </div>
 
           {/* Custom Solutions CTA */}
-          <div className="text-center mt-24 py-16 bg-white/10 backdrop-blur-md rounded-3xl border border-white/20" data-aos="zoom-in" data-aos-delay="100">
+          <div className="text-center mt-24 py-16 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-3xl shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
             <h2 className="text-4xl font-black text-white mb-6">
               {t('customSolutionsTitle')}
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-10 leading-relaxed">
+            <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
               {t('customSolutionsDescription')}
             </p>
             <Link to="/contact" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl text-lg">
@@ -174,7 +182,7 @@ const OurServicesPage = () => {
             </div>
           </div>
         </div>
-        <FAQSection /> {/* Integrate the FAQ section here */}
+        <FAQSection faqs={servicesFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" /> {/* Integrate the FAQ section here with props */}
       </main>
       <Footer />
       <ScrollToTopButton />

@@ -14,9 +14,15 @@ import PartnersSection from "@/components/PartnersSection";
 import CtaSection from "@/components/CtaSection";
 import ContactSection from "@/components/ContactSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
+import FAQSection from "@/components/FAQSection"; // Import FAQSection
 
 const Home = () => {
   const { language, t } = useLanguage();
+
+  const homeFaqs = [
+    { id: "home-faq-1", question: t('homeFaqQ1'), answer: t('homeFaqA1') },
+    { id: "home-faq-2", question: t('homeFaqQ2'), answer: t('homeFaqA2') },
+  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -24,7 +30,6 @@ const Home = () => {
         <title>{t('heroTitlePart1')} {t('heroTitlePart2')} {t('heroTitlePart3')} - Sidra Med</title>
         <meta name="description" content={t('heroDescription')} />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
-        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet" />
       </Helmet>
       <Navbar />
       <main className="flex-grow">
@@ -38,6 +43,7 @@ const Home = () => {
         <PartnersSection />
         <CtaSection />
         <ContactSection />
+        <FAQSection faqs={homeFaqs} titleKey="faqTitle" subtitleKey="faqSubtitle" />
       </main>
       <Footer />
       <ScrollToTopButton />
