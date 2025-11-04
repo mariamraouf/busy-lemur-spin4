@@ -15,8 +15,6 @@ const SuccessStoriesSection = () => {
         { label: t('diagnosticCenterLaunchStat2'), value: "Imaging" },
         { label: t('diagnosticCenterLaunchStat3'), value: "Compliance" },
       ],
-      image: "https://images.unsplash.com/photo-1585435557343-3b092031a831?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Modern diagnostic equipment
-      alt: "Advanced Diagnostic Center with modern medical equipment",
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
     },
@@ -29,8 +27,6 @@ const SuccessStoriesSection = () => {
         { label: t('clinicNetworkOptimizationStat2'), value: "EMR" },
         { label: t('clinicNetworkOptimizationStat3'), value: "High" },
       ],
-      image: "https://images.unsplash.com/photo-1551076805-e18690433258?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Modern clinic interior with patient interaction
-      alt: "Modern clinic interior with healthcare professionals and patients",
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
     },
@@ -43,8 +39,6 @@ const SuccessStoriesSection = () => {
         { label: t('internationalMarketEntryStat2'), value: "5+" },
         { label: t('internationalMarketEntryStat3'), value: "Full" },
       ],
-      image: "https://images.unsplash.com/photo-1521737711867-ee1ab9279f17?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80", // Professional business meeting/collaboration
-      alt: "Business professionals collaborating in a modern office setting",
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
     },
@@ -70,33 +64,32 @@ const SuccessStoriesSection = () => {
           {stories.map((story, index) => (
             <div
               key={index}
-              className="group bg-white rounded-3xl shadow-xl overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group bg-white rounded-3xl p-8 shadow-xl border border-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
-              <div className="relative h-60 overflow-hidden">
-                <img src={story.image} alt={story.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
-                <div className={cn(
-                  "absolute inset-0 bg-gradient-to-t from-black/70 to-transparent",
-                  `via-black/30`
-                )}></div>
-                <div className="absolute bottom-0 left-0 p-6 text-white">
-                  <h3 className="text-2xl font-bold mb-1 font-sans">{story.title}</h3>
-                  <p className="text-lg font-medium flex items-center font-sans">
-                    <i className="fas fa-map-marker-alt text-sidraTeal mr-2"></i> {story.location}
-                  </p>
-                </div>
+              <div className="flex-grow">
+                <h3 className={cn(
+                  "text-3xl font-black mb-2 leading-tight",
+                  `bg-gradient-to-r ${story.gradientFrom} ${story.gradientTo} bg-clip-text text-transparent`
+                )}>
+                  {story.title}
+                </h3>
+                <p className="text-lg font-medium flex items-center text-gray-600 mb-4">
+                  <i className="fas fa-map-marker-alt text-sidraTeal mr-2"></i> {story.location}
+                </p>
+                <p className="text-gray-700 mb-6 leading-relaxed text-base">
+                  {story.description}
+                </p>
               </div>
-              <div className="p-6">
-                <p className="text-gray-700 mb-6 leading-relaxed text-base font-sans">{story.description}</p>
-                <div className="grid grid-cols-3 gap-4 text-center">
-                  {story.stats.map((stat, statIndex) => (
-                    <div key={statIndex} className="p-4 bg-gray-100 rounded-xl">
-                      <div className="text-2xl font-bold text-gray-900 font-sans">{stat.value}</div>
-                      <div className="text-sm text-gray-500 font-sans">{stat.label}</div>
-                    </div>
-                  ))}
-                </div>
+              
+              <div className="grid grid-cols-3 gap-4 text-center border-t border-gray-100 pt-6 mt-6">
+                {story.stats.map((stat, statIndex) => (
+                  <div key={statIndex} className="p-3 bg-gray-50 rounded-xl">
+                    <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
+                    <div className="text-sm text-gray-500">{stat.label}</div>
+                  </div>
+                ))}
               </div>
             </div>
           ))}
