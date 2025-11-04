@@ -42,9 +42,9 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary relative overflow-hidden">
-      <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraSecondary/10 to-sidraAccent/10"></div>
+    <section id="services" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+      <div className="absolute inset-0 opacity-10">
+        <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -52,10 +52,10 @@ const ServicesSection = () => {
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('whatWeDo')}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
             <span className="block">{t('servicesSummaryTitle')}</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             {t('servicesSummarySubtitle')}
           </p>
         </div>
@@ -64,7 +64,7 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-white/10 backdrop-blur-md rounded-3xl p-8 border border-white/20 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
@@ -75,19 +75,19 @@ const ServicesSection = () => {
                 <i className={cn(service.icon, "text-white text-3xl")}></i>
               </div>
               <h3 className={cn(
-                "text-2xl font-bold text-white mb-4 transition-colors",
+                "text-2xl font-bold text-gray-900 mb-4 transition-colors",
                 service.hoverColor.replace('text-', 'group-hover:text-')
               )}>
                 {service.title}
               </h3>
-              <p className="text-gray-300 leading-relaxed mb-6">
+              <p className="text-gray-700 leading-relaxed mb-6">
                 {service.description}
               </p>
             </div>
           ))}
         </div>
         <div className="text-center" data-aos="fade-up" data-aos-delay="500">
-          <Link to="/services" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl hover:shadow-3xl">
+          <Link to="/services" className="group inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white font-bold rounded-2xl hover:shadow-lg transition-all transform hover:scale-105 shadow-2xl hover:shadow-3xl">
             <span>{t('exploreAllServices')}</span>
             <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
           </Link>

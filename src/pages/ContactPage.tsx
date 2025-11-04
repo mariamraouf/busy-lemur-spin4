@@ -30,7 +30,6 @@ const ContactPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('getInTouch')}
             </span>
-            {/* Removed h1 title: {t('discussYourProject')} */}
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
               {t('discussYourProject')}
             </h1>

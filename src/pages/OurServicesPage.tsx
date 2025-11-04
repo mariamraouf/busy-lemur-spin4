@@ -87,7 +87,9 @@ const OurServicesPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('whatWeDo')}
             </span>
-            {/* Removed h2 title: {t('ourServicesPageTitle')} */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+              {t('ourServicesPageTitle')} {/* Re-added the title */}
+            </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {t('ourServicesPageDescription')}
             </p>
