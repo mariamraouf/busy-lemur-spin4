@@ -18,8 +18,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-x-4 mb-6"> {/* Changed space-x-4 to gap-x-4 */}
-              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-20 h-20 object-contain" /> {/* Increased logo size */}
-              {/* Removed Sidra Med title and Healthcare Excellence tagline */}
+              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-24 h-24 object-contain" /> {/* Increased logo size to w-24 h-24 */}
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
               {t('empoweringHealthcare')}
