@@ -96,7 +96,7 @@
   }
 
   body {
-    @apply bg-background text-foreground font-sans; /* Apply Poppins by default */
+    @apply bg-background text-foreground font-sans; /* Apply Inter by default */
   }
 
   html[dir="rtl"] body {

@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'], // Default for English
+        sans: ['Inter', 'sans-serif'], // Default for English
         arabic: ['Tajawal', 'sans-serif'], // Specific for Arabic
       },
       colors: {
