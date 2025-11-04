@@ -6,7 +6,7 @@ const CtaSection = () => {
   const { t } = useLanguage();
 
   return (
-    <section className="py-24 bg-gradient-to-br from-sidraPrimary via-sidraPurple to-sidraPink relative overflow-hidden">
+    <section className="py-24 bg-gradient-to-br from-sidraPrimary via-sidraSecondary to-sidraAccent relative overflow-hidden">
       <div className="absolute inset-0">
         <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
       </div>
@@ -23,7 +23,7 @@ const CtaSection = () => {
         <div data-aos="zoom-in" data-aos-duration="1000">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">
             <span className="block">{t('readyToBuildFuture')}</span>
-            <span className="block bg-gradient-to-r from-sidraCyan via-sidraEmerald to-sidraTeal bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
+            <span className="block bg-gradient-to-r from-sidraTeal via-sidraPrimary to-sidraSecondary bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
           </h2>
           <p className="text-2xl text-white/90 mb-12 max-w-3xl mx-auto font-light">
             {t('letsWorkTogether')}

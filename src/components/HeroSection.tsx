@@ -9,7 +9,7 @@ const HeroSection = () => {
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&h=1080&fit=crop" alt="Healthcare" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraPurple/80 to-sidraPink/90"></div>
+        <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraSecondary/80 to-sidraAccent/90"></div>
       </div>
 
       {/* Floating Elements */}
@@ -28,7 +28,7 @@ const HeroSection = () => {
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
             <span className="block">{t('heroTitlePart1')}</span>
-            <span className="block bg-gradient-to-r from-white via-sidraCyan to-sidraEmerald bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
+            <span className="block bg-gradient-to-r from-white via-sidraTeal to-sidraPrimary bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
             <span className="block">{t('heroTitlePart3')}</span>
           </h1>
           <p className="text-xl sm:text-2xl text-white/90 mb-10 leading-relaxed font-light">

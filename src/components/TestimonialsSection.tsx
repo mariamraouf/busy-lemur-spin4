@@ -19,29 +19,29 @@ const TestimonialsSection = () => {
       author: t('testimonial2Author'),
       role: t('testimonial2Role'),
       avatar: "https://randomuser.me/api/portraits/women/44.jpg",
-      gradientFrom: "from-sidraPurple",
-      gradientTo: "to-sidraPink",
+      gradientFrom: "from-sidraSecondary",
+      gradientTo: "to-sidraAccent",
     },
     {
       quote: t('testimonial3'),
       author: t('testimonial3Author'),
       role: t('testimonial3Role'),
       avatar: "https://randomuser.me/api/portraits/men/47.jpg",
-      gradientFrom: "from-sidraEmerald",
-      gradientTo: "to-sidraCyan",
+      gradientFrom: "from-sidraTeal",
+      gradientTo: "to-sidraPrimary",
     },
   ];
 
   return (
     <section id="testimonials" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraPurple rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraPink to-sidraOrange rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('whatOurClientsSay')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
@@ -58,7 +58,7 @@ const TestimonialsSection = () => {
               data-aos-delay={100 * (index + 1)}
             >
               <div className="flex items-center mb-6">
-                <img src={testimonial.avatar} alt={testimonial.author} className="w-16 h-16 rounded-full object-cover mr-4 border-4 border-sidraPrimary group-hover:border-sidraPurple transition-colors duration-300" />
+                <img src={testimonial.avatar} alt={testimonial.author} className="w-16 h-16 rounded-full object-cover mr-4 border-4 border-sidraPrimary group-hover:border-sidraSecondary transition-colors duration-300" />
                 <div>
                   <h4 className="text-xl font-bold text-gray-900">{testimonial.author}</h4>
                   <p className="text-gray-600 text-sm">{testimonial.role}</p>

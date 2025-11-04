@@ -19,64 +19,64 @@ const WhyChooseUsSection = () => {
       icon: "fas fa-award",
       title: t('whyChooseUsFeature2Title'),
       description: t('whyChooseUsFeature2Description'),
-      gradientFrom: "from-sidraPurple",
-      gradientTo: "to-sidraPink",
-      hoverBorder: "hover:border-sidraPurple/20",
-      hoverText: "group-hover:text-sidraPurple",
+      gradientFrom: "from-sidraSecondary",
+      gradientTo: "to-sidraAccent",
+      hoverBorder: "hover:border-sidraSecondary/20",
+      hoverText: "group-hover:text-sidraSecondary",
     },
     {
       icon: "fas fa-users",
       title: t('whyChooseUsFeature3Title'),
       description: t('whyChooseUsFeature3Description'),
-      gradientFrom: "from-sidraEmerald",
-      gradientTo: "to-sidraCyan",
-      hoverBorder: "hover:border-sidraEmerald/20",
-      hoverText: "group-hover:text-sidraEmerald",
+      gradientFrom: "from-sidraTeal",
+      gradientTo: "to-sidraPrimary",
+      hoverBorder: "hover:border-sidraTeal/20",
+      hoverText: "group-hover:text-sidraTeal",
     },
     {
-      icon: "fas fa-bullseye", // Changed from fa-target to fa-bullseye for better icon representation
+      icon: "fas fa-bullseye",
       title: t('whyChooseUsFeature4Title'),
       description: t('whyChooseUsFeature4Description'),
-      gradientFrom: "from-sidraOrange",
-      gradientTo: "to-red-500",
-      hoverBorder: "hover:border-sidraOrange/20",
-      hoverText: "group-hover:text-sidraOrange",
+      gradientFrom: "from-sidraAccent",
+      gradientTo: "to-sidraSecondary",
+      hoverBorder: "hover:border-sidraAccent/20",
+      hoverText: "group-hover:text-sidraAccent",
     },
     {
       icon: "fas fa-rocket",
       title: t('whyChooseUsFeature5Title'),
       description: t('whyChooseUsFeature5Description'),
-      gradientFrom: "from-sidraIndigo",
-      gradientTo: "to-sidraPurple",
-      hoverBorder: "hover:border-sidraIndigo/20",
-      hoverText: "group-hover:text-sidraIndigo",
+      gradientFrom: "from-sidraPrimary",
+      gradientTo: "to-sidraAccent",
+      hoverBorder: "hover:border-sidraPrimary/20",
+      hoverText: "group-hover:text-sidraPrimary",
     },
     {
       icon: "fas fa-shield-alt",
       title: t('whyChooseUsFeature6Title'),
       description: t('whyChooseUsFeature6Description'),
-      gradientFrom: "from-sidraPink",
-      gradientTo: "to-rose-500",
-      hoverBorder: "hover:border-sidraPink/20",
-      hoverText: "group-hover:text-sidraPink",
+      gradientFrom: "from-sidraSecondary",
+      gradientTo: "to-sidraTeal",
+      hoverBorder: "hover:border-sidraSecondary/20",
+      hoverText: "group-hover:text-sidraSecondary",
     },
   ];
 
   return (
     <section className="py-24 bg-gradient-to-br from-white via-sidraLight to-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-sidraPrimary to-sidraPurple rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-r from-sidraPink to-sidraOrange rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl animate-pulse-slow"></div>
+        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl animate-pulse-slow"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('whySidraMed')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
             <span className="block">{t('whyChooseUsTitlePart1')}</span>
-            <span className="block bg-gradient-to-r from-sidraPrimary via-sidraPurple to-sidraPink bg-clip-text text-transparent">{t('whyChooseUsTitlePart2')}</span>
+            <span className="block bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">{t('whyChooseUsTitlePart2')}</span>
             <span className="block">{t('whyChooseUsTitlePart3')}</span>
           </h2>
         </div>

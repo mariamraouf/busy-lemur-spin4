@@ -6,10 +6,10 @@ const Footer = () => {
   const { t } = useLanguage();
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-sidraPurple to-sidraIndigo text-white py-16 relative overflow-hidden">
+    <footer className="bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary text-white py-16 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraPurple rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-r from-sidraPink to-sidraOrange rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="flex items-center space-x-4 mb-6">
               <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-16 h-16 object-contain" />
               <div>
-                <h3 className="text-3xl font-black bg-gradient-to-r from-sidraCyan via-sidraEmerald to-sidraTeal bg-clip-text text-transparent">Sidra Med</h3>
+                <h3 className="text-3xl font-black bg-gradient-to-r from-sidraTeal via-sidraPrimary to-sidraSecondary bg-clip-text text-transparent">Sidra Med</h3>
                 <p className="text-gray-400 font-semibold">{t('healthcareExcellence')}</p>
               </div>
             </div>

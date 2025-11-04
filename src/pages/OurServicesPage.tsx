@@ -13,43 +13,30 @@ const OurServicesPage = () => {
     {
       icon: "fas fa-project-diagram",
       title: t('serviceCategory1Title'),
-      items: [
-        t('serviceCategory1Item1'),
-        t('serviceCategory1Item2'),
-        t('serviceCategory1Item3'),
-      ],
+      description: t('serviceCategory1Item1'), // Using item1 as the main description
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
     },
     {
       icon: "fas fa-file-contract",
       title: t('serviceCategory2Title'),
-      items: [
-        t('serviceCategory2Item1'),
-        t('serviceCategory2Item2'),
-      ],
-      gradientFrom: "from-sidraPurple",
-      gradientTo: "to-sidraPink",
+      description: t('serviceCategory2Item1'),
+      gradientFrom: "from-sidraSecondary",
+      gradientTo: "to-sidraAccent",
     },
     {
       icon: "fas fa-hospital-alt",
       title: t('serviceCategory3Title'),
-      items: [
-        t('serviceCategory3Item1'),
-        t('serviceCategory3Item2'),
-      ],
-      gradientFrom: "from-sidraEmerald",
-      gradientTo: "to-sidraCyan",
+      description: t('serviceCategory3Item1'),
+      gradientFrom: "from-sidraTeal",
+      gradientTo: "to-sidraPrimary",
     },
     {
-      icon: "fas fa-chart-pie",
+      icon: "fas fa-handshake",
       title: t('serviceCategory4Title'),
-      items: [
-        t('serviceCategory4Item1'),
-        t('serviceCategory4Item2'),
-      ],
-      gradientFrom: "from-sidraOrange",
-      gradientTo: "to-red-500",
+      description: t('serviceCategory4Item1'),
+      gradientFrom: "from-sidraAccent",
+      gradientTo: "to-sidraSecondary",
     },
   ];
 
@@ -60,14 +47,14 @@ const OurServicesPage = () => {
         <meta name="description" content={t('servicesSummarySubtitle')} />
       </Helmet>
       <Navbar />
-      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-gray-900 via-sidraPurple to-sidraIndigo relative overflow-hidden">
+      <main className="flex-grow pt-24 pb-16 bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraPurple/10 to-sidraPink/10"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraSecondary/10 to-sidraAccent/10"></div>
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('whatWeDo')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">
@@ -95,11 +82,9 @@ const OurServicesPage = () => {
                 <h3 className="text-2xl font-bold text-white mb-4">
                   {category.title}
                 </h3>
-                <ul className="list-disc list-inside text-gray-300 space-y-2 pl-4">
-                  {category.items.map((item, itemIndex) => (
-                    <li key={itemIndex}>{item}</li>
-                  ))}
-                </ul>
+                <p className="text-gray-300 leading-relaxed">
+                  {category.description}
+                </p>
               </div>
             ))}
           </div>

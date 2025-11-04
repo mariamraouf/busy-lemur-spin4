@@ -13,7 +13,7 @@ const ServicesSection = () => {
       description: t('service1Description'),
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
-      hoverColor: "text-sidraCyan",
+      hoverColor: "text-sidraTeal", // Adjusted to new palette
     },
     {
       icon: "fas fa-hospital",
@@ -21,7 +21,7 @@ const ServicesSection = () => {
       description: t('service2Description'),
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
-      hoverColor: "text-sidraEmerald",
+      hoverColor: "text-sidraAccent", // Adjusted to new palette
     },
     {
       icon: "fas fa-globe-asia",
@@ -29,7 +29,7 @@ const ServicesSection = () => {
       description: t('service3Description'),
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
-      hoverColor: "text-sidraPurple",
+      hoverColor: "text-sidraPrimary", // Adjusted to new palette
     },
     {
       icon: "fas fa-handshake",
@@ -37,19 +37,19 @@ const ServicesSection = () => {
       description: t('service4Description'),
       gradientFrom: "from-sidraAccent",
       gradientTo: "to-sidraSecondary",
-      hoverColor: "text-sidraPink",
+      hoverColor: "text-sidraSecondary", // Adjusted to new palette
     },
   ];
 
   return (
-    <section id="services" className="py-24 bg-gradient-to-br from-gray-900 via-sidraPurple to-sidraIndigo relative overflow-hidden">
+    <section id="services" className="py-24 bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary relative overflow-hidden">
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraPurple/10 to-sidraPink/10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraSecondary/10 to-sidraAccent/10"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('whatWeDo')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">

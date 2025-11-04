@@ -182,21 +182,16 @@ export const translations = {
     teamRole4: "Strategic and Financial Analysts",
     teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.",
 
-    // Our Services Page
+    // Our Services Page - Simplified to match the 4 core services
     ourServicesPageTitle: "Our services",
-    serviceCategory1Title: "Healthcare Project Management",
-    serviceCategory1Item1: "Turnkey delivery for hospitals, clinics, and labs",
-    serviceCategory1Item2: "Feasibility studies & market assessments",
-    serviceCategory1Item3: "On-site medical services for construction projects",
-    serviceCategory2Title: "Licensing & Regulatory Approvals",
-    serviceCategory2Item1: "MOH licensing & facility registration",
-    serviceCategory2Item2: "Compliance audits and documentation",
-    serviceCategory3Title: "Medical Planning & Architecture Support",
-    serviceCategory3Item1: "Conceptual design and facility planning",
-    serviceCategory3Item2: "Equipment planning and BOQ development",
-    serviceCategory4Title: "Operational Readiness & Strategic Advisory",
-    serviceCategory4Item1: "Recruitment coordination and SOP development",
-    serviceCategory4Item2: "Business modeling and investment strategies",
+    serviceCategory1Title: "Project Support & Execution",
+    serviceCategory1Item1: "Assistance across the full project lifecycle—from feasibility and design to operational readiness and compliance.",
+    serviceCategory2Title: "Facility Operations & Management",
+    serviceCategory2Item1: "Supporting clinical and non-clinical operations, including IT systems, staffing, procurement, and logistics.",
+    serviceCategory3Title: "Local Market Integration",
+    serviceCategory3Item1: "Guiding international firms through local regulations, business practices, and cultural alignment to ensure success in the Saudi market.",
+    serviceCategory4Title: "Strategic Partnerships",
+    serviceCategory4Item1: "Through our consortium network, we enable end-to-end project delivery by combining the strengths of specialised partners across various domains.",
 
     // Not Found Page
     pageNotFoundTitle: "Page Not Found",
@@ -386,26 +381,16 @@ export const translations = {
     teamRole4: "المحللون الاستراتيجيون والماليون",
     teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
 
-    // Our Services Page
+    // Our Services Page - Simplified to match the 4 core services
     ourServicesPageTitle: "خدماتنا",
-    serviceCategory1Title: "إدارة مشاريع الرعاية الصحية",
-    serviceCategory1Item1: "تسليم المشاريع الجاهزة للمستشفيات والعيادات والمختبرات",
-    serviceCategory1Item2: "دراسات الجدوى وتقييمات السوق",
-    serviceCategory1Item3: "الخدمات الطبية في الموقع لمشاريع البناء",
-    serviceCategory2Title: "التراخيص والموافقات التنظيمية",
-    serviceCategory2Item1: "ترخيص وزارة الصحة وتسجيل المنشآت",
-    serviceCategory2Item2: "تدقيقات الامتثال والوثائق",
-    serviceCategory3Title: "التخطيط الطبي ودعم الهندسة المعمارية",
-    serviceCategory3Item1: "التصميم المفاهيمي وتخطيط المنشآت",
-    serviceCategory3Item2: "تخطيط المعدات وتطوير قوائم الكميات",
-    serviceCategory4Title: "الجاهزية التشغيلية والاستشارات الاستراتيجية",
-    serviceCategory4Item1: "تنسيق التوظيف وتطوير إجراءات التشغيل القياسية",
-    serviceCategory4Item2: "نمذجة الأعمال واستراتيجيات الاستثمار",
-
-    // Not Found Page
-    pageNotFoundTitle: "الصفحة غير موجودة",
-    pageNotFoundDescription: "عذراً! الصفحة التي تبحث عنها غير موجودة.",
-    returnToHome: "العودة إلى الرئيسية",
+    serviceCategory1Title: "دعم وتنفيذ المشاريع",
+    serviceCategory1Item1: "المساعدة في جميع مراحل المشروع - من الجدوى والتصميم إلى الجاهزية التشغيلية والامتثال.",
+    serviceCategory2Title: "عمليات وإدارة المنشآت",
+    serviceCategory2Item1: "دعم العمليات السريرية وغير السريرية، بما في ذلك أنظمة تكنولوجيا المعلومات والتوظيف والمشتريات والخدمات اللوجستية.",
+    serviceCategory3Title: "التكامل مع السوق المحلي",
+    serviceCategory3Item1: "توجيه الشركات الدولية من خلال اللوائح المحلية والممارسات التجارية والتوافق الثقافي لضمان النجاح في السوق السعودي.",
+    serviceCategory4Title: "الشراكات الاستراتيجية",
+    serviceCategory4Item1: "من خلال شبكة الاتحاد الخاصة بنا، نمكّن تسليم المشاريع من البداية إلى النهاية من خلال الجمع بين نقاط القوة للشركاء المتخصصين في مختلف المجالات.",
   },
 };
 

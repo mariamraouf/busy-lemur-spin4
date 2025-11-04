@@ -29,8 +29,8 @@ const SuccessStoriesSection = () => {
         { label: t('laboratoryExpansionStat3'), value: "40%" },
       ],
       image: "https://images.unsplash.com/photo-1532187863566-d0156217165a?w=800&h=600&fit=crop",
-      gradientFrom: "from-sidraPurple",
-      gradientTo: "to-sidraPink",
+      gradientFrom: "from-sidraSecondary",
+      gradientTo: "to-sidraAccent",
     },
     {
       title: t('investmentAdvisoryTitle'),
@@ -42,20 +42,20 @@ const SuccessStoriesSection = () => {
         { label: t('investmentAdvisoryStat3'), value: "Partners" },
       ],
       image: "https://images.unsplash.com/photo-1588702547919-26089e690806?w=800&h=600&fit=crop",
-      gradientFrom: "from-sidraEmerald",
-      gradientTo: "to-sidraCyan",
+      gradientFrom: "from-sidraTeal",
+      gradientTo: "to-sidraPrimary",
     },
   ];
 
   return (
-    <section id="success-stories" className="py-24 bg-gradient-to-br from-gray-900 via-sidraIndigo to-gray-900 relative overflow-hidden">
+    <section id="success-stories" className="py-24 bg-gradient-to-br from-gray-900 via-sidraPrimary to-gray-900 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraPurple/10 to-sidraPink/10"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/10 via-sidraSecondary/10 to-sidraAccent/10"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('ourSuccessStories')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">

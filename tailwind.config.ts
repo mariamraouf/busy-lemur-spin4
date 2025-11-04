@@ -62,18 +62,13 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom Sidra Med colors
+        // Custom Sidra Med colors - updated to match the provided palette
         sidraPrimary: '#449CA6',
         sidraSecondary: '#29A6A6',
         sidraAccent: '#80A6A6',
         sidraTeal: '#03A696',
         sidraLight: '#F2F2F2',
-        sidraPurple: '#8B5CF6',
-        sidraPink: '#EC4899',
-        sidraOrange: '#F97316',
-        sidraEmerald: '#10B981',
-        sidraCyan: '#06B6D4',
-        sidraIndigo: '#6366F1',
+        // Removed sidraPurple, sidraPink, sidraOrange, sidraEmerald, sidraCyan, sidraIndigo
       },
       borderRadius: {
         lg: "var(--radius)",

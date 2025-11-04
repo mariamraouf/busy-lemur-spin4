@@ -9,15 +9,15 @@ const AboutSection = () => {
   return (
     <section id="about" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraPurple rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraPink to-sidraOrange rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div data-aos="fade-right" data-aos-duration="1000">
             <div className="mb-6">
-              <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white rounded-full text-sm font-bold uppercase tracking-wide">
+              <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide">
                 {t('whoWeAre')}
               </span>
             </div>
@@ -27,7 +27,7 @@ const AboutSection = () => {
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
               {t('aboutSummaryDescription')}
             </p>
-            <Link to="/about-us" className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white font-bold rounded-xl hover:shadow-lg transition-all transform hover:scale-105 text-lg">
+            <Link to="/about-us" className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white font-bold rounded-xl hover:shadow-lg transition-all transform hover:scale-105 text-lg">
               <span>{t('learnMoreAboutUs')}</span>
               <i className="fas fa-arrow-right ml-3 group-hover:translate-x-1 transition-transform"></i>
             </Link>
@@ -40,7 +40,7 @@ const AboutSection = () => {
             {/* Floating Cards */}
             <div className="absolute -top-6 -left-6 bg-white p-6 rounded-2xl shadow-xl animate-float z-20">
               <div className="flex items-center space-x-3">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraEmerald to-sidraCyan rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-full flex items-center justify-center">
                   <i className="fas fa-check text-white"></i>
                 </div>
                 <div>
@@ -51,7 +51,7 @@ const AboutSection = () => {
             </div>
             <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl animate-float z-20" style={{ animationDelay: '-2s' }}>
               <div className="flex items-center space-x-3">
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraPurple to-sidraPink rounded-full flex items-center justify-center">
+                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-full flex items-center justify-center">
                   <i className="fas fa-star text-white"></i>
                 </div>
                 <div>

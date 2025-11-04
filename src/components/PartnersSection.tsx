@@ -24,12 +24,12 @@ const PartnersSection = () => {
   return (
     <section id="partners" className="py-20 bg-sidraLight relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center" data-aos="fade-up">
-        <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraPurple text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+        <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
           {t('partners')}
         </span>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
           <span className="block">Our Valued</span>
-          <span className="block bg-gradient-to-r from-sidraPrimary via-sidraPurple to-sidraPink bg-clip-text text-transparent">Partners</span>
+          <span className="block bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">Partners</span>
         </h2>
       </div>
 
