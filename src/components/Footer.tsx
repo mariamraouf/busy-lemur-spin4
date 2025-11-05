@@ -82,6 +82,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      {/* This comment was added to force a file change and trigger a rebuild. */}
     </footer>
   );
 };
