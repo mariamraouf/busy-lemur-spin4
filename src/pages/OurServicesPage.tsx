@@ -1,13 +1,11 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
-import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"; // Import shadcn Card components
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"; // Import shadcn Card components
+import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 
 const OurServicesPage = () => {
   const { language, t } = useLanguage();
@@ -72,13 +70,13 @@ const OurServicesPage = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <> {/* Removed min-h-screen flex flex-col */}
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('services')} - Sidra Med</title>
         <meta name="description" content={t('servicesSummarySubtitle')} />
       </Helmet>
-      <Navbar />
-      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+      {/* Removed Navbar */}
+      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Adjusted pt-32 to pt-24 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
         </div>
@@ -187,10 +185,10 @@ const OurServicesPage = () => {
           </div>
         </div>
         <FAQSection faqs={servicesFaqs} titleKey="faqTitle" hideSubtitle={true} />
-      </main>
-      <Footer />
+      </div>
+      {/* Removed Footer */}
       <ScrollToTopButton />
-    </div>
+    </>
   );
 };
 

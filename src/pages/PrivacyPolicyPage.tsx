@@ -1,9 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
+import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 import { cn } from '@/lib/utils';
 
 const PrivacyPolicyPage = () => {
@@ -14,13 +12,13 @@ const PrivacyPolicyPage = () => {
   const sharingExamples = t('privacyPolicySharingExamples', { returnObjects: true });
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <> {/* Removed min-h-screen flex flex-col */}
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('privacyPolicyPageTitle')} - Sidra Med</title>
         <meta name="description" content={t('privacyPolicyIntro')} />
       </Helmet>
-      <Navbar />
-      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+      {/* Removed Navbar */}
+      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Adjusted pt-32 to pt-24 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
@@ -69,10 +67,10 @@ const PrivacyPolicyPage = () => {
             <p className="mb-6">{t('privacyPolicyContactContent')}</p>
           </div>
         </div>
-      </main>
-      <Footer />
+      </div>
+      {/* Removed Footer */}
       <ScrollToTopButton />
-    </div>
+    </>
   );
 };
 

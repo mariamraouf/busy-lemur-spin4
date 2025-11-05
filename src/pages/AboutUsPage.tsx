@@ -1,12 +1,10 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
-import Navbar from '@/components/Navbar';
-import Footer from '@/components/Footer';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
+import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 
 const AboutUsPage = () => {
   const { language, t } = useLanguage();
@@ -21,13 +19,13 @@ const AboutUsPage = () => {
   ];
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <> {/* Removed min-h-screen flex flex-col */}
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('aboutUs')} - Sidra Med</title>
         <meta name="description" content={t('whoWeAreDescription1')} />
       </Helmet>
-      <Navbar />
-      <main className="flex-grow pt-32 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+      {/* Removed Navbar */}
+      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Adjusted pt-32 to pt-24 */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
@@ -66,24 +64,24 @@ const AboutUsPage = () => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/mission-vision" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraPrimary text-white font-bold rounded-xl hover:bg-sidraSecondary transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('missionVision')}</span>
-                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i>
+                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
               </Link>
               <Link to="/our-values" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraSecondary text-white font-bold rounded-xl hover:bg-sidraAccent transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('ourValues')}</span>
-                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i>
+                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
               </Link>
               <Link to="/our-team" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraTeal text-white font-bold rounded-xl hover:bg-sidraPrimary transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('ourTeam')}</span>
-                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i>
+                <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
               </Link>
             </div>
           </div>
         </div>
         <FAQSection faqs={aboutUsFaqs} titleKey="faqTitle" hideSubtitle={true} />
-      </main>
-      <Footer />
+      </div>
+      {/* Removed Footer */}
       <ScrollToTopButton />
-    </div>
+    </>
   );
 };
 
