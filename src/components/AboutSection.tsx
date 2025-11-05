@@ -44,8 +44,8 @@ const AboutSection = () => {
                   <i className="fas fa-check text-white"></i>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">{t('qualityAssured')}</div>
-                  <div className="text-sm text-gray-500">{t('isoCertified')}</div>
+                  <h3 className="font-bold text-gray-900">{t('qualityAssured')}</h3>
+                  <p className="text-sm text-gray-500">{t('isoCertified')}</p>
                 </div>
               </div>
             </div>
@@ -55,8 +55,8 @@ const AboutSection = () => {
                   <i className="fas fa-star text-white"></i>
                 </div>
                 <div>
-                  <div className="font-bold text-gray-900">{t('awardWinning')}</div>
-                  <div className="text-sm text-gray-500">{t('excellenceInHealthcare')}</div>
+                  <h3 className="font-bold text-gray-900">{t('awardWinning')}</h3>
+                  <p className="text-sm text-gray-500">{t('excellenceInHealthcare')}</p>
                 </div>
               </div>
             </div>

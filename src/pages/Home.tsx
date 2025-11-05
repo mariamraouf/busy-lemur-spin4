@@ -27,26 +27,22 @@ const Home = () => {
   ];
 
   return (
-    <> {/* Removed min-h-screen flex flex-col as it's now in App.tsx */}
+    <>
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('heroTitlePart1')} {t('heroTitlePart2')} {t('heroTitlePart3')} - Sidra Med</title>
         <meta name="description" content={t('heroDescription')} />
-        {/* Removed Font Awesome link from here */}
       </Helmet>
-      {/* Removed Navbar */}
-      {/* main tag is now in App.tsx, content starts directly */}
-        <HeroSection />
-        <StatsSection />
-        <AboutSection />
-        <ServicesSection />
-        <WhyChooseUsSection />
-        <SuccessStoriesSection />
-        <TestimonialsSection />
-        <PartnersSection />
-        <CtaSection />
-        <FullContactSection />
-        <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} />
-      {/* Removed Footer */}
+      <HeroSection />
+      <StatsSection />
+      <AboutSection />
+      <ServicesSection />
+      <WhyChooseUsSection />
+      <SuccessStoriesSection />
+      <TestimonialsSection />
+      <PartnersSection />
+      <CtaSection />
+      <FullContactSection />
+      <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} />
       <ScrollToTopButton />
     </>
   );

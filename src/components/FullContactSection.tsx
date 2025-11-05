@@ -35,28 +35,28 @@ const FullContactSection = () => {
             <form className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-3">{t('firstName')}</label>
-                  <input type="text" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterFirstName')} />
+                  <label htmlFor="firstName" className="block text-sm font-bold text-gray-700 mb-3">{t('firstName')}</label>
+                  <input type="text" id="firstName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterFirstName')} />
                 </div>
                 <div>
-                  <label className="block text-sm font-bold text-gray-700 mb-3">{t('lastName')}</label>
-                  <input type="text" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterLastName')} />
+                  <label htmlFor="lastName" className="block text-sm font-bold text-gray-700 mb-3">{t('lastName')}</label>
+                  <input type="text" id="lastName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterLastName')} />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-gray-700 mb-3">{t('emailAddress')}</label>
-                <input type="email" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterEmail')} />
+                <label htmlFor="emailAddress" className="block text-sm font-bold text-gray-700 mb-3">{t('emailAddress')}</label>
+                <input type="email" id="emailAddress" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterEmail')} />
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-gray-700 mb-3">{t('phoneNumber')}</label>
-                <input type="tel" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} defaultValue={phoneNumber} />
+                <label htmlFor="phoneNumber" className="block text-sm font-bold text-gray-700 mb-3">{t('phoneNumber')}</label>
+                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} defaultValue={phoneNumber} />
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-gray-700 mb-3">{t('projectType')}</label>
-                <select className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300">
+                <label htmlFor="projectType" className="block text-sm font-bold text-gray-700 mb-3">{t('projectType')}</label>
+                <select id="projectType" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300">
                   <option>{t('selectProjectType')}</option>
                   <option>{t('hospitalDevelopment')}</option>
                   <option>{t('clinicSetup')}</option>
@@ -66,8 +66,8 @@ const FullContactSection = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-bold text-gray-700 mb-3">{t('message')}</label>
-                <textarea rows={5} className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all resize-none hover:border-gray-300" placeholder={t('tellUsAboutProject')}></textarea>
+                <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-3">{t('message')}</label>
+                <textarea id="message" rows={5} className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all resize-none hover:border-gray-300" placeholder={t('tellUsAboutProject')}></textarea>
               </div>
 
               <button type="submit" className="w-full bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent text-white font-bold py-6 rounded-xl hover:shadow-2xl transition-all transform hover:scale-105 text-lg">

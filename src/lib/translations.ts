@@ -176,6 +176,7 @@ export const translations = {
     aboutUsPageMainDescription: "Sidra Med is a specialized medical services firm based in Saudi Arabia, acting as strategic enablers for healthcare projects from concept to execution.", // New key
     whoWeAreDescription1: "Sidra Med Ltd. is a specialised medical services firm based in Saudi Arabia. We act as strategic enablers for healthcare projects by providing comprehensive services across every project phase from concept to execution.",
     whoWeAreDescription2: "Whether supporting hospital development, clinics, laboratories, or digital health initiatives, we offer world-class expertise tailored to the Saudi market and its unique regulatory landscape. We integrate medical knowledge, engineering excellence, and operational execution to deliver dependable, scalable healthcare solutions.",
+    aboutUsMetaDescription: "Discover Sidra Med's story and expertise in healthcare project delivery across Saudi Arabia, from concept to operational readiness, ensuring seamless execution and regulatory alignment.", // NEW
 
     // Our Values Page
     ourValuesPageTitle: "Our Values",
@@ -187,6 +188,7 @@ export const translations = {
     value3Description: "We continuously seek smarter, more efficient ways to deliver healthcare solutions.",
     value4Title: "Excellence",
     value4Description: "We strive for excellence in execution, from planning to implementation.",
+    ourValuesMetaDescription: "Explore Sidra Med's core values: Integrity, Collaboration, Innovation, and Excellence, which drive our commitment to transforming healthcare in Saudi Arabia.", // NEW
 
     // Our Team Page
     ourTeamPageTitle: "OUR TEAM",
@@ -200,10 +202,12 @@ export const translations = {
     team4Description: "Professionals ensuring project viability and long-term financial sustainability.",
     teamRole3Description: "Specialists in healthcare facility design, construction, and regulatory compliance.", // NEW
     teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.", // NEW
+    ourTeamMetaDescription: "Meet the expert team at Sidra Med, comprising healthcare project managers, clinical experts, engineers, and financial analysts dedicated to your project's success in Saudi Arabia.", // NEW
 
     // Our Services Page (Detailed Content)
     ourServicesPageTitle: "Our Comprehensive Healthcare Services", // Added this line
     ourServicesPageDescription: "Sidra Med offers practical, strategic, and technical support across all stages of healthcare project development. Whether you're launching a new clinic, upgrading an existing hospital, managing healthcare investments, or planning for long-term operations, we provide the tools and expertise to ensure success.",
+    ourServicesMetaDescription: "Explore Sidra Med's comprehensive healthcare services, including project & technical support, operational management, and consortium-driven solutions for facilities across Saudi Arabia.", // NEW
 
     projectTechnicalSupportTitle: "Project & Technical Support",
     projectTechnicalSupportDescription: "We help clients assess feasibility, plan facility layouts, and ensure alignment with local regulatory requirements.",
@@ -433,6 +437,7 @@ export const translations = {
     partnersPageDescription: "We collaborate with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.",
     ourValued: "Our Valued", // Added missing key
     partnersTitle: "Partners", // Added missing key
+    partnersMetaDescription: "Explore Sidra Med's esteemed network of partners, collaborating to deliver comprehensive healthcare solutions and drive innovation across Saudi Arabia.", // NEW
 
     // Partners Page FAQs
     partnersFaqQ1: "How does Sidra Med choose its partners?",
@@ -625,6 +630,7 @@ export const translations = {
     aboutUsPageMainDescription: "سدرة ميد هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية، تعمل كممكّن استراتيجي للمشاريع الصحية من المفهوم إلى التنفيذ.", // New key
     whoWeAreDescription1: "سدرة ميد المحدودة هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية. نعمل كممكّنين استراتيجيين للمشاريع الصحية من خلال تقديم خدمات شاملة عبر كل مرحلة من مراحل المشروع من المفهوم إلى التنفيذ.",
     whoWeAreDescription2: "سواء كان الدعم لتطوير المستشفيات، العيادات، المختبرات، أو مبادرات الصحة الرقمية، فإننا نقدم خبرة عالمية المستوى مصممة خصيصًا للسوق السعودي وبيئته التنظيمية الفريدة. نحن ندمج المعرفة الطبية، التميز الهندسي، والتنفيذ التشغيلي لتقديم حلول رعاية صحية موثوقة وقابلة للتطوير.",
+    aboutUsMetaDescription: "اكتشف قصة سدرة ميد وخبرتها في تنفيذ مشاريع الرعاية الصحية في جميع أنحاء المملكة العربية السعودية، من المفهوم إلى الجاهزية التشغيلية، مما يضمن التنفيذ السلس والامتثال التنظيمي.", // NEW
 
     // Our Values Page
     ourValuesPageTitle: "قيمنا",
@@ -636,6 +642,7 @@ export const translations = {
     value3Description: "نسعى باستمرار لإيجاد طرق أذكى وأكثر كفاءة لتقديم حلول الرعاية الصحية.",
     value4Title: "التميز",
     value4Description: "نسعى جاهدين للتميز في التنفيذ، من التخطيط إلى التطبيق.",
+    ourValuesMetaDescription: "استكشف قيم سدرة ميد الأساسية: النزاهة، التعاون، الابتكار، والتميز، التي تدفع التزامنا بتحويل الرعاية الصحية في المملكة العربية السعودية.", // NEW
 
     // Our Team Page
     ourTeamPageTitle: "فريقنا",
@@ -649,10 +656,12 @@ export const translations = {
     team4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
     teamRole3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.", // NEW
     teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.", // NEW
+    ourTeamMetaDescription: "تعرف على فريق الخبراء في سدرة ميد، والذي يضم مديري مشاريع الرعاية الصحية، والخبراء السريريين، والمهندسين، والمحللين الماليين المكرسين لنجاح مشروعك في المملكة العربية السعودية.", // NEW
 
     // Our Services Page (Detailed Content)
     ourServicesPageTitle: "خدماتنا الشاملة للرعاية الصحية", // Added this line
     ourServicesPageDescription: "تقدم سدرة ميد الدعم العملي والاستراتيجي والتقني في جميع مراحل تطوير مشاريع الرعاية الصحية. سواء كنت تطلق عيادة جديدة، أو تقوم بترقية مستشفى قائم، أو تدير استثمارات الرعاية الصحية، أو تخطط للعمليات طويلة الأجل، فإننا نوفر الأدوات والخبرة لضمان النجاح.",
+    ourServicesMetaDescription: "استكشف خدمات سدرة ميد الشاملة للرعاية الصحية، بما في ذلك دعم المشاريع والتقنيات، والإدارة التشغيلية، والحلول القائمة على التحالف للمرافق في جميع أنحاء المملكة العربية السعودية.", // NEW
 
     projectTechnicalSupportTitle: "الدعم الفني للمشاريع",
     projectTechnicalSupportDescription: "نساعد العملاء في تقييم الجدوى، وتخطيط تصميم المنشآت، وضمان التوافق مع المتطلبات التنظيمية المحلية.",
@@ -882,6 +891,7 @@ export const translations = {
     partnersPageDescription: "نتعاون مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.",
     ourValued: "شركاؤنا الكرام", // Added missing key
     partnersTitle: "الشركاء", // Added missing key
+    partnersMetaDescription: "استكشف شبكة سدرة ميد الموقرة من الشركاء، الذين يتعاونون لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة العربية السعودية.", // NEW
 
     // Partners Page FAQs
     partnersFaqQ1: "كيف تختار سدرة ميد شركاءها؟",

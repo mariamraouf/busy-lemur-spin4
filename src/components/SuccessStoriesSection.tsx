@@ -28,7 +28,7 @@ const SuccessStoriesSection = () => {
       description: t('clinicNetworkOptimizationDescription'),
       stats: [
         { label: t('clinicNetworkOptimizationStat1'), value: "30%", unit: t('efficiency'), icon: "fas fa-chart-line" },
-        { label: t('clinicNetworkOptimizationStat2'), value: "EMR", unit: t('system'), icon: "fas fa-notes-medical" },
+        { label: t('clinicNetworkOptimizationStat2'), value: "EMR", unit: t('system'), icon: "fas fa-laptop-medical" },
         { label: t('clinicNetworkOptimizationStat3'), value: "High", unit: t('satisfaction'), icon: "fas fa-smile" },
       ],
       gradientFrom: "from-sidraSecondary",

@@ -70,13 +70,12 @@ const OurServicesPage = () => {
   ];
 
   return (
-    <> {/* Removed min-h-screen flex flex-col */}
+    <>
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('services')} - Sidra Med</title>
-        <meta name="description" content={t('servicesSummarySubtitle')} />
+        <meta name="description" content={t('ourServicesMetaDescription')} />
       </Helmet>
-      {/* Removed Navbar */}
-      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Adjusted pt-32 to pt-24 */}
+      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
         </div>
@@ -131,7 +130,7 @@ const OurServicesPage = () => {
                           <i className={cn(item.icon, "text-xl")}></i>
                         </div>
                         <CardTitle className={cn("text-xl font-bold text-gray-900", language === 'ar' ? 'mr-4' : 'ml-4')}>
-                          {item.title}
+                          <h3>{item.title}</h3> {/* Changed to H3 */}
                         </CardTitle>
                       </CardHeader>
                       <CardDescription className="text-gray-600 leading-relaxed text-base flex-grow">
@@ -177,7 +176,7 @@ const OurServicesPage = () => {
                   )}>
                     <i className={cn(step.icon, "text-white text-2xl")}></i>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 mb-2">{step.title}</h3> {/* Changed to H3 */}
                   <p className="text-gray-700 text-base">{step.description}</p>
                 </div>
               ))}
@@ -186,7 +185,6 @@ const OurServicesPage = () => {
         </div>
         <FAQSection faqs={servicesFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </div>
-      {/* Removed Footer */}
       <ScrollToTopButton />
     </>
   );

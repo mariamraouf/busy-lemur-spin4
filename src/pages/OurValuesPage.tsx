@@ -49,13 +49,12 @@ const OurValuesPage = () => {
   ];
 
   return (
-    <> {/* Removed min-h-screen flex flex-col */}
+    <>
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('ourValues')} - Sidra Med</title>
-        <meta name="description" content={t('value1Description')} />
+        <meta name="description" content={t('ourValuesMetaDescription')} />
       </Helmet>
-      {/* Removed Navbar */}
-      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden"> {/* Adjusted pt-32 to pt-24 */}
+      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
           <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
@@ -85,9 +84,9 @@ const OurValuesPage = () => {
                 )}>
                   <i className={cn(value.icon, "text-white text-2xl")}></i>
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h2 className="text-xl font-bold text-gray-900 mb-4"> {/* Changed to H2 */}
                   {value.title}
-                </h3>
+                </h2>
                 <p className="text-gray-600 leading-relaxed">
                   {value.description}
                 </p>
@@ -97,7 +96,6 @@ const OurValuesPage = () => {
         </div>
         <FAQSection faqs={ourValuesFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </div>
-      {/* Removed Footer */}
       <ScrollToTopButton />
     </>
   );
