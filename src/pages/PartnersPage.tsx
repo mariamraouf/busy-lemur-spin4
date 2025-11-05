@@ -22,23 +22,31 @@ const PartnersPage = () => {
     { name: t('partnerKingsCollegeHospital'), logo: "/partners/kings-college-hospital.png" },
     { name: t('partnerItqan'), logo: "/partners/itqan.png" },
     { name: t('partnerFizik'), logo: "/partners/fizik.png" },
-    { name: t('partnerDrSolimanFakeehHospital'), logo: "/partners/dr-soliman-fakeeh-hospital.png" }, // NEW
-    { name: t('partnerInma'), logo: "/partners/inma.png" }, // NEW
-    { name: t('partnerBClinic'), logo: "/partners/b-clinic.png" }, // NEW
-    { name: t('partnerKPMG'), logo: "/partners/kpmg.png" }, // NEW
-    { name: t('partnerPVR'), logo: "/partners/pvr.png" }, // NEW
-    { name: t('partnerAllSensesMedicalCenter'), logo: "/partners/all-senses-medical-center.png" }, // NEW
-    { name: t('partnerKidneyCareCenter'), logo: "/partners/kidney-care-center.png" }, // NEW
-    { name: t('partnerRadRadiologyPlanning'), logo: "/partners/rad-radiology-planning.png" }, // NEW
-    { name: t('partnerCDLMedicalLaboratories'), logo: "/partners/cdl-medical-laboratories.png" }, // NEW
-    { name: t('partnerAbeer'), logo: "/partners/abeer.png" }, // NEW
-    { name: t('partnerAlMaddahiaHolding'), logo: "/partners/almaddahia-holding.png" }, // NEW
-    { name: t('partnerZmzm'), logo: "/partners/zmzm.png" }, // NEW
-    { name: t('partnerKingdomMedicine'), logo: "/partners/kingdom-medicine.png" }, // NEW
-    { name: t('partnerDoctorsClinic'), logo: "/partners/doctors-clinic.png" }, // NEW
-    { name: t('partnerZaherMedicalComplex'), logo: "/partners/zaher-medical-complex.png" }, // NEW
-    { name: t('partnerAlAmmar'), logo: "/partners/al-ammar.png" }, // NEW
-    { name: t('partnerBunyan'), logo: "/partners/bunyan.png" }, // NEW
+    { name: t('partnerDrSolimanFakeehHospital'), logo: "/partners/dr-soliman-fakeeh-hospital.png" },
+    { name: t('partnerInma'), logo: "/partners/inma.png" },
+    { name: t('partnerBClinic'), logo: "/partners/b-clinic.png" },
+    { name: t('partnerKPMG'), logo: "/partners/kpmg.png" },
+    { name: t('partnerPVR'), logo: "/partners/pvr.png" },
+    { name: t('partnerAllSensesMedicalCenter'), logo: "/partners/all-senses-medical-center.png" },
+    { name: t('partnerKidneyCareCenter'), logo: "/partners/kidney-care-center.png" },
+    { name: t('partnerRadRadiologyPlanning'), logo: "/partners/rad-radiology-planning.png" },
+    { name: t('partnerCDLMedicalLaboratories'), logo: "/partners/cdl-medical-laboratories.png" },
+    { name: t('partnerAbeer'), logo: "/partners/abeer.png" },
+    { name: t('partnerAlMaddahiaHolding'), logo: "/partners/almaddahia-holding.png" },
+    { name: t('partnerZmzm'), logo: "/partners/zmzm.png" },
+    { name: t('partnerKingdomMedicine'), logo: "/partners/kingdom-medicine.png" },
+    { name: t('partnerDoctorsClinic'), logo: "/partners/doctors-clinic.png" },
+    { name: t('partnerZaherMedicalComplex'), logo: "/partners/zaher-medical-complex.png" },
+    { name: t('partnerAlAmmar'), logo: "/partners/al-ammar.png" },
+    { name: t('partnerBunyan'), logo: "/partners/bunyan.png" },
+    { name: t('partnerAldarHospital'), logo: "/partners/aldar-hospital.png" }, // NEW
+    { name: t('partnerAlmustaqbalMedical'), logo: "/partners/almustaqbal-medical.png" }, // NEW
+    { name: t('partnerNMG'), logo: "/partners/nmg.png" }, // NEW
+    { name: t('partnerMafaselClinics'), logo: "/partners/mafasel-clinics.png" }, // NEW
+    { name: t('partnerFutureHealthTrainingCenter'), logo: "/partners/future-health-training-center.png" }, // NEW
+    { name: t('partnerAlZahraaHospitals'), logo: "/partners/al-zahraa-hospitals.png" }, // NEW
+    { name: t('partnerMASBTS'), logo: "/partners/mas-bts.png" }, // NEW
+    { name: t('partnerTalab'), logo: "/partners/talab.png" }, // NEW
   ];
 
   const partnersFaqs = [
