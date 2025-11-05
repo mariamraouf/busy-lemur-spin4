@@ -20,7 +20,11 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center gap-x-4 mb-6">
-              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-24 h-24 object-contain filter invert" /> {/* Added filter invert here */}
+              <img 
+                src="/sidra-med-logo.png" 
+                alt="Sidra Med Logo" 
+                className="w-24 h-24 object-contain filter brightness(0) invert(1)" 
+              /> {/* Corrected filter to make it white */}
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
               {t('empoweringHealthcare')}
