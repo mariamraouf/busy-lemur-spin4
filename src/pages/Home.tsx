@@ -31,7 +31,7 @@ const Home = () => {
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('heroTitlePart1')} {t('heroTitlePart2')} {t('heroTitlePart3')} - Sidra Med</title>
         <meta name="description" content={t('heroDescription')} />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+        {/* Removed Font Awesome link from here */}
       </Helmet>
       {/* Removed Navbar */}
       {/* main tag is now in App.tsx, content starts directly */}
