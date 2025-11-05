@@ -7,8 +7,8 @@ const FullContactSection = () => {
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
 
-  // Google Maps embed URL for Jeddah, KSA. You can customize the coordinates and zoom.
-  const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238132.00000000002!2d39.0872629!3d21.5433331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3d01fb1137e59%3A0xe059579737b1185!2sJeddah%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1678888888888!5m2!1sen!2sus";
+  // Google Maps embed URL for the new specific address
+  const googleMapsEmbedUrl = "https://maps.google.com/maps?q=4500%20Libya%20Street,%20Al%20Hamra%20District,%2023324,%20Jeddah,%20Saudi%20Arabia&output=embed";
 
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
