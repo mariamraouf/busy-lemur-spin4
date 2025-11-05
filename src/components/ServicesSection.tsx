@@ -52,7 +52,7 @@ const ServicesSection = () => {
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('whatWeDo')}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
             <span className="block">{t('servicesSummaryTitle')}</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ const ServicesSection = () => {
                 <i className={cn(service.icon, "text-white text-3xl")}></i>
               </div>
               <h3 className={cn(
-                "text-2xl font-bold text-gray-900 mb-4 transition-colors",
+                "text-2xl font-bold text-gray-900 mb-4 transition-colors break-words",
                 service.hoverColor.replace('text-', 'group-hover:text-')
               )}>
                 {service.title}

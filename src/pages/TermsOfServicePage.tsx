@@ -36,7 +36,7 @@ const TermsOfServicePage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('termsOfServicePageTitle')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('termsOfServicePageTitle')}
             </h1>
           </div>
@@ -46,7 +46,7 @@ const TermsOfServicePage = () => {
 
             {termsSections.map((section, index) => (
               <div key={index} className="mb-8">
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4">{t(section.titleKey)}</h2>
+                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4 break-words">{t(section.titleKey)}</h2>
                 <p>{t(section.contentKey)}</p>
               </div>
             ))}

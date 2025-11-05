@@ -21,7 +21,7 @@ const AboutSection = () => {
                 {t('whoWeAre')}
               </span>
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-tight">
+            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-tight break-words">
               {t('aboutSummaryTitle')}
             </h2>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">
@@ -44,7 +44,7 @@ const AboutSection = () => {
                   <i className="fas fa-check text-white"></i>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900">{t('qualityAssured')}</h3>
+                  <h3 className="font-bold text-gray-900 break-words">{t('qualityAssured')}</h3>
                   <p className="text-sm text-gray-500">{t('isoCertified')}</p>
                 </div>
               </div>
@@ -55,7 +55,7 @@ const AboutSection = () => {
                   <i className="fas fa-star text-white"></i>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900">{t('awardWinning')}</h3>
+                  <h3 className="font-bold text-gray-900 break-words">{t('awardWinning')}</h3>
                   <p className="text-sm text-gray-500">{t('excellenceInHealthcare')}</p>
                 </div>
               </div>

@@ -26,7 +26,7 @@ const HeroSection = () => {
               {t('transformingHealthcare')}
             </span>
           </div>
-          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight break-words">
             <span className="block">{t('heroTitlePart1')}</span>
             {/* Adjusted gradient for better visibility */}
             <span className="block bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">{t('heroTitlePart2')}</span>

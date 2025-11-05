@@ -22,7 +22,7 @@ const CtaSection = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div data-aos="zoom-in" data-aos-duration="1000">
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8 break-words">
             <span className="block">{t('readyToBuildFuture')}</span>
             <span className="block bg-gradient-to-r from-sidraTeal via-sidraPrimary to-sidraSecondary bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
           </h2>

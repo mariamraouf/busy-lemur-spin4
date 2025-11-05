@@ -44,7 +44,7 @@ const TestimonialsSection = () => {
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('whatOurClientsSay')}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
             <span className="block">{t('hearFromLeaders')}</span>
           </h2>
         </div>
@@ -60,7 +60,7 @@ const TestimonialsSection = () => {
               <div className="flex items-center mb-6">
                 <img src={testimonial.avatar} alt={testimonial.author} className={cn("w-16 h-16 rounded-full object-cover border-4 border-sidraPrimary group-hover:border-sidraSecondary transition-colors duration-300", language === 'ar' ? 'ml-4' : 'mr-4')} /> {/* Adjusted for RTL */}
                 <div>
-                  <h3 className="text-xl font-bold text-gray-900">{testimonial.author}</h3>
+                  <h3 className="text-xl font-bold text-gray-900 break-words">{testimonial.author}</h3>
                   <p className="text-gray-600 text-sm">{testimonial.role}</p>
                 </div>
               </div>

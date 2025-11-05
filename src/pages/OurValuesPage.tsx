@@ -65,7 +65,7 @@ const OurValuesPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('ourValues')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('ourValuesPageTitle')}
             </h1>
           </div>
@@ -84,7 +84,7 @@ const OurValuesPage = () => {
                 )}>
                   <i className={cn(value.icon, "text-white text-2xl")}></i>
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-4"> {/* Changed to H2 */}
+                <h2 className="text-xl font-bold text-gray-900 mb-4 break-words"> {/* Changed to H2 */}
                   {value.title}
                 </h2>
                 <p className="text-gray-600 leading-relaxed">

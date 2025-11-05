@@ -65,7 +65,7 @@ const OurTeamPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('ourTeam')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('ourTeamPageTitle')}
             </h1>
           </div>
@@ -75,7 +75,7 @@ const OurTeamPage = () => {
               <img src="https://images.unsplash.com/photo-1579154204601-f159c8f8ad6e?w=800&h=600&fit=crop" alt="Our Team" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
             </div>
             <div className="relative p-8 bg-white rounded-3xl shadow-xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('ourTeamPageTitle')}</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('ourTeamPageTitle')}</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {t('whoWeAreDescription1')} {/* Reusing a general description for context */}
               </p>
@@ -86,7 +86,7 @@ const OurTeamPage = () => {
                       <i className={cn(role.icon, "text-white text-xl")}></i>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-lg">{role.title}</h3> {/* Changed to H3 */}
+                      <h3 className="font-bold text-gray-900 text-lg break-words">{role.title}</h3> {/* Changed to H3 */}
                       <p className="text-sm text-gray-600">{role.description}</p>
                     </div>
                   </div>

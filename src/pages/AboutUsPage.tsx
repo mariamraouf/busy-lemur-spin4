@@ -35,7 +35,7 @@ const AboutUsPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('whoWeAre')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('aboutUsPageMainTitle')}
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -48,7 +48,7 @@ const AboutUsPage = () => {
               <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop" alt="Healthcare Team" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
             </div>
             <div data-aos="fade-left" data-aos-duration="1000">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">{t('whoWeAre')}</h2> {/* Added H2 */}
+              <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('whoWeAre')}</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 {t('whoWeAreDescription1')}
               </p>
@@ -60,7 +60,7 @@ const AboutUsPage = () => {
 
           {/* Optional: Add Mission & Vision or Values here if desired, or link to them */}
           <div className="mt-20 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8">{t('learnMore')}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 break-words">{t('learnMore')}</h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/mission-vision" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraPrimary text-white font-bold rounded-xl hover:bg-sidraSecondary transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('missionVision')}</span>

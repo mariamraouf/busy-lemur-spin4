@@ -23,7 +23,7 @@ const Footer = () => {
               <img 
                 src="/sidra-med-logo.png" 
                 alt="Sidra Med Logo" 
-                className="w-24 h-24 object-contain filter brightness(0) invert(1)" 
+                className="w-24 h-24 object-contain filter invert(100%) sepia(100%) saturate(0%) hue-rotate(200deg) brightness(1000%)" 
               /> {/* Corrected filter to make it white */}
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
@@ -82,7 +82,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      {/* This comment was added to force a file change and trigger a rebuild. */}
     </footer>
   );
 };

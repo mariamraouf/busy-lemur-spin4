@@ -69,7 +69,7 @@ const SuccessStoriesSection = () => {
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6 font-sans">
             {t('ourSuccessStories')}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8 font-sans">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8 font-sans break-words">
             <span className="block">{t('projectsThatMadeImpact')}</span>
           </h2>
         </div>
@@ -93,7 +93,7 @@ const SuccessStoriesSection = () => {
                   story.gradientFrom, story.gradientTo
                 )}></div>
                 <div className="absolute bottom-4 left-4 right-4 text-white z-10">
-                  <CardTitle className="text-xl font-black leading-tight mb-1 text-white">
+                  <CardTitle className="text-xl font-black leading-tight mb-1 text-white break-words">
                     {story.title}
                   </CardTitle>
                   <CardDescription className="text-sm font-medium flex items-center text-white/90">

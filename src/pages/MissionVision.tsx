@@ -34,7 +34,7 @@ const MissionVision = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('missionVision')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('missionPageTitle')}
             </h1>
           </div>
@@ -45,7 +45,7 @@ const MissionVision = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center">
                   <i className="fas fa-bullseye text-white text-2xl"></i>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">{t('mission')}</h2>
+                <h2 className="text-3xl font-bold text-gray-900 break-words">{t('mission')}</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {t('missionContent')}
@@ -57,7 +57,7 @@ const MissionVision = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center">
                   <i className="fas fa-eye text-white text-2xl"></i>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900">{t('vision')}</h2>
+                <h2 className="text-3xl font-bold text-gray-900 break-words">{t('vision')}</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {t('visionContent')}
