@@ -196,6 +196,7 @@ export const translations = {
     team2Description: "These seasoned pros make sure everything runs perfectly, from patient care to daily operations.",
     teamRole3: "Healthcare Architects & Engineers",
     team3Description: "Our design and build gurus create amazing healthcare spaces that meet all the rules and look great.",
+    teamRole4: "Strategic & Financial Analysts", // Added missing key
     team4Description: "They're the brains behind the numbers, making sure your project is smart, viable, and financially sound for the long haul.",
     ourTeamMetaDescription: "Meet the expert team at Sidra Med, comprising healthcare project managers, clinical experts, engineers, and financial analysts dedicated to your project's success in Saudi Arabia.",
 
@@ -430,9 +431,9 @@ export const translations = {
 
     // Partners Page
     partnersPageTitle: "Our Esteemed Partners",
-    partnersPageDescription: "We team up with top organizations to deliver awesome healthcare solutions and spark innovation across the Kingdom.",
+    partnersPageDescription: "Through our partners' networks, we connect with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.",
     ourValued: "Our Trusted Network", // Updated English
-    partnersTitle: "Partners",
+    partnersTitle: "Network", // Changed to Network
     partnersMetaDescription: "Explore Sidra Med's esteemed network of partners, collaborating to deliver comprehensive healthcare solutions and drive innovation across Saudi Arabia.",
 
     // Partners Page FAQs
@@ -646,6 +647,7 @@ export const translations = {
     team2Description: "هؤلاء المحترفون المتمرسون يتأكدون من أن كل شيء يعمل بشكل مثالي، من رعاية المرضى إلى العمليات اليومية.",
     teamRole3: "مهندسو ومعماريو الرعاية الصحية",
     team3Description: "خبراء التصميم والبناء لدينا ينشئون مساحات رعاية صحية مذهلة تلبي جميع القواعد وتبدو رائعة.",
+    teamRole4: "محللون استراتيجيون وماليون", // Added missing key
     team4Description: "هم العقول المدبرة وراء الأرقام، يتأكدون من أن مشروعك ذكي، قابل للتطبيق، وسليم ماليًا على المدى الطويل.",
     ourTeamMetaDescription: "تعرف على فريق الخبراء في سدرة ميد، والذي يضم مديري مشاريع الرعاية الصحية، والخبراء السريريين، والمهندسين، والمحللين الماليين المكرسين لنجاح مشروعك في المملكة العربية السعودية.",
 
@@ -719,7 +721,7 @@ export const translations = {
     faqQ5: "كيف أحصل على استشارة لمشروعي؟",
     faqA5: "الأمر سهل للغاية! ما عليك سوى التوجه إلى قسم 'اتصل بنا' وملء النموذج، أو ببساطة أرسل لنا بريدًا إلكترونيًا أو اتصل بنا. نحن متحمسون لسماع مشروعك!",
     faqQ6: "هل تدعم سدرة ميد مبادرات الصحة الرقمية؟",
-    faqA6: "نعم، نحن نؤمن بالرقمنة! نقدم دعمًا شاملاً للصحة الرقمية، بما في ذلك تنفيذ أنظمة تكنولوجيا المعلومات، والسجلات الطبية الإلكترونية (EMR)، وحلول الرعاية الصحية عن بعد.",
+    faqA6: "نعم، نحن نؤمن بالرقمنة! نقدم دعمًا شاملاً للصحة الرقمية، بما في ذلك تنفيذ أنظمة تكنولوجيا المعلومات، والسجلات الطبية الإلكترونية (EMR), وحلول الرعاية الصحية عن بعد.",
 
     // Home Page FAQs
     homeFaqQ1: "ما الذي يميز سدرة ميد في الرعاية الصحية السعودية؟",
@@ -803,7 +805,7 @@ export const translations = {
     privacyPolicyInfoCollectionContent: "عند زيارتك لموقعنا، نجمع بعض التفاصيل حول جهازك، وكيف تتفاعل معنا، وما نحتاجه لمعالجة مشترياتك. إذا تواصلت معنا للحصول على الدعم، فقد نجمع المزيد. أي معلومات يمكن أن تحدد هويتك بشكل فريد هي ما نسميه 'المعلومات الشخصية'. تحقق من القائمة أدناه للحصول على التفاصيل المثيرة حول ما نجمع ولماذا.",
     privacyPolicyPersonalInfoTypes: [
       { title: "معلومات الجهاز", details: "فكر في إصدار متصفح الويب، وعنوان IP، والمنطقة الزمنية، وبيانات ملفات تعريف الارتباط، والصفحات التي تتصفحها، ومصطلحات البحث، وكيف تتنقل. لماذا نجمعها: للتأكد من أن موقعنا يعمل بشكل مثالي لك ولفهم كيفية استخدامه حتى نتمكن من جعله أفضل. كيف نحصل عليها: تلقائيًا عند زيارتك، باستخدام ملفات تعريف الارتباط، وملفات السجل، وغيرها من التقنيات السحرية." },
-      { title: "معلومات الطلب", details: "يتضمن ذلك اسمك، وعناوين الفواتير والشحن، وتفاصيل الدفع (مثل أرقام بطاقات الائتمان)، والبريد الإلكتروني، ورقم الهاتف. لماذا نجمعها: لتوصيل منتجاتك أو خدماتك إليك، ومعالجة المدفوعات، وترتيب الشحن، وإرسال الفواتير/التأكيدات، والدردشة معك، واكتشاف أي احتيال محتمل، و (إذا كنت موافقًا) إرسال معلومات أو إعلانات حول منتجاتنا. كيف نحصل عليها: أنت تقدمها لنا عند الشراء." },
+      { title: "معلومات الطلب", details: "يتضمن ذلك اسمك، وعناوين الفواتير والشحن، وتفاصيل الدفع (مثل أرقام بطاقات الائتمان)، والبريد الإلكتروني، ورقم الهاتف. لماذا نجمعها: لتوصيل منتجاتك أو خدماتك إليك، ومعالجة المدفوعات، وترتيب الشحن، وإرسال الفواتير/التأكيدات، والدردشة معك، واكتشاف أي احتيال محتمل، و (إذا كنت موافقًا) إرسال معلومات أو إعلانات حول منتجاتنا. كيف نحصل عليها: أنت تقدمها عندما تشتري." },
       { title: "معلومات دعم العملاء", details: "اسمك، وبريدك الإلكتروني، ورقم هاتفك، وأي شيء تستفسر عنه. لماذا نجمعها: لتقديم أفضل دعم عملاء ممكن. كيف نحصل عليها: أنت تقدمها عندما تتصل بنا." }
     ],
     privacyPolicySharingTitle: "مع من نشارك المعلومات",
@@ -880,9 +882,9 @@ export const translations = {
 
     // Partners Page
     partnersPageTitle: "شركاؤنا الكرام",
-    partnersPageDescription: "نتعاون مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.",
+    partnersPageDescription: "من خلال شبكات شركائنا، نتواصل مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.",
     ourValued: "شبكتنا الموثوقة", // Updated Arabic
-    partnersTitle: "الشركاء",
+    partnersTitle: "الشبكة", // Changed to Network
     partnersMetaDescription: "استكشف شبكة سدرة ميد الموقرة من الشركاء، الذين يتعاونون لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة العربية السعودية.",
 
     // Partners Page FAQs
