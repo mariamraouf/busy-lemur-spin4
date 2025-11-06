@@ -8,7 +8,7 @@ import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 // import SuccessStoriesSection from "@/components/SuccessStoriesSection"; // Removed
 // import TestimonialsSection from "@/components/TestimonialsSection"; // Removed
-import PartnersSection from "@/components/PartnersSection";
+import AnimatedPartnersSection from "@/components/AnimatedPartnersSection"; // Import the new animated section
 import CtaSection from "@/components/CtaSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
 import FAQSection from "@/components/FAQSection";
@@ -39,7 +39,7 @@ const Home = () => {
       <WhyChooseUsSection />
       {/* <SuccessStoriesSection /> */}
       {/* <TestimonialsSection /> */}
-      <PartnersSection />
+      <AnimatedPartnersSection /> {/* Render the new animated partners section */}
       <CtaSection />
       <FullContactSection />
       <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} />

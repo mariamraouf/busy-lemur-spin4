@@ -122,9 +122,13 @@ export default {
             'background-position': 'right center'
           }
         },
-        scroll: {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+        'scroll-left': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
+        'scroll-right': {
+          from: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(0)' },
         },
       },
       animation: {
@@ -135,7 +139,8 @@ export default {
         'bounce-slow': 'bounce-slow 3s infinite',
         'spin-slow': 'spin-slow 8s linear infinite',
         'gradient': 'gradient 15s ease infinite',
-        'scroll': 'scroll var(--scroll-duration) linear infinite',
+        'scroll-left': 'scroll-left var(--scroll-duration) linear infinite',
+        'scroll-right': 'scroll-right var(--scroll-duration) linear infinite',
       },
     },
   },
