@@ -58,13 +58,13 @@ const PartnersSection = () => {
       </div>
 
       <div className="relative w-full py-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center"> {/* Changed to static grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center">
           {partners.map((partner, index) => (
-            <div key={index} className="flex-shrink-0 w-48 mx-8">
+            <div key={index} className="flex items-center justify-center p-4"> {/* Centered, with padding */}
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-20 w-auto object-contain" // Removed grayscale and hover effects
+                className="max-h-20 w-auto object-contain" // Max height, auto width
               />
             </div>
           ))}
