@@ -19,7 +19,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Lato', 'sans-serif'], // Changed to Lato
+        sans: ['Quicksand', 'sans-serif'], // Changed to Quicksand
         arabic: ['Tajawal', 'sans-serif'], // Specific for Arabic
       },
       colors: {
