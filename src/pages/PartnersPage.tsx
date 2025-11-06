@@ -84,14 +84,14 @@ const PartnersPage = () => {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 flex items-center justify-center h-32 w-full max-w-[200px] transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="group flex items-center justify-center h-32 w-full max-w-[200px] transition-all duration-300 hover:scale-105" // Removed bg-white, rounded-2xl, p-6, shadow-lg, border, hover:shadow-xl
                 data-aos="fade-up"
                 data-aos-delay={50 * (index + 1)}
               >
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-full w-auto object-contain" // Removed grayscale and hover effects
+                  className="h-full w-auto object-contain"
                 />
               </div>
             ))}
