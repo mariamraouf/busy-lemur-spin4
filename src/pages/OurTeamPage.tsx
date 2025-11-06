@@ -41,7 +41,7 @@ const OurTeamPage = () => {
     },
     {
       icon: "fas fa-chart-line",
-      title: t('teamRole4'),
+      title: t('teamRole4'), // This should now resolve correctly
       description: t('team4Description'),
       gradientFrom: "from-sidraAccent",
       gradientTo: "to-sidraSecondary",
@@ -55,11 +55,9 @@ const OurTeamPage = () => {
         <meta name="description" content={t('ourTeamMetaDescription')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        {/* Animated background elements - REMOVED */}
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mr-[-50px]"> {/* Grid break: shifted right */}
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
               {t('ourTeam')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -68,7 +66,7 @@ const OurTeamPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-1 gap-16 items-center mb-20"> {/* Changed to single column */}
-            <div className="relative p-8 bg-white rounded-3xl shadow-xl border border-gray-100" data-aos="fade-up" data-aos-duration="1000"> {/* Adjusted animation */}
+            <div className="relative p-8 bg-white shadow-xl border border-gray-100" data-aos="fade-up" data-aos-duration="1000"> {/* Adjusted animation */}
               <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('ourTeamPageTitle')}</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {t('whoWeAreDescription1')} {/* Reusing a general description for context */}
@@ -76,7 +74,7 @@ const OurTeamPage = () => {
               <div className="grid grid-cols-2 gap-6">
                 {teamRoles.map((role, index) => (
                   <div key={index} className="flex items-start gap-x-4">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full flex items-center justify-center bg-gradient-to-br from-sidraPrimary to-sidraTeal">
+                    <div className="flex-shrink-0 w-12 h-12 flex items-center justify-center bg-gradient-to-br from-sidraPrimary to-sidraTeal">
                       <i className={cn(role.icon, "text-white text-xl")}></i>
                     </div>
                     <div>
