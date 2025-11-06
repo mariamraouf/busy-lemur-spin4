@@ -196,7 +196,7 @@ export const translations = {
     team2Description: "These seasoned pros make sure everything runs perfectly, from patient care to daily operations.",
     teamRole3: "Healthcare Architects & Engineers",
     team3Description: "Our design and build gurus create amazing healthcare spaces that meet all the rules and look great.",
-    teamRole4: "Strategic & Financial Analysts", // Added missing key
+    teamRole4: "Strategic & Financial Analysts", 
     team4Description: "They're the brains behind the numbers, making sure your project is smart, viable, and financially sound for the long haul.",
     ourTeamMetaDescription: "Meet the expert team at Sidra Med, comprising healthcare project managers, clinical experts, engineers, and financial analysts dedicated to your project's success in Saudi Arabia.",
 
@@ -430,10 +430,10 @@ export const translations = {
     partnerTalab: "Talab", 
 
     // Partners Page
-    partnersPageTitle: "Our Esteemed Partners",
-    partnersPageDescription: "Through our partners' networks, we connect with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.",
-    ourValued: "Our Trusted Network", // Updated English
-    partnersTitle: "Network", // Changed to Network
+    partnersPageTitle: "Our Trusted Network", // Changed to "Our Trusted Network"
+    partnersPageDescription: "Through our partners' networks, we connect with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.", // Updated description
+    ourValued: "Our Trusted Network", 
+    partnersTitle: "Network", // Changed to "Network"
     partnersMetaDescription: "Explore Sidra Med's esteemed network of partners, collaborating to deliver comprehensive healthcare solutions and drive innovation across Saudi Arabia.",
 
     // Partners Page FAQs
@@ -647,7 +647,7 @@ export const translations = {
     team2Description: "هؤلاء المحترفون المتمرسون يتأكدون من أن كل شيء يعمل بشكل مثالي، من رعاية المرضى إلى العمليات اليومية.",
     teamRole3: "مهندسو ومعماريو الرعاية الصحية",
     team3Description: "خبراء التصميم والبناء لدينا ينشئون مساحات رعاية صحية مذهلة تلبي جميع القواعد وتبدو رائعة.",
-    teamRole4: "محللون استراتيجيون وماليون", // Added missing key
+    teamRole4: "محللون استراتيجيون وماليون", 
     team4Description: "هم العقول المدبرة وراء الأرقام، يتأكدون من أن مشروعك ذكي، قابل للتطبيق، وسليم ماليًا على المدى الطويل.",
     ourTeamMetaDescription: "تعرف على فريق الخبراء في سدرة ميد، والذي يضم مديري مشاريع الرعاية الصحية، والخبراء السريريين، والمهندسين، والمحللين الماليين المكرسين لنجاح مشروعك في المملكة العربية السعودية.",
 
@@ -721,7 +721,7 @@ export const translations = {
     faqQ5: "كيف أحصل على استشارة لمشروعي؟",
     faqA5: "الأمر سهل للغاية! ما عليك سوى التوجه إلى قسم 'اتصل بنا' وملء النموذج، أو ببساطة أرسل لنا بريدًا إلكترونيًا أو اتصل بنا. نحن متحمسون لسماع مشروعك!",
     faqQ6: "هل تدعم سدرة ميد مبادرات الصحة الرقمية؟",
-    faqA6: "نعم، نحن نؤمن بالرقمنة! نقدم دعمًا شاملاً للصحة الرقمية، بما في ذلك تنفيذ أنظمة تكنولوجيا المعلومات، والسجلات الطبية الإلكترونية (EMR), وحلول الرعاية الصحية عن بعد.",
+    faqA6: "نعم، نحن نؤمن بالرقمنة! نقدم دعمًا شاملاً للصحة الرقمية، بما في ذلك تنفيذ أنظمة تكنولوجيا المعلومات، والسجلات الطبية الإلكترونية (EMR)، وحلول الرعاية الصحية عن بعد.",
 
     // Home Page FAQs
     homeFaqQ1: "ما الذي يميز سدرة ميد في الرعاية الصحية السعودية؟",
@@ -881,10 +881,10 @@ export const translations = {
     partnerTalab: "تَلَب",
 
     // Partners Page
-    partnersPageTitle: "شركاؤنا الكرام",
-    partnersPageDescription: "من خلال شبكات شركائنا، نتواصل مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.",
-    ourValued: "شبكتنا الموثوقة", // Updated Arabic
-    partnersTitle: "الشبكة", // Changed to Network
+    partnersPageTitle: "شبكتنا الموثوقة", // Changed to "شبكتنا الموثوقة"
+    partnersPageDescription: "من خلال شبكات شركائنا، نتواصل مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.", // Updated description
+    ourValued: "شبكتنا الموثوقة", 
+    partnersTitle: "الشبكة", // Changed to "الشبكة"
     partnersMetaDescription: "استكشف شبكة سدرة ميد الموقرة من الشركاء، الذين يتعاونون لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة العربية السعودية.",
 
     // Partners Page FAQs

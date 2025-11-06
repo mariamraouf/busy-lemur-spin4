@@ -61,7 +61,7 @@ const PartnersPage = () => {
   return (
     <>
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
-        <title>{t('partners')} - Sidra Med</title>
+        <title>{t('partnersPageTitle')} - Sidra Med</title> {/* Updated to partnersPageTitle */}
         <meta name="description" content={t('partnersMetaDescription')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
@@ -73,7 +73,7 @@ const PartnersPage = () => {
               {t('partners')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
-              {t('partnersPageTitle')}
+              {t('partnersPageTitle')} {/* Updated to partnersPageTitle */}
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {t('partnersPageDescription')}
