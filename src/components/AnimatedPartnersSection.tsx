@@ -51,16 +51,23 @@ const AnimatedPartnersSection = () => {
     { name: t('partnerTalab'), logo: "/partners/talab.png" },
   ];
 
-  // Calculate scroll duration based on number of logos to maintain consistent speed
-  const scrollDuration = partners.length * 3; // Increased multiplier for slower animation
+  // Create a base sequence by duplicating partners multiple times to ensure a long, seamless loop
+  // Duplicating 3 times means the full set of partners appears 3 times before repeating.
+  const baseSequence = [...partners, ...partners, ...partners];
 
-  // Create offset versions of the partners array for each line
-  const half = Math.floor(partners.length / 2);
-  const quarter = Math.floor(partners.length / 4);
+  // Calculate scroll duration based on the length of the base sequence
+  // Each logo takes roughly 1.5 seconds to scroll past (adjust as needed for desired speed)
+  const scrollDuration = baseSequence.length * 1.5; 
 
-  const line1Partners = [...partners, ...partners];
-  const line2Partners = [...partners.slice(half), ...partners, ...partners.slice(0, half)];
-  const line3Partners = [...partners.slice(quarter), ...partners, ...partners.slice(0, quarter)];
+  // Create offset versions of the base sequence for each line
+  // This ensures that each line starts with a different set of logos, reducing visible repetition across lines.
+  const offset1 = 0; // Line 1 starts at the beginning
+  const offset2 = Math.floor(partners.length / 3); // Line 2 offset by 1/3 of the original partners list
+  const offset3 = Math.floor(partners.length * 2 / 3); // Line 3 offset by 2/3 of the original partners list
+
+  const line1Partners = [...baseSequence.slice(offset1), ...baseSequence.slice(0, offset1)];
+  const line2Partners = [...baseSequence.slice(offset2), ...baseSequence.slice(0, offset2)];
+  const line3Partners = [...baseSequence.slice(offset3), ...baseSequence.slice(0, offset3)];
 
   return (
     <section id="animated-partners" className="py-16 bg-sidraLight relative overflow-hidden">
