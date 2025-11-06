@@ -2,10 +2,15 @@ import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
 
+interface Partner {
+  name: string;
+  logo: string;
+}
+
 const AnimatedPartnersSection = () => {
   const { t } = useLanguage();
 
-  const partners = [
+  const partners: Partner[] = [
     { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" },
     { name: t('partnerWomanHealth'), logo: "/partners/woman-health.png" },
     { name: t('partnerDrTalaQutub'), logo: "/partners/dr-tala-qutub.png" },
@@ -46,12 +51,16 @@ const AnimatedPartnersSection = () => {
     { name: t('partnerTalab'), logo: "/partners/talab.png" },
   ];
 
-  // Duplicate partners twice to ensure seamless looping with less immediate repetition
-  const duplicatedPartners = [...partners, ...partners]; 
-
   // Calculate scroll duration based on number of logos to maintain consistent speed
-  // Increased multiplier from 1.5 to 3 for slower animation
-  const scrollDuration = partners.length * 3; 
+  const scrollDuration = partners.length * 3; // Increased multiplier for slower animation
+
+  // Create offset versions of the partners array for each line
+  const half = Math.floor(partners.length / 2);
+  const quarter = Math.floor(partners.length / 4);
+
+  const line1Partners = [...partners, ...partners];
+  const line2Partners = [...partners.slice(half), ...partners, ...partners.slice(0, half)];
+  const line3Partners = [...partners.slice(quarter), ...partners, ...partners.slice(0, quarter)];
 
   return (
     <section id="animated-partners" className="py-16 bg-sidraLight relative overflow-hidden">
@@ -71,7 +80,7 @@ const AnimatedPartnersSection = () => {
             className="flex flex-nowrap animate-scroll-left"
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
-            {duplicatedPartners.map((partner, index) => (
+            {line1Partners.map((partner, index) => (
               <div key={`line1-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
@@ -85,7 +94,7 @@ const AnimatedPartnersSection = () => {
             className="flex flex-nowrap animate-scroll-right"
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
-            {duplicatedPartners.map((partner, index) => (
+            {line2Partners.map((partner, index) => (
               <div key={`line2-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
@@ -99,7 +108,7 @@ const AnimatedPartnersSection = () => {
             className="flex flex-nowrap animate-scroll-left"
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
-            {duplicatedPartners.map((partner, index) => (
+            {line3Partners.map((partner, index) => (
               <div key={`line3-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
