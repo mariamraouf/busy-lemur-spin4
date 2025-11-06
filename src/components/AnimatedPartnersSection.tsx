@@ -10,7 +10,7 @@ interface Partner {
 const AnimatedPartnersSection = () => {
   const { t, language } = useLanguage();
 
-  const partners: Partner[] = [
+  const allPartners: Partner[] = [
     { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" },
     { name: t('partnerWomanHealth'), logo: "/partners/woman-health.png" },
     { name: t('partnerDrTalaQutub'), logo: "/partners/dr-tala-qutub.png" },
@@ -51,13 +51,23 @@ const AnimatedPartnersSection = () => {
     { name: t('partnerTalab'), logo: "/partners/talab.png" },
   ];
 
-  const numPartners = partners.length;
-  // Duplicate partners twice to ensure seamless infinite scroll
-  const repeatedPartners = [...partners, ...partners]; 
+  // Divide partners into three distinct lines
+  const partnersLine1 = allPartners.slice(0, 13);
+  const partnersLine2 = allPartners.slice(13, 26);
+  const partnersLine3 = allPartners.slice(26, 38); // Remaining 12 logos
 
-  // Calculate scroll duration based on the number of *unique* partners
-  // This duration will be for one full cycle of the unique set.
-  const scrollDuration = numPartners * 1.5; // 1.5 seconds per logo for one full unique set
+  // Duplicate each line's partners for seamless infinite scroll
+  const repeatedPartnersLine1 = [...partnersLine1, ...partnersLine1];
+  const repeatedPartnersLine2 = [...partnersLine2, ...partnersLine2];
+  const repeatedPartnersLine3 = [...partnersLine3, ...partnersLine3];
+
+  // Base speed factor (e.g., 1.5 seconds per logo)
+  const speedFactor = 1.5; 
+
+  // Calculate scroll duration for each line based on its unique logo count
+  const scrollDuration1 = partnersLine1.length * speedFactor;
+  const scrollDuration2 = partnersLine2.length * speedFactor;
+  const scrollDuration3 = partnersLine3.length * speedFactor;
 
   // Determine animation classes based on language and desired visual direction
   // Line 1 & 3: Visually move left (LTR: left, RTL: right)
@@ -91,10 +101,10 @@ const AnimatedPartnersSection = () => {
         {/* Line 1: Moves visually left (LTR: left, RTL: right) */}
         <div className={cn("flex overflow-hidden", maskClassVisualLeft)}>
           <div
-            className={cn("flex flex-nowrap w-max", animationClassLine1_3)} // w-max ensures it takes full width of content
-            style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
+            className={cn("flex flex-nowrap w-max", animationClassLine1_3)}
+            style={{ '--scroll-duration': `${scrollDuration1}s` } as React.CSSProperties}
           >
-            {repeatedPartners.map((partner, index) => (
+            {repeatedPartnersLine1.map((partner, index) => (
               <div key={`line1-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
@@ -106,9 +116,9 @@ const AnimatedPartnersSection = () => {
         <div className={cn("flex overflow-hidden", maskClassVisualRight)}>
           <div
             className={cn("flex flex-nowrap w-max", animationClassLine2)}
-            style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
+            style={{ '--scroll-duration': `${scrollDuration2}s` } as React.CSSProperties}
           >
-            {repeatedPartners.map((partner, index) => (
+            {repeatedPartnersLine2.map((partner, index) => (
               <div key={`line2-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
@@ -120,9 +130,9 @@ const AnimatedPartnersSection = () => {
         <div className={cn("flex overflow-hidden", maskClassVisualLeft)}>
           <div
             className={cn("flex flex-nowrap w-max", animationClassLine1_3)}
-            style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
+            style={{ '--scroll-duration': `${scrollDuration3}s` } as React.CSSProperties}
           >
-            {repeatedPartners.map((partner, index) => (
+            {repeatedPartnersLine3.map((partner, index) => (
               <div key={`line3-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
