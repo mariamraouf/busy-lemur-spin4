@@ -9,8 +9,8 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden">
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center" 
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1587854692137-8cd983d87392?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
+        className="absolute inset-0 z-0 bg-cover bg-center filter blur-sm" // Added filter blur-sm
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551076805-e0186922b336?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }} // New image of clinic buildings
       >
         <div className="absolute inset-0 bg-black/60"></div> {/* Darker overlay for text readability */}
       </div>
