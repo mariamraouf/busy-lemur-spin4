@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "@/context/LanguageContext";
 import HeroSection from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
+// import StatsSection from "@/components/StatsSection"; // Removed
 // import AboutSection from "@/components/AboutSection"; // Removed
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
@@ -33,7 +33,7 @@ const Home = () => {
         <meta name="description" content={t('heroDescription')} />
       </Helmet>
       <HeroSection />
-      <StatsSection />
+      {/* <StatsSection /> */}
       {/* <AboutSection /> */}
       <ServicesSection />
       <WhyChooseUsSection />

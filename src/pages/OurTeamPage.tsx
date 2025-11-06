@@ -28,7 +28,7 @@ const OurTeamPage = () => {
     {
       icon: "fas fa-stethoscope",
       title: t('teamRole2'),
-      description: t('team2Description'), // Corrected key
+      description: t('team2Description'),
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
     },

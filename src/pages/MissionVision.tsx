@@ -12,7 +12,7 @@ const MissionVision = () => {
     { id: "mv-faq-1", question: t('missionVisionFaqQ1'), answer: t('missionVisionFaqA1') },
     { id: "mv-faq-2", question: t('missionVisionFaqQ2'), answer: t('missionVisionFaqA2') },
     { id: "mv-faq-3", question: t('missionVisionFaqQ3'), answer: t('missionVisionFaqA3') },
-    { id: "mv-faq-4", question: t('missionVisionFaqQ4'), answer: t('missionVisionF4') }, // Corrected key from missionVisionFaqA4 to missionVisionF4
+    { id: "mv-faq-4", question: t('missionVisionFaqQ4'), answer: t('missionVisionFaqA4') }, // Corrected key to missionVisionFaqA4
     { id: "mv-faq-5", question: t('missionVisionFaqQ5'), answer: t('missionVisionFaqA5') },
     { id: "mv-faq-6", question: t('missionVisionFaqQ6'), answer: t('missionVisionFaqA6') },
   ];

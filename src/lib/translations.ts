@@ -196,6 +196,7 @@ export const translations = {
     team2Description: "These seasoned pros make sure everything runs perfectly, from patient care to daily operations.",
     teamRole3: "Healthcare Architects & Engineers",
     team3Description: "Our design and build gurus create amazing healthcare spaces that meet all the rules and look great.",
+    teamRole4Title: "Strategic and Financial Analysts", // Renamed from teamRole4
     team4Description: "They're the brains behind the numbers, making sure your project is smart, viable, and financially sound for the long haul.",
     ourTeamMetaDescription: "Meet the expert team at Sidra Med, comprising healthcare project managers, clinical experts, engineers, and financial analysts dedicated to your project's success in Saudi Arabia.",
 
@@ -306,7 +307,8 @@ export const translations = {
     missionVisionFaqA2: "Our vision is to be the leading healthcare project delivery partner in Saudi Arabia, celebrated for innovation, reliability, and delivering successful outcomes for everyone involved.",
     missionVisionFaqQ3: "How does our mission guide daily work?",
     missionVisionFaqA3: "Our mission is the compass for every decision, keeping us focused on empowering clients and delivering excellence in every healthcare project.",
-    missionVisionF4: "Our long-term goals are to constantly innovate, expand our positive impact, and set new benchmarks for healthcare project delivery throughout the region.",
+    missionVisionFaqQ4: "What are Sidra Med's long-term goals?", // Renamed from missionVisionF4
+    missionVisionFaqA4: "Our long-term goals are to constantly innovate, expand our positive impact, and set new benchmarks for healthcare project delivery throughout the region.", // Renamed from missionVisionF4
     missionVisionFaqQ5: "How do you measure success against your mission and vision?",
     missionVisionFaqA5: "We measure success by happy clients, stellar project outcomes, full regulatory compliance, and the positive difference we make in Saudi Arabia's healthcare services.",
     missionVisionFaqQ6: "Is the mission and vision ever updated?",
@@ -645,7 +647,7 @@ export const translations = {
     team2Description: "هذولي المحترفين المتمرسين يتأكدون إن كل شي يشتغل تمام، من رعاية المرضى لين العمليات اليومية.",
     teamRole3: "مهندسو ومعماريو الرعاية الصحية",
     team3Description: "مصممينا ومهندسينا يبنون مساحات رعاية صحية مذهلة تلبي كل الأنظمة وتبدو رائعة.",
-    teamRole4: "محللون استراتيجيون وماليون", 
+    teamRole4Title: "محللون استراتيجيون وماليون", // Renamed from teamRole4
     team4Description: "هم العقول المدبرة وراء الأرقام، يتأكدون إن مشروعك ذكي، قابل للتطبيق، وسليم ماليًا على المدى الطويل.",
     ourTeamMetaDescription: "تعرف على فريق الخبراء في سدرة ميد، اللي يضم مديري مشاريع الرعاية الصحية، والخبراء السريريين، والمهندسين، والمحللين الماليين المكرسين لنجاح مشروعك في السعودية.",
 
@@ -756,7 +758,8 @@ export const translations = {
     missionVisionFaqA2: "رؤيتنا هي نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في السعودية، ونكون معروفين بالابتكار، والموثوقية، وتقديم نتائج ناجحة للكل.",
     missionVisionFaqQ3: "كيف توجه رسالتنا شغلنا اليومي؟",
     missionVisionFaqA3: "رسالتنا هي البوصلة لكل قرار، وتخلينا نركز على تمكين العملاء وتقديم التميز في كل مشروع رعاية صحية.",
-    missionVisionF4: "أهدافنا طويلة المدى هي الابتكار المستمر، وتوسيع تأثيرنا الإيجابي، ووضع معايير جديدة لتقديم مشاريع الرعاية الصحية في كل المنطقة.",
+    missionVisionFaqQ4: "ايش هي أهداف سدرة ميد طويلة المدى؟", // Renamed from missionVisionF4
+    missionVisionFaqA4: "أهدافنا طويلة المدى هي الابتكار المستمر، وتوسيع تأثيرنا الإيجابي، ووضع معايير جديدة لتقديم مشاريع الرعاية الصحية في كل المنطقة.", // Renamed from missionVisionF4
     missionVisionFaqQ5: "كيف تقيسون النجاح بناءً على رسالتكم ورؤيتكم؟",
     missionVisionFaqA5: "نقيس النجاح برضا العملاء، ونتائج المشاريع الممتازة، والالتزام الكامل بالأنظمة، والفرق الإيجابي اللي نسويه في خدمات الرعاية الصحية بالسعودية.",
     missionVisionFaqQ6: "هل الرسالة والرؤية تتحدث دايمًا؟",

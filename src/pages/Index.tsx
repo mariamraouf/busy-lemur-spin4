@@ -2,12 +2,12 @@ import React from "react";
 import { Helmet } from "react-helmet-async";
 import { useLanguage } from "@/context/LanguageContext";
 import HeroSection from "@/components/HeroSection";
-import StatsSection from "@/components/StatsSection";
-import AboutSection from "@/components/AboutSection";
+// import StatsSection from "@/components/StatsSection"; // Removed
+// import AboutSection from "@/components/AboutSection"; // Removed
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
-import SuccessStoriesSection from "@/components/SuccessStoriesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+// import SuccessStoriesSection from "@/components/SuccessStoriesSection"; // Removed
+// import TestimonialsSection from "@/components/TestimonialsSection"; // Removed
 import PartnersSection from "@/components/PartnersSection";
 import CtaSection from "@/components/CtaSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
@@ -27,26 +27,22 @@ const Home = () => {
   ];
 
   return (
-    <> {/* Removed min-h-screen flex flex-col as it's now in App.tsx */}
+    <>
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
         <title>{t('heroTitlePart1')} {t('heroTitlePart2')} {t('heroTitlePart3')} - Sidra Med</title>
         <meta name="description" content={t('heroDescription')} />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
       </Helmet>
-      {/* Removed Navbar */}
-      {/* main tag is now in App.tsx, content starts directly */}
-        <HeroSection />
-        <StatsSection />
-        <AboutSection />
-        <ServicesSection />
-        <WhyChooseUsSection />
-        <SuccessStoriesSection />
-        <TestimonialsSection />
-        <PartnersSection />
-        <CtaSection />
-        <FullContactSection />
-        <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} />
-      {/* Removed Footer */}
+      <HeroSection />
+      {/* <StatsSection /> */}
+      {/* <AboutSection /> */}
+      <ServicesSection />
+      <WhyChooseUsSection />
+      {/* <SuccessStoriesSection /> */}
+      {/* <TestimonialsSection /> */}
+      <PartnersSection />
+      <CtaSection />
+      <FullContactSection />
+      <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} />
       <ScrollToTopButton />
     </>
   );
