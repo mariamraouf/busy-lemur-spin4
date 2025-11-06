@@ -41,7 +41,7 @@ const OurTeamPage = () => {
     },
     {
       icon: "fas fa-chart-line",
-      title: t('teamRole4'), // This should now resolve correctly
+      title: t('teamRole4Title'), // This key is correctly defined in translations.ts
       description: t('team4Description'),
       gradientFrom: "from-sidraAccent",
       gradientTo: "to-sidraSecondary",
