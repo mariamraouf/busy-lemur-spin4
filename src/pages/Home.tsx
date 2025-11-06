@@ -3,11 +3,11 @@ import { Helmet } from "react-helmet-async";
 import { useLanguage } from "@/context/LanguageContext";
 import HeroSection from "@/components/HeroSection";
 import StatsSection from "@/components/StatsSection";
-import AboutSection from "@/components/AboutSection";
+// import AboutSection from "@/components/AboutSection"; // Removed
 import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
-import SuccessStoriesSection from "@/components/SuccessStoriesSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
+// import SuccessStoriesSection from "@/components/SuccessStoriesSection"; // Removed
+// import TestimonialsSection from "@/components/TestimonialsSection"; // Removed
 import PartnersSection from "@/components/PartnersSection";
 import CtaSection from "@/components/CtaSection";
 import ScrollToTopButton from "@/components/ScrollToTopButton";
@@ -34,11 +34,11 @@ const Home = () => {
       </Helmet>
       <HeroSection />
       <StatsSection />
-      <AboutSection />
+      {/* <AboutSection /> */}
       <ServicesSection />
       <WhyChooseUsSection />
-      <SuccessStoriesSection />
-      <TestimonialsSection />
+      {/* <SuccessStoriesSection /> */}
+      {/* <TestimonialsSection /> */}
       <PartnersSection />
       <CtaSection />
       <FullContactSection />
