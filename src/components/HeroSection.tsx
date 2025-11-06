@@ -9,15 +9,17 @@ const HeroSection = () => {
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        {/* Updated image to reflect medical buildings */}
-        <img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Modern Medical Building" className="w-full h-full object-cover" />
+        {/* Updated image to reflect healthcare infrastructure/management */}
+        <img src="https://images.unsplash.com/photo-1587854692137-8cd983d87392?w=1920&h=1080&fit=crop" alt="Modern Healthcare Facility" className="w-full h-full object-cover" />
         <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraSecondary/80 to-sidraAccent/90"></div>
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32 ml-[-100px]"> {/* Grid break: shifted left */}
+      {/* Floating Elements - REMOVED */}
+
+      <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
           <div className="mb-6">
-            <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm text-white text-sm font-semibold animate-pulse-slow">
+            <span className="inline-block px-6 py-2 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold animate-pulse-slow">
               {t('transformingHealthcare')}
             </span>
           </div>
@@ -31,12 +33,12 @@ const HeroSection = () => {
             {t('heroDescription')}
           </p>
           <div className="flex flex-col sm:flex-row gap-6" data-aos="fade-up" data-aos-delay="200">
-            <a href="#services" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold hover:bg-gray-100 transition-all transform hover:scale-104 shadow-2xl hover:shadow-3xl">
+            <a href="#services" className="group inline-flex items-center justify-center px-10 py-5 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl hover:shadow-3xl">
               <span>{t('exploreOurServices')}</span>
               <i className={cn("fas fa-rocket", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
             </a>
             <a href="#contact" className={cn(
-              "group inline-flex items-center justify-center px-10 py-5 bg-transparent border-3 border-white text-white font-bold hover:bg-white hover:text-sidraPrimary transition-all transform hover:scale-104",
+              "group inline-flex items-center justify-center px-10 py-5 bg-transparent border-3 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-sidraPrimary transition-all transform hover:scale-105",
               "bg-white/10 backdrop-blur-sm border border-white/20" // glass-effect
             )}>
               <span>{t('partnerWithUs')}</span>
