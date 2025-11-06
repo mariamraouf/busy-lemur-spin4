@@ -46,8 +46,8 @@ const PartnersSection = () => {
     { name: t('partnerTalab'), logo: "/partners/talab.png" }, // NEW
   ];
 
-  // Duplicate partners to create a seamless loop
-  const duplicatedPartners = [...partners, ...partners];
+  // Calculate a dynamic duration based on the number of partners for smoother animation
+  const scrollDuration = partners.length * 2; // 2 seconds per logo, adjust as needed
 
   return (
     <section id="partners" className="py-20 bg-sidraLight relative overflow-hidden">
@@ -57,21 +57,18 @@ const PartnersSection = () => {
         </span>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
           <span className="block">{t('ourValued')}</span>
-          {/* Removed the second span that was causing duplication */}
         </h2>
       </div>
 
       <div className="relative w-full overflow-hidden py-8">
-        <div
-          className="flex animate-scroll"
-          style={{ '--scroll-duration': `${duplicatedPartners.length * 2}s` } as React.CSSProperties}
-        >
-          {duplicatedPartners.map((partner, index) => (
-            <div key={index} className="flex-shrink-0 w-48 mx-8">
+        <div className="flex w-max animate-scroll" style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}>
+          {/* Render partners twice to create a seamless loop */}
+          {[...partners, ...partners].map((partner, index) => (
+            <div key={index} className="flex-shrink-0 w-48 mx-8 flex items-center justify-center">
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-20 w-auto object-contain transition-all duration-300" // Removed grayscale and group-hover:grayscale-0
+                className="h-20 w-auto object-contain" // Ensure no grayscale or conflicting styles
               />
             </div>
           ))}

@@ -122,9 +122,10 @@ export default {
             'background-position': 'right center'
           }
         },
+        // Modified scroll keyframe for seamless loop
         scroll: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
+          '100%': { transform: 'translateX(calc(-50% - var(--gap-compensation, 0px)))' }, // Adjust to scroll half the content
         },
       },
       animation: {

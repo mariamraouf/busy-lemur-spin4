@@ -91,7 +91,7 @@ const PartnersPage = () => {
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="h-full w-auto object-contain transition-all duration-300" // Removed grayscale and group-hover:grayscale-0
+                  className="h-full w-auto object-contain" // Ensure no grayscale or conflicting styles
                 />
               </div>
             ))}
