@@ -45,7 +45,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center group">
             <div className="flex items-center gap-x-3">
-              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-28 h-28 object-contain transform group-hover:scale-110 transition-transform duration-300" />
+              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-28 h-28 object-contain" /> {/* Removed transform and transition classes */}
             </div>
           </Link>
 

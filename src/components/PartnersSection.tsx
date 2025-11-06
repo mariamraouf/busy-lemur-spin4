@@ -46,9 +46,6 @@ const PartnersSection = () => {
     { name: t('partnerTalab'), logo: "/partners/talab.png" }, // NEW
   ];
 
-  // Duplicate partners to create a seamless loop
-  const duplicatedPartners = [...partners, ...partners];
-
   return (
     <section id="partners" className="py-20 bg-sidraLight relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center" data-aos="fade-up">
@@ -57,21 +54,17 @@ const PartnersSection = () => {
         </span>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
           <span className="block">{t('ourValued')}</span>
-          {/* Removed the second span that was causing duplication */}
         </h2>
       </div>
 
-      <div className="relative w-full overflow-hidden py-8">
-        <div
-          className="flex animate-scroll"
-          style={{ '--scroll-duration': `${duplicatedPartners.length * 2}s` } as React.CSSProperties}
-        >
-          {duplicatedPartners.map((partner, index) => (
+      <div className="relative w-full py-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center"> {/* Changed to static grid */}
+          {partners.map((partner, index) => (
             <div key={index} className="flex-shrink-0 w-48 mx-8">
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
+                className="h-20 w-auto object-contain" // Removed grayscale and hover effects
               />
             </div>
           ))}
