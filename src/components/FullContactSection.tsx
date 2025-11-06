@@ -8,7 +8,7 @@ const FullContactSection = () => {
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
 
   // Google Maps embed URL for the new specific address
-  const googleMapsEmbedUrl = "https://maps.google.com/maps?q=4500%20Libya%20Street,%20Al%20Hamra%20District,%2023324,%20Jeddah,%20Saudi%20Arabia&output=embed";
+  const googleMapsEmbedUrl = "https://maps.google.com/maps?q=The%20Office,%20Prince%20Sultan%20Rd,%20Al%20Khalidiyyah,%20Jeddah%2023421&output=embed";
 
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
