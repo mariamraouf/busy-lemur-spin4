@@ -27,9 +27,9 @@ const AboutUsPage = () => {
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
         {/* Animated background elements - REMOVED */}
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ml-[-100px]"> {/* Grid break: shifted left */}
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
               {t('whoWeAre')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -56,15 +56,15 @@ const AboutUsPage = () => {
           <div className="mt-20 text-center">
             <h2 className="text-3xl font-bold text-gray-900 mb-8 break-words">{t('learnMore')}</h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link to="/mission-vision" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraPrimary text-white font-bold rounded-xl hover:bg-sidraSecondary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/mission-vision" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraPrimary text-white font-bold hover:bg-sidraSecondary transition-all transform hover:scale-104 shadow-lg">
                 <span>{t('missionVision')}</span>
                 <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
               </Link>
-              <Link to="/our-values" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraSecondary text-white font-bold rounded-xl hover:bg-sidraAccent transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/our-values" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraSecondary text-white font-bold hover:bg-sidraAccent transition-all transform hover:scale-104 shadow-lg">
                 <span>{t('ourValues')}</span>
                 <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
               </Link>
-              <Link to="/our-team" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraTeal text-white font-bold rounded-xl hover:bg-sidraPrimary transition-all transform hover:scale-105 shadow-lg">
+              <Link to="/our-team" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraTeal text-white font-bold hover:bg-sidraPrimary transition-all transform hover:scale-104 shadow-lg">
                 <span>{t('ourTeam')}</span>
                 <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
               </Link>

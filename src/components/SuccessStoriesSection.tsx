@@ -59,14 +59,14 @@ const SuccessStoriesSection = () => {
 
       {/* Dynamic Background Elements */}
       <div className="absolute inset-0 overflow-hidden z-0">
-        <div className="absolute top-1/4 left-10 w-32 h-32 bg-white/5 rounded-full blur-3xl animate-bounce-slow"></div>
-        <div className="absolute bottom-1/3 right-20 w-24 h-24 bg-white/5 rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute top-1/2 left-1/2 w-40 h-40 bg-white/5 rounded-full blur-3xl animate-float" style={{ animationDelay: '-2s' }}></div>
+        <div className="absolute top-1/4 left-10 w-32 h-32 bg-white/5 blur-3xl animate-bounce-slow"></div>
+        <div className="absolute bottom-1/3 right-20 w-24 h-24 bg-white/5 blur-3xl animate-pulse-slow"></div>
+        <div className="absolute top-1/2 left-1/2 w-40 h-40 bg-white/5 blur-3xl animate-float" style={{ animationDelay: '-2s' }}></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mr-[-50px]"> {/* Grid break: shifted right */}
         <div className="text-center mb-20" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6 font-sans">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6 font-sans">
             {t('ourSuccessStories')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8 font-sans break-words">
@@ -78,7 +78,7 @@ const SuccessStoriesSection = () => {
           {stories.map((story, index) => (
             <Card
               key={story.id}
-              className="group bg-white rounded-3xl shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col"
+              className="group bg-white shadow-xl border border-gray-100 overflow-hidden transition-all duration-300 hover:scale-104 hover:shadow-2xl flex flex-col"
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
@@ -107,7 +107,7 @@ const SuccessStoriesSection = () => {
                 </p>
                 <div className="grid grid-cols-3 gap-4 text-center border-t border-gray-100 pt-6 mt-6">
                   {story.stats.map((stat, statIndex) => (
-                    <div key={statIndex} className="p-2 bg-sidraLight rounded-lg flex flex-col items-center justify-center">
+                    <div key={statIndex} className="p-2 bg-sidraLight flex flex-col items-center justify-center">
                       <i className={cn(stat.icon, "text-sidraPrimary text-xl mb-1")}></i>
                       <div className="text-md font-bold text-gray-900">{stat.value}</div>
                       <div className="text-xs text-gray-600">{stat.unit}</div> {/* Changed label to unit for clarity */}

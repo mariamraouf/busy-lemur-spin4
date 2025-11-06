@@ -12,9 +12,7 @@ const CtaSection = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
       </div>
 
-      {/* Animated Elements - REMOVED */}
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center mr-[-50px]"> {/* Grid break: shifted right */}
         <div data-aos="zoom-in" data-aos-duration="1000">
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-white mb-8 break-words">
             <span className="block">{t('readyToBuildFuture')}</span>
@@ -25,12 +23,12 @@ const CtaSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-6 justify-center" data-aos="fade-up" data-aos-delay="200">
             {/* Changed to tel: link for automatic call */}
-            <a href={`tel:${phoneNumber}`} className="group inline-flex items-center justify-center px-12 py-6 bg-white text-sidraPrimary font-bold rounded-2xl hover:bg-gray-100 transition-all transform hover:scale-105 shadow-2xl text-lg">
+            <a href={`tel:${phoneNumber}`} className="group inline-flex items-center justify-center px-12 py-6 bg-white text-sidraPrimary font-bold hover:bg-gray-100 transition-all transform hover:scale-104 shadow-2xl text-lg">
               <span>{t('callUs')}</span> {/* Using new 'callUs' key */}
               <i className={cn("fas fa-phone", language === 'ar' ? 'mr-3 group-hover:-translate-x-1 group-hover:-translate-y-1' : 'ml-3 group-hover:translate-x-1 group-hover:-translate-y-1', "transition-transform")}></i>
             </a>
             <a href="#contact" className={cn(
-              "group inline-flex items-center justify-center px-12 py-6 bg-transparent border-3 border-white text-white font-bold rounded-2xl hover:bg-white hover:text-sidraPrimary transition-all transform hover:scale-105 text-lg",
+              "group inline-flex items-center justify-center px-12 py-6 bg-transparent border-3 border-white text-white font-bold hover:bg-white hover:text-sidraPrimary transition-all transform hover:scale-104 text-lg",
               "bg-white/10 backdrop-blur-sm border border-white/20" // glass-effect
             )}>
               <span>{t('getAConsultation')}</span>

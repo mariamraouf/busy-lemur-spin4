@@ -24,11 +24,9 @@ const MissionVision = () => {
         <meta name="description" content={t('missionContent')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        {/* Animated background elements - REMOVED */}
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ml-[-100px]"> {/* Grid break: shifted left */}
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
               {t('missionVision')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -37,9 +35,9 @@ const MissionVision = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
+            <div className="bg-white p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
               <div className="flex items-center gap-x-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal flex items-center justify-center">
                   <i className="fas fa-bullseye text-white text-2xl"></i>
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 break-words">{t('mission')}</h2>
@@ -49,9 +47,9 @@ const MissionVision = () => {
               </p>
             </div>
 
-            <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
+            <div className="bg-white p-10 shadow-2xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
               <div className="flex items-center gap-x-4 mb-6">
-                <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent flex items-center justify-center">
                   <i className="fas fa-eye text-white text-2xl"></i>
                 </div>
                 <h2 className="text-3xl font-bold text-gray-900 break-words">{t('vision')}</h2>

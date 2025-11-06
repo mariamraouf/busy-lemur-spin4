@@ -49,31 +49,31 @@ const StatsSection = () => {
   return (
     <section id="stats" ref={sectionRef} className="py-20 bg-gradient-to-r from-gray-900 via-sidraPrimary to-sidraSecondary relative overflow-hidden">
       <div className="absolute inset-0 bg-black/50"></div>
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mr-[-50px]"> {/* Grid break: shifted right */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="text-center" data-aos="zoom-in" data-aos-delay="100">
-            <div className="w-20 h-20 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
+            <div className="w-20 h-20 bg-gradient-to-br from-sidraTeal to-sidraPrimary flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
               <i className="fas fa-hospital text-white text-2xl"></i>
             </div>
             <div className="text-4xl lg:text-5xl font-black text-white mb-2 counter" data-target="50">0</div>
             <div className="text-gray-300 font-semibold">{t('projectsCompleted')}</div>
           </div>
           <div className="text-center" data-aos="zoom-in" data-aos-delay="200">
-            <div className="w-20 h-20 bg-gradient-to-br from-sidraPrimary to-sidraAccent rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
+            <div className="w-20 h-20 bg-gradient-to-br from-sidraPrimary to-sidraAccent flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
               <i className="fas fa-users text-white text-2xl"></i>
             </div>
             <div className="text-4xl lg:text-5xl font-black text-white mb-2 counter" data-target="100">0</div>
             <div className="text-gray-300 font-semibold">{t('happyClients')}</div>
           </div>
           <div className="text-center" data-aos="zoom-in" data-aos-delay="300">
-            <div className="w-20 h-20 bg-gradient-to-br from-sidraSecondary to-sidraTeal rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
+            <div className="w-20 h-20 bg-gradient-to-br from-sidraSecondary to-sidraTeal flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
               <i className="fas fa-award text-white text-2xl"></i>
             </div>
             <div className="text-4xl lg:text-5xl font-black text-white mb-2 counter" data-target="15">0</div>
             <div className="text-gray-300 font-semibold">{t('yearsExperience')}</div>
           </div>
           <div className="text-center" data-aos="zoom-in" data-aos-delay="400">
-            <div className="w-20 h-20 bg-gradient-to-br from-sidraAccent to-sidraPrimary rounded-full flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
+            <div className="w-20 h-20 bg-gradient-to-br from-sidraAccent to-sidraPrimary flex items-center justify-center mx-auto mb-4 animate-pulse-slow">
               <i className="fas fa-globe text-white text-2xl"></i>
             </div>
             <div className="text-4xl lg:text-5xl font-black text-white mb-2 counter" data-target="25">0</div>

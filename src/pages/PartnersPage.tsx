@@ -65,11 +65,9 @@ const PartnersPage = () => {
         <meta name="description" content={t('partnersMetaDescription')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        {/* Animated background elements - REMOVED */}
-
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mr-[-50px]"> {/* Grid break: shifted right */}
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
               {t('partners')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -84,7 +82,7 @@ const PartnersPage = () => {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-2xl p-6 shadow-lg border border-gray-100 flex items-center justify-center h-32 w-full max-w-[200px] transition-all duration-300 hover:scale-105 hover:shadow-xl"
+                className="group bg-white p-6 shadow-lg border border-gray-100 flex items-center justify-center h-32 w-full max-w-[200px] transition-all duration-300 hover:scale-104 hover:shadow-xl"
                 data-aos="fade-up"
                 data-aos-delay={50 * (index + 1)}
               >

@@ -43,11 +43,9 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-      {/* Animated background elements - REMOVED */}
-
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mr-[-50px]"> {/* Grid break: shifted right */}
         <div className="text-center mb-20" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
             {t('whatWeDo')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -62,12 +60,12 @@ const ServicesSection = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="group bg-white rounded-3xl p-8 border border-gray-100 shadow-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group bg-white p-8 border border-gray-100 shadow-xl transition-all duration-300 hover:scale-104 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
               <div className={cn(
-                "w-20 h-20 rounded-2xl flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300",
+                "w-20 h-20 flex items-center justify-center mb-6 group-hover:rotate-12 transition-transform duration-300",
                 `bg-gradient-to-br ${service.gradientFrom} ${service.gradientTo}`
               )}>
                 <i className={cn(service.icon, "text-white text-3xl")}></i>
@@ -82,7 +80,7 @@ const ServicesSection = () => {
           ))}
         </div>
         <div className="text-center" data-aos="fade-up" data-aos-delay="500">
-          <Link to="/services" className="group inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white font-bold rounded-2xl hover:shadow-lg transition-all transform hover:scale-105 shadow-2xl hover:shadow-3xl">
+          <Link to="/services" className="group inline-flex items-center justify-center px-10 py-5 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white font-bold hover:shadow-lg transition-all transform hover:scale-104 shadow-2xl hover:shadow-3xl">
             <span>{t('exploreAllServices')}</span>
             <i className={cn("fas fa-arrow-right", language === 'ar' ? 'mr-3 group-hover:-translate-x-1' : 'ml-3 group-hover:translate-x-1', "transition-transform")}></i> {/* Adjusted for RTL */}
           </Link>

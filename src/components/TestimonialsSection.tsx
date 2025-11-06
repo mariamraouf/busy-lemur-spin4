@@ -35,13 +35,13 @@ const TestimonialsSection = () => {
   return (
     <section id="testimonials" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
       <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
+        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary blur-3xl"></div>
+        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ml-[-100px]"> {/* Grid break: shifted left */}
         <div className="text-center mb-20" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
             {t('whatOurClientsSay')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -53,12 +53,12 @@ const TestimonialsSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="group bg-white rounded-3xl p-8 shadow-xl border-2 border-transparent transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+              className="group bg-white p-8 shadow-xl border-2 border-transparent transition-all duration-300 hover:scale-104 hover:shadow-2xl"
               data-aos="fade-up"
               data-aos-delay={100 * (index + 1)}
             >
               <div className="flex items-center mb-6">
-                <img src={testimonial.avatar} alt={testimonial.author} className={cn("w-16 h-16 rounded-full object-cover border-4 border-sidraPrimary group-hover:border-sidraSecondary transition-colors duration-300", language === 'ar' ? 'ml-4' : 'mr-4')} /> {/* Adjusted for RTL */}
+                <img src={testimonial.avatar} alt={testimonial.author} className={cn("w-16 h-16 object-cover border-4 border-sidraPrimary group-hover:border-sidraSecondary transition-colors duration-300", language === 'ar' ? 'ml-4' : 'mr-4')} /> {/* Adjusted for RTL */}
                 <div>
                   <h3 className="text-xl font-bold text-gray-900 break-words">{testimonial.author}</h3>
                   <p className="text-gray-600 text-sm">{testimonial.role}</p>
@@ -68,7 +68,7 @@ const TestimonialsSection = () => {
                 "{testimonial.quote}"
               </p>
               <div className={cn(
-                "w-12 h-12 rounded-full flex items-center justify-center text-white text-2xl",
+                "w-12 h-12 flex items-center justify-center text-white text-2xl",
                 `bg-gradient-to-br ${testimonial.gradientFrom} ${testimonial.gradientTo}`
               )}>
                 <i className="fas fa-quote-right"></i>
