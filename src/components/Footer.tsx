@@ -20,8 +20,8 @@ const Footer = () => {
               <img 
                 src="/sidra-med-logo.png" 
                 alt="Sidra Med Logo" 
-                className="w-24 h-24 object-contain filter invert(100%)" 
-              /> {/* Changed filter to invert(100%) */}
+                className="w-24 h-24 object-contain" 
+              /> {/* Removed filter invert(100%) */}
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
               {t('empoweringHealthcare')}
