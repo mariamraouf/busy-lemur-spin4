@@ -41,11 +41,8 @@ const AboutUsPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
+            {/* Removed image from here */}
             <div data-aos="fade-right" data-aos-duration="1000">
-              {/* Replaced image with a more abstract, professional one */}
-              <img src="https://images.unsplash.com/photo-1587854692137-8cd983d87392?w=800&h=600&fit=crop" alt="Strategic Healthcare Planning" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
-            </div>
-            <div data-aos="fade-left" data-aos-duration="1000">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('whoWeAre')}</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 {t('whoWeAreDescription1')}
@@ -53,6 +50,10 @@ const AboutUsPage = () => {
               <p className="text-lg text-gray-600 leading-relaxed">
                 {t('whoWeAreDescription2')}
               </p>
+            </div>
+            <div data-aos="fade-left" data-aos-duration="1000">
+              {/* Placeholder for content if needed, or adjust grid to single column */}
+              {/* For now, I'll just leave it empty or you can add other content here */}
             </div>
           </div>
 

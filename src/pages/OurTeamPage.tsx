@@ -68,9 +68,7 @@ const OurTeamPage = () => {
           </div>
 
           <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            <div className="relative" data-aos="fade-right" data-aos-duration="1000">
-              <img src="https://images.unsplash.com/photo-1579154204601-f159c8f8ad6e?w=800&h=600&fit=crop" alt="Our Team" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
-            </div>
+            {/* Removed image from here */}
             <div className="relative p-8 bg-white rounded-3xl shadow-xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('ourTeamPageTitle')}</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
@@ -89,6 +87,10 @@ const OurTeamPage = () => {
                   </div>
                 ))}
               </div>
+            </div>
+            <div data-aos="fade-right" data-aos-duration="1000">
+              {/* Placeholder for content if needed, or adjust grid to single column */}
+              {/* For now, I'll just leave it empty or you can add other content here */}
             </div>
           </div>
         </div>
