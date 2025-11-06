@@ -31,7 +31,7 @@ const Navbar = () => {
     { id: 'home', label: t('home'), path: '/' },
     { id: 'aboutUs', label: t('aboutUs'), path: '/about-us' },
     { id: 'services', label: t('services'), path: '/services' },
-    { id: 'partners', label: t('partners'), path: '/partners' },
+    { id: 'ourValued', label: t('ourValued'), path: '/partners' }, // Changed from 'partners' to 'ourValued'
     { id: 'contact', label: t('contact'), path: '/contact' },
   ];
 
