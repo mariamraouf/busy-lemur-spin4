@@ -834,72 +834,72 @@ export const translations = {
     termsOfServiceSection5Title: "5. تعليقات المستخدمين والملاحظات والتقديمات الأخرى",
     termsOfServiceSection5Content: "إذا قمت، بناءً على طلبنا، بإرسال بعض التقديمات المحددة (على سبيل المثال إدخالات المسابقة) أو بدون طلب منا، أرسلت أفكارًا إبداعية أو اقتراحات أو مقترحات أو خططًا أو مواد أخرى، سواء عبر الإنترنت أو عبر البريد الإلكتروني أو عبر البريد العادي أو غير ذلك (يُشار إليها إجمالاً باسم 'التعليقات')، فإنك توافق على أنه يجوز لنا، في أي وقت، دون قيود، تحرير أو نسخ أو نشر أو توزيع أو ترجمة أو استخدام بأي طريقة أخرى في أي وسيط أي تعليقات ترسلها إلينا. نحن ولسنا ملزمين (1) بالحفاظ على سرية أي تعليقات؛ (2) بدفع تعويض عن أي تعليقات؛ أو (3) بالرد على أي تعليقات. يجوز لنا، ولكن ليس لدينا أي التزام، بمراقبة أو تحرير أو إزالة المحتوى الذي نحدده وفقًا لتقديرنا الخاص بأنه غير قانوني أو مسيء أو مهدد أو تشهيري أو افترائي أو إباحي أو فاحش أو غير مقبول بأي شكل آخر أو ينتهك الملكية الفكرية لأي طرف أو شروط الخدمة هذه. أنت توافق على أن تعليقاتك لن تنتهك أي حق لأي طرف ثالث، بما في ذلك حقوق الطبع والنشر أو العلامات التجارية أو الخصوصية أو الشخصية أو أي حق شخصية أو ملكية آخر. أنت توافق كذلك على أن تعليقاتك لن تحتوي على مواد تشهيرية أو غير قانونية أو مسيئة أو فاحشة بأي شكل آخر، أو تحتوي على أي فيروس كمبيوتر أو برامج ضارة أخرى يمكن أن تؤثر بأي شكل من الأشكال على تشغيل الخدمة أو أي موقع ويب ذي صلة. لا يجوز لك استخدام عنوان بريد إلكتروني مزيف، أو التظاهر بأنك شخص آخر غير نفسك، أو تضليلنا أو تضليل أطراف ثالثة بأي شكل آخر فيما يتعلق بأصل أي تعليقات. أنت وحدك المسؤول عن أي تعليقات تقوم بها ودقتها. نحن لا نتحمل أي مسؤولية ولا نتحمل أي التزام عن أي تعليقات تنشرها أنت أو أي طرف ثالث.",
     termsOfServiceSection6Title: "6. إخلاء المسؤولية عن الضمانات؛ تحديد المسؤولية",
-    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المناسب أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدها. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة هي (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، ولكن لا تقتصر على، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
+    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المنايق أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدها. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة هي (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، ولكن لا تقتصر على، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
     termsOfServiceSection7Title: "7. القانون الحاكم",
     termsOfServiceSection7Content: "تخضع شروط الخدمة هذه وأي اتفاقيات منفصلة نقدم لك بموجبها الخدمات وتفسر وفقًا لقوانين المملكة العربية السعودية.",
     termsOfServiceSection8Title: "8. معلومات الاتصال",
     termsOfServiceSection8Content: "يجب إرسال الأسئلة حول شروط الخدمة إلينا على amad@sidramed.com.sa.",
 
     // New Partner Names
-    partnerNoorAlAin: "Noor Al Ain Medical Services", // Changed to English text
-    partnerWomanHealth: "Woman's Health", // Changed to English text
-    partnerDrTalaQutub: "Dr. Tala Qutub Medical Center", // Changed to English text
-    partnerPrinceSattamUniversity: "Prince Sattam Bin Abdulaziz University", // Changed to English text
-    partnerDentaliaClinics: "Dentalia Clinics", // Changed to English text
-    partnerSSBCompany: "SSB Company", // Changed to English text
-    partnerAmazSpecialtyHospital: "Amaz Specialty Hospital", // Changed to English text
-    partnerDrOsamaAlwashiah: "Dr. Osama Alwashiah Clinics", // Changed to English text
-    partnerHeartCareCenter: "Heart Care Center", // Changed to English text
-    partnerKCMedicalCenter: "KC Medical Center", // Changed to English text
-    partnerKingsCollegeHospital: "King's College Hospital London", // Changed to English text
-    partnerItqan: "Itqan", // Changed to English text
-    partnerFizik: "Fizik Physical Therapy & Rehabilitation", // Changed to English text
-    partnerDrSolimanFakeehHospital: "Dr. Soliman Fakeeh Hospital", // Changed to English text
-    partnerInma: "Inma", // Changed to English text
-    partnerBClinic: "B Clinic", // Changed to English text
-    partnerKPMG: "KPMG", // Changed to English text
-    partnerPVR: "PVR", // Changed to English text
-    partnerAllSensesMedicalCenter: "All Senses Medical Center", // Changed to English text
-    partnerKidneyCareCenter: "Kidney Care Center", // Changed to English text
-    partnerRadRadiologyPlanning: "RAD Radiology Planning", // Changed to English text
-    partnerCDLMedicalLaboratories: "CDL Medical Laboratories", // Changed to English text
-    partnerAbeer: "Abeer", // Changed to English text
-    partnerAlMaddahiaHolding: "AlMaddahia Holding", // Changed to English text
-    partnerZmzm: "zmzm", // Changed to English text
-    partnerKingdomMedicine: "Kingdom Medicine", // Changed to English text
-    partnerDoctorsClinic: "Doctors Clinic", // Changed to English text
-    partnerZaherMedicalComplex: "Zaher Medical Complex", // Changed to English text
-    partnerAlAmmar: "Al-Ammar", // Changed to English text
-    partnerBunyan: "Bunyan", // Changed to English text
-    partnerAldarHospital: "Aldar Hospital", 
-    partnerAlmustaqbalMedical: "Almustaqbal Medical", 
-    partnerNMG: "NMG", 
-    partnerMafaselClinics: "Mafasel Clinics", 
-    partnerFutureHealthTrainingCenter: "Future Health Training Center", 
-    partnerAlZahraaHospitals: "Al Zahraa Hospitals", 
-    partnerMASBTS: "MAS BTS", 
-    partnerTalab: "Talab", 
+    partnerNoorAlAin: "شركة نور العين للخدمات الطبية",
+    partnerWomanHealth: "صحة المرأة",
+    partnerDrTalaQutub: "مركز د.طلال قطب الطبي",
+    partnerPrinceSattamUniversity: "معهد البحوث والخدمات الاستشارية بجامعة الأمير سطام بن عبدالعزيز",
+    partnerDentaliaClinics: "عيادات دينتاليا",
+    partnerSSBCompany: "شركة سعيد سعد بخروش للتجارة والمقاولات المحدودة",
+    partnerAmazSpecialtyHospital: "مستشفى أماز التخصصي",
+    partnerDrOsamaAlwashiah: "عيادات د.أسامة الوسية",
+    partnerHeartCareCenter: "مركز العناية بالقلب",
+    partnerKCMedicalCenter: "مركز كي سي الطبي",
+    partnerKingsCollegeHospital: "مستشفى كينغز كوليدج لندن",
+    partnerItqan: "إتقان",
+    partnerFizik: "فيزيك للعلاج الطبيعي والتأهيل",
+    partnerDrSolimanFakeehHospital: "مستشفى د.سليمان فقيه",
+    partnerInma: "إنماء",
+    partnerBClinic: "بي كلينك",
+    partnerKPMG: "كي بي إم جي",
+    partnerPVR: "بي في آر",
+    partnerAllSensesMedicalCenter: "مركز كل الحواس الطبي",
+    partnerKidneyCareCenter: "مركز العناية بالكلى",
+    partnerRadRadiologyPlanning: "راد للتخطيط الإشعاعي",
+    partnerCDLMedicalLaboratories: "مختبرات سي دي إل الطبية",
+    partnerAbeer: "عبير",
+    partnerAlMaddahiaHolding: "شركة المداحية القابضة",
+    partnerZmzm: "زمزم",
+    partnerKingdomMedicine: "طب المملكة",
+    partnerDoctorsClinic: "عيادات الأطباء",
+    partnerZaherMedicalComplex: "مجمع الطبيب زاهر قضيب البان الطبي العام",
+    partnerAlAmmar: "العمّار",
+    partnerBunyan: "بنيان",
+    partnerAldarHospital: "مستشفى الدار",
+    partnerAlmustaqbalMedical: "المستقبل الطبي",
+    partnerNMG: "إن إم جي",
+    partnerMafaselClinics: "عيادات مفاصل",
+    partnerFutureHealthTrainingCenter: "مركز المستقبل للتدريب الصحي",
+    partnerAlZahraaHospitals: "مستشفيات الزهراء",
+    partnerMASBTS: "شركة ماس القابضة",
+    partnerTalab: "تَلَب",
 
     // Partners Page
-    partnersPageTitle: "Our Trusted Network", // Changed to English text
-    partnersPageDescription: "Through our partners' networks, we connect with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.", // Changed to English text
-    ourValued: "Our Trusted Network", // Changed to English text
+    partnersPageTitle: "شبكتنا الموثوقة",
+    partnersPageDescription: "من خلال شبكات شركائنا، نتواصل مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.",
+    ourValued: "شبكتنا الموثوقة", 
     partnersTitle: "", // Changed to empty string
-    partnersMetaDescription: "Explore Sidra Med's esteemed network of partners, collaborating to deliver comprehensive healthcare solutions and drive innovation across Saudi Arabia.", // Changed to English text
+    partnersMetaDescription: "استكشف شبكة سدرة ميد الموقرة من الشركاء، الذين يتعاونون لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة العربية السعودية.",
 
     // Partners Page FAQs
-    partnersFaqQ1: "How does Sidra Med pick its partners?", // Changed to English text
-    partnersFaqA1: "We hand-pick partners based on their expertise, proven track record, commitment to quality, and how well they align with our mission to deliver exceptional healthcare solutions. Only the best!", // Changed to English text
-    partnersFaqQ2: "What's in it for me if I partner with Sidra Med?", // Changed to English text
-    partnersFaqA2: "Partners get to tap into our deep market knowledge, vast network, smart project management, and our knack for navigating complex regulations. This all leads to super successful projects!", // Changed to English text
-    partnersFaqQ3: "Can international companies team up with Sidra Med?", // Changed to English text
-    partnersFaqA3: "Yes, absolutely! We're always looking to partner with international firms wanting to enter or grow in the Saudi healthcare market. We'll help you integrate locally and provide all the support you need.", // Changed to English text
-    partnersFaqQ4: "What kinds of partnerships does Sidra Med get into?", // Changed to English text
-    partnersFaqA4: "We engage in all sorts of partnerships: strategic alliances for project delivery, tech collaborations, and service provider agreements across various healthcare domains. We're flexible!", // Changed to English text
-    partnersFaqQ5: "How can my organization become a partner?", // Changed to English text
-    partnersFaqA5: "If you're keen to partner with Sidra Med, just reach out via our contact page! Tell us about your organization and what you're great at. We'd love to explore how we can work together.", // Changed to English text
-    partnersFaqQ6: "Does Sidra Med offer exclusive partnerships?", // Changed to English text
-    partnersFaqA6: "Partnership terms vary depending on the collaboration. Our main goal is always mutually beneficial relationships that boost our collective capabilities and service offerings. Let's chat about it!", // Changed to English text
+    partnersFaqQ1: "كيف تختار سدرة ميد شركاءها؟",
+    partnersFaqA1: "نختار الشركاء بعناية بناءً على خبرتهم وسجلهم الحافل والتزامهم بالجودة وتوافقهم مع مهمتنا لتقديم حلول رعاية صحية استثنائية.",
+    partnersFaqQ2: "ما هي فوائد الشراكة مع سدرة ميد؟",
+    partnersFaqA2: "يستفيد الشركاء من معرفتنا العميقة بالسوق، وشبكتنا الواسعة، وإدارة المشاريع الاستراتيجية، والقدرة على التنقل في البيئات التنظيمية المعقدة، مما يؤدي إلى نتائج مشاريع ناجحة.",
+    partnersFaqQ3: "هل يمكن للشركات الدولية الشراكة مع سدرة ميد؟",
+    partnersFaqA3: "نعم، نسعى بنشاط إلى الشراكة مع الشركات الدولية التي تتطلع إلى دخول أو توسيع وجودها في السوق الرعاية الصحية السعودي، وتقديم التكامل والدعم المحلي.",
+    partnersFaqQ4: "ما هي أنواع الشراكات التي تشارك فيها سدرة ميد؟",
+    partnersFaqA4: "نشارك في شراكات مختلفة، بما في ذلك التحالفات الاستراتيجية لتسليم المشاريع، والتعاون التكنولوجي، واتفاقيات مزودي الخدمة عبر مجالات الرعاية الصحية المختلفة.",
+    partnersFaqQ5: "كيف يمكن لمؤسستي أن تصبح شريكاً؟",
+    partnersFaqA5: "إذا كنت مهتمًا بالشراكة مع سدرة ميد، يرجى التواصل معنا عبر صفحة الاتصال الخاصة بنا مع تفاصيل حول مؤسستك ومجالات خبرتك. يسعدنا استكشاف التعاون المحتمل.",
+    partnersFaqQ6: "هل تقدم سدرة ميد شراكات حصرية؟",
+    partnersFaqA6: "تختلف شروط الشراكة اعتمادًا على طبيعة التعاون. نحن نهدف إلى علاقات متبادلة المنفعة تعزز قدراتنا وعروض خدماتنا الجماعية.",
   },
 };
 
