@@ -67,9 +67,8 @@ const OurTeamPage = () => {
             </h1>
           </div>
 
-          <div className="grid lg:grid-cols-2 gap-16 items-center mb-20">
-            {/* Removed image from here */}
-            <div className="relative p-8 bg-white rounded-3xl shadow-xl border border-gray-100" data-aos="fade-left" data-aos-duration="1000">
+          <div className="grid lg:grid-cols-1 gap-16 items-center mb-20"> {/* Changed to single column */}
+            <div className="relative p-8 bg-white rounded-3xl shadow-xl border border-gray-100" data-aos="fade-up" data-aos-duration="1000"> {/* Adjusted animation */}
               <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('ourTeamPageTitle')}</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {t('whoWeAreDescription1')} {/* Reusing a general description for context */}
@@ -87,10 +86,6 @@ const OurTeamPage = () => {
                   </div>
                 ))}
               </div>
-            </div>
-            <div data-aos="fade-right" data-aos-duration="1000">
-              {/* Placeholder for content if needed, or adjust grid to single column */}
-              {/* For now, I'll just leave it empty or you can add other content here */}
             </div>
           </div>
         </div>
