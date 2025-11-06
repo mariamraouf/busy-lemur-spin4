@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
-import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
+import ScrollToTopButton from '@/components/ScrollToTopButton';
 
 const PartnersPage = () => {
   const { language, t } = useLanguage();
@@ -39,14 +39,14 @@ const PartnersPage = () => {
     { name: t('partnerZaherMedicalComplex'), logo: "/partners/zaher-medical-complex.png" },
     { name: t('partnerAlAmmar'), logo: "/partners/al-ammar.png" },
     { name: t('partnerBunyan'), logo: "/partners/bunyan.png" },
-    { name: t('partnerAldarHospital'), logo: "/partners/aldar-hospital.png" }, // NEW
-    { name: t('partnerAlmustaqbalMedical'), logo: "/partners/almustaqbal-medical.png" }, // NEW
-    { name: t('partnerNMG'), logo: "/partners/nmg.png" }, // NEW
-    { name: t('partnerMafaselClinics'), logo: "/partners/mafasel-clinics.png" }, // NEW
-    { name: t('partnerFutureHealthTrainingCenter'), logo: "/partners/future-health-training-center.png" }, // NEW
-    { name: t('partnerAlZahraaHospitals'), logo: "/partners/al-zahraa-hospitals.png" }, // NEW
-    { name: t('partnerMASBTS'), logo: "/partners/mas-bts.png" }, // NEW
-    { name: t('partnerTalab'), logo: "/partners/talab.png" }, // NEW
+    { name: t('partnerAldarHospital'), logo: "/partners/aldar-hospital.png" },
+    { name: t('partnerAlmustaqbalMedical'), logo: "/partners/almustaqbal-medical.png" },
+    { name: t('partnerNMG'), logo: "/partners/nmg.png" },
+    { name: t('partnerMafaselClinics'), logo: "/partners/mafasel-clinics.png" },
+    { name: t('partnerFutureHealthTrainingCenter'), logo: "/partners/future-health-training-center.png" },
+    { name: t('partnerAlZahraaHospitals'), logo: "/partners/al-zahraa-hospitals.png" },
+    { name: t('partnerMASBTS'), logo: "/partners/mas-bts.png" },
+    { name: t('partnerTalab'), logo: "/partners/talab.png" },
   ];
 
   const partnersFaqs = [
@@ -61,21 +61,19 @@ const PartnersPage = () => {
   return (
     <>
       <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
-        <title>{t('partnersPageTitle')} - Sidra Med</title> {/* Updated to partnersPageTitle */}
+        <title>{t('partnersPageTitle')} - Sidra Med</title>
         <meta name="description" content={t('partnersMetaDescription')} />
       </Helmet>
-      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        {/* Animated background elements - REMOVED */}
-
+      <div className="pt-24 pb-16 bg-moyasar-light-bg relative overflow-hidden">
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-moyasar-blue-primary text-moyasar-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('partners')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
-              {t('partnersPageTitle')} {/* Updated to partnersPageTitle */}
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-moyasar-dark-text mb-8 break-words">
+              {t('partnersPageTitle')}
             </h1>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-moyasar-gray-text max-w-3xl mx-auto leading-relaxed">
               {t('partnersPageDescription')}
             </p>
           </div>
@@ -84,14 +82,14 @@ const PartnersPage = () => {
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="flex items-center justify-center p-4 transition-all duration-300 hover:scale-105" // Removed fixed height/width, added padding
+                className="flex items-center justify-center p-4 transition-all duration-300 hover:scale-105"
                 data-aos="fade-up"
                 data-aos-delay={50 * (index + 1)}
               >
                 <img
                   src={partner.logo}
                   alt={partner.name}
-                  className="max-h-24 w-auto object-contain" // Slightly larger max-height for the dedicated page
+                  className="max-h-24 w-auto object-contain"
                 />
               </div>
             ))}

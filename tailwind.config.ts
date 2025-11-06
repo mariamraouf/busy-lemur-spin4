@@ -19,8 +19,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Quicksand', 'sans-serif'], // Changed to Quicksand
-        arabic: ['Tajawal', 'sans-serif'], // Specific for Arabic
+        sans: ['Quicksand', 'sans-serif'], // Keeping Quicksand for LTR
+        arabic: ['Tajawal', 'sans-serif'], // Keeping Tajawal for RTL
       },
       colors: {
         border: "hsl(var(--border))",
@@ -66,13 +66,15 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
-        // Custom Sidra Med colors - updated to match the provided palette
-        sidraPrimary: '#449CA6',
-        sidraSecondary: '#29A6A6',
-        sidraAccent: '#80A6A6',
-        sidraTeal: '#03A696',
-        sidraLight: '#F2F2F2',
-        // Removed sidraPurple, sidraPink, sidraOrange, sidraEmerald, sidraCyan, sidraIndigo
+        // Moyasar-inspired colors
+        'moyasar-blue-primary': '#3B37F3',
+        'moyasar-blue-secondary': '#6C63FF',
+        'moyasar-teal-accent': '#00C4CC',
+        'moyasar-dark-text': '#1A202C',
+        'moyasar-gray-text': '#4A5568',
+        'moyasar-light-bg': '#F8F9FA',
+        'moyasar-white': '#FFFFFF',
+        'moyasar-border': '#E2E8F0',
       },
       borderRadius: {
         lg: "var(--radius)",

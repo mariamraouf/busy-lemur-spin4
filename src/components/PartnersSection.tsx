@@ -36,23 +36,23 @@ const PartnersSection = () => {
     { name: t('partnerZaherMedicalComplex'), logo: "/partners/zaher-medical-complex.png" },
     { name: t('partnerAlAmmar'), logo: "/partners/al-ammar.png" },
     { name: t('partnerBunyan'), logo: "/partners/bunyan.png" },
-    { name: t('partnerAldarHospital'), logo: "/partners/aldar-hospital.png" }, // NEW
-    { name: t('partnerAlmustaqbalMedical'), logo: "/partners/almustaqbal-medical.png" }, // NEW
-    { name: t('partnerNMG'), logo: "/partners/nmg.png" }, // NEW
-    { name: t('partnerMafaselClinics'), logo: "/partners/mafasel-clinics.png" }, // NEW
-    { name: t('partnerFutureHealthTrainingCenter'), logo: "/partners/future-health-training-center.png" }, // NEW
-    { name: t('partnerAlZahraaHospitals'), logo: "/partners/al-zahraa-hospitals.png" }, // NEW
-    { name: t('partnerMASBTS'), logo: "/partners/mas-bts.png" }, // NEW
-    { name: t('partnerTalab'), logo: "/partners/talab.png" }, // NEW
+    { name: t('partnerAldarHospital'), logo: "/partners/aldar-hospital.png" },
+    { name: t('partnerAlmustaqbalMedical'), logo: "/partners/almustaqbal-medical.png" },
+    { name: t('partnerNMG'), logo: "/partners/nmg.png" },
+    { name: t('partnerMafaselClinics'), logo: "/partners/mafasel-clinics.png" },
+    { name: t('partnerFutureHealthTrainingCenter'), logo: "/partners/future-health-training-center.png" },
+    { name: t('partnerAlZahraaHospitals'), logo: "/partners/al-zahraa-hospitals.png" },
+    { name: t('partnerMASBTS'), logo: "/partners/mas-bts.png" },
+    { name: t('partnerTalab'), logo: "/partners/talab.png" },
   ];
 
   return (
-    <section id="partners" className="py-20 bg-sidraLight relative overflow-hidden">
+    <section id="partners" className="py-20 bg-moyasar-light-bg relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center" data-aos="fade-up">
-        <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+        <span className="inline-block px-4 py-2 bg-moyasar-blue-primary text-moyasar-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
           {t('partners')}
         </span>
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-moyasar-dark-text mb-8 break-words">
           <span className="block">{t('ourValued')}</span>
         </h2>
       </div>
@@ -60,11 +60,11 @@ const PartnersSection = () => {
       <div className="relative w-full py-8">
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center">
           {partners.map((partner, index) => (
-            <div key={index} className="flex items-center justify-center p-4"> {/* Centered, with padding */}
+            <div key={index} className="flex items-center justify-center p-4">
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="max-h-20 w-auto object-contain" // Max height, auto width
+                className="max-h-20 w-auto object-contain"
               />
             </div>
           ))}
