@@ -123,22 +123,22 @@ export default {
           }
         },
         // LTR animations
-        'scroll-left': {
+        'scroll-left': { // Visually moves left (content moves left)
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-50%)' }, // Scrolls half its width
+          to: { transform: 'translateX(-50%)' }, 
         },
-        'scroll-right': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(50%)' }, // Scrolls half its width in opposite direction
+        'scroll-right': { // Visually moves right (content moves right)
+          from: { transform: 'translateX(-50%)' }, 
+          to: { transform: 'translateX(0)' }, 
         },
         // RTL specific animations (visually mirrored)
-        'scroll-left-rtl': { // Visually moves left (content moves right)
+        'scroll-left-rtl': { // Visually moves left in RTL (content moves right)
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(50%)' },
         },
-        'scroll-right-rtl': { // Visually moves right (content moves left)
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-50%)' },
+        'scroll-right-rtl': { // Visually moves right in RTL (content moves left)
+          from: { transform: 'translateX(50%)' },
+          to: { transform: 'translateX(0)' },
         },
       },
       animation: {
