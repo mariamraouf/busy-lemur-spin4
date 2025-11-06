@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
+import MovingPartnersBar from './MovingPartnersBar'; // Import the new component
 
 const PartnersSection = () => {
   const { t } = useLanguage();
@@ -58,17 +59,7 @@ const PartnersSection = () => {
       </div>
 
       <div className="relative w-full py-8">
-        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center">
-          {partners.map((partner, index) => (
-            <div key={index} className="flex items-center justify-center p-4"> {/* Centered, with padding */}
-              <img
-                src={partner.logo}
-                alt={partner.name}
-                className="max-h-20 w-auto object-contain" // Max height, auto width
-              />
-            </div>
-          ))}
-        </div>
+        <MovingPartnersBar partners={partners} barCount={3} logoHeightClass="max-h-16" baseDurationSeconds={50} />
       </div>
     </section>
   );
