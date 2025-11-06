@@ -32,7 +32,7 @@ const AboutSection = () => {
 
           <div className="relative" data-aos="fade-left" data-aos-duration="1000">
             <div className="relative z-10">
-              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop" alt="Healthcare Team" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
+              <img src="https://images.unsplash.com/photo-1587854692137-8cd983d87392?w=800&h=600&fit=crop" alt="Strategic Healthcare Facility Management" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
             </div>
             {/* Floating Cards - REMOVED */}
           </div>
