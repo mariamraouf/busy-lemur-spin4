@@ -51,8 +51,8 @@ const PartnersSection = () => {
 
   return (
     <section id="partners" className="py-20 bg-sidraLight relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center ml-[-100px]" data-aos="fade-up"> {/* Grid break: shifted left */}
-        <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center" data-aos="fade-up">
+        <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
           {t('partners')}
         </span>
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -71,7 +71,7 @@ const PartnersSection = () => {
               <img
                 src={partner.logo}
                 alt={partner.name}
-                className="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300 hover:scale-104"
+                className="h-20 w-auto object-contain grayscale hover:grayscale-0 transition-all duration-300"
               />
             </div>
           ))}

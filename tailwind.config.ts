@@ -37,8 +37,8 @@ export default {
           foreground: "hsl(var(--secondary-foreground))",
         },
         destructive: {
-          DEFAULT: "0 84.2% 60.2%",
-          foreground: "210 40% 98%",
+          DEFAULT: "hsl(var(--destructive))",
+          foreground: "hsl(var(--destructive-foreground))",
         },
         muted: {
           DEFAULT: "hsl(var(--muted))",
@@ -75,10 +75,9 @@ export default {
         // Removed sidraPurple, sidraPink, sidraOrange, sidraEmerald, sidraCyan, sidraIndigo
       },
       borderRadius: {
-        lg: "0px",
-        md: "0px",
-        sm: "0px",
-        DEFAULT: "0px", // Ensure all default border-radii are 0
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
         "accordion-down": {

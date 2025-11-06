@@ -12,9 +12,11 @@ const FullContactSection = () => {
 
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 mr-[-50px]"> {/* Grid break: shifted right */}
+      {/* Animated background elements - REMOVED */}
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16" data-aos="fade-up">
-          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
+          <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('getInTouch')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -26,32 +28,32 @@ const FullContactSection = () => {
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          <div className="bg-white p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
+          <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
             <form className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-bold text-gray-700 mb-3">{t('firstName')}</label>
-                  <input type="text" id="firstName" className="w-full px-6 py-4 border-2 border-gray-200 focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterFirstName')} />
+                  <input type="text" id="firstName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterFirstName')} />
                 </div>
                 <div>
                   <label htmlFor="lastName" className="block text-sm font-bold text-gray-700 mb-3">{t('lastName')}</label>
-                  <input type="text" id="lastName" className="w-full px-6 py-4 border-2 border-gray-200 focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterLastName')} />
+                  <input type="text" id="lastName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterLastName')} />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="emailAddress" className="block text-sm font-bold text-gray-700 mb-3">{t('emailAddress')}</label>
-                <input type="email" id="emailAddress" className="w-full px-6 py-4 border-2 border-gray-200 focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterEmail')} />
+                <input type="email" id="emailAddress" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterEmail')} />
               </div>
 
               <div>
                 <label htmlFor="phoneNumber" className="block text-sm font-bold text-gray-700 mb-3">{t('phoneNumber')}</label>
-                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} defaultValue={phoneNumber} />
+                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} defaultValue={phoneNumber} />
               </div>
 
               <div>
                 <label htmlFor="projectType" className="block text-sm font-bold text-gray-700 mb-3">{t('projectType')}</label>
-                <select id="projectType" className="w-full px-6 py-4 border-2 border-gray-200 focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300">
+                <select id="projectType" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300">
                   <option>{t('selectProjectType')}</option>
                   <option>{t('hospitalDevelopment')}</option>
                   <option>{t('clinicSetup')}</option>
@@ -62,10 +64,10 @@ const FullContactSection = () => {
 
               <div>
                 <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-3">{t('message')}</label>
-                <textarea id="message" rows={5} className="w-full px-6 py-4 border-2 border-gray-200 focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all resize-none hover:border-gray-300" placeholder={t('tellUsAboutProject')}></textarea>
+                <textarea id="message" rows={5} className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all resize-none hover:border-gray-300" placeholder={t('tellUsAboutProject')}></textarea>
               </div>
 
-              <button type="submit" className="w-full bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent text-white font-bold py-6 hover:shadow-2xl transition-all transform hover:scale-104 text-lg">
+              <button type="submit" className="w-full bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent text-white font-bold py-6 rounded-xl hover:shadow-2xl transition-all transform hover:scale-105 text-lg">
                 <span>{t('sendMessage')}</span>
                 <i className={cn("fas fa-paper-plane", language === 'ar' ? 'mr-3' : 'ml-3')}></i>
               </button>
@@ -76,7 +78,7 @@ const FullContactSection = () => {
             <div className="space-y-8 mb-12">
               <div className="flex items-start gap-x-6 group">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal flex items-center justify-center group-hover:scale-104 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <i className="fas fa-map-marker-alt text-white text-xl"></i>
                   </div>
                 </div>
@@ -88,26 +90,26 @@ const FullContactSection = () => {
 
               <div className="flex items-start gap-x-6 group">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent flex items-center justify-center group-hover:scale-104 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <i className="fas fa-envelope text-white text-xl"></i>
                   </div>
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2 text-lg break-words">{t('email')}</h3>
-                  <a href="mailto:amad@sidramed.com.sa" className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold hover:scale-104">amad@sidramed.com.sa</a>
+                  <a href="mailto:amad@sidramed.com.sa" className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">amad@sidramed.com.sa</a>
                 </div>
               </div>
 
               <div className="flex items-start gap-x-6 group">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary flex items-center justify-center group-hover:scale-104 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <i className="fas fa-phone text-white text-xl"></i>
                   </div>
                 </div>
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2 text-lg break-words">{t('phoneNumber')}</h3>
-                  <a href={`tel:${phoneNumber}`} className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold hover:scale-104">{phoneNumber}</a>
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold mt-1 hover:scale-104">
+                  <a href={`tel:${phoneNumber}`} className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">{phoneNumber}</a>
+                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold mt-1">
                     <i className="fab fa-whatsapp mr-2"></i> {t('whatsapp')}
                   </a>
                 </div>
@@ -115,7 +117,7 @@ const FullContactSection = () => {
 
               <div className="flex items-start gap-x-6 group">
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-gradient-to-br from-sidraAccent to-sidraSecondary flex items-center justify-center group-hover:scale-104 transition-transform duration-300">
+                  <div className="w-16 h-16 bg-gradient-to-br from-sidraAccent to-sidraSecondary rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
                     <i className="fas fa-clock text-white text-xl"></i>
                   </div>
                 </div>
@@ -127,7 +129,7 @@ const FullContactSection = () => {
             </div>
 
             {/* Google Maps Embed */}
-            <div className="bg-white shadow-2xl border border-gray-100 overflow-hidden mt-12">
+            <div className="bg-white rounded-3xl shadow-2xl border border-gray-100 overflow-hidden mt-12">
               <h3 className="text-xl font-bold text-gray-900 p-6 pb-0 break-words">{t('ourLocation')}</h3>
               <iframe
                 src={googleMapsEmbedUrl}

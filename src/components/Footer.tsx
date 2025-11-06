@@ -10,7 +10,9 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary text-white py-16 relative overflow-hidden">
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mr-[-50px]"> {/* Grid break: shifted right */}
+      {/* Animated background elements - REMOVED */}
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="lg:col-span-2">
@@ -25,16 +27,16 @@ const Footer = () => {
               {t('empoweringHealthcare')}
             </p>            
             <div className="flex gap-x-4 mb-6"> {/* Added margin-bottom for spacing */}
-              <a href={`tel:${phoneNumber}`} className="w-12 h-12 bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-104" aria-label="Call us">
+              <a href={`tel:${phoneNumber}`} className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Call us">
                 <i className="fas fa-phone text-xl"></i>
               </a>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-104" aria-label="WhatsApp us">
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="WhatsApp us">
                 <i className="fab fa-whatsapp text-xl"></i>
               </a>
-              <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-104" aria-label="Instagram">
+              <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Instagram">
                 <i className="fab fa-instagram text-xl"></i>
               </a>
-              <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-104" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in text-xl"></i>
               </a>
             </div>
@@ -47,10 +49,10 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6 text-white">{t('quickLinks')}</h4>
             <ul className="space-y-4">
-              <li><Link to="/" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('home')}</Link></li>
-              <li><Link to="/about-us" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('aboutUs')}</Link></li>
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('ourServicesFooter')}</Link></li>
-              <li><Link to="/contact" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('contact')}</Link></li>
+              <li><Link to="/" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('home')}</Link></li>
+              <li><Link to="/about-us" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('aboutUs')}</Link></li>
+              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('ourServicesFooter')}</Link></li>
+              <li><Link to="/contact" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('contact')}</Link></li>
             </ul>
           </div>
 
@@ -58,10 +60,10 @@ const Footer = () => {
           <div>
             <h4 className="text-xl font-bold mb-6 text-white">{t('services')}</h4>
             <ul className="space-y-4">
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service1Title')}</Link></li>
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service2Title')}</Link></li>
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('marketIntegration')}</Link></li>
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block hover:scale-104", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service4Title')}</Link></li>
+              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service1Title')}</Link></li>
+              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service2Title')}</Link></li>
+              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('marketIntegration')}</Link></li>
+              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service4Title')}</Link></li>
             </ul>
           </div>
         </div>
@@ -72,8 +74,8 @@ const Footer = () => {
             {t('allRightsReserved')}
           </p>
           <div className="flex items-center gap-x-6 text-sm text-gray-400">
-            <Link to="/privacy-policy" className="hover:text-sidraPrimary transition-colors hover:scale-104">{t('privacyPolicy')}</Link>
-            <Link to="/terms-of-service" className="hover:text-sidraPrimary transition-colors hover:scale-104">{t('termsOfService')}</Link>
+            <Link to="/privacy-policy" className="hover:text-sidraPrimary transition-colors">{t('privacyPolicy')}</Link>
+            <Link to="/terms-of-service" className="hover:text-sidraPrimary transition-colors">{t('termsOfService')}</Link>
           </div>
         </div>
       </div>

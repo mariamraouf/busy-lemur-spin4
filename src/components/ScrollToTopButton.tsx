@@ -34,9 +34,9 @@ const ScrollToTopButton = () => {
         <button
           onClick={scrollToTop}
           className={cn(
-            "flex items-center justify-center w-14 h-14",
+            "flex items-center justify-center w-14 h-14 rounded-full",
             "bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white shadow-lg",
-            "hover:scale-104 transition-all duration-300 transform",
+            "hover:scale-110 transition-all duration-300 transform",
             "focus:outline-none focus:ring-2 focus:ring-sidraPrimary focus:ring-offset-2"
           )}
           aria-label="Scroll to top"

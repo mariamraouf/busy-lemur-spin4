@@ -18,9 +18,11 @@ const PrivacyPolicyPage = () => {
         <meta name="description" content={t('privacyPolicyIntro')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ml-[-100px]"> {/* Grid break: shifted left */}
+        {/* Animated background elements - REMOVED */}
+
+        <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('privacyPolicyPageTitle')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">

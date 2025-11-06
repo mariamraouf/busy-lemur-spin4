@@ -55,9 +55,11 @@ const OurValuesPage = () => {
         <meta name="description" content={t('ourValuesMetaDescription')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 ml-[-100px]"> {/* Grid break: shifted left */}
+        {/* Animated background elements - REMOVED */}
+
+        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('ourValues')}
             </span>
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
@@ -69,12 +71,12 @@ const OurValuesPage = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group bg-white p-8 shadow-xl border-2 border-gray-100 transition-all duration-300 hover:scale-104 hover:shadow-2xl"
+                className="group bg-white rounded-3xl p-8 shadow-xl border-2 border-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 data-aos="fade-up"
                 data-aos-delay={100 * (index + 1)}
               >
                 <div className={cn(
-                  "w-16 h-16 flex items-center justify-center mb-6 group-hover:scale-104 transition-transform duration-300",
+                  "w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300",
                   `bg-gradient-to-br ${value.gradientFrom} ${value.gradientTo}`
                 )}>
                   <i className={cn(value.icon, "text-white text-2xl")}></i>
