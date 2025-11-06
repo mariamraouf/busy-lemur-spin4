@@ -8,12 +8,13 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden">
-      <div 
-        className="absolute inset-0 z-0 bg-cover bg-center filter blur-sm" // Added filter blur-sm
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1551076805-e0186922b336?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }} // New image of clinic buildings
-      >
-        <div className="absolute inset-0 bg-black/60"></div> {/* Darker overlay for text readability */}
+      <div className="absolute inset-0 z-0">
+        {/* Updated image to reflect healthcare infrastructure/management */}
+        <img src="https://images.unsplash.com/photo-1587854692137-8cd983d87392?w=1920&h=1080&fit=crop" alt="Modern Healthcare Facility" className="w-full h-full object-cover" />
+        <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraSecondary/80 to-sidraAccent/90"></div>
       </div>
+
+      {/* Floating Elements - REMOVED */}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
@@ -24,6 +25,7 @@ const HeroSection = () => {
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight break-words">
             <span className="block">{t('heroTitlePart1')}</span>
+            {/* Adjusted gradient for better visibility */}
             <span className="block bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
             <span className="block">{t('heroTitlePart3')}</span>
           </h1>
