@@ -4,7 +4,6 @@ import { useLanguage } from '@/context/LanguageContext';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
-import MovingPartnersBar from '@/components/MovingPartnersBar'; // Import the new component
 
 const PartnersPage = () => {
   const { language, t } = useLanguage();
@@ -81,8 +80,21 @@ const PartnersPage = () => {
             </p>
           </div>
 
-          <div className="relative w-full py-8">
-            <MovingPartnersBar partners={partners} barCount={3} logoHeightClass="max-h-20" baseDurationSeconds={60} />
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-8 justify-items-center">
+            {partners.map((partner, index) => (
+              <div
+                key={index}
+                className="flex items-center justify-center p-4 transition-all duration-300 hover:scale-105" // Removed fixed height/width, added padding
+                data-aos="fade-up"
+                data-aos-delay={50 * (index + 1)}
+              >
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="max-h-24 w-auto object-contain" // Slightly larger max-height for the dedicated page
+                />
+              </div>
+            ))}
           </div>
         </div>
         <FAQSection faqs={partnersFaqs} titleKey="faqTitle" hideSubtitle={true} />

@@ -124,7 +124,7 @@ export default {
         },
         scroll: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-50%)' }, // Changed to -50% for seamless loop with duplicated content
+          '100%': { transform: 'translateX(-100%)' },
         },
       },
       animation: {
@@ -135,7 +135,7 @@ export default {
         'bounce-slow': 'bounce-slow 3s infinite',
         'spin-slow': 'spin-slow 8s linear infinite',
         'gradient': 'gradient 15s ease infinite',
-        // Removed 'scroll' from here as it's applied directly in the component with dynamic duration
+        'scroll': 'scroll var(--scroll-duration) linear infinite',
       },
     },
   },
