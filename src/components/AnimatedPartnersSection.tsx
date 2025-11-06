@@ -51,24 +51,30 @@ const AnimatedPartnersSection = () => {
     { name: t('partnerTalab'), logo: "/partners/talab.png" },
   ];
 
-  // Create a base sequence by duplicating partners multiple times to ensure a long, seamless loop
-  const baseSequence = [...partners, ...partners, ...partners];
+  const numPartners = partners.length;
+  // Duplicate partners twice to ensure seamless infinite scroll
+  const repeatedPartners = [...partners, ...partners]; 
 
-  // Calculate scroll duration based on the length of the base sequence
-  const scrollDuration = baseSequence.length * 1.5; 
+  // Calculate scroll duration based on the number of *unique* partners
+  // This duration will be for one full cycle of the unique set.
+  const scrollDuration = numPartners * 1.5; // 1.5 seconds per logo for one full unique set
 
-  // Create offset versions of the base sequence for each line
-  const offset1 = 0; 
-  const offset2 = Math.floor(partners.length / 3); 
-  const offset3 = Math.floor(partners.length * 2 / 3); 
+  // Determine animation classes based on language and desired visual direction
+  // Line 1 & 3: Visually move left (LTR: left, RTL: right)
+  const animationClassLine1_3 = language === 'ar' ? 'animate-scroll-left-rtl' : 'animate-scroll-left'; 
+  // Line 2: Visually move right (LTR: right, RTL: left)
+  const animationClassLine2 = language === 'ar' ? 'animate-scroll-right-rtl' : 'animate-scroll-right'; 
 
-  const line1Partners = [...baseSequence.slice(offset1), ...baseSequence.slice(0, offset1)];
-  const line2Partners = [...baseSequence.slice(offset2), ...baseSequence.slice(0, offset2)];
-  const line3Partners = [...baseSequence.slice(offset3), ...baseSequence.slice(0, offset3)];
+  // Determine mask classes based on language and visual direction
+  // Mask for content moving visually left (fade in from left, fade out on right in LTR; fade in from right, fade out on left in RTL)
+  const maskClassVisualLeft = language === 'ar' 
+    ? '[mask-image:_linear-gradient(to_left,transparent_0%,#000_10%,#000_90%,transparent_100%)]' 
+    : '[mask-image:_linear-gradient(to_right,transparent_0%,#000_10%,#000_90%,transparent_100%)]'; 
 
-  // Determine animation classes based on language
-  const animationClassLeft = language === 'ar' ? 'animate-scroll-left-rtl' : 'animate-scroll-left';
-  const animationClassRight = language === 'ar' ? 'animate-scroll-right-rtl' : 'animate-scroll-right';
+  // Mask for content moving visually right (fade in from right, fade out on left in LTR; fade in from left, fade out on right in RTL)
+  const maskClassVisualRight = language === 'ar' 
+    ? '[mask-image:_linear-gradient(to_right,transparent_0%,#000_10%,#000_90%,transparent_100%)]' 
+    : '[mask-image:_linear-gradient(to_left,transparent_0%,#000_10%,#000_90%,transparent_100%)]'; 
 
   return (
     <section id="animated-partners" className="py-16 bg-sidraLight relative overflow-hidden">
@@ -82,13 +88,13 @@ const AnimatedPartnersSection = () => {
       </div>
 
       <div className="space-y-8">
-        {/* Line 1: Right to Left in LTR, Left to Right in RTL */}
-        <div className="flex overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0%,#000_10%,#000_90%,transparent_100%)]">
+        {/* Line 1: Moves visually left (LTR: left, RTL: right) */}
+        <div className={cn("flex overflow-hidden", maskClassVisualLeft)}>
           <div
-            className={cn("flex flex-nowrap", animationClassLeft)}
+            className={cn("flex flex-nowrap w-max", animationClassLine1_3)} // w-max ensures it takes full width of content
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
-            {line1Partners.map((partner, index) => (
+            {repeatedPartners.map((partner, index) => (
               <div key={`line1-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
@@ -96,13 +102,13 @@ const AnimatedPartnersSection = () => {
           </div>
         </div>
 
-        {/* Line 2: Left to Right in LTR, Right to Left in RTL */}
-        <div className="flex overflow-hidden [mask-image:_linear-gradient(to_left,transparent_0%,#000_10%,#000_90%,transparent_100%)]">
+        {/* Line 2: Moves visually right (LTR: right, RTL: left) */}
+        <div className={cn("flex overflow-hidden", maskClassVisualRight)}>
           <div
-            className={cn("flex flex-nowrap", animationClassRight)}
+            className={cn("flex flex-nowrap w-max", animationClassLine2)}
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
-            {line2Partners.map((partner, index) => (
+            {repeatedPartners.map((partner, index) => (
               <div key={`line2-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>
@@ -110,13 +116,13 @@ const AnimatedPartnersSection = () => {
           </div>
         </div>
 
-        {/* Line 3: Right to Left in LTR, Left to Right in RTL */}
-        <div className="flex overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0%,#000_10%,#000_90%,transparent_100%)]">
+        {/* Line 3: Moves visually left (LTR: left, RTL: right) */}
+        <div className={cn("flex overflow-hidden", maskClassVisualLeft)}>
           <div
-            className={cn("flex flex-nowrap", animationClassLeft)}
+            className={cn("flex flex-nowrap w-max", animationClassLine1_3)}
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
-            {line3Partners.map((partner, index) => (
+            {repeatedPartners.map((partner, index) => (
               <div key={`line3-${index}`} className="flex-shrink-0 flex items-center justify-center w-40 h-20 px-4">
                 <img src={partner.logo} alt={partner.name} className="max-h-full w-auto object-contain" />
               </div>

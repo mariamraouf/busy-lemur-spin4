@@ -122,22 +122,23 @@ export default {
             'background-position': 'right center'
           }
         },
+        // LTR animations
         'scroll-left': {
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
+          to: { transform: 'translateX(-50%)' }, // Scrolls half its width
         },
         'scroll-right': {
-          from: { transform: 'translateX(-100%)' },
-          to: { transform: 'translateX(0)' },
-        },
-        // RTL specific animations
-        'scroll-left-rtl': { // Visually moves left in RTL (from right to left)
           from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(50%)' }, // Scrolls half its width in opposite direction
         },
-        'scroll-right-rtl': { // Visually moves right in RTL (from left to right)
-          from: { transform: 'translateX(100%)' },
-          to: { transform: 'translateX(0)' },
+        // RTL specific animations (visually mirrored)
+        'scroll-left-rtl': { // Visually moves left (content moves right)
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(50%)' },
+        },
+        'scroll-right-rtl': { // Visually moves right (content moves left)
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-50%)' },
         },
       },
       animation: {
