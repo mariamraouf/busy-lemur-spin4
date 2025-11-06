@@ -67,11 +67,11 @@ export default {
           ring: "hsl(var(--sidebar-ring))",
         },
         // Custom Sidra Med colors - updated to match the provided palette
-        sidraPrimary: '#659A9D', // Moonstone
-        sidraSecondary: '#2C9FA8', // Darker Moonstone
-        sidraAccent: '#ABBFCO', // Ash gray
-        sidraTeal: '#2C9FA8', // Using darker Moonstone for teal as well
-        sidraLight: '#EFF2F2', // Anti-flash white
+        sidraPrimary: '#449CA6',
+        sidraSecondary: '#29A6A6',
+        sidraAccent: '#80A6A6',
+        sidraTeal: '#03A696',
+        sidraLight: '#F2F2F2',
         // Removed sidraPurple, sidraPink, sidraOrange, sidraEmerald, sidraCyan, sidraIndigo
       },
       borderRadius: {
