@@ -430,10 +430,10 @@ export const translations = {
     partnerTalab: "Talab", 
 
     // Partners Page
-    partnersPageTitle: "Our Trusted Network", // Changed to "Our Trusted Network"
-    partnersPageDescription: "Through our partners' networks, we connect with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.", // Updated description
+    partnersPageTitle: "Our Trusted Network",
+    partnersPageDescription: "Through our partners' networks, we connect with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.",
     ourValued: "Our Trusted Network", 
-    partnersTitle: "Network", // Changed to "Network"
+    partnersTitle: "", // Changed to empty string
     partnersMetaDescription: "Explore Sidra Med's esteemed network of partners, collaborating to deliver comprehensive healthcare solutions and drive innovation across Saudi Arabia.",
 
     // Partners Page FAQs
@@ -735,7 +735,7 @@ export const translations = {
     homeFaqQ5: "ما نوع الشراكات التي تقدمها سدرة ميد؟",
     homeFaqA5: "من خلال شبكتنا الواسعة، نبرم شراكات استراتيجية تسلم المشاريع من البداية إلى النهاية، وتجمع الخبرات المتخصصة في المجالات القانونية والمالية والتصميم والبناء.",
     homeFaqQ6: "هل تشارك سدرة ميد في مبادرات الصحة الرقمية؟",
-    homeFaqA6: "بالتأكيد! نحن ندعم بنشاط الصحة الرقمية، بما في ذلك تنفيذ أنظمة تكنولوجيا المعلومات، وتكامل السجلات الطبية الإلكترونية، واستخدام التكنولوجيا لتعزيز رعاية المرضى وكفاءة التشغيل.",
+    homeFaqA6: "بالتأكيد! نحن ندعم بنشاط الصحة الرقمية، بما في ذلك تنفيذ أنظمة تكنولوجيا المعلومات، وتكامل السجلات الطبية الإلكترونية (EMR)، واستخدام التكنولوجيا لتعزيز رعاية المرضى وكفاءة التشغيل.",
 
     // About Us Page FAQs
     aboutUsFaqQ1: "ما هي القوة الخارقة الأساسية لسدرة ميد؟",
@@ -775,23 +775,23 @@ export const translations = {
     ourValuesFaqQ4: "ما هو الدور الذي يلعبه الابتكار في خدمات سدرة ميد؟",
     ourValuesFaqA4: "الابتكار هو جوهر نهجنا! نحن دائمًا نبحث عن طرق أذكى وأكثر كفاءة وتطورًا تقنيًا لتقديم حلول الرعاية الصحية.",
     ourValuesFaqQ5: "كيف تضمن سدرة ميد خدمات من الدرجة الأولى؟",
-    ourValuesFaqA5: "من خلال الحفاظ على معايير عالية جدًا في التخطيط والتنفيذ والتحسين المستمر، مما يضمن أن كل مشروع يلبي أو يتجاوز توقعات العميل.",
-    ourValuesFaqQ6: "هل تشاركون هذه القيم مع شركائكم؟",
-    ourValuesFaqA6: "بالتأكيد! نحن نسعى بنشاط إلى الشركاء الذين يشاركوننا قيمنا الأساسية لضمان بيئة تعاونية متماسكة وفعالة ومتناغمة.",
+    ourValuesFaqA5: "By maintaining sky-high standards in planning, execution, and continuous improvement, ensuring every project meets or beats client expectations.",
+    ourValuesFaqQ6: "Do you share these values with your partners?",
+    ourValuesFaqA6: "Absolutely! We actively seek partners who share our core values to ensure a cohesive, effective, and harmonious collaborative environment.",
 
     // Our Team Page FAQs
-    ourTeamFaqQ1: "من يشكل فريق سدرة ميد الحلم؟",
-    ourTeamFaqA1: "فريق أحلامنا يضم مديري مشاريع الرعاية الصحية، وخبراء العمليات السريرية والتشغيلية، ومهندسي ومعماريي الرعاية الصحية، والمحللين الاستراتيجيين والماليين - جميعهم مكرسون لنجاح مشروعك!",
-    ourTeamFaqQ2: "كيف تضمن سدرة ميد أن العمليات لا تشوبها شائبة؟",
-    ourTeamFaqA2: "يضمن خبراء العمليات السريرية والتشغيلية لدينا، جنبًا إلى جنب مع مديري المشاريع لدينا، دمج التميز التشغيلي وأفضل الممارسات السريرية في كل مشروع من اليوم الأول.",
-    ourTeamFaqQ3: "ما هو مستوى خبرة فريق سدرة ميد؟",
-    ourTeamFaqA3: "يتمتع أعضاء فريقنا بثروة من الخبرة من مختلف جوانب صناعة الرعاية الصحية، محليًا ودوليًا. لقد رأوا كل شيء!",
-    ourTeamFaqQ4: "كيف يظل الفريق متقدمًا على اتجاهات الصناعة؟",
-    ourTeamFaqA4: "من خلال التطوير المهني المستمر، والمشاركة النشطة في المؤتمرات الصناعية، والمشاركة المستمرة في أحدث ابتكارات الرعاية الصحية. نحن نتعلم دائمًا!",
-    ourTeamFaqQ5: "هل يضم فريق سدرة ميد متخصصين في مجالات طبية محددة؟",
-    ourTeamFaqA5: "نعم، تضم شبكتنا متخصصين في مختلف المجالات الطبية، مما يسمح لنا بتكييف الخبرة بدقة لتلبية المتطلبات الفريدة لمشروعك.",
-    ourTeamFaqQ6: "كيف تعزز سدرة ميد العمل الجماعي والتعاون؟",
-    ourTeamFaqA6: "نحن نزرع ثقافة تعاونية من خلال المشاريع متعددة الوظائف، وجلسات تبادل المعرفة المنتظمة، وأنشطة بناء الفريق الممتعة. نحن عائلة!",
+    ourTeamFaqQ1: "Who makes up the Sidra Med dream team?",
+    ourTeamFaqA1: "Our dream team includes Healthcare Project Managers, Clinical & Operations Experts, Healthcare Architects & Engineers, and Strategic and Financial Analysts—all dedicated to your project's success!",
+    ourTeamFaqQ2: "How does Sidra Med ensure operations are flawless?",
+    ourTeamFaqA2: "Our Clinical & Operations Experts, alongside our Project Managers, ensure operational excellence and clinical best practices are woven into every project from day one.",
+    ourTeamFaqQ3: "What's the experience level of Sidra Med's team?",
+    ourTeamFaqA3: "Our team members bring a wealth of experience from various corners of the healthcare industry, both locally and internationally. They've seen it all!",
+    ourTeamFaqQ4: "How does the team stay ahead of industry trends?",
+    ourTeamFaqA4: "Through continuous professional development, active participation in industry conferences, and constant engagement with the latest healthcare innovations. We're always learning!",
+    ourTeamFaqQ5: "Does Sidra Med's team include specialists for specific medical fields?",
+    ourTeamFaqA5: "Yes, our network boasts specialists across various medical fields, allowing us to tailor expertise precisely to your project's unique requirements.",
+    ourTeamFaqQ6: "How does Sidra Med foster teamwork and collaboration?",
+    ourTeamFaqA6: "We cultivate a collaborative culture through cross-functional projects, regular knowledge-sharing sessions, and fun team-building activities. We're a family!",
 
     // Not Found Page
     pageNotFoundTitle: "عفوًا! الصفحة غير موجودة",
@@ -834,7 +834,7 @@ export const translations = {
     termsOfServiceSection5Title: "5. تعليقات المستخدمين والملاحظات والتقديمات الأخرى",
     termsOfServiceSection5Content: "إذا قمت، بناءً على طلبنا، بإرسال بعض التقديمات المحددة (على سبيل المثال إدخالات المسابقة) أو بدون طلب منا، أرسلت أفكارًا إبداعية أو اقتراحات أو مقترحات أو خططًا أو مواد أخرى، سواء عبر الإنترنت أو عبر البريد الإلكتروني أو عبر البريد العادي أو غير ذلك (يُشار إليها إجمالاً باسم 'التعليقات')، فإنك توافق على أنه يجوز لنا، في أي وقت، دون قيود، تحرير أو نسخ أو نشر أو توزيع أو ترجمة أو استخدام بأي طريقة أخرى في أي وسيط أي تعليقات ترسلها إلينا. نحن ولسنا ملزمين (1) بالحفاظ على سرية أي تعليقات؛ (2) بدفع تعويض عن أي تعليقات؛ أو (3) بالرد على أي تعليقات. يجوز لنا، ولكن ليس لدينا أي التزام، بمراقبة أو تحرير أو إزالة المحتوى الذي نحدده وفقًا لتقديرنا الخاص بأنه غير قانوني أو مسيء أو مهدد أو تشهيري أو افترائي أو إباحي أو فاحش أو غير مقبول بأي شكل آخر أو ينتهك الملكية الفكرية لأي طرف أو شروط الخدمة هذه. أنت توافق على أن تعليقاتك لن تنتهك أي حق لأي طرف ثالث، بما في ذلك حقوق الطبع والنشر أو العلامات التجارية أو الخصوصية أو الشخصية أو أي حق شخصية أو ملكية آخر. أنت توافق كذلك على أن تعليقاتك لن تحتوي على مواد تشهيرية أو غير قانونية أو مسيئة أو فاحشة بأي شكل آخر، أو تحتوي على أي فيروس كمبيوتر أو برامج ضارة أخرى يمكن أن تؤثر بأي شكل من الأشكال على تشغيل الخدمة أو أي موقع ويب ذي صلة. لا يجوز لك استخدام عنوان بريد إلكتروني مزيف، أو التظاهر بأنك شخص آخر غير نفسك، أو تضليلنا أو تضليل أطراف ثالثة بأي شكل آخر فيما يتعلق بأصل أي تعليقات. أنت وحدك المسؤول عن أي تعليقات تقوم بها ودقتها. نحن لا نتحمل أي مسؤولية ولا نتحمل أي التزام عن أي تعليقات تنشرها أنت أو أي طرف ثالث.",
     termsOfServiceSection6Title: "6. إخلاء المسؤولية عن الضمانات؛ تحديد المسؤولية",
-    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المناسب أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدها. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة هي (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، ولكن لا تقتصر على، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
+    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المنايق أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدها. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة هي (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، ولكن لا تقتصر على، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
     termsOfServiceSection7Title: "7. القانون الحاكم",
     termsOfServiceSection7Content: "تخضع شروط الخدمة هذه وأي اتفاقيات منفصلة نقدم لك بموجبها الخدمات وتفسر وفقًا لقوانين المملكة العربية السعودية.",
     termsOfServiceSection8Title: "8. معلومات الاتصال",
@@ -881,10 +881,10 @@ export const translations = {
     partnerTalab: "تَلَب",
 
     // Partners Page
-    partnersPageTitle: "شبكتنا الموثوقة", // Changed to "شبكتنا الموثوقة"
-    partnersPageDescription: "من خلال شبكات شركائنا، نتواصل مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.", // Updated description
+    partnersPageTitle: "شبكتنا الموثوقة",
+    partnersPageDescription: "من خلال شبكات شركائنا، نتواصل مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.",
     ourValued: "شبكتنا الموثوقة", 
-    partnersTitle: "الشبكة", // Changed to "الشبكة"
+    partnersTitle: "", // Changed to empty string
     partnersMetaDescription: "استكشف شبكة سدرة ميد الموقرة من الشركاء، الذين يتعاونون لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة العربية السعودية.",
 
     // Partners Page FAQs
