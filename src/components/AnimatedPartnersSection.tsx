@@ -46,12 +46,12 @@ const AnimatedPartnersSection = () => {
     { name: t('partnerTalab'), logo: "/partners/talab.png" },
   ];
 
-  // Duplicate partners to ensure seamless looping
-  const duplicatedPartners = [...partners, ...partners, ...partners]; // Triple for smoother loop
+  // Duplicate partners twice to ensure seamless looping with less immediate repetition
+  const duplicatedPartners = [...partners, ...partners]; 
 
   // Calculate scroll duration based on number of logos to maintain consistent speed
-  // Each logo takes roughly 1.5 seconds to scroll past (adjust as needed)
-  const scrollDuration = partners.length * 1.5; 
+  // Increased multiplier from 1.5 to 3 for slower animation
+  const scrollDuration = partners.length * 3; 
 
   return (
     <section id="animated-partners" className="py-16 bg-sidraLight relative overflow-hidden">
