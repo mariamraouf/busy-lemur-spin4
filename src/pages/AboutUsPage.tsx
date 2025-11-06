@@ -25,10 +25,7 @@ const AboutUsPage = () => {
         <meta name="description" content={t('aboutUsMetaDescription')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
-        </div>
+        {/* Animated background elements - REMOVED */}
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16" data-aos="fade-up">
@@ -45,7 +42,8 @@ const AboutUsPage = () => {
 
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div data-aos="fade-right" data-aos-duration="1000">
-              <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop" alt="Healthcare Team" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
+              {/* Replaced image with a more abstract, professional one */}
+              <img src="https://images.unsplash.com/photo-1587854692137-8cd983d87392?w=800&h=600&fit=crop" alt="Strategic Healthcare Planning" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
             </div>
             <div data-aos="fade-left" data-aos-duration="1000">
               <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('whoWeAre')}</h2>

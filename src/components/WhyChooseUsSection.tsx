@@ -16,18 +16,18 @@ const WhyChooseUsSection = () => {
       hoverText: "group-hover:text-sidraPrimary",
     },
     {
-      icon: "fas fa-award",
-      title: t('whyChooseUsFeature2Title'),
-      description: t('whyChooseUsFeature2Description'),
+      icon: "fas fa-handshake", // Changed icon to match "Trusted Network"
+      title: t('whyChooseUsFeature3Title'), // Changed to "Trusted Network"
+      description: t('whyChooseUsFeature3Description'), // Changed to "Trusted Network"
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
       hoverBorder: "hover:border-sidraSecondary/20",
       hoverText: "group-hover:text-sidraSecondary",
     },
     {
-      icon: "fas fa-users",
-      title: t('whyChooseUsFeature3Title'),
-      description: t('whyChooseUsFeature3Description'),
+      icon: "fas fa-cogs", // Changed icon to match "End-to-End Delivery"
+      title: t('whyChooseUsFeature2Title'), // Changed to "End-to-End Delivery"
+      description: t('whyChooseUsFeature2Description'), // Changed to "End-to-End Delivery"
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
       hoverBorder: "hover:border-sidraTeal/20",
@@ -42,32 +42,11 @@ const WhyChooseUsSection = () => {
       hoverBorder: "hover:border-sidraAccent/20",
       hoverText: "group-hover:text-sidraAccent",
     },
-    {
-      icon: "fas fa-rocket",
-      title: t('whyChooseUsFeature5Title'),
-      description: t('whyChooseUsFeature5Description'),
-      gradientFrom: "from-sidraPrimary",
-      gradientTo: "to-sidraAccent",
-      hoverBorder: "hover:border-sidraPrimary/20",
-      hoverText: "group-hover:text-sidraPrimary",
-    },
-    {
-      icon: "fas fa-shield-alt",
-      title: t('whyChooseUsFeature6Title'),
-      description: t('whyChooseUsFeature6Description'),
-      gradientFrom: "from-sidraSecondary",
-      gradientTo: "to-sidraTeal",
-      hoverBorder: "hover:border-sidraSecondary/20",
-      hoverText: "group-hover:text-sidraSecondary",
-    },
   ];
 
   return (
     <section className="py-24 bg-gradient-to-br from-white via-sidraLight to-gray-100 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-10 left-10 w-72 h-72 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl animate-pulse-slow"></div>
-        <div className="absolute bottom-10 right-10 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl animate-pulse-slow"></div>
-      </div>
+      {/* Animated background elements - REMOVED */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20" data-aos="fade-up">
@@ -75,13 +54,11 @@ const WhyChooseUsSection = () => {
             {t('whySidraMed')}
           </span>
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
-            <span className="block">{t('whyChooseUsTitlePart1')}</span>
-            <span className="block bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">{t('whyChooseUsTitlePart2')}</span>
-            <span className="block">{t('whyChooseUsTitlePart3')}</span>
+            <span className="block bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">{t('whyChooseUsTitlePart1')}</span>
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8"> {/* Changed to 4 columns */}
           {features.map((feature, index) => (
             <div
               key={index}
@@ -98,10 +75,7 @@ const WhyChooseUsSection = () => {
               )}>
                 <i className={cn(feature.icon, "text-white text-2xl")}></i>
               </div>
-              <h3 className={cn(
-                "text-xl font-bold text-gray-900 mb-4 transition-colors break-words",
-                feature.hoverText
-              )}>
+              <h3 className="text-xl font-bold text-gray-900 mb-4 transition-colors break-words">
                 {feature.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">

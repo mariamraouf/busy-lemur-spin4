@@ -10,10 +10,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary text-white py-16 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-0 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
-      </div>
+      {/* Animated background elements - REMOVED */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">

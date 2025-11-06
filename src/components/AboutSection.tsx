@@ -8,10 +8,7 @@ const AboutSection = () => {
 
   return (
     <section id="about" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
-      </div>
+      {/* Animated background elements - REMOVED */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
@@ -37,29 +34,7 @@ const AboutSection = () => {
             <div className="relative z-10">
               <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=600&fit=crop" alt="Healthcare Team" className="rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500" />
             </div>
-            {/* Floating Cards */}
-            <div className="absolute -top-6 -left-6 bg-white p-6 rounded-2xl shadow-xl animate-float z-20">
-              <div className="flex items-center gap-x-3"> {/* Changed space-x-3 to gap-x-3 */}
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraTeal to-sidraPrimary rounded-full flex items-center justify-center">
-                  <i className="fas fa-check text-white"></i>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 break-words">{t('qualityAssured')}</h3>
-                  <p className="text-sm text-gray-500">{t('isoCertified')}</p>
-                </div>
-              </div>
-            </div>
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl animate-float z-20" style={{ animationDelay: '-2s' }}>
-              <div className="flex items-center gap-x-3"> {/* Changed space-x-3 to gap-x-3 */}
-                <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-full flex items-center justify-center">
-                  <i className="fas fa-star text-white"></i>
-                </div>
-                <div>
-                  <h3 className="font-bold text-gray-900 break-words">{t('awardWinning')}</h3>
-                  <p className="text-sm text-gray-500">{t('excellenceInHealthcare')}</p>
-                </div>
-              </div>
-            </div>
+            {/* Floating Cards - REMOVED */}
           </div>
         </div>
       </div>

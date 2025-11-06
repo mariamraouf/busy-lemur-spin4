@@ -33,10 +33,10 @@ export const translations = {
     aboutSummaryTitle: "Sidra Med is a Saudi-based healthcare project and service delivery company.",
     aboutSummaryDescription: "We help investors, operators, and all healthcare stakeholders plan, launch, and manage medical facilities across the Kingdom. From initial concept to operational readiness, Sidra Med ensures seamless execution, regulatory alignment, and sustainable outcomes.",
     learnMoreAboutUs: "Learn More About Us",
-    qualityAssured: "Quality Assured",
-    isoCertified: "ISO Certified",
-    awardWinning: "Award Winning",
-    excellenceInHealthcare: "Excellence in Healthcare",
+    qualityAssured: "Quality Assured", // REMOVED FROM ABOUT SECTION
+    isoCertified: "ISO Certified", // REMOVED FROM ABOUT SECTION
+    awardWinning: "Award Winning", // REMOVED FROM ABOUT SECTION
+    excellenceInHealthcare: "Excellence in Healthcare", // REMOVED FROM ABOUT SECTION
 
     // Services Section (Home Page Summary)
     whatWeDo: "What We Do",
@@ -53,37 +53,36 @@ export const translations = {
     service4Description: "Through our consortium network, we enable end-to-end project delivery by combining the strengths of specialised partners across various domains.",
     exploreAllServices: "Explore All Services",
 
-    // Why Choose Us Section
+    // Why Choose Us Section - UPDATED
     whySidraMed: "Why Sidra Med?",
-    whyChooseUsTitlePart1: "Our approach combines",
-    whyChooseUsTitlePart2: "local expertise",
-    whyChooseUsTitlePart3: "with international standards",
-    whyChooseUsFeature1Title: "Local insight with international standards",
-    whyChooseUsFeature1Description: "Combining deep understanding of Saudi healthcare with global best practices",
-    whyChooseUsFeature2Title: "Proven experience in healthcare project delivery",
-    whyChooseUsFeature2Description: "Track record of successful healthcare facility launches across the Kingdom",
-    whyChooseUsFeature3Title: "Strategic collaboration with industry-leading partners",
-    whyChooseUsFeature3Description: "Access to a network of specialized experts and service providers",
-    whyChooseUsFeature4Title: "Focused on outcomes, impact, and sustainable healthcare",
-    whyChooseUsFeature4Description: "Commitment to long-term success and positive healthcare impact",
-    whyChooseUsFeature5Title: "Agile and dependable project execution",
-    whyChooseUsFeature5Description: "Flexible approach that adapts to changing needs while maintaining reliability",
-    whyChooseUsFeature6Title: "Regulatory compliance and quality assurance",
-    whyChooseUsFeature6Description: "Ensuring all projects meet Saudi healthcare regulations and international quality standards",
+    whyChooseUsTitlePart1: "Why choose us.?", // Changed to full title
+    whyChooseUsTitlePart2: "", // Empty as it's a full title now
+    whyChooseUsTitlePart3: "", // Empty as it's a full title now
+    whyChooseUsFeature1Title: "Local Expertise, Global Standards",
+    whyChooseUsFeature1Description: "We bring deep knowledge of Saudi Arabia's healthcare regulations while aligning with international best practices.",
+    whyChooseUsFeature2Title: "End-to-End Delivery",
+    whyChooseUsFeature2Description: "From Strategic planning to execution, we manage it all under one roof",
+    whyChooseUsFeature3Title: "Trusted Network",
+    whyChooseUsFeature3Description: "We have built strong partnerships with local authorities, global advisors, and world-class vendors.",
+    whyChooseUsFeature4Title: "Results-Driven",
+    whyChooseUsFeature4Description: "Our projects are delivered on time, on budget, and with high impact.",
+    whyChooseUsFeature5Title: "Agile and dependable project execution", // Kept existing as it's not replaced
+    whyChooseUsFeature5Description: "Flexible approach that adapts to changing needs while maintaining reliability", // Kept existing
+    whyChooseUsFeature6Title: "Regulatory compliance and quality assurance", // Kept existing
+    whyChooseUsFeature6Description: "Ensuring all projects meet Saudi healthcare regulations and international quality standards", // Kept existing
 
-    // Success Stories Section
-    ourSuccessStories: "Our Success Stories",
-    projectsThatMadeImpact: "Projects that made a real impact in healthcare",
-    // New Success Stories
+    // Success Stories Section - REMOVED FROM HOME
+    ourSuccessStories: "Our Success Stories", // Added missing key
+    projectsThatMadeImpact: "Projects that made a real impact in healthcare", // Added missing key
     diagnosticCenterLaunchTitle: "Advanced Diagnostic Center Launch",
     diagnosticCenterLaunchLocation: "Riyadh, Saudi Arabia",
     diagnosticCenterLaunchDescription: "Managed the entire project lifecycle for a new diagnostic center, from feasibility and design to operational readiness and regulatory compliance.",
     diagnosticCenterLaunchStat1: "12-month delivery",
     diagnosticCenterLaunchStat2: "Advanced imaging tech",
     diagnosticCenterLaunchStat3: "Full regulatory compliance",
-    months: "months", // New key
-    tech: "tech", // New key
-    compliance: "compliance", // New key
+    months: "months",
+    tech: "tech",
+    compliance: "compliance",
 
     clinicNetworkOptimizationTitle: "Regional Clinic Network Optimization",
     clinicNetworkOptimizationLocation: "Multiple Cities, KSA",
@@ -91,9 +90,9 @@ export const translations = {
     clinicNetworkOptimizationStat1: "30% operational efficiency",
     clinicNetworkOptimizationStat2: "Integrated EMR system",
     clinicNetworkOptimizationStat3: "Enhanced patient satisfaction",
-    efficiency: "efficiency", // New key
-    system: "system", // New key
-    satisfaction: "satisfaction", // New key
+    efficiency: "efficiency",
+    system: "system",
+    satisfaction: "satisfaction",
 
     internationalMarketEntryTitle: "International Market Entry & Partnership",
     internationalMarketEntryLocation: "Jeddah, Saudi Arabia",
@@ -101,11 +100,11 @@ export const translations = {
     internationalMarketEntryStat1: "Successful market entry",
     internationalMarketEntryStat2: "5+ strategic partnerships",
     internationalMarketEntryStat3: "Full regulatory adherence",
-    entry: "entry", // New key
-    partnerships: "partnerships", // New key
-    adherence: "adherence", // New key
+    entry: "entry",
+    partnerships: "partnerships",
+    adherence: "adherence",
 
-    // Testimonials Section
+    // Testimonials Section - REMOVED FROM HOME
     whatOurClientsSay: "What Our Clients Say",
     hearFromLeaders: "Hear from healthcare leaders who trust Sidra Med",
     testimonial1: "Sidra Med transformed our facility operations. Their expertise in healthcare project management is unmatched in the Kingdom.",
@@ -122,7 +121,7 @@ export const translations = {
     readyToBuildFuture: "Ready to build the future of healthcare?",
     letsWorkTogether: "Let's work together to bring your vision to life.",
     getAConsultation: "Get a Consultation",
-    callUs: "Call Us", // New key for the CTA button
+    callUs: "Call Us",
 
     // Contact Section
     getInTouch: "Get In Touch",
@@ -130,13 +129,13 @@ export const translations = {
     contactDescription: "Our team is ready to help you achieve your healthcare goals in Saudi Arabia.",
     location: "Location",
     jeddahKSA: "Jeddah, Saudi Arabia",
-    fullAddress: "4500 Libya Street, Al Hamra District, 23324, Jeddah, Saudi Arabia", // New key
+    fullAddress: "4500 Libya Street, Al Hamra District, 23324, Jeddah, Saudi Arabia",
     email: "Email",
     businessHours: "Business Hours",
     businessHoursTime: "Sunday - Thursday: 8:00 AM - 6:00 PM",
     phoneNumber: "Phone Number",
-    whatsapp: "WhatsApp", // New key
-    firstName: "First Name", // Added missing key
+    whatsapp: "WhatsApp",
+    firstName: "First Name",
     enterFirstName: "Enter your first name",
     lastName: "Last Name",
     enterLastName: "Enter your last name",
@@ -152,33 +151,32 @@ export const translations = {
     message: "Message",
     tellUsAboutProject: "Tell us about your project",
     sendMessage: "Send Message",
-    ourLocation: "Our Location", // New key for map title
+    ourLocation: "Our Location",
 
     // Footer
     empoweringHealthcare: "Empowering healthcare stakeholders—providers, investors, operators, and beyond—with strategic, technical, and operational services in Saudi Arabia's evolving healthcare landscape.",
     quickLinks: "Quick Links",
-    ourServicesFooter: "Our Services", // Renamed to avoid conflict with Navbar link
+    ourServicesFooter: "Our Services",
     marketIntegration: "Market Integration",
     privacyPolicy: "Privacy Policy",
     termsOfService: "Terms of Service",
     allRightsReserved: "© 2025 Sidra Med. All rights reserved.",
 
-    // New Content from Company Profile
-    // Mission & Vision Page
+    // Mission & Vision Page - UPDATED
     missionPageTitle: "Mission & Vision",
     mission: "Mission",
     missionContent: "At Sidra Med, our mission is to empower healthcare providers across Saudi Arabia by delivering strategic, operational, and technical support to ensure the success of healthcare projects. We are committed to transforming medical service delivery by enabling excellence in healthcare infrastructure and services.",
     vision: "Vision",
     visionContent: "To be the leading healthcare project delivery partner in Saudi Arabia. Recognized for innovation, reliability, and our ability to enable successful outcomes for healthcare providers, investors, and the community.",
 
-    // Who We Are Page
-    aboutUsPageMainTitle: "Our Story and Expertise", // New key
-    aboutUsPageMainDescription: "Sidra Med is a specialized medical services firm based in Saudi Arabia, acting as strategic enablers for healthcare projects from concept to execution.", // New key
+    // Who We Are Page - UPDATED
+    aboutUsPageMainTitle: "Our Story and Expertise",
+    aboutUsPageMainDescription: "Sidra Med is a specialized medical services firm based in Saudi Arabia, acting as strategic enablers for healthcare projects from concept to execution.",
     whoWeAreDescription1: "Sidra Med Ltd. is a specialised medical services firm based in Saudi Arabia. We act as strategic enablers for healthcare projects by providing comprehensive services across every project phase from concept to execution.",
     whoWeAreDescription2: "Whether supporting hospital development, clinics, laboratories, or digital health initiatives, we offer world-class expertise tailored to the Saudi market and its unique regulatory landscape. We integrate medical knowledge, engineering excellence, and operational execution to deliver dependable, scalable healthcare solutions.",
-    aboutUsMetaDescription: "Discover Sidra Med's story and expertise in healthcare project delivery across Saudi Arabia, from concept to operational readiness, ensuring seamless execution and regulatory alignment.", // NEW
+    aboutUsMetaDescription: "Discover Sidra Med's story and expertise in healthcare project delivery across Saudi Arabia, from concept to operational readiness, ensuring seamless execution and regulatory alignment.",
 
-    // Our Values Page
+    // Our Values Page - UPDATED
     ourValuesPageTitle: "Our Values",
     value1Title: "Integrity & Professionalism",
     value1Description: "We uphold the highest standards of honesty, ethics, and professional conduct.",
@@ -188,74 +186,75 @@ export const translations = {
     value3Description: "We continuously seek smarter, more efficient ways to deliver healthcare solutions.",
     value4Title: "Excellence",
     value4Description: "We strive for excellence in execution, from planning to implementation.",
-    ourValuesMetaDescription: "Explore Sidra Med's core values: Integrity, Collaboration, Innovation, and Excellence, which drive our commitment to transforming healthcare in Saudi Arabia.", // NEW
+    ourValuesMetaDescription: "Explore Sidra Med's core values: Integrity, Collaboration, Innovation, and Excellence, which drive our commitment to transforming healthcare in Saudi Arabia.",
 
-    // Our Team Page
+    // Our Team Page - UPDATED
     ourTeamPageTitle: "OUR TEAM",
     teamRole1: "Healthcare Project Managers",
-    teamRole1Description: "Experts in healthcare-specific project delivery with deep understanding of clinical requirements.",
+    teamRole1Description: "Experts in healthcare-specific project delivery with deep understanding of clinical requirements",
     teamRole2: "Clinical & Operations Experts",
-    team2Description: "Seasoned healthcare professionals ensuring operational excellence and clinical best practices.",
+    team2Description: "Seasoned healthcare professionals ensuring operational excellence and clinical best practices",
     teamRole3: "Healthcare Architects & Engineers",
-    team3Description: "Specialists in healthcare facility design, construction, and regulatory compliance.",
+    team3Description: "Specialists in healthcare facility design, construction, and regulatory compliance",
+    teamRole3Description: "Specialists in healthcare facility design, construction, and regulatory compliance",
     teamRole4: "Strategic and Financial Analysts",
-    team4Description: "Professionals ensuring project viability and long-term financial sustainability.",
-    teamRole3Description: "Specialists in healthcare facility design, construction, and regulatory compliance.", // NEW
-    teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability.", // NEW
-    ourTeamMetaDescription: "Meet the expert team at Sidra Med, comprising healthcare project managers, clinical experts, engineers, and financial analysts dedicated to your project's success in Saudi Arabia.", // NEW
+    team4Description: "Professionals ensuring project viability and long-term financial sustainability",
+    teamRole4Description: "Professionals ensuring project viability and long-term financial sustainability",
+    ourTeamMetaDescription: "Meet the expert team at Sidra Med, comprising healthcare project managers, clinical experts, engineers, and financial analysts dedicated to your project's success in Saudi Arabia.",
 
-    // Our Services Page (Detailed Content)
-    ourServicesPageTitle: "Our Comprehensive Healthcare Services", // Added this line
+    // Our Services Page (Detailed Content) - UPDATED
+    ourServicesPageTitle: "Our Comprehensive Healthcare Services",
     ourServicesPageDescription: "Sidra Med offers practical, strategic, and technical support across all stages of healthcare project development. Whether you're launching a new clinic, upgrading an existing hospital, managing healthcare investments, or planning for long-term operations, we provide the tools and expertise to ensure success.",
-    ourServicesMetaDescription: "Explore Sidra Med's comprehensive healthcare services, including project & technical support, operational management, and consortium-driven solutions for facilities across Saudi Arabia.", // NEW
+    ourServicesMetaDescription: "Explore Sidra Med's comprehensive healthcare services, including project & technical support, operational management, and consortium-driven solutions for facilities across Saudi Arabia.",
 
-    projectTechnicalSupportTitle: "Project & Technical Support",
-    projectTechnicalSupportDescription: "We help clients assess feasibility, plan facility layouts, and ensure alignment with local regulatory requirements.",
-    siteAssessmentsTitle: "Site Assessments and Operational Planning",
-    siteAssessmentsDescription: "Comprehensive evaluation of potential locations and operational requirements for healthcare facilities.",
-    coordArchitecturalTitle: "Coordination with Architectural and Engineering Teams",
-    coordArchitecturalDescription: "Seamless integration with design and construction teams to ensure healthcare-specific requirements are met.",
-    licensingCommissioningTitle: "Licensing and Commissioning Support",
-    licensingCommissioningDescription: "Expert guidance through Saudi Arabia's healthcare facility licensing process and operational commissioning.",
-    strategicPlanningTitle: "Strategic Planning and Investment Alignment",
-    strategicPlanningDescription: "Ensure your healthcare project aligns with both business goals and Saudi Vision 2030 healthcare priorities.",
+    projectTechnicalSupportTitle: "Healthcare Project Management",
+    projectTechnicalSupportDescription: "Turnkey delivery for hospitals, clinics, and labs. Feasibility studies & market assessments. On-site medical services for construction projects.",
+    siteAssessmentsTitle: "Feasibility studies & market assessments", // Sub-item, will be used differently
+    siteAssessmentsDescription: "Comprehensive evaluation of potential locations and operational requirements for healthcare facilities.", // Kept existing description for now, will adjust component
+    coordArchitecturalTitle: "Medical Planning & Architecture Support",
+    coordArchitecturalDescription: "Conceptual design and facility planning. Equipment planning and BOQ development.",
+    licensingCommissioningTitle: "Licensing & Regulatory Approvals",
+    licensingCommissioningDescription: "MOH licensing & facility registration. Compliance audits and documentation.",
+    strategicPlanningTitle: "Operational Readiness & Strategic Advisory",
+    strategicPlanningDescription: "Recruitment coordination and SOP development. Business modeling and investment strategies.",
 
-    operationalSupportTitle: "Operational Support & Management",
-    operationalSupportDescription: "We manage or co-manage healthcare facilities to ensure quality, efficiency, and compliance.",
-    facilityOperationsOversightTitle: "Facility Operations Oversight",
-    facilityOperationsOversightDescription: "Day-to-day management and oversight of healthcare facility operations to ensure smooth functioning.",
-    healthcareITImplementationTitle: "Healthcare IT Implementation",
-    healthcareITImplementationDescription: "Selection, implementation, and management of healthcare information systems and technology infrastructure.",
-    workforceRecruitmentTitle: "Workforce Recruitment Coordination",
-    workforceRecruitmentDescription: "Strategic staffing solutions to address the unique challenges of healthcare professional recruitment in Saudi Arabia.",
-    maintenanceBiomedicalTitle: "Maintenance and Biomedical Equipment Services",
-    maintenanceBiomedicalDescription: "Comprehensive maintenance planning and execution for facility infrastructure and specialized medical equipment.",
+    operationalSupportTitle: "Operational Support & Management", // Kept existing title, description will be updated
+    operationalSupportDescription: "We manage or co-manage healthcare facilities to ensure quality, efficiency, and compliance.", // Kept existing description
+    facilityOperationsOversightTitle: "Facility Operations Oversight", // Kept existing
+    facilityOperationsOversightDescription: "Day-to-day management and oversight of healthcare facility operations to ensure smooth functioning.", // Kept existing
+    healthcareITImplementationTitle: "Healthcare IT Implementation", // Kept existing
+    healthcareITImplementationDescription: "Selection, implementation, and management of healthcare information systems and technology infrastructure.", // Kept existing
+    workforceRecruitmentTitle: "Workforce Recruitment Coordination", // Kept existing
+    workforceRecruitmentDescription: "Strategic staffing solutions to address the unique challenges of healthcare professional recruitment in Saudi Arabia.", // Kept existing
+    maintenanceBiomedicalTitle: "Maintenance and Biomedical Equipment Services", // Kept existing
+    maintenanceBiomedicalDescription: "Comprehensive maintenance planning and execution for facility infrastructure and specialized medical equipment.", // Kept existing
 
-    consortiumDrivenTitle: "Consortium-Driven Full-Service Delivery",
-    consortiumDrivenDescription: "As part of a wider healthcare consortium, Sidra Med can activate a full-service delivery model.",
-    legalCommercialConsultancyTitle: "Legal and Commercial Consultancy",
-    legalCommercialConsultancyDescription: "Expert advice on healthcare regulations, commercial structuring, and contract negotiations in the Saudi context.",
-    financialPlanningAuditingTitle: "Financial Planning and Auditing",
-    financialPlanningAuditingDescription: "Comprehensive financial services from initial budgeting to ongoing financial management and compliance.",
-    procurementEquipmentPlanningTitle: "Procurement and Equipment Planning",
-    procurementEquipmentPlanningDescription: "Strategic sourcing of medical equipment, supplies, and technology with a focus on value and quality.",
-    facilityDesignConstructionTitle: "Facility Design and Construction",
-    facilityDesignConstructionDescription: "End-to-end project management of healthcare facility design and construction, aligned with international standards.",
-    accreditationSustainabilityTitle: "Accreditation and Sustainability Planning",
-    accreditationSustainabilityDescription: "Strategic support for achieving national and international healthcare accreditations while implementing sustainable practices.",
+    consortiumDrivenTitle: "Consortium-Driven Full-Service Delivery", // Kept existing
+    consortiumDrivenDescription: "As part of a wider healthcare consortium, Sidra Med can activate a full-service delivery model.", // Kept existing
+    legalCommercialConsultancyTitle: "Legal and Commercial Consultancy", // Kept existing
+    legalCommercialConsultancyDescription: "Expert advice on healthcare regulations, commercial structuring, and contract negotiations in the Saudi context.", // Kept existing
+    financialPlanningAuditingTitle: "Financial Planning and Auditing", // Kept existing
+    financialPlanningAuditingDescription: "Comprehensive financial services from initial budgeting to ongoing financial management and compliance.", // Kept existing
+    procurementEquipmentPlanningTitle: "Procurement and Equipment Planning", // Kept existing
+    procurementEquipmentPlanningDescription: "Strategic sourcing of medical equipment, supplies, and technology with a focus on value and quality.", // Kept existing
+    facilityDesignConstructionTitle: "Facility Design and Construction", // Kept existing
+    facilityDesignConstructionDescription: "End-to-end project management of healthcare facility design and construction, aligned with international standards.", // Kept existing
+    accreditationSustainabilityTitle: "Accreditation and Sustainability Planning", // Kept existing
+    accreditationSustainabilityDescription: "Strategic support for achieving national and international healthcare accreditations while implementing sustainable practices.", // Kept existing
 
     customSolutionsTitle: "Custom Solutions for Your Healthcare Project",
     customSolutionsDescription: "Each project is custom-scoped to ensure the right mix of partners and services.",
 
-    ourApproachTitle: "Our Approach",
-    approachStep1Title: "1. Assess",
-    approachStep1Description: "We evaluate your unique needs and project requirements.",
-    approachStep2Title: "2. Plan",
-    approach2Description: "We create a tailored strategy with the right service mix.", // Corrected key
-    approachStep3Title: "3. Execute",
-    approach3Description: "We implement solutions with our expert team and partners.", // Corrected key
-    approachStep4Title: "4. Optimize",
-    approach4Description: "We continuously improve and adapt to ensure lasting success.", // Corrected key
+    // Our Comprehensive Approach - UPDATED
+    ourApproachTitle: "OUR COMPREHENSIVE APPROACH",
+    approachStep1Title: "1. Initial Assessment",
+    approachStep1Description: "Conduct thorough evaluation of healthcare needs and market opportunities",
+    approachStep2Title: "2. Strategic Planning",
+    approach2Description: "Collaborate with key stakeholders to develop a customized implementation roadmap",
+    approachStep3Title: "3. Implementation",
+    approach3Description: "Execute plans with meticulous attention to detail and flexibility to adapt",
+    approachStep4Title: "4. Continuous Optimization",
+    approach4Description: "Systematically refine operations to achieve maximum efficiency and effectiveness",
 
     needCustomSolution: "Need a customized solution for your healthcare project?",
     contactUsToday: "Contact us today to discuss your specific needs and how we can help.",
@@ -406,38 +405,38 @@ export const translations = {
     partnerKingsCollegeHospital: "King's College Hospital London",
     partnerItqan: "Itqan",
     partnerFizik: "Fizik Physical Therapy & Rehabilitation",
-    partnerDrSolimanFakeehHospital: "Dr. Soliman Fakeeh Hospital", // NEW
-    partnerInma: "Inma", // NEW
-    partnerBClinic: "B Clinic", // NEW
-    partnerKPMG: "KPMG", // NEW
-    partnerPVR: "PVR", // NEW
-    partnerAllSensesMedicalCenter: "All Senses Medical Center", // NEW
-    partnerKidneyCareCenter: "Kidney Care Center", // NEW
-    partnerRadRadiologyPlanning: "RAD Radiology Planning", // NEW
-    partnerCDLMedicalLaboratories: "CDL Medical Laboratories", // NEW
-    partnerAbeer: "Abeer", // NEW
-    partnerAlMaddahiaHolding: "AlMaddahia Holding", // NEW
-    partnerZmzm: "zmzm", // NEW
-    partnerKingdomMedicine: "Kingdom Medicine", // NEW
-    partnerDoctorsClinic: "Doctors Clinic", // NEW
-    partnerZaherMedicalComplex: "Zaher Medical Complex", // NEW
-    partnerAlAmmar: "Al-Ammar", // NEW
-    partnerBunyan: "Bunyan", // NEW
-    partnerAldarHospital: "Aldar Hospital", // NEW
-    partnerAlmustaqbalMedical: "Almustaqbal Medical", // NEW
-    partnerNMG: "NMG", // NEW
-    partnerMafaselClinics: "Mafasel Clinics", // NEW
-    partnerFutureHealthTrainingCenter: "Future Health Training Center", // NEW
-    partnerAlZahraaHospitals: "Al Zahraa Hospitals", // NEW
-    partnerMASBTS: "MAS BTS", // NEW
-    partnerTalab: "Talab", // NEW
+    partnerDrSolimanFakeehHospital: "Dr. Soliman Fakeeh Hospital",
+    partnerInma: "Inma",
+    partnerBClinic: "B Clinic",
+    partnerKPMG: "KPMG",
+    partnerPVR: "PVR",
+    partnerAllSensesMedicalCenter: "All Senses Medical Center",
+    partnerKidneyCareCenter: "Kidney Care Center",
+    partnerRadRadiologyPlanning: "RAD Radiology Planning",
+    partnerCDLMedicalLaboratories: "CDL Medical Laboratories",
+    partnerAbeer: "Abeer",
+    partnerAlMaddahiaHolding: "AlMaddahia Holding",
+    partnerZmzm: "zmzm",
+    partnerKingdomMedicine: "Kingdom Medicine",
+    partnerDoctorsClinic: "Doctors Clinic",
+    partnerZaherMedicalComplex: "Zaher Medical Complex",
+    partnerAlAmmar: "Al-Ammar",
+    partnerBunyan: "Bunyan",
+    partnerAldarHospital: "Aldar Hospital",
+    partnerAlmustaqbalMedical: "Almustaqbal Medical",
+    partnerNMG: "NMG",
+    partnerMafaselClinics: "Mafasel Clinics",
+    partnerFutureHealthTrainingCenter: "Future Health Training Center",
+    partnerAlZahraaHospitals: "Al Zahraa Hospitals",
+    partnerMASBTS: "MAS BTS",
+    partnerTalab: "Talab",
 
     // Partners Page
     partnersPageTitle: "Our Esteemed Partners",
     partnersPageDescription: "We collaborate with leading organizations to deliver comprehensive healthcare solutions and drive innovation across the Kingdom.",
-    ourValued: "Our Valued", // Added missing key
-    partnersTitle: "Partners", // Added missing key
-    partnersMetaDescription: "Explore Sidra Med's esteemed network of partners, collaborating to deliver comprehensive healthcare solutions and drive innovation across Saudi Arabia.", // NEW
+    ourValued: "Our Valued",
+    partnersTitle: "Partners",
+    partnersMetaDescription: "Explore Sidra Med's esteemed network of partners, collaborating to deliver comprehensive healthcare solutions and drive innovation across Saudi Arabia.",
 
     // Partners Page FAQs
     partnersFaqQ1: "How does Sidra Med choose its partners?",
@@ -487,10 +486,10 @@ export const translations = {
     aboutSummaryTitle: "سدرة ميد هي شركة سعودية متخصصة في مشاريع وخدمات الرعاية الصحية.",
     aboutSummaryDescription: "نساعد المستثمرين والمشغلين وجميع أصحاب المصلحة في القطاع الصحي على التخطيط والإطلاق وإدارة المنشآت الطبية في جميع أنحاء المملكة. من المفهوم الأولي إلى الجاهزية التشغيلية، تضمن سدرة ميد التنفيذ السلس والامتثال التنظيمي والنتائج المستدامة.",
     learnMoreAboutUs: "اعرف المزيد عنا",
-    qualityAssured: "جودة مضمونة",
-    isoCertified: "معتمد من الآيزو",
-    awardWinning: "حائز على جوائز",
-    excellenceInHealthcare: "التميز في الرعاية الصحية",
+    qualityAssured: "جودة مضمونة", // REMOVED FROM ABOUT SECTION
+    isoCertified: "معتمد من الآيزو", // REMOVED FROM ABOUT SECTION
+    awardWinning: "حائز على جوائز", // REMOVED FROM ABOUT SECTION
+    excellenceInHealthcare: "التميز في الرعاية الصحية", // REMOVED FROM ABOUT SECTION
 
     // Services Section (Home Page Summary)
     whatWeDo: "ما نقدمه",
@@ -507,28 +506,27 @@ export const translations = {
     service4Description: "من خلال شبكة الاتحاد الخاصة بنا، نمكّن تسليم المشاريع من البداية إلى النهاية من خلال الجمع بين نقاط القوة للشركاء المتخصصين في مختلف المجالات.",
     exploreAllServices: "استكشف جميع الخدمات",
 
-    // Why Choose Us Section
+    // Why Choose Us Section - UPDATED
     whySidraMed: "لماذا سدرة ميد؟",
-    whyChooseUsTitlePart1: "نهجنا يجمع بين",
-    whyChooseUsTitlePart2: "الخبرة المحلية",
-    whyChooseUsTitlePart3: "والمعايير الدولية",
-    whyChooseUsFeature1Title: "رؤية محلية مع معايير دولية",
-    whyChooseUsFeature1Description: "الجمع بين الفهم العميق للرعاية الصحية السعودية وأفضل الممارسات العالمية",
-    whyChooseUsFeature2Title: "خبرة مثبتة في تسليم المشاريع الصحية",
-    whyChooseUsFeature2Description: "سجل حافل من إطلاق المنشآت الصحية الناجحة في جميع أنحاء المملكة",
-    whyChooseUsFeature3Title: "التعاون الاستراتيجي مع الشركاء الرائدين في الصناعة",
-    whyChooseUsFeature3Description: "الوصول إلى شبكة من الخبراء المتخصصين ومقدمي الخدمات",
-    whyChooseUsFeature4Title: "التركيز على النتائج والتأثير والرعاية الصحية المستدامة",
-    whyChooseUsFeature4Description: "الالتزام بالنجاح على المدى الطويل والتأثير الإيجابي على الرعاية الصحية",
-    whyChooseUsFeature5Title: "تنفيذ مشاريع مرن وموثوق",
-    whyChooseUsFeature5Description: "نهج مرن يتكيف مع الاحتياجات المتغيرة مع الحفاظ على الموثوقية",
-    whyChooseUsFeature6Title: "الامتثال التنظيمي وضمان الجودة",
-    whyChooseUsFeature6Description: "ضمان امتثال جميع المشاريع للوائح الرعاية الصحية السعودية ومعايير الجودة الدولية",
+    whyChooseUsTitlePart1: "لماذا تختارنا؟", // Changed to full title
+    whyChooseUsTitlePart2: "", // Empty as it's a full title now
+    whyChooseUsTitlePart3: "", // Empty as it's a full title now
+    whyChooseUsFeature1Title: "خبرة محلية، معايير عالمية",
+    whyChooseUsFeature1Description: "نحن نقدم معرفة عميقة بلوائح الرعاية الصحية في المملكة العربية السعودية مع الالتزام بأفضل الممارسات الدولية.",
+    whyChooseUsFeature2Title: "تسليم شامل",
+    whyChooseUsFeature2Description: "من التخطيط الاستراتيجي إلى التنفيذ، ندير كل شيء تحت سقف واحد",
+    whyChooseUsFeature3Title: "شبكة موثوقة",
+    whyChooseUsFeature3Description: "لقد بنينا شراكات قوية مع السلطات المحلية، والمستشارين العالميين، والبائعين ذوي المستوى العالمي.",
+    whyChooseUsFeature4Title: "مدفوعة بالنتائج",
+    whyChooseUsFeature4Description: "يتم تسليم مشاريعنا في الوقت المحدد، وفي حدود الميزانية، وبتأثير كبير.",
+    whyChooseUsFeature5Title: "تنفيذ مشاريع مرن وموثوق", // Kept existing as it's not replaced
+    whyChooseUsFeature5Description: "نهج مرن يتكيف مع الاحتياجات المتغيرة مع الحفاظ على الموثوقية", // Kept existing
+    whyChooseUsFeature6Title: "الامتثال التنظيمي وضمان الجودة", // Kept existing
+    whyChooseUsFeature6Description: "ضمان امتثال جميع المشاريع للوائح الرعاية الصحية السعودية ومعايير الجودة الدولية", // Kept existing
 
-    // Success Stories Section
-    ourSuccessStories: "قصص نجاحنا",
-    projectsThatMadeImpact: "مشاريع أحدثت تأثيراً حقيقياً في الرعاية الصحية",
-    // New Success Stories
+    // Success Stories Section - REMOVED FROM HOME
+    ourSuccessStories: "قصص نجاحنا", // Added missing key
+    projectsThatMadeImpact: "مشاريع أحدثت تأثيراً حقيقياً في الرعاية الصحية", // Added missing key
     diagnosticCenterLaunchTitle: "إطلاق مركز تشخيصي متقدم",
     diagnosticCenterLaunchLocation: "الرياض، المملكة العربية السعودية",
     diagnosticCenterLaunchDescription: "إدارة دورة حياة المشروع بالكامل لمركز تشخيصي جديد، من دراسات الجدوى والتصميم إلى الجاهزية التشغيلية والامتثال التنظيمي.",
@@ -559,7 +557,7 @@ export const translations = {
     partnerships: "شراكات",
     adherence: "التزام",
 
-    // Testimonials Section
+    // Testimonials Section - REMOVED FROM HOME
     whatOurClientsSay: "ماذا يقول عملاؤنا",
     hearFromLeaders: "استمع من قادة الرعاية الصحية الذين يثقون بسدرة ميد",
     testimonial1: "لقد غيرت سدرة ميد عمليات منشأتنا. خبرتهم في إدارة مشاريع الرعاية الصحية لا مثيل لها في المملكة.",
@@ -576,7 +574,7 @@ export const translations = {
     readyToBuildFuture: "هل أنت مستعد لبناء مستقبل الرعاية الصحية؟",
     letsWorkTogether: "دعنا نعمل معاً لتحقيق رؤيتك.",
     getAConsultation: "احصل على استشارة",
-    callUs: "اتصل بنا", // New key for the CTA button
+    callUs: "اتصل بنا",
 
     // Contact Section
     getInTouch: "تواصل معنا",
@@ -584,13 +582,13 @@ export const translations = {
     contactDescription: "فريقنا جاهز لمساعدتك في تحقيق أهدافك الصحية في المملكة العربية السعودية.",
     location: "الموقع",
     jeddahKSA: "جدة، المملكة العربية السعودية",
-    fullAddress: "شارع ليبيا 4500، حي الحمراء، 23324، جدة، المملكة العربية السعودية", // New key
+    fullAddress: "شارع ليبيا 4500، حي الحمراء، 23324، جدة، المملكة العربية السعودية",
     email: "البريد الإلكتروني",
     businessHours: "ساعات العمل",
     businessHoursTime: "الأحد - الخميس: 8:00 ص - 6:00 م",
     phoneNumber: "رقم الهاتف",
-    whatsapp: "واتساب", // New key
-    firstName: "الاسم الأول", // Added missing key
+    whatsapp: "واتساب",
+    firstName: "الاسم الأول",
     enterFirstName: "أدخل اسمك الأول",
     lastName: "اسم العائلة",
     enterLastName: "أدخل اسم عائلتك",
@@ -611,28 +609,27 @@ export const translations = {
     // Footer
     empoweringHealthcare: "تمكين أصحاب المصلحة في الرعاية الصحية من مقدمي الخدمات والمستثمرين والمشغلين وما بعدهم بخدمات استراتيجية وتقنية وتشغيلية في المشهد الصحي المتطور في المملكة العربية السعودية.",
     quickLinks: "روابط سريعة",
-    ourServicesFooter: "خدماتنا", // Renamed to avoid conflict with Navbar link
+    ourServicesFooter: "خدماتنا",
     marketIntegration: "التكامل مع السوق",
     privacyPolicy: "سياسة الخصوصية",
     termsOfService: "شروط الخدمة",
     allRightsReserved: "© 2025 سدرة ميد. جميع الحقوق محفوظة.",
 
-    // New Content from Company Profile
-    // Mission & Vision Page
+    // Mission & Vision Page - UPDATED
     missionPageTitle: "الرسالة والرؤية",
     mission: "الرسالة",
     missionContent: "في سدرة ميد، مهمتنا هي تمكين مقدمي الرعاية الصحية في جميع أنحاء المملكة العربية السعودية من خلال تقديم الدعم الاستراتيجي والتشغيلي والتقني لضمان نجاح المشاريع الصحية. نحن ملتزمون بتحويل تقديم الخدمات الطبية من خلال تمكين التميز في البنية التحتية والخدمات الصحية.",
     vision: "الرؤية",
     visionContent: "أن نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في المملكة العربية السعودية. معترف بنا للابتكار والموثوقية وقدرتنا على تحقيق نتائج ناجحة لمقدمي الرعاية الصحية والمستثمرين والمجتمع.",
 
-    // Who We Are Page
-    aboutUsPageMainTitle: "قصتنا وخبرتنا", // New key
-    aboutUsPageMainDescription: "سدرة ميد هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية، تعمل كممكّن استراتيجي للمشاريع الصحية من المفهوم إلى التنفيذ.", // New key
+    // Who We Are Page - UPDATED
+    aboutUsPageMainTitle: "قصتنا وخبرتنا",
+    aboutUsPageMainDescription: "سدرة ميد هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية، تعمل كممكّن استراتيجي للمشاريع الصحية من المفهوم إلى التنفيذ.",
     whoWeAreDescription1: "سدرة ميد المحدودة هي شركة خدمات طبية متخصصة مقرها في المملكة العربية السعودية. نعمل كممكّنين استراتيجيين للمشاريع الصحية من خلال تقديم خدمات شاملة عبر كل مرحلة من مراحل المشروع من المفهوم إلى التنفيذ.",
     whoWeAreDescription2: "سواء كان الدعم لتطوير المستشفيات، العيادات، المختبرات، أو مبادرات الصحة الرقمية، فإننا نقدم خبرة عالمية المستوى مصممة خصيصًا للسوق السعودي وبيئته التنظيمية الفريدة. نحن ندمج المعرفة الطبية، التميز الهندسي، والتنفيذ التشغيلي لتقديم حلول رعاية صحية موثوقة وقابلة للتطوير.",
-    aboutUsMetaDescription: "اكتشف قصة سدرة ميد وخبرتها في تنفيذ مشاريع الرعاية الصحية في جميع أنحاء المملكة العربية السعودية، من المفهوم إلى الجاهزية التشغيلية، مما يضمن التنفيذ السلس والامتثال التنظيمي.", // NEW
+    aboutUsMetaDescription: "اكتشف قصة سدرة ميد وخبرتها في تنفيذ مشاريع الرعاية الصحية في جميع أنحاء المملكة العربية السعودية، من المفهوم إلى الجاهزية التشغيلية، مما يضمن التنفيذ السلس والامتثال التنظيمي.",
 
-    // Our Values Page
+    // Our Values Page - UPDATED
     ourValuesPageTitle: "قيمنا",
     value1Title: "النزاهة والاحترافية",
     value1Description: "نحن نلتزم بأعلى معايير الصدق والأخلاق والسلوك المهني.",
@@ -642,37 +639,37 @@ export const translations = {
     value3Description: "نسعى باستمرار لإيجاد طرق أذكى وأكثر كفاءة لتقديم حلول الرعاية الصحية.",
     value4Title: "التميز",
     value4Description: "نسعى جاهدين للتميز في التنفيذ، من التخطيط إلى التطبيق.",
-    ourValuesMetaDescription: "استكشف قيم سدرة ميد الأساسية: النزاهة، التعاون، الابتكار، والتميز، التي تدفع التزامنا بتحويل الرعاية الصحية في المملكة العربية السعودية.", // NEW
+    ourValuesMetaDescription: "استكشف قيم سدرة ميد الأساسية: النزاهة، التعاون، الابتكار، والتميز، التي تدفع التزامنا بتحويل الرعاية الصحية في المملكة العربية السعودية.",
 
-    // Our Team Page
+    // Our Team Page - UPDATED
     ourTeamPageTitle: "فريقنا",
     teamRole1: "مديرو مشاريع الرعاية الصحية",
-    teamRole1Description: "خبراء في تسليم مشاريع الرعاية الصحية المتخصصة مع فهم عميق للمتطلبات السريرية.",
+    teamRole1Description: "خبراء في تسليم مشاريع الرعاية الصحية المتخصصة مع فهم عميق للمتطلبات السريرية",
     teamRole2: "خبراء العمليات السريرية والتشغيلية",
-    team2Description: "متخصصون في الرعاية الصحية ذوو خبرة يضمنون التميز التشغيلي وأفضل الممارسات السريرية.",
+    team2Description: "متخصصون في الرعاية الصحية ذوو خبرة يضمنون التميز التشغيلي وأفضل الممارسات السريرية",
     teamRole3: "مهندسو ومعماريو الرعاية الصحية",
-    team3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.",
+    team3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي",
+    teamRole3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي",
     teamRole4: "المحللون الاستراتيجيون والماليون",
-    team4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.",
-    teamRole3Description: "متخصصون في تصميم وبناء منشآت الرعاية الصحية والامتثال التنظيمي.", // NEW
-    teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل.", // NEW
-    ourTeamMetaDescription: "تعرف على فريق الخبراء في سدرة ميد، والذي يضم مديري مشاريع الرعاية الصحية، والخبراء السريريين، والمهندسين، والمحللين الماليين المكرسين لنجاح مشروعك في المملكة العربية السعودية.", // NEW
+    team4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل",
+    teamRole4Description: "محترفون يضمنون جدوى المشروع والاستدامة المالية على المدى الطويل",
+    ourTeamMetaDescription: "تعرف على فريق الخبراء في سدرة ميد، والذي يضم مديري مشاريع الرعاية الصحية، والخبراء السريريين، والمهندسين، والمحللين الماليين المكرسين لنجاح مشروعك في المملكة العربية السعودية.",
 
-    // Our Services Page (Detailed Content)
-    ourServicesPageTitle: "خدماتنا الشاملة للرعاية الصحية", // Added this line
+    // Our Services Page (Detailed Content) - UPDATED
+    ourServicesPageTitle: "خدماتنا الشاملة للرعاية الصحية",
     ourServicesPageDescription: "تقدم سدرة ميد الدعم العملي والاستراتيجي والتقني في جميع مراحل تطوير مشاريع الرعاية الصحية. سواء كنت تطلق عيادة جديدة، أو تقوم بترقية مستشفى قائم، أو تدير استثمارات الرعاية الصحية، أو تخطط للعمليات طويلة الأجل، فإننا نوفر الأدوات والخبرة لضمان النجاح.",
-    ourServicesMetaDescription: "استكشف خدمات سدرة ميد الشاملة للرعاية الصحية، بما في ذلك دعم المشاريع والتقنيات، والإدارة التشغيلية، والحلول القائمة على التحالف للمرافق في جميع أنحاء المملكة العربية السعودية.", // NEW
+    ourServicesMetaDescription: "استكشف خدمات سدرة ميد الشاملة للرعاية الصحية، بما في ذلك دعم المشاريع والتقنيات، والإدارة التشغيلية، والحلول القائمة على التحالف للمرافق في جميع أنحاء المملكة العربية السعودية.",
 
-    projectTechnicalSupportTitle: "الدعم الفني للمشاريع",
-    projectTechnicalSupportDescription: "نساعد العملاء في تقييم الجدوى، وتخطيط تصميم المنشآت، وضمان التوافق مع المتطلبات التنظيمية المحلية.",
-    siteAssessmentsTitle: "تقييمات المواقع والتخطيط التشغيلي",
+    projectTechnicalSupportTitle: "إدارة مشاريع الرعاية الصحية",
+    projectTechnicalSupportDescription: "تسليم المشاريع الجاهزة للمستشفيات والعيادات والمختبرات. دراسات الجدوى وتقييمات السوق. خدمات طبية في الموقع لمشاريع البناء.",
+    siteAssessmentsTitle: "دراسات الجدوى وتقييمات السوق",
     siteAssessmentsDescription: "تقييم شامل للمواقع المحتملة والمتطلبات التشغيلية للمنشآت الصحية.",
-    coordArchitecturalTitle: "التنسيق مع فرق الهندسة المعمارية والهندسية",
-    coordArchitecturalDescription: "التكامل السلس مع فرق التصميم والبناء لضمان تلبية المتطلبات الخاصة بالرعاية الصحية.",
-    licensingCommissioningTitle: "دعم الترخيص والتشغيل",
-    licensingCommissioningDescription: "إرشادات الخبراء خلال عملية ترخيص المنشآت الصحية في المملكة العربية السعودية والتشغيل الأولي.",
-    strategicPlanningTitle: "التخطيط الاستراتيجي ومواءمة الاستثمار",
-    strategicPlanningDescription: "ضمان توافق مشروع الرعاية الصحية الخاص بك مع أهداف العمل وأولويات رؤية السعودية 2030 للرعاية الصحية.",
+    coordArchitecturalTitle: "دعم التخطيط الطبي والهندسة المعمارية",
+    coordArchitecturalDescription: "التصميم المفاهيمي وتخطيط المنشآت. تخطيط المعدات وتطوير قوائم الكميات.",
+    licensingCommissioningTitle: "الترخيص والموافقات التنظيمية",
+    licensingCommissioningDescription: "ترخيص وزارة الصحة وتسجيل المنشآت. تدقيق الامتثال والوثائق.",
+    strategicPlanningTitle: "الجاهزية التشغيلية والاستشارات الاستراتيجية",
+    strategicPlanningDescription: "تنسيق التوظيف وتطوير إجراءات التشغيل القياسية. نمذجة الأعمال واستراتيجيات الاستثمار.",
 
     operationalSupportTitle: "الدعم التشغيلي والإدارة",
     operationalSupportDescription: "نقوم بإدارة أو المشاركة في إدارة المنشآت الصحية لضمان الجودة والكفاءة والامتثال.",
@@ -701,15 +698,16 @@ export const translations = {
     customSolutionsTitle: "حلول مخصصة لمشروع الرعاية الصحية الخاص بك",
     customSolutionsDescription: "يتم تحديد نطاق كل مشروع بشكل مخصص لضمان المزيج الصحيح من الشركاء والخدمات.",
 
-    ourApproachTitle: "نهجنا",
-    approachStep1Title: "1. التقييم",
-    approachStep1Description: "نقوم بتقييم احتياجاتك ومتطلبات مشروعك الفريدة.",
-    approachStep2Title: "2. التخطيط",
-    approach2Description: "ننشئ استراتيجية مخصصة مع المزيج الصحيح من الخدمات.", // Corrected key
+    // Our Comprehensive Approach - UPDATED
+    ourApproachTitle: "نهجنا الشامل",
+    approachStep1Title: "1. التقييم الأولي",
+    approachStep1Description: "إجراء تقييم شامل لاحتياجات الرعاية الصحية وفرص السوق",
+    approachStep2Title: "2. التخطيط الاستراتيجي",
+    approach2Description: "التعاون مع أصحاب المصلحة الرئيسيين لتطوير خارطة طريق تنفيذ مخصصة",
     approachStep3Title: "3. التنفيذ",
-    approach3Description: "نقوم بتنفيذ الحلول مع فريق الخبراء والشركاء لدينا.", // Corrected key
-    approachStep4Title: "4. التحسين",
-    approach4Description: "نعمل باستمرار على التحسين والتكيف لضمان النجاح الدائم.", // Corrected key
+    approach3Description: "تنفيذ الخطط بدقة متناهية ومرونة للتكيف",
+    approachStep4Title: "4. التحسين المستمر",
+    approach4Description: "تحسين العمليات بشكل منهجي لتحقيق أقصى قدر من الكفاءة والفعالية",
 
     needCustomSolution: "هل تحتاج إلى حل مخصص لمشروع الرعاية الصحية الخاص بك؟",
     contactUsToday: "اتصل بنا اليوم لمناقشة احتياجاتك المحددة وكيف يمكننا المساعدة.",
@@ -778,7 +776,7 @@ export const translations = {
     ourValuesFaqA2: "نؤمن بقوة الشراكات والعمل الجماعي متعدد التخصصات، ونسعى بنشاط للجمع بين نقاط القوة مع الشركاء المتخصصين لتقديم مشاريع شاملة.",
     ourValuesFaqQ3: "كيف يتم الحفاظ على النزاهة في جميع المشاريع؟",
     ourValuesFaqA3: "من خلال التواصل الشفاف، واتخاذ القرارات الأخلاقية، والالتزام الصارم بالمعايير واللوائح المهنية.",
-    ourValuesFaqQ4: "ما هو الدور الذي يلعبه الابتكار في خدمات سدرة ميد؟",
+    ourValuesFaqQ4: "ما هو الدور الذي يلعبه الابتكار في سدرة ميد's services?",
     ourValuesFaqA4: "الابتكار هو مفتاح نهجنا، حيث نسعى باستمرار لإيجاد طرق أذكى وأكثر كفاءة وتطوراً تكنولوجياً لتقديم حلول الرعاية الصحية.",
     ourValuesFaqQ5: "كيف تضمن سدرة ميد التميز في خدماتها؟",
     ourValuesFaqA5: "من خلال الحفاظ على معايير عالية في التخطيط والتنفيذ والتحسين المستمر، مما يضمن أن كل مشروع يلبي توقعات العميل أو يتجاوزها.",
@@ -840,7 +838,7 @@ export const translations = {
     termsOfServiceSection5Title: "5. تعليقات المستخدمين والملاحظات والتقديمات الأخرى",
     termsOfServiceSection5Content: "إذا قمت، بناءً على طلبنا، بإرسال بعض التقديمات المحددة (على سبيل المثال إدخالات المسابقة) أو بدون طلب منا، أرسلت أفكارًا إبداعية أو اقتراحات أو مقترحات أو خططًا أو مواد أخرى، سواء عبر الإنترنت أو عبر البريد الإلكتروني أو عبر البريد العادي أو غير ذلك (يُشار إليها إجمالاً باسم 'التعليقات')، فإنك توافق على أنه يجوز لنا، في أي وقت، دون قيود، تحرير أو نسخ أو نشر أو توزيع أو ترجمة أو استخدام بأي طريقة أخرى في أي وسيط أي تعليقات ترسلها إلينا. نحن ولسنا ملزمين (1) بالحفاظ على سرية أي تعليقات؛ (2) بدفع تعويض عن أي تعليقات؛ أو (3) بالرد على أي تعليقات. يجوز لنا، ولكن ليس لدينا أي التزام، بمراقبة أو تحرير أو إزالة المحتوى الذي نحدده وفقًا لتقديرنا الخاص بأنه غير قانوني أو مسيء أو مهدد أو تشهيري أو افترائي أو إباحي أو فاحش أو غير مقبول بأي شكل آخر أو ينتهك الملكية الفكرية لأي طرف أو شروط الخدمة هذه. أنت توافق على أن تعليقاتك لن تنتهك أي حق لأي طرف ثالث، بما في ذلك حقوق الطبع والنشر أو العلامات التجارية أو الخصوصية أو الشخصية أو أي حق شخصي أو ملكية آخر. أنت توافق كذلك على أن تعليقاتك لن تحتوي على مواد تشهيرية أو غير قانونية أو مسيئة أو فاحشة بأي شكل آخر، أو تحتوي على أي فيروس كمبيوتر أو برامج ضارة أخرى يمكن أن تؤثر بأي شكل من الأشكال على تشغيل الخدمة أو أي موقع ويب ذي صلة. لا يجوز لك استخدام عنوان بريد إلكتروني مزيف، أو التظاهر بأنك شخص آخر غير نفسك، أو تضليلنا أو تضليل أطراف ثالثة بأي شكل آخر فيما يتعلق بأصل أي تعليقات. أنت وحدك المسؤول عن أي تعليقات تقوم بها ودقتها. نحن لا نتحمل أي مسؤولية ولا نتحمل أي التزام عن أي تعليقات تنشرها أنت أو أي طرف ثالث.",
     termsOfServiceSection6Title: "6. إخلاء المسؤولية عن الضمانات؛ تحديد المسؤولية",
-    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المناسب أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدها. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، ولكن لا تقتصر على، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
+    termsOfServiceSection6Content: "نحن لا نضمن أو نمثل أو نكفل أن استخدامك لخدمتنا سيكون دون انقطاع أو في الوقت المناسب أو آمنًا أو خاليًا من الأخطاء. نحن لا نضمن أن النتائج التي قد يتم الحصول عليها من استخدام الخدمة ستكون دقيقة أو موثوقة. أنت توافق على أنه يجوز لنا من وقت لآخر إزالة الخدمة لفترات زمنية غير محددة أو إلغاء الخدمة في أي وقت، دون إشعار لك. أنت توافق صراحة على أن استخدامك للخدمة، أو عدم قدرتك على استخدامها، هو على مسؤوليتك وحدها. يتم تقديم الخدمة وجميع المنتجات والخدمات المقدمة لك من خلال الخدمة هي (باستثناء ما هو منصوص عليه صراحة من قبلنا) 'كما هي' و 'كما هي متاحة' لاستخدامك، دون أي تمثيل أو ضمانات أو شروط من أي نوع، سواء كانت صريحة أو ضمنية، بما في ذلك جميع الضمانات أو الشروط الضمنية للرواج، والجودة التجارية، والملاءمة لغرض معين، والمتانة، والملكية، وعدم الانتهاك. في أي حال من الأحوال لن تكون سدرة ميد، أو مديرينا، أو مسؤولينا، أو موظفينا، أو الشركات التابعة لنا، أو وكلائنا، أو مقاولينا، أو المتدربين لدينا، أو موردينا، أو مزودي الخدمة لدينا، أو المرخصين لنا مسؤولين عن أي إصابة أو خسارة أو مطالبة أو أي أضرار مباشرة أو غير مباشرة أو عرضية أو عقابية أو خاصة أو تبعية من أي نوع، بما في ذلك، على سبيل المثال لا الحصر، الأرباح المفقودة، أو الإيرادات المفقودة، أو المدخرات المفقودة، أو فقدان البيانات، أو فقدان البيانات، أو تكاليف الاستبدال، أو أي أضرار مماثلة، سواء كانت تستند إلى عقد أو ضرر (بما في ذلك الإهمال) أو مسؤولية صارمة أو غير ذلك، تنشأ عن استخدامك لأي من الخدمة أو أي منتجات تم الحصول عليها باستخدام الخدمة، أو عن أي مطالبة أخرى تتعلق بأي شكل من الأشكال باستخدامك للخدمة أو أي منتج، بما في ذلك، ولكن لا تقتصر على، أي أخطاء أو سهو في أي محتوى، أو أي خسارة أو ضرر من أي نوع يتم تكبده نتيجة لاستخدام الخدمة أو أي محتوى (أو منتج) تم نشره أو نقله أو إتاحته بأي طريقة أخرى عبر الخدمة، حتى لو تم إبلاغنا بإمكانية حدوث ذلك. نظرًا لأن بعض الولايات أو الولايات القضائية لا تسمح باستبعاد أو تحديد المسؤولية عن الأضرار التبعية أو العرضية، في مثل هذه الولايات أو الولايات القضائية، يجب أن تقتصر مسؤوليتنا على أقصى حد يسمح به القانون.",
     termsOfServiceSection7Title: "7. القانون الحاكم",
     termsOfServiceSection7Content: "تخضع شروط الخدمة هذه وأي اتفاقيات منفصلة نقدم لك بموجبها الخدمات وتفسر وفقًا لقوانين المملكة العربية السعودية.",
     termsOfServiceSection8Title: "8. معلومات الاتصال",
@@ -860,38 +858,38 @@ export const translations = {
     partnerKingsCollegeHospital: "مستشفى كينغز كوليدج لندن",
     partnerItqan: "إتقان",
     partnerFizik: "فيزيك للعلاج الطبيعي والتأهيل",
-    partnerDrSolimanFakeehHospital: "مستشفى د.سليمان فقيه", // NEW
-    partnerInma: "إنماء", // NEW
-    partnerBClinic: "بي كلينك", // NEW
-    partnerKPMG: "كي بي إم جي", // NEW
-    partnerPVR: "بي في آر", // NEW
-    partnerAllSensesMedicalCenter: "مركز كل الحواس الطبي", // NEW
-    partnerKidneyCareCenter: "مركز العناية بالكلى", // NEW
-    partnerRadRadiologyPlanning: "راد للتخطيط الإشعاعي", // NEW
-    partnerCDLMedicalLaboratories: "مختبرات سي دي إل الطبية", // NEW
-    partnerAbeer: "عبير", // NEW
-    partnerAlMaddahiaHolding: "شركة المداحية القابضة", // NEW
-    partnerZmzm: "زمزم", // NEW
-    partnerKingdomMedicine: "طب المملكة", // NEW
-    partnerDoctorsClinic: "عيادات الأطباء", // NEW
-    partnerZaherMedicalComplex: "مجمع الطبيب زاهر قضيب البان الطبي العام", // NEW
-    partnerAlAmmar: "العمّار", // NEW
-    partnerBunyan: "بنيان", // NEW
-    partnerAldarHospital: "مستشفى الدار", // NEW
-    partnerAlmustaqbalMedical: "المستقبل الطبي", // NEW
-    partnerNMG: "إن إم جي", // NEW
-    partnerMafaselClinics: "عيادات مفاصل", // NEW
-    partnerFutureHealthTrainingCenter: "مركز المستقبل للتدريب الصحي", // NEW
-    partnerAlZahraaHospitals: "مستشفيات الزهراء", // NEW
-    partnerMASBTS: "شركة ماس القابضة", // NEW
-    partnerTalab: "تَلَب", // NEW
+    partnerDrSolimanFakeehHospital: "مستشفى د.سليمان فقيه",
+    partnerInma: "إنماء",
+    partnerBClinic: "بي كلينك",
+    partnerKPMG: "كي بي إم جي",
+    partnerPVR: "بي في آر",
+    partnerAllSensesMedicalCenter: "مركز كل الحواس الطبي",
+    partnerKidneyCareCenter: "مركز العناية بالكلى",
+    partnerRadRadiologyPlanning: "راد للتخطيط الإشعاعي",
+    partnerCDLMedicalLaboratories: "مختبرات سي دي إل الطبية",
+    partnerAbeer: "عبير",
+    partnerAlMaddahiaHolding: "شركة المداحية القابضة",
+    partnerZmzm: "زمزم",
+    partnerKingdomMedicine: "طب المملكة",
+    partnerDoctorsClinic: "عيادات الأطباء",
+    partnerZaherMedicalComplex: "مجمع الطبيب زاهر قضيب البان الطبي العام",
+    partnerAlAmmar: "العمّار",
+    partnerBunyan: "بنيان",
+    partnerAldarHospital: "مستشفى الدار",
+    partnerAlmustaqbalMedical: "المستقبل الطبي",
+    partnerNMG: "إن إم جي",
+    partnerMafaselClinics: "عيادات مفاصل",
+    partnerFutureHealthTrainingCenter: "مركز المستقبل للتدريب الصحي",
+    partnerAlZahraaHospitals: "مستشفيات الزهراء",
+    partnerMASBTS: "شركة ماس القابضة",
+    partnerTalab: "تَلَب",
 
     // Partners Page
     partnersPageTitle: "شركاؤنا الكرام",
     partnersPageDescription: "نتعاون مع المنظمات الرائدة لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة.",
-    ourValued: "شركاؤنا الكرام", // Added missing key
-    partnersTitle: "الشركاء", // Added missing key
-    partnersMetaDescription: "استكشف شبكة سدرة ميد الموقرة من الشركاء، الذين يتعاونون لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة العربية السعودية.", // NEW
+    ourValued: "شركاؤنا الكرام",
+    partnersTitle: "الشركاء",
+    partnersMetaDescription: "استكشف شبكة سدرة ميد الموقرة من الشركاء، الذين يتعاونون لتقديم حلول رعاية صحية شاملة ودفع الابتكار في جميع أنحاء المملكة العربية السعودية.",
 
     // Partners Page FAQs
     partnersFaqQ1: "كيف تختار سدرة ميد شركاءها؟",

@@ -12,13 +12,7 @@ const CtaSection = () => {
         <div className="absolute top-0 left-0 w-full h-full bg-black/20"></div>
       </div>
 
-      {/* Animated Elements */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-20 left-20 w-32 h-32 bg-white/10 rounded-full animate-bounce-slow"></div>
-        <div className="absolute top-40 right-32 w-24 h-24 bg-white/10 rounded-full animate-float"></div>
-        <div className="absolute bottom-32 left-1/4 w-20 h-20 bg-white/10 rounded-full animate-pulse-slow"></div>
-        <div className="absolute bottom-20 right-20 w-28 h-28 bg-white/10 rounded-full animate-bounce-slow"></div>
-      </div>
+      {/* Animated Elements - REMOVED */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div data-aos="zoom-in" data-aos-duration="1000">

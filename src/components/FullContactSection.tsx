@@ -12,10 +12,7 @@ const FullContactSection = () => {
 
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
-      <div className="absolute inset-0 opacity-5">
-        <div className="absolute top-20 right-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
-        <div className="absolute bottom-20 left-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
-      </div>
+      {/* Animated background elements - REMOVED */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="text-center mb-16" data-aos="fade-up">

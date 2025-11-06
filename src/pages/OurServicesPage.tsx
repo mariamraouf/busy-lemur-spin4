@@ -16,48 +16,53 @@ const OurServicesPage = () => {
       title: t('projectTechnicalSupportTitle'),
       description: t('projectTechnicalSupportDescription'),
       items: [
-        { icon: "fas fa-map-marked-alt", title: t('siteAssessmentsTitle'), description: t('siteAssessmentsDescription') },
-        { icon: "fas fa-drafting-compass", title: t('coordArchitecturalTitle'), description: t('coordArchitecturalDescription') },
-        { icon: "fas fa-file-contract", title: t('licensingCommissioningTitle'), description: t('licensingCommissioningDescription') },
-        { icon: "fas fa-lightbulb", title: t('strategicPlanningTitle'), description: t('strategicPlanningDescription') },
+        { icon: "fas fa-hospital", title: "Turnkey delivery for hospitals, clinics, and labs" },
+        { icon: "fas fa-chart-bar", title: "Feasibility studies & market assessments" },
+        { icon: "fas fa-hard-hat", title: "On-site medical services for construction projects" },
       ],
       gradientFrom: "from-sidraPrimary",
       gradientTo: "to-sidraTeal",
     },
     {
-      icon: "fas fa-hospital-alt",
-      title: t('operationalSupportTitle'),
-      description: t('operationalSupportDescription'),
+      icon: "fas fa-file-contract",
+      title: t('licensingCommissioningTitle'),
+      description: t('licensingCommissioningDescription'),
       items: [
-        { icon: "fas fa-eye", title: t('facilityOperationsOversightTitle'), description: t('facilityOperationsOversightDescription') },
-        { icon: "fas fa-laptop-medical", title: t('healthcareITImplementationTitle'), description: t('healthcareITImplementationDescription') },
-        { icon: "fas fa-user-md", title: t('workforceRecruitmentTitle'), description: t('workforceRecruitmentDescription') },
-        { icon: "fas fa-tools", title: t('maintenanceBiomedicalTitle'), description: t('maintenanceBiomedicalDescription') },
+        { icon: "fas fa-certificate", title: "MOH licensing & facility registration" },
+        { icon: "fas fa-clipboard-check", title: "Compliance audits and documentation" },
       ],
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
     },
     {
-      icon: "fas fa-handshake",
-      title: t('consortiumDrivenTitle'),
-      description: t('consortiumDrivenDescription'),
+      icon: "fas fa-drafting-compass",
+      title: t('coordArchitecturalTitle'),
+      description: t('coordArchitecturalDescription'),
       items: [
-        { icon: "fas fa-gavel", title: t('legalCommercialConsultancyTitle'), description: t('legalCommercialConsultancyDescription') },
-        { icon: "fas fa-chart-pie", title: t('financialPlanningAuditingTitle'), description: t('financialPlanningAuditingDescription') },
-        { icon: "fas fa-truck-medical", title: t('procurementEquipmentPlanningTitle'), description: t('procurementEquipmentPlanningDescription') },
-        { icon: "fas fa-hard-hat", title: t('facilityDesignConstructionTitle'), description: t('facilityDesignConstructionDescription') },
-        { icon: "fas fa-certificate", title: t('accreditationSustainabilityTitle'), description: t('accreditationSustainabilityDescription') },
+        { icon: "fas fa-pencil-ruler", title: "Conceptual design and facility planning" },
+        { icon: "fas fa-microscope", title: "Equipment planning and BOQ development" },
       ],
       gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraPrimary",
+    },
+    {
+      icon: "fas fa-lightbulb",
+      title: t('strategicPlanningTitle'),
+      description: t('strategicPlanningDescription'),
+      items: [
+        { icon: "fas fa-users", title: "Recruitment coordination and SOP development" },
+        { icon: "fas fa-chart-line", title: "Business modeling and investment strategies" },
+      ],
+      gradientFrom: "from-sidraAccent",
+      gradientTo: "to-sidraSecondary",
     },
   ];
 
   const approachSteps = [
     { icon: "fas fa-search", title: t('approachStep1Title'), description: t('approachStep1Description'), color: "text-sidraPrimary" },
-    { icon: "fas fa-lightbulb", title: t('approachStep2Title'), description: t('approach2Description'), color: "text-sidraSecondary" }, // Corrected key
-    { icon: "fas fa-cogs", title: t('approachStep3Title'), description: t('approach3Description'), color: "text-sidraTeal" }, // Corrected key
-    { icon: "fas fa-chart-line", title: t('approachStep4Title'), description: t('approach4Description'), color: "text-sidraAccent" }, // Corrected key
+    { icon: "fas fa-lightbulb", title: t('approachStep2Title'), description: t('approach2Description'), color: "text-sidraSecondary" },
+    { icon: "fas fa-cogs", title: t('approachStep3Title'), description: t('approach3Description'), color: "text-sidraTeal" },
+    { icon: "fas fa-chart-line", title: t('approachStep4Title'), description: t('approach4Description'), color: "text-sidraAccent" },
   ];
 
   const servicesFaqs = [
@@ -76,9 +81,7 @@ const OurServicesPage = () => {
         <meta name="description" content={t('ourServicesMetaDescription')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
-        </div>
+        {/* Animated background elements - REMOVED */}
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-20" data-aos="fade-up">
@@ -119,7 +122,7 @@ const OurServicesPage = () => {
                 <p className="text-gray-700 leading-relaxed mb-8 text-lg">
                   {category.description}
                 </p>
-                <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"> {/* Adjusted grid for more cards per row */}
+                <div className="grid sm:grid-cols-2 lg:grid-cols-2 gap-6"> {/* Adjusted grid for 2 cards per row */}
                   {category.items.map((item, itemIndex) => (
                     <Card
                       key={itemIndex}
@@ -130,12 +133,10 @@ const OurServicesPage = () => {
                           <i className={cn(item.icon, "text-xl")}></i>
                         </div>
                         <CardTitle className={cn("text-xl font-bold text-gray-900", language === 'ar' ? 'mr-4' : 'ml-4')}>
-                          <h3 className="break-words">{item.title}</h3> {/* Changed to H3 */}
+                          <h3 className="break-words">{item.title}</h3>
                         </CardTitle>
                       </CardHeader>
-                      <CardDescription className="text-gray-600 leading-relaxed text-base flex-grow">
-                        {item.description}
-                      </CardDescription>
+                      {/* Removed CardDescription as the new content is part of the main description */}
                     </Card>
                   ))}
                 </div>
@@ -176,7 +177,7 @@ const OurServicesPage = () => {
                   )}>
                     <i className={cn(step.icon, "text-white text-2xl")}></i>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 break-words">{step.title}</h3> {/* Changed to H3 */}
+                  <h3 className="text-xl font-bold text-gray-900 mb-2 break-words">{step.title}</h3>
                   <p className="text-gray-700 text-base">{step.description}</p>
                 </div>
               ))}

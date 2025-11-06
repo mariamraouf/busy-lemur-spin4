@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   const { t, language } = useLanguage();
@@ -12,12 +13,7 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraSecondary/80 to-sidraAccent/90"></div>
       </div>
 
-      {/* Floating Elements */}
-      <div className="absolute inset-0 z-5">
-        <div className="absolute top-1/4 left-10 w-20 h-20 bg-white/20 rounded-full animate-bounce-slow"></div>
-        <div className="absolute top-1/3 right-20 w-16 h-16 bg-white/20 rounded-full animate-pulse-slow"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-12 h-12 bg-white/20 rounded-full animate-float"></div>
-      </div>
+      {/* Floating Elements - REMOVED */}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">

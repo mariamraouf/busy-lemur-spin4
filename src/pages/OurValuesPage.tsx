@@ -55,10 +55,7 @@ const OurValuesPage = () => {
         <meta name="description" content={t('ourValuesMetaDescription')} />
       </Helmet>
       <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute top-20 left-20 w-96 h-96 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-full blur-3xl"></div>
-          <div className="absolute bottom-20 right-20 w-80 h-80 bg-gradient-to-r from-sidraAccent to-sidraTeal rounded-full blur-3xl"></div>
-        </div>
+        {/* Animated background elements - REMOVED */}
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16" data-aos="fade-up">
@@ -84,7 +81,7 @@ const OurValuesPage = () => {
                 )}>
                   <i className={cn(value.icon, "text-white text-2xl")}></i>
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-4 break-words"> {/* Changed to H2 */}
+                <h2 className="text-xl font-bold text-gray-900 mb-4 break-words">
                   {value.title}
                 </h2>
                 <p className="text-gray-600 leading-relaxed">

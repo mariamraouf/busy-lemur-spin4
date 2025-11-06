@@ -43,9 +43,7 @@ const ServicesSection = () => {
 
   return (
     <section id="services" className="py-24 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full bg-sidraPrimary/5 via-sidraSecondary/5 to-sidraAccent/5"></div>
-      </div>
+      {/* Animated background elements - REMOVED */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-20" data-aos="fade-up">
@@ -74,10 +72,7 @@ const ServicesSection = () => {
               )}>
                 <i className={cn(service.icon, "text-white text-3xl")}></i>
               </div>
-              <h3 className={cn(
-                "text-2xl font-bold text-gray-900 mb-4 transition-colors break-words",
-                service.hoverColor.replace('text-', 'group-hover:text-')
-              )}>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4 transition-colors break-words">
                 {service.title}
               </h3>
               <p className="text-gray-700 leading-relaxed mb-6">
