@@ -8,8 +8,11 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden">
-      <div className="absolute inset-0 z-0 bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraTeal bg-[length:200%_200%] animate-gradient">
-        <div className="absolute inset-0 bg-black/50"></div> {/* Subtle dark overlay for text readability */}
+      <div 
+        className="absolute inset-0 z-0 bg-cover bg-center" 
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1587854692137-8cd983d87392?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')" }}
+      >
+        <div className="absolute inset-0 bg-black/60"></div> {/* Darker overlay for text readability */}
       </div>
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
