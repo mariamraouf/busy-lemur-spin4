@@ -8,13 +8,9 @@ const HeroSection = () => {
 
   return (
     <section id="home" className="relative min-h-screen flex items-center pt-32 overflow-hidden">
-      <div className="absolute inset-0 z-0">
-        {/* Updated image to reflect healthcare infrastructure/management */}
-        <img src="https://images.unsplash.com/photo-1587854692137-8cd983d87392?w=1920&h=1080&fit=crop" alt="Modern Healthcare Facility" className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-br from-sidraPrimary/90 via-sidraSecondary/80 to-sidraAccent/90"></div>
+      <div className="absolute inset-0 z-0 bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraTeal bg-[length:200%_200%] animate-gradient">
+        <div className="absolute inset-0 bg-black/50"></div> {/* Subtle dark overlay for text readability */}
       </div>
-
-      {/* Floating Elements - REMOVED */}
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-32">
         <div className="max-w-4xl" data-aos="fade-up" data-aos-duration="1000">
@@ -25,7 +21,6 @@ const HeroSection = () => {
           </div>
           <h1 className="text-5xl sm:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight break-words">
             <span className="block">{t('heroTitlePart1')}</span>
-            {/* Adjusted gradient for better visibility */}
             <span className="block bg-gradient-to-r from-white via-gray-200 to-white bg-clip-text text-transparent">{t('heroTitlePart2')}</span>
             <span className="block">{t('heroTitlePart3')}</span>
           </h1>
