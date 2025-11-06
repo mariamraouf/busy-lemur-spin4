@@ -130,6 +130,15 @@ export default {
           from: { transform: 'translateX(-100%)' },
           to: { transform: 'translateX(0)' },
         },
+        // RTL specific animations
+        'scroll-left-rtl': { // Visually moves left in RTL (from right to left)
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(100%)' },
+        },
+        'scroll-right-rtl': { // Visually moves right in RTL (from left to right)
+          from: { transform: 'translateX(100%)' },
+          to: { transform: 'translateX(0)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -141,6 +150,8 @@ export default {
         'gradient': 'gradient 15s ease infinite',
         'scroll-left': 'scroll-left var(--scroll-duration) linear infinite',
         'scroll-right': 'scroll-right var(--scroll-duration) linear infinite',
+        'scroll-left-rtl': 'scroll-left-rtl var(--scroll-duration) linear infinite',
+        'scroll-right-rtl': 'scroll-right-rtl var(--scroll-duration) linear infinite',
       },
     },
   },

@@ -8,7 +8,7 @@ interface Partner {
 }
 
 const AnimatedPartnersSection = () => {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
 
   const partners: Partner[] = [
     { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" },
@@ -52,22 +52,23 @@ const AnimatedPartnersSection = () => {
   ];
 
   // Create a base sequence by duplicating partners multiple times to ensure a long, seamless loop
-  // Duplicating 3 times means the full set of partners appears 3 times before repeating.
   const baseSequence = [...partners, ...partners, ...partners];
 
   // Calculate scroll duration based on the length of the base sequence
-  // Each logo takes roughly 1.5 seconds to scroll past (adjust as needed for desired speed)
   const scrollDuration = baseSequence.length * 1.5; 
 
   // Create offset versions of the base sequence for each line
-  // This ensures that each line starts with a different set of logos, reducing visible repetition across lines.
-  const offset1 = 0; // Line 1 starts at the beginning
-  const offset2 = Math.floor(partners.length / 3); // Line 2 offset by 1/3 of the original partners list
-  const offset3 = Math.floor(partners.length * 2 / 3); // Line 3 offset by 2/3 of the original partners list
+  const offset1 = 0; 
+  const offset2 = Math.floor(partners.length / 3); 
+  const offset3 = Math.floor(partners.length * 2 / 3); 
 
   const line1Partners = [...baseSequence.slice(offset1), ...baseSequence.slice(0, offset1)];
   const line2Partners = [...baseSequence.slice(offset2), ...baseSequence.slice(0, offset2)];
   const line3Partners = [...baseSequence.slice(offset3), ...baseSequence.slice(0, offset3)];
+
+  // Determine animation classes based on language
+  const animationClassLeft = language === 'ar' ? 'animate-scroll-left-rtl' : 'animate-scroll-left';
+  const animationClassRight = language === 'ar' ? 'animate-scroll-right-rtl' : 'animate-scroll-right';
 
   return (
     <section id="animated-partners" className="py-16 bg-sidraLight relative overflow-hidden">
@@ -81,10 +82,10 @@ const AnimatedPartnersSection = () => {
       </div>
 
       <div className="space-y-8">
-        {/* Line 1: Right to Left */}
+        {/* Line 1: Right to Left in LTR, Left to Right in RTL */}
         <div className="flex overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0%,#000_10%,#000_90%,transparent_100%)]">
           <div
-            className="flex flex-nowrap animate-scroll-left"
+            className={cn("flex flex-nowrap", animationClassLeft)}
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
             {line1Partners.map((partner, index) => (
@@ -95,10 +96,10 @@ const AnimatedPartnersSection = () => {
           </div>
         </div>
 
-        {/* Line 2: Left to Right */}
+        {/* Line 2: Left to Right in LTR, Right to Left in RTL */}
         <div className="flex overflow-hidden [mask-image:_linear-gradient(to_left,transparent_0%,#000_10%,#000_90%,transparent_100%)]">
           <div
-            className="flex flex-nowrap animate-scroll-right"
+            className={cn("flex flex-nowrap", animationClassRight)}
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
             {line2Partners.map((partner, index) => (
@@ -109,10 +110,10 @@ const AnimatedPartnersSection = () => {
           </div>
         </div>
 
-        {/* Line 3: Right to Left */}
+        {/* Line 3: Right to Left in LTR, Left to Right in RTL */}
         <div className="flex overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0%,#000_10%,#000_90%,transparent_100%)]">
           <div
-            className="flex flex-nowrap animate-scroll-left"
+            className={cn("flex flex-nowrap", animationClassLeft)}
             style={{ '--scroll-duration': `${scrollDuration}s` } as React.CSSProperties}
           >
             {line3Partners.map((partner, index) => (
