@@ -4,6 +4,7 @@ import { cn } from '@/lib/utils';
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+  // Show button when page is scrolled up to a certain amount
   const toggleVisibility = () => {
     if (window.scrollY > 300) {
       setIsVisible(true);
@@ -12,6 +13,7 @@ const ScrollToTopButton = () => {
     }
   };
 
+  // Scroll to top when button is clicked
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -33,9 +35,9 @@ const ScrollToTopButton = () => {
           onClick={scrollToTop}
           className={cn(
             "flex items-center justify-center w-14 h-14 rounded-full",
-            "bg-moyasar-blue-primary text-moyasar-white shadow-lg",
-            "hover:scale-110 hover:bg-moyasar-blue-secondary transition-all duration-300 transform",
-            "focus:outline-none focus:ring-2 focus:ring-moyasar-blue-primary focus:ring-offset-2"
+            "bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white shadow-lg",
+            "hover:scale-110 transition-all duration-300 transform",
+            "focus:outline-none focus:ring-2 focus:ring-sidraPrimary focus:ring-offset-2"
           )}
           aria-label="Scroll to top"
         >

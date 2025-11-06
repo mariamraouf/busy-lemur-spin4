@@ -87,12 +87,12 @@ const AnimatedPartnersSection = () => {
     : '[mask-image:_linear-gradient(to_left,transparent_0%,#000_10%,#000_90%,transparent_100%)]'; 
 
   return (
-    <section id="animated-partners" className="py-16 bg-moyasar-white relative overflow-hidden">
+    <section id="animated-partners" className="py-16 bg-sidraLight relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 text-center" data-aos="fade-up">
-        <span className="inline-block px-4 py-2 bg-moyasar-blue-primary text-moyasar-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+        <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
           {t('partners')}
         </span>
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-moyasar-dark-text mb-8 break-words">
+        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
           <span className="block">{t('ourValued')}</span>
         </h2>
       </div>

@@ -3,7 +3,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
+import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 
 const OurValuesPage = () => {
   const { language, t } = useLanguage();
@@ -22,25 +22,29 @@ const OurValuesPage = () => {
       icon: "fas fa-shield-alt",
       title: t('value1Title'),
       description: t('value1Description'),
-      iconBg: "bg-moyasar-blue-primary",
+      gradientFrom: "from-sidraPrimary",
+      gradientTo: "to-sidraTeal",
     },
     {
       icon: "fas fa-handshake",
       title: t('value2Title'),
       description: t('value2Description'),
-      iconBg: "bg-moyasar-blue-secondary",
+      gradientFrom: "from-sidraSecondary",
+      gradientTo: "to-sidraAccent",
     },
     {
       icon: "fas fa-lightbulb",
       title: t('value3Title'),
       description: t('value3Description'),
-      iconBg: "bg-moyasar-teal-accent",
+      gradientFrom: "from-sidraTeal",
+      gradientTo: "to-sidraPrimary",
     },
     {
       icon: "fas fa-star",
       title: t('value4Title'),
       description: t('value4Description'),
-      iconBg: "bg-moyasar-blue-primary", // Reusing primary for consistency
+      gradientFrom: "from-sidraAccent",
+      gradientTo: "to-sidraSecondary",
     },
   ];
 
@@ -50,13 +54,15 @@ const OurValuesPage = () => {
         <title>{t('ourValues')} - Sidra Med</title>
         <meta name="description" content={t('ourValuesMetaDescription')} />
       </Helmet>
-      <div className="pt-24 pb-16 bg-moyasar-light-bg relative overflow-hidden">
+      <div className="pt-24 pb-16 bg-gradient-to-br from-sidraLight via-white to-gray-100 relative overflow-hidden">
+        {/* Animated background elements - REMOVED */}
+
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
           <div className="text-center mb-16" data-aos="fade-up">
-            <span className="inline-block px-4 py-2 bg-moyasar-blue-primary text-moyasar-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
+            <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('ourValues')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-moyasar-dark-text mb-8 break-words">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('ourValuesPageTitle')}
             </h1>
           </div>
@@ -65,20 +71,20 @@ const OurValuesPage = () => {
             {values.map((value, index) => (
               <div
                 key={index}
-                className="group bg-moyasar-white rounded-3xl p-8 shadow-md border-2 border-moyasar-border transition-all duration-300 hover:scale-105 hover:shadow-lg"
+                className="group bg-white rounded-3xl p-8 shadow-xl border-2 border-gray-100 transition-all duration-300 hover:scale-105 hover:shadow-2xl"
                 data-aos="fade-up"
                 data-aos-delay={100 * (index + 1)}
               >
                 <div className={cn(
                   "w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300",
-                  value.iconBg
+                  `bg-gradient-to-br ${value.gradientFrom} ${value.gradientTo}`
                 )}>
-                  <i className={cn(value.icon, "text-moyasar-white text-2xl")}></i>
+                  <i className={cn(value.icon, "text-white text-2xl")}></i>
                 </div>
-                <h2 className="text-xl font-bold text-moyasar-dark-text mb-4 break-words">
+                <h2 className="text-xl font-bold text-gray-900 mb-4 break-words">
                   {value.title}
                 </h2>
-                <p className="text-moyasar-gray-text leading-relaxed">
+                <p className="text-gray-600 leading-relaxed">
                   {value.description}
                 </p>
               </div>
