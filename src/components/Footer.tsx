@@ -8,6 +8,9 @@ const Footer = () => {
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
 
+  // Determine which logo to use based on the current language
+  const logoSrc = language === 'ar' ? "/sidra-med-logo-ar.png" : "/sidra-med-logo.png";
+
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-sidraPrimary to-sidraSecondary text-white py-16 relative overflow-hidden">
       {/* Animated background elements - REMOVED */}
@@ -18,7 +21,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="flex items-center gap-x-4 mb-6">
               <img 
-                src="/sidra-med-logo.png" 
+                src={logoSrc} 
                 alt="Sidra Med Logo" 
                 className="w-32 h-32 object-contain" 
               /> {/* Increased size */}
