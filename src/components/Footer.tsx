@@ -63,6 +63,8 @@ const Footer = () => {
               <li><Link to="/services#project-management" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('projectTechnicalSupportTitle')}</Link></li>
               <li><Link to="/services#operational-support" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('operationalSupportTitle')}</Link></li>
               <li><Link to="/services#licensing-regulatory" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('licensingCommissioningTitle')}</Link></li>
+              <li><Link to="/services#medical-planning" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('coordArchitecturalTitle')}</Link></li>
+              <li><Link to="/services#strategic-advisory" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('strategicPlanningTitle')}</Link></li>
               <li><Link to="/services#consortium-delivery" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('consortiumDrivenTitle')}</Link></li>
             </ul>
           </div>
