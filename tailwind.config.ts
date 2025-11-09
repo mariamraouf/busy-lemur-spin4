@@ -143,6 +143,12 @@ export default {
           from: { transform: 'translateX(50%)' },
           to: { transform: 'translateX(0)' },
         },
+        // New highlight animation
+        'highlight-pulse': {
+          '0%': { 'box-shadow': '0 0 0px 0px rgba(68, 156, 166, 0.7)', 'border-color': 'rgba(68, 156, 166, 0.7)' },
+          '50%': { 'box-shadow': '0 0 0px 8px rgba(68, 156, 166, 0)', 'border-color': 'rgba(68, 156, 166, 0.3)' },
+          '100%': { 'box-shadow': '0 0 0px 0px rgba(68, 156, 166, 0)', 'border-color': 'var(--border)' },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
@@ -156,6 +162,7 @@ export default {
         'scroll-right': 'scroll-right var(--scroll-duration) linear infinite',
         'scroll-left-rtl': 'scroll-left-rtl var(--scroll-duration) linear infinite',
         'scroll-right-rtl': 'scroll-right-rtl var(--scroll-duration) linear infinite',
+        'highlight-pulse': 'highlight-pulse 2s ease-out', // A short, noticeable pulse
       },
     },
   },

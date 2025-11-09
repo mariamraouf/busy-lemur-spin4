@@ -1,14 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
-import { Link } from 'react-router-dom';
-import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"; // Import shadcn Card components
+import { Link, useLocation } from 'react-router-dom'; // Import useLocation
+import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 
 const OurServicesPage = () => {
   const { language, t } = useLanguage();
+  const location = useLocation(); // Get location object
+  const [highlightedServiceId, setHighlightedServiceId] = useState<string | null>(null);
+
+  useEffect(() => {
+    if (location.hash) {
+      const id = location.hash.substring(1); // Remove '#'
+      setHighlightedServiceId(id);
+
+      // Remove highlight after a few seconds
+      const timer = setTimeout(() => {
+        setHighlightedServiceId(null);
+      }, 3000); // Highlight for 3 seconds
+
+      return () => clearTimeout(timer); // Cleanup timer
+    }
+  }, [location.hash]); // Re-run when hash changes
 
   const serviceCategories = [
     {
@@ -137,6 +153,7 @@ const OurServicesPage = () => {
                 id={category.id} /* Added ID here */
                 className={cn(
                   "p-10 rounded-3xl shadow-2xl border border-gray-100 bg-white",
+                  highlightedServiceId === category.id && "animate-highlight-pulse border-sidraPrimary ring-4 ring-sidraPrimary/50", // Apply highlight
                 )}
                 data-aos="fade-up"
                 data-aos-delay={100 * (index + 1)}
