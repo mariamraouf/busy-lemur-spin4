@@ -12,6 +12,7 @@ const OurServicesPage = () => {
 
   const serviceCategories = [
     {
+      id: "project-management",
       icon: "fas fa-project-diagram",
       title: t('projectTechnicalSupportTitle'),
       description: t('projectTechnicalSupportDescription'),
@@ -24,6 +25,21 @@ const OurServicesPage = () => {
       gradientTo: "to-sidraTeal",
     },
     {
+      id: "operational-support",
+      icon: "fas fa-hospital-user", // New icon for operational support
+      title: t('operationalSupportTitle'),
+      description: t('operationalSupportDescription'),
+      items: [
+        { icon: "fas fa-user-md", title: t('facilityOperationsOversightTitle') },
+        { icon: "fas fa-laptop-medical", title: t('healthcareITImplementationTitle') },
+        { icon: "fas fa-users-cog", title: t('workforceRecruitmentTitle') },
+        { icon: "fas fa-tools", title: t('maintenanceBiomedicalTitle') },
+      ],
+      gradientFrom: "from-sidraSecondary",
+      gradientTo: "to-sidraAccent",
+    },
+    {
+      id: "licensing-regulatory",
       icon: "fas fa-file-contract",
       title: t('licensingCommissioningTitle'),
       description: t('licensingCommissioningDescription'),
@@ -31,10 +47,11 @@ const OurServicesPage = () => {
         { icon: "fas fa-certificate", title: t('serviceItemMOHLicensing') },
         { icon: "fas fa-clipboard-check", title: t('serviceItemComplianceAudits') },
       ],
-      gradientFrom: "from-sidraSecondary",
-      gradientTo: "to-sidraAccent",
+      gradientFrom: "from-sidraTeal",
+      gradientTo: "to-sidraPrimary",
     },
     {
+      id: "medical-planning",
       icon: "fas fa-drafting-compass",
       title: t('coordArchitecturalTitle'),
       description: t('coordArchitecturalDescription'),
@@ -42,10 +59,11 @@ const OurServicesPage = () => {
         { icon: "fas fa-pencil-ruler", title: t('serviceItemConceptualDesign') },
         { icon: "fas fa-microscope", title: t('serviceItemEquipmentPlanning') },
       ],
-      gradientFrom: "from-sidraTeal",
-      gradientTo: "to-sidraPrimary",
+      gradientFrom: "from-sidraAccent",
+      gradientTo: "to-sidraSecondary",
     },
     {
+      id: "strategic-advisory",
       icon: "fas fa-lightbulb",
       title: t('strategicPlanningTitle'),
       description: t('strategicPlanningDescription'),
@@ -53,7 +71,22 @@ const OurServicesPage = () => {
         { icon: "fas fa-users", title: t('serviceItemRecruitmentCoordination') },
         { icon: "fas fa-chart-line", title: t('serviceItemBusinessModeling') },
       ],
-      gradientFrom: "from-sidraAccent",
+      gradientFrom: "from-sidraPrimary", // Reusing gradients
+      gradientTo: "to-sidraAccent",
+    },
+    {
+      id: "consortium-delivery",
+      icon: "fas fa-handshake-alt", // New icon for consortium
+      title: t('consortiumDrivenTitle'),
+      description: t('consortiumDrivenDescription'),
+      items: [
+        { icon: "fas fa-gavel", title: t('legalCommercialConsultancyTitle') },
+        { icon: "fas fa-dollar-sign", title: t('financialPlanningAuditingTitle') },
+        { icon: "fas fa-truck-loading", title: t('procurementEquipmentPlanningTitle') },
+        { icon: "fas fa-building", title: t('facilityDesignConstructionTitle') },
+        { icon: "fas fa-award", title: t('accreditationSustainabilityTitle') },
+      ],
+      gradientFrom: "from-sidraTeal",
       gradientTo: "to-sidraSecondary",
     },
   ];
@@ -101,6 +134,7 @@ const OurServicesPage = () => {
             {serviceCategories.map((category, index) => (
               <div
                 key={index}
+                id={category.id} /* Added ID here */
                 className={cn(
                   "p-10 rounded-3xl shadow-2xl border border-gray-100 bg-white",
                 )}
