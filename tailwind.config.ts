@@ -23,7 +23,7 @@ export default {
         arabic: ['Tajawal', 'sans-serif'], // Specific for Arabic
       },
       lineHeight: { // Added custom line height for Arabic
-        'arabic-loose': '1.8', // Decreased line height for smaller distance
+        'arabic-loose': '1.5', // Further decreased line height for smaller distance
       },
       colors: {
         border: "hsl(var(--border))",

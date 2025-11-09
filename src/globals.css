@@ -50,7 +50,7 @@
 
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --line-height-arabic-loose: 1.8; /* Define as a CSS variable */
+    --line-height-arabic-loose: 1.5; /* Define as a CSS variable */
   }
 
   .dark {
@@ -90,7 +90,7 @@
     --sidebar-border: 240 3.7% 15.9%;
     --sidebar-ring: 217.2 91.2% 59.8%;
 
-    --line-height-arabic-loose: 1.8; /* Define for dark mode too */
+    --line-height-arabic-loose: 1.5; /* Define for dark mode too */
   }
 }
 
