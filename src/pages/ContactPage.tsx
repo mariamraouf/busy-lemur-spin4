@@ -14,7 +14,7 @@ const ContactPage = () => {
         <meta name="description" content={t('contactDescription')} />
       </Helmet>
       <div className="pt-24 pb-16">
-        <FullContactSection />
+        <FullContactSection headingLevel="h1" /> {/* Pass 'h1' for the main heading */}
       </div>
       <ScrollToTopButton />
     </>

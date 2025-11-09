@@ -41,7 +41,7 @@ const Home = () => {
       {/* <TestimonialsSection /> */}
       <AnimatedPartnersSection /> {/* Render the new animated partners section */}
       <CtaSection />
-      <FullContactSection />
+      <FullContactSection headingLevel="h2" /> {/* Pass 'h2' for a secondary heading */}
       <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} />
       <ScrollToTopButton />
     </>

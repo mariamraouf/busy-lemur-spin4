@@ -2,7 +2,11 @@ import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
 
-const FullContactSection = () => {
+interface FullContactSectionProps {
+  headingLevel?: 'h1' | 'h2'; // New prop for dynamic heading level
+}
+
+const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: Heading = 'h2' }) => {
   const { language, t } = useLanguage();
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
@@ -19,9 +23,9 @@ const FullContactSection = () => {
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('getInTouch')}
           </span>
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 break-words">
+          <Heading className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 break-words">
             {t('discussYourProject')}
-          </h2>
+          </Heading>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
             {t('contactDescription')}
           </p>
