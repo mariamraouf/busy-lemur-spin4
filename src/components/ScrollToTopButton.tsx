@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
-import { useLanguage } from '@/context/LanguageContext'; // Import useLanguage
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const { t } = useLanguage(); // Use t for translations
 
   // Show button when page is scrolled up to a certain amount
   const toggleVisibility = () => {
@@ -41,7 +39,7 @@ const ScrollToTopButton = () => {
             "hover:scale-110 transition-all duration-300 transform",
             "focus:outline-none focus:ring-2 focus:ring-sidraPrimary focus:ring-offset-2"
           )}
-          aria-label={t('scrollToTopAriaLabel')} // Using translated aria-label
+          aria-label="Scroll to top"
         >
           <i className="fas fa-arrow-up text-xl"></i>
         </button>

@@ -19,7 +19,7 @@ const Footer = () => {
             <div className="flex items-center gap-x-4 mb-6">
               <img 
                 src="/sidra-med-logo.png" 
-                alt={t('sidraMedLogoAlt')} 
+                alt="Sidra Med Logo" 
                 className="w-32 h-32 object-contain" 
               /> {/* Increased size */}
             </div>
@@ -27,16 +27,16 @@ const Footer = () => {
               {t('empoweringHealthcare')}
             </p>            
             <div className="flex gap-x-4 mb-6"> {/* Added margin-bottom for spacing */}
-              <a href={`tel:${phoneNumber}`} className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label={t('callUsAriaLabel')}>
+              <a href={`tel:${phoneNumber}`} className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Call us">
                 <i className="fas fa-phone text-xl"></i>
               </a>
-              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label={t('whatsappUsAriaLabel')}>
+              <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="WhatsApp us">
                 <i className="fab fa-whatsapp text-xl"></i>
               </a>
-              <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label={t('instagramAriaLabel')}>
+              <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Instagram">
                 <i className="fab fa-instagram text-xl"></i>
               </a>
-              <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label={t('linkedinAriaLabel')}>
+              <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="LinkedIn">
                 <i className="fab fa-linkedin-in text-xl"></i>
               </a>
             </div>

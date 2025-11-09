@@ -45,7 +45,7 @@ const Navbar = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center group">
             <div className="flex items-center gap-x-3">
-              <img src="/sidra-med-logo.png" alt={t('sidraMedLogoAlt')} className="w-28 h-28 object-contain" /> {/* Removed transform and transition classes */}
+              <img src="/sidra-med-logo.png" alt="Sidra Med Logo" className="w-28 h-28 object-contain" /> {/* Removed transform and transition classes */}
             </div>
           </Link>
 
@@ -66,7 +66,6 @@ const Navbar = () => {
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-x-2 px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"
-              aria-label={language === 'en' ? t('arabic') : t('english')}
             >
               <i className="fas fa-globe animate-spin-slow"></i>
               <span className="font-semibold">{language === 'en' ? t('arabic') : t('english')}</span>
@@ -77,7 +76,6 @@ const Navbar = () => {
           <button
             onClick={toggleMobileMenu}
             className="lg:hidden text-gray-700 focus:outline-none transform hover:scale-110 transition-transform"
-            aria-label={t('toggleMobileMenu')}
           >
             <i className="fas fa-bars text-2xl"></i>
           </button>
@@ -105,23 +103,22 @@ const Navbar = () => {
           ))}
           {/* Mobile Social Media and Contact */}
           <div className="flex justify-center gap-x-6 py-4 border-b border-gray-100">
-            <a href={`tel:${phoneNumber}`} className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label={t('callUsAriaLabel')}>
+            <a href={`tel:${phoneNumber}`} className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="Call us">
               <i className="fas fa-phone text-2xl"></i>
             </a>
-            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label={t('whatsappUsAriaLabel')}>
+            <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="WhatsApp us">
               <i className="fab fa-whatsapp text-2xl"></i>
             </a>
-            <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label={t('instagramAriaLabel')}>
+            <a href="https://www.instagram.com/sidramed.ksa/" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="Instagram">
               <i className="fab fa-instagram text-2xl"></i>
             </a>
-            <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label={t('linkedinAriaLabel')}>
+            <a href="https://www.linkedin.com/company/sidra-med/?viewAsMember=true" target="_blank" rel="noopener noreferrer" className="text-gray-700 hover:text-sidraPrimary transition-colors" aria-label="LinkedIn">
               <i className="fab fa-linkedin-in text-2xl"></i>
             </a>
           </div>
           <button
             onClick={() => { toggleLanguage(); setIsMobileMenuOpen(false); }}
             className="w-full flex items-center justify-center gap-x-2 px-6 py-4 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-xl hover:shadow-lg transition-all duration-300"
-            aria-label={language === 'en' ? t('arabic') : t('english')}
           >
             <i className="fas fa-globe animate-spin-slow"></i>
             <span className="font-semibold">{language === 'en' ? t('arabic') : t('english')}</span>
