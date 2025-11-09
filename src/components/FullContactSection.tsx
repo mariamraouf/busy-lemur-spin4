@@ -14,27 +14,6 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
   // Google Maps embed URL for the new specific address
   const googleMapsEmbedUrl = "https://maps.google.com/maps?q=The%20Office,%20Prince%20Sultan%20Rd,%20Al%20Khalidiyyah,%20Jeddah%2023421&output=embed";
 
-  // A placeholder function for form submission.
-  // You will need to replace this with actual backend integration.
-  const handleSubmit = (event: React.FormEvent) => {
-    event.preventDefault();
-    // In a real application, you would collect form data here
-    // and send it to a backend API or a third-party service.
-    console.log("Form submitted! (Backend integration needed for email sending)");
-    // Example of collecting data (you'd typically use state management or FormData)
-    const formData = {
-      firstName: (document.getElementById('firstName') as HTMLInputElement).value,
-      lastName: (document.getElementById('lastName') as HTMLInputElement).value,
-      emailAddress: (document.getElementById('emailAddress') as HTMLInputElement).value,
-      phoneNumber: (document.getElementById('phoneNumber') as HTMLInputElement).value,
-      projectType: (document.getElementById('projectType') as HTMLSelectElement).value,
-      message: (document.getElementById('message') as HTMLTextAreaElement).value,
-    };
-    console.log(formData);
-    // You would then send this 'formData' to your backend.
-    // For example: fetch('/api/send-email', { method: 'POST', body: JSON.stringify(formData) });
-  };
-
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
       {/* Animated background elements - REMOVED */}
@@ -54,50 +33,9 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
 
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
-            <form className="space-y-8" onSubmit={handleSubmit}>
-              <div className="grid sm:grid-cols-2 gap-6">
-                <div>
-                  <label htmlFor="firstName" className="block text-sm font-bold text-gray-700 mb-3">{t('firstName')}</label>
-                  <input type="text" id="firstName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterFirstName')} />
-                </div>
-                <div>
-                  <label htmlFor="lastName" className="block text-sm font-bold text-gray-700 mb-3">{t('lastName')}</label>
-                  <input type="text" id="lastName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterLastName')} />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="emailAddress" className="block text-sm font-bold text-gray-700 mb-3">{t('emailAddress')}</label>
-                <input type="email" id="emailAddress" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterEmail')} />
-              </div>
-
-              <div>
-                <label htmlFor="phoneNumber" className="block text-sm font-bold text-gray-700 mb-3">{t('phoneNumber')}</label>
-                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} />
-              </div>
-
-              <div>
-                <label htmlFor="projectType" className="block text-sm font-bold text-gray-700 mb-3">{t('projectType')}</label>
-                <select id="projectType" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300">
-                  <option>{t('selectProjectType')}</option>
-                  <option>{t('hospitalDevelopment')}</option>
-                  <option>{t('clinicSetup')}</option>
-                  <option>{t('medicalCenter')}</option>
-                  <option>{t('healthcareConsulting')}</option>
-                  <option>{t('other')}</option> {/* Added 'Other' option */}
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-3">{t('message')}</label>
-                <textarea id="message" rows={5} className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all resize-none hover:border-gray-300" placeholder={t('tellUsAboutProject')}></textarea>
-              </div>
-
-              <button type="submit" className="w-full bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent text-white font-bold py-6 rounded-xl hover:shadow-2xl transition-all transform hover:scale-105 text-lg">
-                <span>{t('sendMessage')}</span>
-                <i className={cn("fas fa-paper-plane", language === 'ar' ? 'mr-3' : 'ml-3')}></i>
-              </button>
-            </form>
+            {/* ClickUp Embed Form */}
+            <iframe className="clickup-embed clickup-dynamic-height" src="https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ" onWheel={() => {}} width="100%" height="100%" style={{ background: 'transparent', border: '1px solid #ccc' }}></iframe>
+            <script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"></script>
           </div>
 
           <div data-aos="fade-left" data-aos-duration="1000">
