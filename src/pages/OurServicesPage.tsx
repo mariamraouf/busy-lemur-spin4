@@ -115,7 +115,7 @@ const OurServicesPage = () => {
                   )}>
                     <i className={cn(category.icon, "text-white text-3xl")}></i>
                   </div>
-                  <h2 className="text-3xl font-bold text-gray-900 break-words">
+                  <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 break-words">
                     {category.title}
                   </h2>
                 </div>
@@ -132,7 +132,7 @@ const OurServicesPage = () => {
                         <div className="w-12 h-12 rounded-full flex items-center justify-center bg-sidraTeal/10 text-sidraTeal group-hover:bg-sidraTeal group-hover:text-white transition-all duration-300">
                           <i className={cn(item.icon, "text-xl")}></i>
                         </div>
-                        <CardTitle className={cn("text-xl font-bold text-gray-900", language === 'ar' ? 'mr-4' : 'ml-4')}>
+                        <CardTitle className={cn("text-lg sm:text-xl font-bold text-gray-900", language === 'ar' ? 'mr-4' : 'ml-4')}>
                           <h3 className="break-words">{item.title}</h3>
                         </CardTitle>
                       </CardHeader>
@@ -146,7 +146,7 @@ const OurServicesPage = () => {
 
           {/* Custom Solutions CTA */}
           <div className="text-center mt-24 py-16 bg-gradient-to-r from-sidraPrimary to-sidraSecondary rounded-3xl shadow-2xl" data-aos="zoom-in" data-aos-delay="100">
-            <h2 className="text-4xl font-black text-white mb-6 break-words">
+            <h2 className="text-3xl sm:text-4xl font-black text-white mb-6 break-words">
               {t('customSolutionsTitle')}
             </h2>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-10 leading-relaxed">
@@ -164,7 +164,7 @@ const OurServicesPage = () => {
               <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
                 {t('ourApproachTitle')}
               </span>
-              <h2 className="text-4xl sm:text-5xl font-black text-gray-900 mb-8 break-words">
+              <h2 className="text-3xl sm:text-4xl font-black text-gray-900 mb-8 break-words">
                 {t('ourApproachTitle')}
               </h2>
             </div>
@@ -177,7 +177,7 @@ const OurServicesPage = () => {
                   )}>
                     <i className={cn(step.icon, "text-white text-2xl")}></i>
                   </div>
-                  <h3 className="text-xl font-bold text-gray-900 mb-2 break-words">{step.title}</h3>
+                  <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 break-words">{step.title}</h3>
                   <p className="text-gray-700 text-base">{step.description}</p>
                 </div>
               ))}

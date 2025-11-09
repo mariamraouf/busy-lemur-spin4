@@ -53,7 +53,7 @@ const WhyChooseUsSection = () => {
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('whySidraMed')}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 break-words">
             <span className="block bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent bg-clip-text text-transparent">{t('whyChooseUsTitlePart1')}</span>
           </h2>
         </div>
@@ -75,7 +75,7 @@ const WhyChooseUsSection = () => {
               )}>
                 <i className={cn(feature.icon, "text-white text-2xl")}></i>
               </div>
-              <h3 className="text-xl font-bold text-gray-900 mb-4 transition-colors break-words">
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 transition-colors break-words">
                 {feature.title}
               </h3>
               <p className="text-gray-600 leading-relaxed">

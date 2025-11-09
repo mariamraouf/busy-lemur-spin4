@@ -92,7 +92,7 @@ const AnimatedPartnersSection = () => {
         <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
           {t('partners')}
         </span>
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 break-words">
           <span className="block">{t('ourValued')}</span>
         </h2>
       </div>

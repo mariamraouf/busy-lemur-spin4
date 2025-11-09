@@ -39,7 +39,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs, titleKey, subtitleKey, hi
             {t(titleKey)}
           </span>
           {!hideSubtitle && subtitleKey && ( // Conditionally render subtitle
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8">
               <span className="block">{t(subtitleKey)}</span>
             </h2>
           )}
@@ -53,7 +53,7 @@ const FAQSection: React.FC<FAQSectionProps> = ({ faqs, titleKey, subtitleKey, hi
                 value={faq.id}
                 className="bg-white rounded-2xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300 hover:shadow-xl"
               >
-                <AccordionTrigger className="flex items-center justify-between p-6 text-left text-gray-900 font-bold text-lg hover:no-underline data-[state=open]:text-sidraPrimary transition-colors">
+                <AccordionTrigger className="flex items-center justify-between p-6 text-left text-gray-900 font-bold text-base sm:text-lg hover:no-underline data-[state=open]:text-sidraPrimary transition-colors">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="p-6 pt-0 text-gray-700 leading-relaxed text-base border-t border-gray-100">

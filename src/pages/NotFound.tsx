@@ -22,7 +22,7 @@ const NotFound = () => {
       </Helmet>
       <div className="min-h-screen flex items-center justify-center bg-gray-100 pt-24">
         <div className="text-center">
-          <h1 className="text-4xl font-bold mb-4 break-words">404: {t('pageNotFoundTitle')}</h1> {/* Combined H1 */}
+          <h1 className="text-3xl sm:text-4xl font-bold mb-4 break-words">404: {t('pageNotFoundTitle')}</h1> {/* Combined H1 */}
           <p className="text-xl text-gray-600 mb-4">{t('pageNotFoundDescription')}</p>
           <a href="/" className="text-blue-500 hover:text-blue-700 underline">
             {t('returnToHome')}

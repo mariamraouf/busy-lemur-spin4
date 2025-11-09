@@ -42,7 +42,7 @@ const MissionVision = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraPrimary to-sidraTeal rounded-2xl flex items-center justify-center">
                   <i className="fas fa-bullseye text-white text-2xl"></i>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 break-words">{t('mission')}</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 break-words">{t('mission')}</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {t('missionContent')}
@@ -54,7 +54,7 @@ const MissionVision = () => {
                 <div className="w-16 h-16 bg-gradient-to-br from-sidraSecondary to-sidraAccent rounded-2xl flex items-center justify-center">
                   <i className="fas fa-eye text-white text-2xl"></i>
                 </div>
-                <h2 className="text-3xl font-bold text-gray-900 break-words">{t('vision')}</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 break-words">{t('vision')}</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
                 {t('visionContent')}

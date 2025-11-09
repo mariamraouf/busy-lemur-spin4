@@ -47,7 +47,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div>
-            <h4 className="text-xl font-bold mb-6 text-white">{t('quickLinks')}</h4>
+            <h4 className="text-lg sm:text-xl font-bold mb-6 text-white">{t('quickLinks')}</h4>
             <ul className="space-y-4">
               <li><Link to="/" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('home')}</Link></li>
               <li><Link to="/about-us" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('aboutUs')}</Link></li>
@@ -58,7 +58,7 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h4 className="text-xl font-bold mb-6 text-white">{t('services')}</h4>
+            <h4 className="text-lg sm:text-xl font-bold mb-6 text-white">{t('services')}</h4>
             <ul className="space-y-4">
               <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service1Title')}</Link></li>
               <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service2Title')}</Link></li>

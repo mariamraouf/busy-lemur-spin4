@@ -18,7 +18,7 @@ const AboutSection = () => {
                 {t('whoWeAre')}
               </span>
             </div>
-            <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 leading-tight break-words">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 leading-tight break-words">
               {t('aboutSummaryTitle')}
             </h2>
             <p className="text-xl text-gray-600 mb-10 leading-relaxed">

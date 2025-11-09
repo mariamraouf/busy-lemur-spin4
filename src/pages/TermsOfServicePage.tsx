@@ -43,7 +43,7 @@ const TermsOfServicePage = () => {
 
             {termsSections.map((section, index) => (
               <div key={index} className="mb-8">
-                <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-4 break-words">{t(section.titleKey)}</h2>
+                <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mt-12 mb-4 break-words">{t(section.titleKey)}</h2>
                 <p>{t(section.contentKey)}</p>
               </div>
             ))}

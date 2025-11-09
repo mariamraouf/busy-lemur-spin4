@@ -81,7 +81,7 @@ const OurValuesPage = () => {
                 )}>
                   <i className={cn(value.icon, "text-white text-2xl")}></i>
                 </div>
-                <h2 className="text-xl font-bold text-gray-900 mb-4 break-words">
+                <h2 className="text-lg sm:text-xl font-bold text-gray-900 mb-4 break-words">
                   {value.title}
                 </h2>
                 <p className="text-gray-600 leading-relaxed">

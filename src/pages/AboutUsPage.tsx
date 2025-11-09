@@ -42,7 +42,7 @@ const AboutUsPage = () => {
 
           <div className="grid lg:grid-cols-1 gap-16 items-center"> {/* Changed to single column */}
             <div data-aos="fade-up" data-aos-duration="1000"> {/* Adjusted animation */}
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('whoWeAre')}</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 break-words">{t('whoWeAre')}</h2>
               <p className="text-xl text-gray-700 mb-8 leading-relaxed">
                 {t('whoWeAreDescription1')}
               </p>
@@ -54,7 +54,7 @@ const AboutUsPage = () => {
 
           {/* Optional: Add Mission & Vision or Values here if desired, or link to them */}
           <div className="mt-20 text-center">
-            <h2 className="text-3xl font-bold text-gray-900 mb-8 break-words">{t('learnMore')}</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-8 break-words">{t('learnMore')}</h2>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link to="/mission-vision" className="group inline-flex items-center justify-center px-8 py-4 bg-sidraPrimary text-white font-bold rounded-xl hover:bg-sidraSecondary transition-all transform hover:scale-105 shadow-lg">
                 <span>{t('missionVision')}</span>

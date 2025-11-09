@@ -19,7 +19,7 @@ const FullContactSection = () => {
           <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
             {t('getInTouch')}
           </span>
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 break-words">
             {t('discussYourProject')}
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
@@ -83,7 +83,7 @@ const FullContactSection = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg break-words">{t('location')}</h3>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg sm:text-xl break-words">{t('location')}</h3>
                   <p className="text-gray-600 text-lg">{t('fullAddress')}</p>
                 </div>
               </div>
@@ -95,7 +95,7 @@ const FullContactSection = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg break-words">{t('email')}</h3>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg sm:text-xl break-words">{t('email')}</h3>
                   <a href="mailto:amad@sidramed.com.sa" className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">amad@sidramed.com.sa</a>
                 </div>
               </div>
@@ -107,7 +107,7 @@ const FullContactSection = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg break-words">{t('phoneNumber')}</h3>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg sm:text-xl break-words">{t('phoneNumber')}</h3>
                   <a href={`tel:${phoneNumber}`} className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">{phoneNumber}</a>
                   <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold mt-1">
                     <i className="fab fa-whatsapp mr-2"></i> {t('whatsapp')}
@@ -122,7 +122,7 @@ const FullContactSection = () => {
                   </div>
                 </div>
                 <div>
-                  <h3 className="font-bold text-gray-900 mb-2 text-lg break-words">{t('businessHours')}</h3>
+                  <h3 className="font-bold text-gray-900 mb-2 text-lg sm:text-xl break-words">{t('businessHours')}</h3>
                   <p className="text-gray-600 text-lg">{t('businessHoursTime')}</p>
                 </div>
               </div>

@@ -67,7 +67,7 @@ const OurTeamPage = () => {
 
           <div className="grid lg:grid-cols-1 gap-16 items-center mb-20"> {/* Changed to single column */}
             <div className="relative p-8 bg-white shadow-xl border border-gray-100" data-aos="fade-up" data-aos-duration="1000"> {/* Adjusted animation */}
-              <h2 className="text-3xl font-bold text-gray-900 mb-6 break-words">{t('ourTeamPageTitle')}</h2>
+              <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-6 break-words">{t('ourTeamPageTitle')}</h2>
               <p className="text-lg text-gray-700 leading-relaxed mb-8">
                 {t('whoWeAreDescription1')} {/* Reusing a general description for context */}
               </p>
@@ -78,7 +78,9 @@ const OurTeamPage = () => {
                       <i className={cn(role.icon, "text-white text-xl")}></i>
                     </div>
                     <div>
-                      <h3 className="font-bold text-gray-900 text-lg break-words">{role.title}</h3> {/* Changed to H3 */}
+                      <h3 className="font-bold text-gray-900 text-base sm:text-lg break-words">
+                        {role.title}
+                      </h3>
                       <p className="text-sm text-gray-600">{role.description}</p>
                     </div>
                   </div>
