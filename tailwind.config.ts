@@ -22,6 +22,9 @@ export default {
         sans: ['Quicksand', 'sans-serif'], // Changed to Quicksand
         arabic: ['Tajawal', 'sans-serif'], // Specific for Arabic
       },
+      lineHeight: { // Added custom line height for Arabic
+        'arabic-loose': '1.8', 
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

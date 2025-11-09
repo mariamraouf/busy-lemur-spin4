@@ -100,6 +100,6 @@
   }
 
   html[dir="rtl"] body {
-    @apply font-arabic; /* Apply Tajawal for RTL (Arabic) */
+    @apply font-arabic leading-arabic-loose break-words; /* Apply Tajawal for RTL (Arabic), custom line height, and word break */
   }
 }
