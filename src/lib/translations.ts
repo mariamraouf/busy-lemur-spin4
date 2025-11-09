@@ -18,7 +18,7 @@ export const translations = {
     heroTitlePart1: "Building Healthier Futures",
     heroTitlePart2: "from Concept to Operation",
     heroTitlePart3: "to Sustainability",
-    heroDescription: "We're here to make healthcare projects simple and successful. From big hospitals to small clinics, we guide investors and owners through every step, ensuring smooth sailing and great results across Saudi Arabia.",
+    heroDescription: "From initial vision to daily operations, we stand beside healthcare investors and operators across Saudi Arabia. Whether launching new facilities or enhancing existing ones, we bring expertise, clarity, and commitment to every milestone.",
     exploreOurServices: "See How We Help",
     partnerWithUs: "Let's Build Together",
 
@@ -470,7 +470,7 @@ export const translations = {
     heroTitlePart1: "نبني مستقبل الرعاية الصحية",
     heroTitlePart2: "من الفكرة إلى التشغيل",
     heroTitlePart3: "إلى الاستدامة",
-    heroDescription: "هنا في سدرة ميد، نسهّل عليك مشاريع الرعاية الصحية ونضمن نجاحها. سواء كانت مستشفيات ضخمة أو عيادات صغيرة، نوجه المستثمرين وأصحاب المشاريع خطوة بخطوة، عشان نضمن سير العمل بسلاسة وتحقيق أفضل النتائج في كل أنحاء المملكة.",
+    heroDescription: "من الرؤية الأولية إلى العمليات اليومية، نقف إلى جانب المستثمرين والمشغلين في قطاع الرعاية الصحية في جميع أنحاء المملكة العربية السعودية. سواء كنت تطلق منشآت جديدة أو تعزز المنشآت القائمة، فإننا نقدم الخبرة والوضوح والالتزام في كل مرحلة.",
     exploreOurServices: "شوف كيف نقدر نساعدك",
     partnerWithUs: "خلنا نتعاون سوا",
 
