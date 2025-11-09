@@ -60,10 +60,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg sm:text-xl font-bold mb-6 text-white">{t('services')}</h4>
             <ul className="space-y-4">
-              <li><Link to="/services#project-management" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service1Title')}</Link></li>
-              <li><Link to="/services#operational-support" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service2Title')}</Link></li>
-              <li><Link to="/services#licensing-regulatory" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service3Title')}</Link></li>
-              <li><Link to="/services#strategic-advisory" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service4Title')}</Link></li>
+              <li><Link to="/services#project-management" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('projectTechnicalSupportTitle')}</Link></li>
+              <li><Link to="/services#operational-support" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('operationalSupportTitle')}</Link></li>
+              <li><Link to="/services#licensing-regulatory" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('licensingCommissioningTitle')}</Link></li>
+              <li><Link to="/services#consortium-delivery" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('consortiumDrivenTitle')}</Link></li>
             </ul>
           </div>
         </div>
