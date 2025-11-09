@@ -25,7 +25,7 @@ const PrivacyPolicyPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('privacyPolicyPageTitle')}
             </span>
-            <h1 className={cn("text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words", language === 'ar' && 'leading-arabic-loose')}>
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('privacyPolicyPageTitle')}
             </h1>
           </div>
@@ -33,18 +33,18 @@ const PrivacyPolicyPage = () => {
           <div className={cn("prose prose-lg max-w-none text-gray-700", language === 'ar' && 'leading-arabic-loose')} data-aos="fade-up" data-aos-delay="200">
             <p className="lead text-xl mb-8">{t('privacyPolicyIntro')}</p>
 
-            <h2 className={cn("text-3xl font-bold text-gray-900 mt-12 mb-6 break-words", language === 'ar' && 'leading-arabic-loose')}>{t('privacyPolicyInfoCollectionTitle')}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 break-words">{t('privacyPolicyInfoCollectionTitle')}</h2>
             <p className="mb-6">{t('privacyPolicyInfoCollectionContent')}</p>
             <ul className="list-disc pl-6 space-y-4">
               {/* Ensure personalInfoTypes is treated as an array of objects */}
               {(personalInfoTypes as { title: string; details: string; }[]).map((item, index) => (
                 <li key={index}>
-                  <h3 className={cn("inline font-bold text-gray-900 break-words", language === 'ar' && 'leading-arabic-loose')}>{item.title}:</h3> {item.details} {/* Changed to H3 */}
+                  <h3 className="inline font-bold text-gray-900 break-words">{item.title}:</h3> {item.details} {/* Changed to H3 */}
                 </li>
               ))}
             </ul>
 
-            <h2 className={cn("text-3xl font-bold text-gray-900 mt-12 mb-6 break-words", language === 'ar' && 'leading-arabic-loose')}>{t('privacyPolicySharingTitle')}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 break-words">{t('privacyPolicySharingTitle')}</h2>
             <p className="mb-6">{t('privacyPolicySharingContent')}</p>
             <ul className="list-disc pl-6 space-y-2">
               {/* Ensure sharingExamples is treated as an array of strings */}
@@ -53,13 +53,13 @@ const PrivacyPolicyPage = () => {
               ))}
             </ul>
 
-            <h2 className={cn("text-3xl font-bold text-gray-900 mt-12 mb-6 break-words", language === 'ar' && 'leading-arabic-loose')}>{t('privacyPolicyYourRightsTitle')}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 break-words">{t('privacyPolicyYourRightsTitle')}</h2>
             <p className="mb-6">{t('privacyPolicyYourRightsContent')}</p>
 
-            <h2 className={cn("text-3xl font-bold text-gray-900 mt-12 mb-6 break-words", language === 'ar' && 'leading-arabic-loose')}>{t('privacyPolicyChangesTitle')}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 break-words">{t('privacyPolicyChangesTitle')}</h2>
             <p className="mb-6">{t('privacyPolicyChangesContent')}</p>
 
-            <h2 className={cn("text-3xl font-bold text-gray-900 mt-12 mb-6 break-words", language === 'ar' && 'leading-arabic-loose')}>{t('privacyPolicyContactTitle')}</h2>
+            <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 break-words">{t('privacyPolicyContactTitle')}</h2>
             <p className="mb-6">{t('privacyPolicyContactContent')}</p>
           </div>
         </div>
