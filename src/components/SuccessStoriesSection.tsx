@@ -29,26 +29,27 @@ const SuccessStoriesSection = () => {
       stats: [
         { label: t('clinicNetworkOptimizationStat1'), value: "30%", unit: t('efficiency'), icon: "fas fa-chart-line" },
         { label: t('clinicNetworkOptimizationStat2'), value: "EMR", unit: t('system'), icon: "fas fa-laptop-medical" },
-        { label: t('clinicNetworkOptimizationStat3'), value: "High", unit: t('satisfaction'), icon: "fas fa-smile" },
+        { label: t('clinicNetworkOptimizationStat3'), value: "Happier patients", unit: t('satisfaction'), icon: "fas fa-smile" },
       ],
       gradientFrom: "from-sidraSecondary",
       gradientTo: "to-sidraAccent",
       image: "/success-story-2.png"
     },
-    {
-      id: "story-3",
-      title: t('internationalMarketEntryTitle'),
-      location: t('internationalMarketEntryLocation'),
-      description: t('internationalMarketEntryDescription'),
-      stats: [
-        { label: t('internationalMarketEntryStat1'), value: "Success", unit: t('entry'), icon: "fas fa-globe" },
-        { label: t('internationalMarketEntryStat2'), value: "5+", unit: t('partnerships'), icon: "fas fa-handshake" },
-        { label: t('internationalMarketEntryStat3'), value: "Full", unit: t('adherence'), icon: "fas fa-balance-scale" },
-      ],
-      gradientFrom: "from-sidraTeal",
-      gradientTo: "to-sidraPrimary",
-      image: "/success-story-3.png"
-    },
+    // The 'international market entry' story has been removed as its translation keys are no longer available.
+    // {
+    //   id: "story-3",
+    //   title: t('internationalMarketEntryTitle'),
+    //   location: t('internationalMarketEntryLocation'),
+    //   description: t('internationalMarketEntryDescription'),
+    //   stats: [
+    //     { label: t('internationalMarketEntryStat1'), value: "Success", unit: t('entry'), icon: "fas fa-globe" },
+    //     { label: t('internationalMarketEntryStat2'), value: "5+", unit: t('partnerships'), icon: "fas fa-handshake" },
+    //     { label: t('internationalMarketEntryStat3'), value: "Full", unit: t('adherence'), icon: "fas fa-balance-scale" },
+    //   ],
+    //   gradientFrom: "from-sidraTeal",
+    //   gradientTo: "to-sidraPrimary",
+    //   image: "/success-story-3.png"
+    // },
   ];
 
   return (
