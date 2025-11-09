@@ -14,6 +14,27 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
   // Google Maps embed URL for the new specific address
   const googleMapsEmbedUrl = "https://maps.google.com/maps?q=The%20Office,%20Prince%20Sultan%20Rd,%20Al%20Khalidiyyah,%20Jeddah%2023421&output=embed";
 
+  // A placeholder function for form submission.
+  // You will need to replace this with actual backend integration.
+  const handleSubmit = (event: React.FormEvent) => {
+    event.preventDefault();
+    // In a real application, you would collect form data here
+    // and send it to a backend API or a third-party service.
+    console.log("Form submitted! (Backend integration needed for email sending)");
+    // Example of collecting data (you'd typically use state management or FormData)
+    const formData = {
+      firstName: (document.getElementById('firstName') as HTMLInputElement).value,
+      lastName: (document.getElementById('lastName') as HTMLInputElement).value,
+      emailAddress: (document.getElementById('emailAddress') as HTMLInputElement).value,
+      phoneNumber: (document.getElementById('phoneNumber') as HTMLInputElement).value,
+      projectType: (document.getElementById('projectType') as HTMLSelectElement).value,
+      message: (document.getElementById('message') as HTMLTextAreaElement).value,
+    };
+    console.log(formData);
+    // You would then send this 'formData' to your backend.
+    // For example: fetch('/api/send-email', { method: 'POST', body: JSON.stringify(formData) });
+  };
+
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
       {/* Animated background elements - REMOVED */}
@@ -33,7 +54,7 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
 
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
-            <form className="space-y-8">
+            <form className="space-y-8" onSubmit={handleSubmit}>
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-bold text-gray-700 mb-3">{t('firstName')}</label>
@@ -52,7 +73,7 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
 
               <div>
                 <label htmlFor="phoneNumber" className="block text-sm font-bold text-gray-700 mb-3">{t('phoneNumber')}</label>
-                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} defaultValue={phoneNumber} />
+                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} />
               </div>
 
               <div>
@@ -63,6 +84,7 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
                   <option>{t('clinicSetup')}</option>
                   <option>{t('medicalCenter')}</option>
                   <option>{t('healthcareConsulting')}</option>
+                  <option>{t('other')}</option> {/* Added 'Other' option */}
                 </select>
               </div>
 
