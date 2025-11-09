@@ -152,7 +152,7 @@ const OurServicesPage = () => {
                 key={index}
                 id={category.id} /* Added ID here */
                 className={cn(
-                  "p-10 rounded-3xl shadow-2xl border border-gray-100 bg-white scroll-mt-24", // Added scroll-mt-24
+                  "p-10 rounded-3xl shadow-2xl border border-gray-100 bg-white scroll-mt-32", // Changed to scroll-mt-32
                   highlightedServiceId === category.id && "animate-highlight-pulse border-sidraPrimary", // Apply highlight, removed ring-4
                 )}
                 data-aos="fade-up"
