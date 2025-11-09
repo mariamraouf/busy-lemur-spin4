@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
-import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 import { cn } from '@/lib/utils';
 import { TranslationKey } from '@/lib/translations';
 
@@ -50,7 +49,6 @@ const TermsOfServicePage = () => {
           </div>
         </div>
       </div>
-      <ScrollToTopButton />
     </>
   );
 };

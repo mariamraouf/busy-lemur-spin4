@@ -4,7 +4,6 @@ import { useLanguage } from '@/context/LanguageContext';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import { Link } from 'react-router-dom';
-import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 
 const AboutUsPage = () => {
   const { language, t } = useLanguage();
@@ -73,7 +72,6 @@ const AboutUsPage = () => {
         </div>
         <FAQSection faqs={aboutUsFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </div>
-      <ScrollToTopButton />
     </>
   );
 };

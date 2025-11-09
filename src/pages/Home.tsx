@@ -10,7 +10,6 @@ import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 // import TestimonialsSection from "@/components/TestimonialsSection"; // Removed
 import AnimatedPartnersSection from "@/components/AnimatedPartnersSection"; // Import the new animated section
 import CtaSection from "@/components/CtaSection";
-import ScrollToTopButton from "@/components/ScrollToTopButton";
 import FAQSection from "@/components/FAQSection";
 import FullContactSection from "@/components/FullContactSection";
 
@@ -43,7 +42,6 @@ const Home = () => {
       <CtaSection />
       <FullContactSection headingLevel="h2" /> {/* Pass 'h2' for a secondary heading */}
       <FAQSection faqs={homeFaqs} titleKey="faqTitle" hideSubtitle={true} />
-      <ScrollToTopButton />
     </>
   );
 };

@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
-import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 
 const OurValuesPage = () => {
   const { language, t } = useLanguage();
@@ -93,7 +92,6 @@ const OurValuesPage = () => {
         </div>
         <FAQSection faqs={ourValuesFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </div>
-      <ScrollToTopButton />
     </>
   );
 };

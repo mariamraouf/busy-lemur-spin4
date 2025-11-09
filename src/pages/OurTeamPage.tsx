@@ -3,7 +3,6 @@ import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
 import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
-import ScrollToTopButton from '@/components/ScrollToTopButton';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"; // Import shadcn Card components
 
 const OurTeamPage = () => {
@@ -108,7 +107,6 @@ const OurTeamPage = () => {
         </div>
         <FAQSection faqs={ourTeamFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </div>
-      <ScrollToTopButton />
     </>
   );
 };

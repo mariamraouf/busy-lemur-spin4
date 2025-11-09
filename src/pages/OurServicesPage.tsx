@@ -5,7 +5,6 @@ import FAQSection from '@/components/FAQSection';
 import { cn } from '@/lib/utils';
 import { Link, useLocation } from 'react-router-dom'; // Import useLocation
 import { Card, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
-import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 
 const OurServicesPage = () => {
   const { language, t } = useLanguage();
@@ -237,7 +236,6 @@ const OurServicesPage = () => {
         </div>
         <FAQSection faqs={servicesFaqs} titleKey="faqTitle" hideSubtitle={true} />
       </div>
-      <ScrollToTopButton />
     </>
   );
 };

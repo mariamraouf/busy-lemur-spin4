@@ -1,7 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { useLanguage } from '@/context/LanguageContext';
-import ScrollToTopButton from '@/components/ScrollToTopButton'; // Keep ScrollToTopButton
 import FullContactSection from '@/components/FullContactSection';
 
 const ContactPage = () => {
@@ -16,7 +15,6 @@ const ContactPage = () => {
       <div className="pt-24 pb-16">
         <FullContactSection headingLevel="h1" /> {/* Pass 'h1' for the main heading */}
       </div>
-      <ScrollToTopButton />
     </>
   );
 };
