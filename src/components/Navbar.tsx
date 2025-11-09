@@ -62,7 +62,7 @@ const Navbar = () => {
               </Link>
             ))}
 
-            {/* Language Switcher */}
+            {/* Language Switcher (Desktop) */}
             <button
               onClick={toggleLanguage}
               className="flex items-center gap-x-2 px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full hover:shadow-lg transform hover:scale-105 transition-all duration-300"
@@ -72,13 +72,22 @@ const Navbar = () => {
             </button>
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={toggleMobileMenu}
-            className="lg:hidden text-gray-700 focus:outline-none transform hover:scale-110 transition-transform"
-          >
-            <i className="fas fa-bars text-2xl"></i>
-          </button>
+          {/* Mobile Language Switcher & Menu Button */}
+          <div className="flex items-center lg:hidden gap-x-4"> {/* Container for mobile buttons */}
+            <button
+              onClick={toggleLanguage}
+              className="flex items-center gap-x-1.5 px-3 py-1.5 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm hover:shadow-lg transform hover:scale-105 transition-all duration-300"
+            >
+              <i className="fas fa-globe animate-spin-slow text-base"></i>
+              <span className="font-semibold">{language === 'en' ? t('arabic') : t('english')}</span>
+            </button>
+            <button
+              onClick={toggleMobileMenu}
+              className="text-gray-700 focus:outline-none transform hover:scale-110 transition-transform"
+            >
+              <i className="fas fa-bars text-2xl"></i>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -116,13 +125,7 @@ const Navbar = () => {
               <i className="fab fa-linkedin-in text-2xl"></i>
             </a>
           </div>
-          <button
-            onClick={() => { toggleLanguage(); setIsMobileMenuOpen(false); }}
-            className="w-full flex items-center justify-center gap-x-2 px-6 py-4 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-xl hover:shadow-lg transition-all duration-300"
-          >
-            <i className="fas fa-globe animate-spin-slow"></i>
-            <span className="font-semibold">{language === 'en' ? t('arabic') : t('english')}</span>
-          </button>
+          {/* Removed the language switcher from here as it's now in the main header bar */}
         </div>
       </div>
     </nav>
