@@ -38,7 +38,7 @@ const TermsOfServicePage = () => {
             </h1>
           </div>
 
-          <div className="prose prose-lg max-w-none text-gray-700" data-aos="fade-up" data-aos-delay="200">
+          <div className={cn("prose prose-lg max-w-none text-gray-700", language === 'ar' && 'leading-arabic-loose')} data-aos="fade-up" data-aos-delay="200">
             <p className="lead text-xl mb-8">{t('termsOfServiceIntro')}</p>
 
             {termsSections.map((section, index) => (

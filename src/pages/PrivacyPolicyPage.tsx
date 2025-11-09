@@ -30,7 +30,7 @@ const PrivacyPolicyPage = () => {
             </h1>
           </div>
 
-          <div className="prose prose-lg max-w-none text-gray-700" data-aos="fade-up" data-aos-delay="200">
+          <div className={cn("prose prose-lg max-w-none text-gray-700", language === 'ar' && 'leading-arabic-loose')} data-aos="fade-up" data-aos-delay="200">
             <p className="lead text-xl mb-8">{t('privacyPolicyIntro')}</p>
 
             <h2 className="text-3xl font-bold text-gray-900 mt-12 mb-6 break-words">{t('privacyPolicyInfoCollectionTitle')}</h2>
