@@ -32,9 +32,9 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
-            {/* ClickUp Embed Form - Removed internal border */}
-            <iframe className="clickup-embed clickup-dynamic-height" src="https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ" onWheel={() => {}} width="100%" height="100%" style={{ background: 'transparent' }}></iframe>
+          <div className="bg-white rounded-3xl p-6 sm:p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000"> {/* Adjusted padding for mobile */}
+            {/* ClickUp Embed Form */}
+            <iframe className="clickup-embed clickup-dynamic-height w-full" src="https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ" onWheel={() => {}} width="100%" style={{ background: 'transparent' }}></iframe> {/* Removed height="100%" */}
             <script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"></script>
           </div>
 
