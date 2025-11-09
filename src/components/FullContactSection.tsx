@@ -32,10 +32,10 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          <div className="bg-white rounded-3xl p-4 sm:p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000"> {/* Adjusted padding for mobile */}
+          <div className="bg-white rounded-3xl p-2 sm:p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000"> {/* Adjusted padding for mobile to p-2 */}
             {/* ClickUp Embed Form */}
             <iframe 
-              className="clickup-embed clickup-dynamic-height w-full min-h-[600px]" // Added min-h-[600px]
+              className="clickup-embed clickup-dynamic-height w-full min-h-[800px]" // Increased min-h to 800px
               src="https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ" 
               onWheel={() => {}} 
               width="100%" 
