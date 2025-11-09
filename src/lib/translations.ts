@@ -94,17 +94,6 @@ export const translations = {
     system: "system",
     satisfaction: "satisfaction",
 
-    // Removed international market entry story
-    // internationalMarketEntryTitle: "Global Market Entry Success",
-    // internationalMarketEntryLocation: "Jeddah, Saudi Arabia",
-    // internationalMarketEntryDescription: "We helped a major international pharma company navigate Saudi regulations, build key local ties, and smoothly enter the market. A true win-win!",
-    // internationalMarketEntryStat1: "Smooth market entry",
-    // internationalMarketEntryStat2: "5+ partnerships",
-    // internationalMarketEntryStat3: "Full regulatory adherence",
-    // entry: "entry",
-    // partnerships: "partnerships",
-    // adherence: "adherence",
-
     // Testimonials Section - REMOVED FROM HOME
     whatOurClientsSay: "What Our Clients Say",
     hearFromLeaders: "Hear from the healthcare leaders who trust us.",
@@ -208,14 +197,24 @@ export const translations = {
 
     projectTechnicalSupportTitle: "Healthcare Project Management",
     projectTechnicalSupportDescription: "We handle everything from start to finish for hospitals, clinics, and labs. We also do feasibility studies and market assessments, plus on-site medical services for construction projects.",
-    siteAssessmentsTitle: "Feasibility studies & market assessments", 
-    siteAssessmentsDescription: "Comprehensive evaluation of potential locations and operational requirements for healthcare facilities.", 
+    serviceItemTurnkeyDelivery: "Turnkey delivery for hospitals, clinics, and labs",
+    serviceItemFeasibilityStudies: "Feasibility studies & market assessments",
+    serviceItemOnSiteMedicalServices: "On-site medical services for construction projects",
+
     coordArchitecturalTitle: "Medical Planning & Architecture Support",
     coordArchitecturalDescription: "We help with conceptual design, facility planning, equipment planning, and bill of quantities development.",
+    serviceItemConceptualDesign: "Conceptual design and facility planning",
+    serviceItemEquipmentPlanning: "Equipment planning and BOQ development",
+
     licensingCommissioningTitle: "Licensing & Regulatory Approvals",
     licensingCommissioningDescription: "We'll guide you through MOH licensing, facility registration, compliance audits, and all the necessary paperwork.",
+    serviceItemMOHLicensing: "MOH licensing & facility registration",
+    serviceItemComplianceAudits: "Compliance audits and documentation",
+
     strategicPlanningTitle: "Operational Readiness & Strategic Advisory",
     strategicPlanningDescription: "We assist with recruitment coordination, SOP development, business modeling, and smart investment strategies.",
+    serviceItemRecruitmentCoordination: "Recruitment coordination and SOP development",
+    serviceItemBusinessModeling: "Business modeling and investment strategies",
 
     operationalSupportTitle: "Operational Support & Management", 
     operationalSupportDescription: "We manage or co-manage healthcare facilities to ensure quality, efficiency, and compliance.", 
@@ -249,11 +248,11 @@ export const translations = {
     approachStep1Title: "1. Initial Assessment",
     approachStep1Description: "We dig deep to understand your healthcare needs and market opportunities.",
     approachStep2Title: "2. Strategic Planning",
-    approach2Description: "We team up with you to craft a custom roadmap for success.",
+    approach2Description: "We team up with you to craft a custom roadmap for success.", // Corrected key
     approachStep3Title: "3. Implementation",
-    approach3Description: "We execute plans with precision, staying flexible to adapt as needed.",
+    approach3Description: "We execute plans with precision, staying flexible to adapt as needed.", // Corrected key
     approachStep4Title: "4. Continuous Optimization",
-    approach4Description: "We constantly fine-tune operations for peak efficiency and effectiveness.",
+    approach4Description: "We constantly fine-tune operations for peak efficiency and effectiveness.", // Corrected key
 
     needCustomSolution: "Got a unique healthcare project? We love a challenge!",
     contactUsToday: "Let's chat about your specific needs and how we can help.",
@@ -546,17 +545,6 @@ export const translations = {
     system: "نظام",
     satisfaction: "رضا",
 
-    // Removed international market entry story
-    // internationalMarketEntryTitle: "نجاح دخول السوق العالمي",
-    // internationalMarketEntryLocation: "جدة، السعودية",
-    // internationalMarketEntryDescription: "ساعدنا شركة أدوية عالمية كبيرة تفهم الأنظمة السعودية، وتبني علاقات قوية محليًا، وتدخل السوق بسلاسة. نجاح حقيقي للكل!",
-    // internationalMarketEntryStat1: "دخول سلس للسوق",
-    // internationalMarketEntryStat2: "أكثر من 5 شراكات",
-    // internationalMarketEntryStat3: "التزام تنظيمي كامل",
-    // entry: "دخول",
-    // partnerships: "شراكات",
-    // adherence: "التزام",
-
     // Testimonials Section - REMOVED FROM HOME
     whatOurClientsSay: "ايش يقول عملاؤنا",
     hearFromLeaders: "اسمع من قادة الرعاية الصحية اللي يثقون فينا.",
@@ -660,14 +648,24 @@ export const translations = {
 
     projectTechnicalSupportTitle: "إدارة مشاريع الرعاية الصحية",
     projectTechnicalSupportDescription: "نتولى كل شي من البداية للنهاية للمستشفيات والعيادات والمختبرات. ونسوي دراسات جدوى وتقييمات سوق، بالإضافة لخدمات طبية في الموقع لمشاريع البناء.",
-    siteAssessmentsTitle: "دراسات الجدوى وتقييمات السوق", 
-    siteAssessmentsDescription: "تقييم شامل للمواقع المحتملة والمتطلبات التشغيلية للمنشآت الصحية.", 
+    serviceItemTurnkeyDelivery: "تسليم مشاريع المستشفيات والعيادات والمختبرات بالكامل",
+    serviceItemFeasibilityStudies: "دراسات الجدوى وتقييمات السوق",
+    serviceItemOnSiteMedicalServices: "خدمات طبية في الموقع لمشاريع البناء",
+
     coordArchitecturalTitle: "دعم التخطيط الطبي والهندسة المعمارية",
     coordArchitecturalDescription: "نساعد في التصميم الأولي، وتخطيط المنشآت، وتخطيط المعدات، وتطوير قوائم الكميات.",
+    serviceItemConceptualDesign: "التصميم الأولي وتخطيط المنشآت",
+    serviceItemEquipmentPlanning: "تخطيط المعدات وتطوير قوائم الكميات",
+
     licensingCommissioningTitle: "الترخيص والموافقات التنظيمية",
     licensingCommissioningDescription: "نوجهك خلال ترخيص وزارة الصحة، وتسجيل المنشآت، وتدقيق الامتثال، وكل الأوراق اللازمة.",
+    serviceItemMOHLicensing: "ترخيص وزارة الصحة وتسجيل المنشآت",
+    serviceItemComplianceAudits: "تدقيق الامتثال والوثائق",
+
     strategicPlanningTitle: "الجاهزية التشغيلية والاستشارات الاستراتيجية",
     strategicPlanningDescription: "نساعد في تنسيق التوظيف، وتطوير إجراءات التشغيل القياسية، ونمذجة الأعمال، واستراتيجيات الاستثمار الذكية.",
+    serviceItemRecruitmentCoordination: "تنسيق التوظيف وتطوير إجراءات التشغيل القياسية",
+    serviceItemBusinessModeling: "نمذجة الأعمال واستراتيجيات الاستثمار",
 
     operationalSupportTitle: "الدعم التشغيلي والإدارة", 
     operationalSupportDescription: "ندير أو نشارك في إدارة المنشآت الصحية عشان نضمن الجودة والكفاءة والالتزام بالأنظمة.", 
@@ -701,11 +699,11 @@ export const translations = {
     approachStep1Title: "1. التقييم الأولي",
     approachStep1Description: "نتعمق في فهم احتياجاتك الصحية وفرص السوق.",
     approachStep2Title: "2. التخطيط الاستراتيجي",
-    approach2Description: "نتعاون معك عشان نصمم خطة عمل مخصصة للنجاح.",
+    approachStep2Description: "نتعاون معك عشان نصمم خطة عمل مخصصة للنجاح.",
     approachStep3Title: "3. التنفيذ",
-    approach3Description: "ننفذ الخطط بدقة، ونكون مرنين عشان نتكيف حسب الحاجة.",
+    approachStep3Description: "ننفذ الخطط بدقة، ونكون مرنين عشان نتكيف حسب الحاجة.",
     approachStep4Title: "4. التحسين المستمر",
-    approach4Description: "نعدّل العمليات باستمرار عشان نوصل لأقصى كفاءة وفعالية.",
+    approachStep4Description: "نعدّل العمليات باستمرار عشان نوصل لأقصى كفاءة وفعالية.",
 
     needCustomSolution: "عندك مشروع رعاية صحية فريد؟ نحب التحديات!",
     contactUsToday: "خلنا نسولف عن احتياجاتك وكيف نقدر نساعدك.",
@@ -757,7 +755,7 @@ export const translations = {
     missionVisionFaqQ1: "ايش هي رسالة سدرة ميد الأساسية؟",
     missionVisionFaqA1: "رسالتنا هي تمكين مقدمي الرعاية الصحية في كل أنحاء السعودية بدعم استراتيجي، تشغيلي، وتقني، وهذا يضمن نجاح المشاريع وتطوير تقديم الخدمات الطبية.",
     missionVisionFaqQ2: "ايش رؤية سدرة ميد للمستقبل؟",
-    missionVisionFaqA2: "رؤيتنا هي نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في السعودية، ونكون معروفين بالابتكار، والموثوقية، وتقديم نتائج ناجحة للكل.",
+    missionVisionFaqA2: "رؤيتنا هي نكون الشريك الرائد في تقديم مشاريع الرعاية الصحية في السعودية، ونكون معروفين بالابتكار، والموثوقية، وتقديم نتائج مبهرة باستمرار للمقدمين والمستثمرين والمجتمع كله.",
     missionVisionFaqQ3: "كيف توجه رسالتنا شغلنا اليومي؟",
     missionVisionFaqA3: "رسالتنا هي البوصلة لكل قرار، وتخلينا نركز على تمكين العملاء وتقديم التميز في كل مشروع رعاية صحية.",
     missionVisionFaqQ4: "ايش هي أهداف سدرة ميد طويلة المدى؟", // Renamed from missionVisionF4
