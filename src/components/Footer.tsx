@@ -60,10 +60,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg sm:text-xl font-bold mb-6 text-white">{t('services')}</h4>
             <ul className="space-y-4">
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service1Title')}</Link></li>
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service2Title')}</Link></li>
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('marketIntegration')}</Link></li>
-              <li><Link to="/services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service4Title')}</Link></li>
+              <li><Link to="/services#services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service1Title')}</Link></li>
+              <li><Link to="/services#services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service2Title')}</Link></li>
+              <li><Link to="/services#services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service3Title')}</Link></li> {/* Changed to service3Title */}
+              <li><Link to="/services#services" className={cn("text-gray-300 hover:text-sidraPrimary transition-colors transform inline-block", language === 'ar' ? 'hover:-translate-x-2' : 'hover:translate-x-2')}>{t('service4Title')}</Link></li>
             </ul>
           </div>
         </div>
