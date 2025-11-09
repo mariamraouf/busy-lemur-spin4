@@ -165,7 +165,7 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
                 allowFullScreen={true}
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Jeddah, Saudi Arabia Location"
+                title={t('jeddahLocationTitle')} // Using translated title
               ></iframe>
             </div>
             <p className="text-center text-gray-600 mt-6 text-lg">

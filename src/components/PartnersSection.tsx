@@ -63,7 +63,7 @@ const PartnersSection = () => {
             <div key={index} className="flex items-center justify-center p-4"> {/* Centered, with padding */}
               <img
                 src={partner.logo}
-                alt={partner.name}
+                alt={partner.name} // Using translated partner name for alt text
                 className="max-h-20 w-auto object-contain" // Max height, auto width
               />
             </div>
