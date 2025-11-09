@@ -657,7 +657,7 @@ export const translations = {
     coordArchitecturalTitle: "دعم التخطيط الطبي والهندسة المعمارية",
     coordArchitecturalDescription: "نساعد في التصميم الأولي، وتخطيط المنشآت، وتخطيط المعدات، وتطوير قوائم الكميات.",
     serviceItemConceptualDesign: "التصميم الأولي وتخطيط المنشآت",
-    serviceItemEquipmentPlanning: "تخطيط المعدات وتطوير قوائم الكميات",
+    serviceItemEquipmentPlanning: "تخطيط المعدات وتطوير قوائم الكميات.",
 
     licensingCommissioningTitle: "الترخيص والموافقات التنظيمية",
     licensingCommissioningDescription: "نوجهك خلال ترخيص وزارة الصحة، وتسجيل المنشآت، وتدقيق الامتثال، وكل الأوراق اللازمة.",
@@ -734,10 +734,10 @@ export const translations = {
     homeFaqA3: "عندنا سجل قوي في إطلاق منشآت صحية بنجاح وتحسين العمليات في كل أنحاء المملكة، ونشتغل مع الكل من المستثمرين الخاصين لين مجموعات الرعاية الصحية الكبيرة.",
     homeFaqQ4: "كيف تضمن سدرة ميد جودة المشاريع؟",
     homeFaqA4: "الجودة في صميم شغلنا! نلتزم بالمعايير العالية والأنظمة المحلية، ونستخدم إدارة مشاريع دقيقة وفحوصات جودة مستمرة عشان نضمن أفضل النتائج.",
-    homeFaqQ5: "What kind of partnerships does Sidra Med offer?",
-    homeFaqA5: "Through our extensive network, we forge strategic partnerships that deliver projects from start to finish, bringing together specialized expertise in legal, financial, design, and construction.",
-    homeFaqQ6: "Is Sidra Med involved in digital health initiatives?",
-    homeFaqA6: "Absolutely! We actively support digital health, including IT system implementation, EMR integration, and using technology to enhance patient care and operational efficiency.",
+    homeFaqQ5: "ايش أنواع الشراكات اللي تقدمها سدرة ميد؟",
+    homeFaqA5: "من خلال شبكتنا الواسعة، نكوّن شراكات استراتيجية تسلم المشاريع من البداية للنهاية، وتجمع الخبرات المتخصصة في الجوانب القانونية، والمالية، والتصميم، والبناء.",
+    homeFaqQ6: "هل سدرة ميد تشارك في مبادرات الصحة الرقمية؟",
+    homeFaqA6: "أكيد! ندعم الصحة الرقمية بنشاط، وهذا يشمل تطبيق أنظمة تقنية المعلومات، وتكامل السجلات الطبية الإلكترونية (EMR)، واستخدام التكنولوجيا لتعزيز رعاية المرضى والكفاءة التشغيلية.",
 
     // About Us Page FAQs
     aboutUsFaqQ1: "ايش هي القوة الخارقة الأساسية لسدرة ميد؟",
@@ -782,23 +782,23 @@ export const translations = {
     ourValuesFaqA6: "أكيد! نبحث عن شركاء يشاركونا قيمنا الأساسية عشان نضمن بيئة عمل متماسكة، وفعالة، ومتناغمة.",
 
     // Our Team Page FAQs
-    ourTeamFaqQ1: "Who makes up the Sidra Med dream team?",
-    ourTeamFaqA1: "Our dream team includes Healthcare Project Managers, Clinical & Operations Experts, Healthcare Architects & Engineers, and Strategic and Financial Analysts—all dedicated to your project's success!",
-    ourTeamFaqQ2: "How does Sidra Med ensure operations are flawless?",
-    ourTeamFaqA2: "Our Clinical & Operations Experts, alongside our Project Managers, ensure operational excellence and clinical best practices are woven into every project from day one.",
-    ourTeamFaqQ3: "What's the experience level of Sidra Med's team?",
-    ourTeamFaqA3: "Our team members bring a wealth of experience from various corners of the healthcare industry locally. They've seen it all!",
-    ourTeamFaqQ4: "How does the team stay ahead of industry trends?",
-    ourTeamFaqA4: "Through continuous professional development, active participation in industry conferences, and constant engagement with the latest healthcare innovations. We're always learning!",
-    ourTeamFaqQ5: "Does Sidra Med's team include specialists for specific medical fields?",
-    ourTeamFaqA5: "Yes, our network boasts specialists across various medical fields, allowing us to tailor expertise precisely to your project's unique requirements.",
-    ourTeamFaqQ6: "How does Sidra Med foster teamwork and collaboration?",
-    ourTeamFaqA6: "We cultivate a collaborative culture through cross-functional projects, regular knowledge-sharing sessions, and fun team-building activities. We're a family!",
+    ourTeamFaqQ1: "من هم أعضاء فريق سدرة ميد المميز؟",
+    ourTeamFaqA1: "فريقنا المميز يضم مديري مشاريع الرعاية الصحية، وخبراء العمليات السريرية والتشغيلية، ومهندسي ومعماريي الرعاية الصحية، ومحللين استراتيجيين وماليين—كلهم مكرسون لنجاح مشروعك!",
+    ourTeamFaqQ2: "كيف تضمن سدرة ميد أن العمليات تسير بسلاسة؟",
+    ourTeamFaqA2: "خبراء العمليات السريرية والتشغيلية لدينا، جنبًا إلى جنب مع مديري المشاريع، يضمنون دمج التميز التشغيلي وأفضل الممارسات السريرية في كل مشروع من اليوم الأول.",
+    ourTeamFaqQ3: "ما هو مستوى خبرة فريق سدرة ميد؟",
+    ourTeamFaqA3: "يتمتع أعضاء فريقنا بثروة من الخبرة من مختلف جوانب صناعة الرعاية الصحية محليًا. لقد رأوا كل شيء!",
+    ourTeamFaqQ4: "كيف يواكب الفريق أحدث اتجاهات الصناعة؟",
+    ourTeamFaqA4: "من خلال التطوير المهني المستمر، والمشاركة النشطة في المؤتمرات الصناعية، والتفاعل الدائم مع أحدث الابتكارات في الرعاية الصحية. نحن نتعلم دائمًا!",
+    ourTeamFaqQ5: "هل يضم فريق سدرة ميد متخصصين في مجالات طبية محددة؟",
+    ourTeamFaqA5: "نعم، تضم شبكتنا متخصصين في مختلف المجالات الطبية، مما يتيح لنا تكييف الخبرة بدقة لتلبية المتطلبات الفريدة لمشروعك.",
+    ourTeamFaqQ6: "كيف تعزز سدرة ميد العمل الجماعي والتعاون؟",
+    ourTeamFaqA6: "نحن نزرع ثقافة تعاونية من خلال المشاريع متعددة الوظائف، وجلسات تبادل المعرفة المنتظمة، وأنشطة بناء الفريق الممتعة. نحن عائلة!",
 
     // Not Found Page
-    pageNotFoundTitle: "يا ساتر! الصفحة مو موجودة",
-    pageNotFoundDescription: "شكلك دخلت صفحة مو موجودة. خلنا نرجع للصفحة الرئيسية!",
-    returnToHome: "الرجوع للصفحة الرئيسية",
+    pageNotFoundTitle: "عذرًا! الصفحة غير موجودة",
+    pageNotFoundDescription: "يبدو أنك وصلت إلى صفحة غير موجودة. حان الوقت للعودة!",
+    returnToHome: "العودة إلى الصفحة الرئيسية",
 
     // New Pages
     privacyPolicyPageTitle: "وعدنا بالخصوصية",
