@@ -138,8 +138,6 @@ export const translations = {
     clinicSetup: "Clinic Setup",
     medicalCenter: "Medical Center Upgrade",
     healthcareConsulting: "Healthcare Consulting",
-    other: "Other", // New translation key
-    selectOther: "Other", // New translation key
     message: "Your Message",
     tellUsAboutProject: "Tell us all about your project!",
     sendMessage: "Send It!",
@@ -591,8 +589,6 @@ export const translations = {
     clinicSetup: "تأسيس عيادة",
     medicalCenter: "تطوير مركز طبي",
     healthcareConsulting: "استشارات صحية",
-    other: "أخرى", // New translation key
-    selectOther: "أخرى", // New translation key
     message: "رسالتك",
     tellUsAboutProject: "احكيلنا عن مشروعك!",
     sendMessage: "أرسل!",
@@ -778,7 +774,7 @@ export const translations = {
     ourValuesFaqA3: "من خلال التواصل الواضح، واتخاذ القرارات الأخلاقية، والالتزام الصارم بالمعايير والأنظمة المهنية. الثقة هي المفتاح!",
     ourValuesFaqQ4: "ايش دور الابتكار في خدمات سدرة ميد؟",
     ourValuesFaqA4: "الابتكار في صميم نهجنا! دايمًا ندور على طرق أذكى، وأكثر كفاءة، وأحدث تقنيًا عشان نقدم حلول رعاية صحية.",
-    ourValuesFaqQ5: "كيف سدرة ميد تضمن خدمات ممتازة؟",
+    ourValuesFaqQ5: "كيف تضمن سدرة ميد خدمات ممتازة؟",
     ourValuesFaqA5: "من خلال الحفاظ على معايير عالية جدًا في التخطيط، والتنفيذ، والتحسين المستمر، وهذا يضمن إن كل مشروع يلبي أو يتجاوز توقعات العميل.",
     ourValuesFaqQ6: "هل تشاركون هذي القيم مع شركائكم؟",
     ourValuesFaqA6: "أكيد! نبحث عن شركاء يشاركونا قيمنا الأساسية عشان نضمن بيئة عمل متماسكة، وفعالة، ومتناغمة.",

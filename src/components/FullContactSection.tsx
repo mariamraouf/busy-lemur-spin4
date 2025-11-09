@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
-import { toast } from 'sonner'; // Import toast from sonner
 
 interface FullContactSectionProps {
   headingLevel?: 'h1' | 'h2'; // New prop for dynamic heading level
@@ -11,67 +10,6 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
   const { language, t } = useLanguage();
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
-
-  // State to manage form data
-  const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    emailAddress: '',
-    phoneNumber: '',
-    projectType: '',
-    message: '',
-  });
-
-  // Handle input changes
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
-    const { id, value } = e.target;
-    setFormData((prevData) => ({
-      ...prevData,
-      [id]: value,
-    }));
-  };
-
-  // Handle form submission
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log("Form Data Submitted:", formData);
-    // In a real application, you would send this data to a backend API.
-    // Example:
-    // fetch('/api/contact', {
-    //   method: 'POST',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(formData),
-    // })
-    // .then(response => response.json())
-    // .then(data => {
-    //   console.log('Success:', data);
-    //   toast.success(t('formSubmissionSuccess')); // Assuming you add this key to translations
-    //   setFormData({ // Clear form after successful submission
-    //     firstName: '',
-    //     lastName: '',
-    //     emailAddress: '',
-    //     phoneNumber: '',
-    //     projectType: '',
-    //     message: '',
-    //   });
-    // })
-    // .catch((error) => {
-    //   console.error('Error:', error);
-    //   toast.error(t('formSubmissionError')); // Assuming you add this key to translations
-    // });
-
-    toast.success(t('formSubmissionSuccess')); // Simulate success for now
-    setFormData({ // Clear form after simulated submission
-      firstName: '',
-      lastName: '',
-      emailAddress: '',
-      phoneNumber: '',
-      projectType: '',
-      message: '',
-    });
-  };
 
   // Google Maps embed URL for the new specific address
   const googleMapsEmbedUrl = "https://maps.google.com/maps?q=The%20Office,%20Prince%20Sultan%20Rd,%20Al%20Khalidiyyah,%20Jeddah%2023421&output=embed";
@@ -95,43 +33,42 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
 
         <div className="grid lg:grid-cols-2 gap-16">
           <div className="bg-white rounded-3xl p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000">
-            <form className="space-y-8" onSubmit={handleSubmit}>
+            <form className="space-y-8">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="firstName" className="block text-sm font-bold text-gray-700 mb-3">{t('firstName')}</label>
-                  <input type="text" id="firstName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterFirstName')} value={formData.firstName} onChange={handleChange} required />
+                  <input type="text" id="firstName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterFirstName')} />
                 </div>
                 <div>
                   <label htmlFor="lastName" className="block text-sm font-bold text-gray-700 mb-3">{t('lastName')}</label>
-                  <input type="text" id="lastName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterLastName')} value={formData.lastName} onChange={handleChange} required />
+                  <input type="text" id="lastName" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterLastName')} />
                 </div>
               </div>
 
               <div>
                 <label htmlFor="emailAddress" className="block text-sm font-bold text-gray-700 mb-3">{t('emailAddress')}</label>
-                <input type="email" id="emailAddress" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterEmail')} value={formData.emailAddress} onChange={handleChange} required />
+                <input type="email" id="emailAddress" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterEmail')} />
               </div>
 
               <div>
                 <label htmlFor="phoneNumber" className="block text-sm font-bold text-gray-700 mb-3">{t('phoneNumber')}</label>
-                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} value={formData.phoneNumber} onChange={handleChange} />
+                <input type="tel" id="phoneNumber" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" placeholder={t('enterPhone')} defaultValue={phoneNumber} />
               </div>
 
               <div>
                 <label htmlFor="projectType" className="block text-sm font-bold text-gray-700 mb-3">{t('projectType')}</label>
-                <select id="projectType" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300" value={formData.projectType} onChange={handleChange} required>
-                  <option value="">{t('selectProjectType')}</option>
-                  <option value={t('hospitalDevelopment')}>{t('hospitalDevelopment')}</option>
-                  <option value={t('clinicSetup')}>{t('clinicSetup')}</option>
-                  <option value={t('medicalCenter')}>{t('medicalCenter')}</option>
-                  <option value={t('healthcareConsulting')}>{t('healthcareConsulting')}</option>
-                  <option value={t('other')}>{t('other')}</option> {/* Added 'Other' option */}
+                <select id="projectType" className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all hover:border-gray-300">
+                  <option>{t('selectProjectType')}</option>
+                  <option>{t('hospitalDevelopment')}</option>
+                  <option>{t('clinicSetup')}</option>
+                  <option>{t('medicalCenter')}</option>
+                  <option>{t('healthcareConsulting')}</option>
                 </select>
               </div>
 
               <div>
                 <label htmlFor="message" className="block text-sm font-bold text-gray-700 mb-3">{t('message')}</label>
-                <textarea id="message" rows={5} className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all resize-none hover:border-gray-300" placeholder={t('tellUsAboutProject')} value={formData.message} onChange={handleChange} required></textarea>
+                <textarea id="message" rows={5} className="w-full px-6 py-4 border-2 border-gray-200 rounded-xl focus:ring-2 focus:ring-sidraPrimary focus:border-transparent outline-none transition-all resize-none hover:border-gray-300" placeholder={t('tellUsAboutProject')}></textarea>
               </div>
 
               <button type="submit" className="w-full bg-gradient-to-r from-sidraPrimary via-sidraSecondary to-sidraAccent text-white font-bold py-6 rounded-xl hover:shadow-2xl transition-all transform hover:scale-105 text-lg">
