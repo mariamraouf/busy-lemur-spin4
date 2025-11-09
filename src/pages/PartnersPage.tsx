@@ -9,7 +9,7 @@ const PartnersPage = () => {
   const { language, t } = useLanguage();
 
   const partners = [
-    { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" },
+    // { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" }, // Removed
     { name: t('partnerWomanHealth'), logo: "/partners/woman-health.png" },
     { name: t('partnerDrTalaQutub'), logo: "/partners/dr-tala-qutub.png" },
     { name: t('partnerPrinceSattamUniversity'), logo: "/partners/prince-sattam-university.png" },

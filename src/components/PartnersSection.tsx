@@ -6,7 +6,7 @@ const PartnersSection = () => {
   const { t } = useLanguage();
 
   const partners = [
-    { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" },
+    // { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" }, // Removed
     { name: t('partnerWomanHealth'), logo: "/partners/woman-health.png" },
     { name: t('partnerDrTalaQutub'), logo: "/partners/dr-tala-qutub.png" },
     { name: t('partnerPrinceSattamUniversity'), logo: "/partners/prince-sattam-university.png" },
@@ -52,7 +52,7 @@ const PartnersSection = () => {
         <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
           {t('partners')}
         </span>
-        <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-gray-900 mb-8 break-words">
           <span className="block">{t('ourValued')}</span>
         </h2>
       </div>

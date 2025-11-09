@@ -11,7 +11,7 @@ const AnimatedPartnersSection = () => {
   const { t, language } = useLanguage();
 
   const allPartners: Partner[] = [
-    { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" },
+    // { name: t('partnerNoorAlAin'), logo: "/partners/noor-al-ain.png" }, // Removed
     { name: t('partnerWomanHealth'), logo: "/partners/woman-health.png" },
     { name: t('partnerDrTalaQutub'), logo: "/partners/dr-tala-qutub.png" },
     { name: t('partnerPrinceSattamUniversity'), logo: "/partners/prince-sattam-university.png" },
@@ -54,7 +54,7 @@ const AnimatedPartnersSection = () => {
   // Divide partners into three distinct lines
   const partnersLine1 = allPartners.slice(0, 13);
   const partnersLine2 = allPartners.slice(13, 26);
-  const partnersLine3 = allPartners.slice(26, 38); // Remaining 12 logos
+  const partnersLine3 = allPartners.slice(26, 37); // Adjusted slice to account for one less logo
 
   // Duplicate each line's partners for seamless infinite scroll
   const repeatedPartnersLine1 = [...partnersLine1, ...partnersLine1];
