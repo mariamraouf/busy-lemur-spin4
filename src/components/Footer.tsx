@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-x-4 mb-6">
+            <div className="flex items-center gap-x-4 mb-6" style={{ direction: 'ltr' }}> {/* Added inline style to force LTR direction for logo */}
               <img 
                 src="/sidra-med-logo.png" 
                 alt="Sidra Med Logo" 
