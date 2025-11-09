@@ -16,17 +16,19 @@ const Footer = () => {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
           {/* Company Info */}
           <div className="lg:col-span-2">
-            <div className="flex items-center gap-x-4 mb-6" style={{ direction: 'ltr' }}> {/* Force LTR for logo container */}
+            {/* Logo - now explicitly left-aligned */}
+            <div className="mb-6 text-left">
               <img 
                 src="/sidra-med-logo.png" 
                 alt="Sidra Med Logo" 
-                className="w-32 h-32 object-contain" 
-              /> {/* Increased size */}
+                className="w-32 h-32 object-contain inline-block" 
+              />
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
               {t('empoweringHealthcare')}
             </p>            
-            <div className="flex gap-x-4 mb-6" style={{ direction: 'ltr' }}> {/* Force LTR for social icons container */}
+            {/* Social Icons - now explicitly left-aligned using justify-start */}
+            <div className="flex gap-x-4 mb-6 justify-start">
               <a href={`tel:${phoneNumber}`} className="w-12 h-12 bg-white/10 backdrop-blur-sm rounded-xl flex items-center justify-center hover:bg-sidraPrimary transition-all transform hover:scale-110" aria-label="Call us">
                 <i className="fas fa-phone text-xl"></i>
               </a>
