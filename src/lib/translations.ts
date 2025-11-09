@@ -15,9 +15,9 @@ export const translations = {
 
     // Hero Section
     transformingHealthcare: "🚀 Your Health, Our Priority",
-    heroTitlePart1: "Building Healthier Futures,",
-    heroTitlePart2: "One Project at a Time",
-    heroTitlePart3: "in Saudi Arabia",
+    heroTitlePart1: "Building Healthier Futures",
+    heroTitlePart2: "from Concept to Operation",
+    heroTitlePart3: "to Sustainability",
     heroDescription: "We're here to make healthcare projects simple and successful. From big hospitals to small clinics, we guide investors and owners through every step, ensuring smooth sailing and great results across Saudi Arabia.",
     exploreOurServices: "See How We Help",
     partnerWithUs: "Let's Build Together",
@@ -690,7 +690,7 @@ export const translations = {
     procurementEquipmentPlanningDescription: "تحديد المصادر الاستراتيجية للمعدات الطبية، والإمدادات، والتقنية مع التركيز على القيمة والجودة.", 
     facilityDesignConstructionTitle: "تصميم وبناء المنشآت", 
     facilityDesignConstructionDescription: "إدارة مشاريع تصميم وبناء منشآت الرعاية الصحية من البداية للنهاية، بما يتماشى مع المعايير العالية.", 
-    accreditationSustainabilityTitle: "التخطيط للاعتماد والاستدامة", 
+    accreditationSustainabilityTitle: "الاعتماد والتخطيط للاستدامة", 
     accreditationSustainabilityDescription: "دعم استراتيجي لتحقيق الاعتمادات الوطنية والرائدة للرعاية الصحية مع تطبيق ممارسات مستدامة.", 
 
     customSolutionsTitle: "حلول مخصصة لمشروعك الصحي",
