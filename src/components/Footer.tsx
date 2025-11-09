@@ -20,7 +20,7 @@ const Footer = () => {
               <img 
                 src="/sidra-med-logo.png" 
                 alt="Sidra Med Logo" 
-                className="w-32 h-32 object-contain" 
+                className="w-32 h-32 object-contain filter invert" // Added filter invert to make it visible on dark background
               /> {/* Increased size */}
             </div>
             <p className="text-gray-300 mb-8 leading-relaxed text-lg">
