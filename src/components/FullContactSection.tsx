@@ -14,6 +14,12 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
   // Google Maps embed URL for the new specific address
   const googleMapsEmbedUrl = "https://maps.google.com/maps?q=The%20Office,%20Prince%20Sultan%20Rd,%20Al%20Khalidiyyah,%20Jeddah%2023421&output=embed";
 
+  // ClickUp embed URLs
+  const englishFormEmbedUrl = "https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ";
+  const arabicFormEmbedUrl = "https://forms.clickup.com/9012970926/f/8cke1de-24532/PJ7OL2LLEDO86QN869";
+
+  const currentFormEmbedUrl = language === 'ar' ? arabicFormEmbedUrl : englishFormEmbedUrl;
+
   return (
     <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
       {/* Animated background elements - REMOVED */}
@@ -36,12 +42,13 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
             {/* ClickUp Embed Form */}
             <iframe 
               className="clickup-embed clickup-dynamic-height w-full min-h-[800px]" // Increased min-h to 800px
-              src="https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ" 
+              src={currentFormEmbedUrl} 
               onWheel={() => {}} 
               width="100%" 
-              style={{ background: 'transparent' }}
+              height="100%" // Ensure height is set for dynamic height to work
+              style={{ background: 'transparent', border: '1px solid #ccc' }}
             ></iframe>
-            <script async src="https://app-cdn.clickup.com/assets/js/forms-embed/v1.js"></script>
+            {/* The script tag is loaded once globally in index.html, so no need to duplicate here */}
           </div>
 
           <div data-aos="fade-left" data-aos-duration="1000">
