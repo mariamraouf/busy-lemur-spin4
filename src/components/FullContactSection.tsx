@@ -12,7 +12,7 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
   const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
 
   // Google Maps embed URL for the new specific address
-  const googleMapsEmbedUrl = "https://maps.google.com/maps?q=The%20Office,%20Prince%20Sultan%20Rd,%20Al%20Khalidiyyah,%20Jeddah%2023421&output=embed";
+  const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.0000000000005!2d39.1402466!3d21.5496663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3c5a4eb089e69%3A0x73e40d57917023a0!2sSidra%20Med!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"; // Updated to the new embed URL
 
   // ClickUp embed URLs
   const englishFormEmbedUrl = "https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ";
