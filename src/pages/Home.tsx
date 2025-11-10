@@ -1,5 +1,5 @@
 import React from "react";
-import { Helmet } from "react-helmet-async";
+import SeoHead from "@/components/SeoHead"; // Import the new SeoHead component
 import { useLanguage } from "@/context/LanguageContext";
 import HeroSection from "@/components/HeroSection";
 // import StatsSection from "@/components/StatsSection"; // Removed
@@ -25,12 +25,17 @@ const Home = () => {
     { id: "home-faq-6", question: t('homeFaqQ6'), answer: t('homeFaqA6') },
   ];
 
+  const pageTitle = `${t('heroTitlePart1')} ${t('heroTitlePart2')} ${t('heroTitlePart3')} - Sidra Med`;
+  const pageDescription = t('heroDescription');
+
   return (
     <>
-      <Helmet htmlAttributes={{ lang: language, dir: language === 'ar' ? 'rtl' : 'ltr' }}>
-        <title>{t('heroTitlePart1')} {t('heroTitlePart2')} {t('heroTitlePart3')} - Sidra Med</title>
-        <meta name="description" content={t('heroDescription')} />
-      </Helmet>
+      <SeoHead 
+        title={pageTitle} 
+        description={pageDescription} 
+        path="/" 
+        ogImage={t('defaultOgImage')} // Use the default image from translations
+      />
       <HeroSection />
       {/* <StatsSection /> */}
       {/* <AboutSection /> */}
