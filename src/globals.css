@@ -115,10 +115,4 @@
   html[dir="rtl"] h6 {
     line-height: var(--line-height-arabic-loose) !important; /* Apply custom line height specifically to all headings in RTL with !important */
   }
-
-  /* Ensure chat widget is always on top */
-  div[data-relevanceai-share-id],
-  .relevanceai-chat-bubble-container {
-    z-index: 9999 !important;
-  }
 }
