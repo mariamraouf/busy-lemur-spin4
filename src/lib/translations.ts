@@ -16,6 +16,7 @@ export const translations = {
     missionVision: "Mission & Vision",
     ourValues: "Our Values",
     ourTeam: "Our Team",
+    careers: "Careers", // New translation key
 
     // Hero Section
     transformingHealthcare: "🚀 Building Excellence in Healthcare Sector",
@@ -454,6 +455,12 @@ export const translations = {
     partnersFaqA5: "If you're keen to partner with Sidra Med, just reach out via our contact page! Tell us about your organization and what you're great at. We'd love to explore how we can work together.",
     partnersFaqQ6: "Does Sidra Med offer exclusive partnerships?",
     partnersFaqA6: "Partnership terms vary depending on the collaboration. Our main goal is always mutually beneficial relationships that boost our collective capabilities and service offerings. Let's chat about it!",
+
+    // Careers Page
+    joinOurTeam: "Join Our Team",
+    careersPageTitle: "Shape the Future of Healthcare with Us",
+    careersPageDescription: "Are you passionate about transforming healthcare in Saudi Arabia? Explore exciting career opportunities at Sidra Med and become part of a team dedicated to excellence and innovation.",
+    careersMetaDescription: "Explore career opportunities at Sidra Med and join a team dedicated to transforming healthcare in Saudi Arabia. Find your next role in project management, operations, or advisory services.",
   },
   ar: {
     // Global SEO defaults
@@ -472,6 +479,7 @@ export const translations = {
     missionVision: "الرسالة والرؤية",
     ourValues: "قيمنا",
     ourTeam: "فريقنا",
+    careers: "الوظائف", // New translation key
 
     // Hero Section
     transformingHealthcare: "نبني التميز في القطاع الصحي",
@@ -910,6 +918,12 @@ export const translations = {
     partnersFaqA5: "إذا كنت مهتم بالشراكة مع سدرة ميد، بس تواصل معنا عن طريق صفحة الاتصال! احكيلنا عن مؤسستك وايش نقاط قوتك. يسعدنا نستكشف كيف نقدر نشتغل سوا.",
     partnersFaqQ6: "هل سدرة ميد تقدم شراكات حصرية؟",
     partnersFaqA6: "شروط الشراكة تختلف حسب طبيعة التعاون. هدفنا الأساسي دايمًا هو علاقات متبادلة المنفعة تعزز قدراتنا وخدماتنا المشتركة. خلنا نسولف عنها!",
+
+    // Careers Page
+    joinOurTeam: "انضم إلى فريقنا",
+    careersPageTitle: "شكل مستقبل الرعاية الصحية معنا",
+    careersPageDescription: "هل أنت شغوف بتطوير الرعاية الصحية في المملكة العربية السعودية؟ استكشف فرص العمل المثيرة في سدرة ميد وكن جزءًا من فريق مكرس للتميز والابتكار.",
+    careersMetaDescription: "استكشف فرص العمل في سدرة ميد وانضم إلى فريق مكرس لتطوير الرعاية الصحية في المملكة العربية السعودية. ابحث عن دورك التالي في إدارة المشاريع، العمليات، أو الخدمات الاستشارية.",
   },
 };
 
