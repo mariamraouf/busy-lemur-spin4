@@ -18,7 +18,6 @@ import PartnersPage from "./pages/PartnersPage";
 import ContactPage from "./pages/ContactPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
-import CareersPage from "./pages/CareersPage"; // Import the new CareersPage
 import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate";
 
 const queryClient = new QueryClient();
@@ -46,7 +45,6 @@ const App = () => (
                   <Route path="/contact" element={<ContactPage />} />
                   <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
                   <Route path="/terms-of-service" element={<TermsOfServicePage />} />
-                  <Route path="/careers" element={<CareersPage />} /> {/* New Careers route */}
                   {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                   <Route path="*" element={<NotFound />} />
                 </Routes>
