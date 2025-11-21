@@ -119,7 +119,7 @@ export const translations = {
     callUs: "Give Us a Call",
 
     // Contact Section
-    getInTouch: "Get In Touch",
+    getInTouch: "Get in Touch", // Updated for form title
     discussYourProject: "Let's Talk About Your Healthcare Project",
     contactDescription: "Our friendly team is eager to help you hit your healthcare goals in Saudi Arabia. Reach out!",
     location: "Our Spot",
@@ -130,23 +130,25 @@ export const translations = {
     businessHoursTime: "Sunday - Thursday: 8:00 AM - 6:00 PM",
     phoneNumber: "Phone Number",
     whatsapp: "WhatsApp",
-    firstName: "First Name",
-    enterFirstName: "What's your first name?",
-    lastName: "Last Name",
-    enterLastName: "And your last name?",
+    fullName: "Full Name", // New key
+    enterFullName: "Enter your full name", // New key
     emailAddress: "Email Address",
     enterEmail: "Your email here",
     enterPhone: "Your phone number",
     projectType: "Project Type",
-    selectProjectType: "What kind of project?",
-    hospitalDevelopment: "New Hospital Build",
-    clinicSetup: "Clinic Setup",
-    medicalCenter: "Medical Center Upgrade",
-    healthcareConsulting: "Healthcare Consulting",
+    selectProjectType: "-- Please select --", // New key
+    hospitalDevelopment: "Build a New Hospital",
+    clinicSetup: "Establish a Clinic",
+    medicalCenter: "Develop a Medical Center",
+    healthcareConsulting: "Health Consulting",
     other: "Other", // Added 'Other' translation key
-    message: "Your Message",
-    tellUsAboutProject: "Tell us all about your project!",
-    sendMessage: "Send It!",
+    pleaseSpecify: "Please specify", // New key
+    describeYourProject: "Describe your project", // New key
+    yourMessage: "Your Message", // New key
+    tellUsAboutProject: "Tell us about your project...",
+    sendMessage: "Send Message", // New key
+    sending: "Sending...", // New key
+    formSuccessMessage: "Thank you! We received your message and will contact you soon.", // New key
     ourLocation: "Find Us Here",
 
     // Footer
@@ -582,7 +584,7 @@ export const translations = {
     callUs: "اتصل علينا",
 
     // Contact Section
-    getInTouch: "تواصل معنا",
+    getInTouch: "تواصل معنا", // Updated for form title
     discussYourProject: "خلنا نتكلم عن مشروعك الصحي",
     contactDescription: "فريقنا الودود متحمس يساعدك تحقق أهدافك الصحية في السعودية. تواصل معنا!",
     location: "موقعنا",
@@ -593,23 +595,25 @@ export const translations = {
     businessHoursTime: "الأحد - الخميس: 8:00 ص - 6:00 م",
     phoneNumber: "رقم الجوال",
     whatsapp: "واتساب",
-    firstName: "الاسم الأول",
-    enterFirstName: "اسمك الأول؟",
-    lastName: "اسم العائلة",
-    enterLastName: "اسم العائلة؟",
+    fullName: "الاسم الكامل", // New key
+    enterFullName: "أدخل اسمك الكامل", // New key
     emailAddress: "البريد الإلكتروني",
     enterEmail: "ايميلك هنا",
     enterPhone: "رقم جوالك",
     projectType: "نوع المشروع",
-    selectProjectType: "ايش نوع المشروع؟",
+    selectProjectType: "-- الرجاء الاختيار --", // New key
     hospitalDevelopment: "بناء مستشفى جديد",
     clinicSetup: "تأسيس عيادة",
     medicalCenter: "تطوير مركز طبي",
     healthcareConsulting: "استشارات صحية",
     other: "أخرى", // Added 'Other' translation key
-    message: "رسالتك",
-    tellUsAboutProject: "احكيلنا عن مشروعك!",
-    sendMessage: "أرسل!",
+    pleaseSpecify: "الرجاء التحديد", // New key
+    describeYourProject: "صف مشروعك", // New key
+    yourMessage: "رسالتك", // New key
+    tellUsAboutProject: "احكيلنا عن مشروعك...",
+    sendMessage: "أرسل الرسالة", // New key
+    sending: "جاري الإرسال...", // New key
+    formSuccessMessage: "شكرًا لك! لقد استلمنا رسالتك وسنتواصل معك قريبًا.", // New key
     ourLocation: "موقعنا على الخريطة",
 
     // Footer

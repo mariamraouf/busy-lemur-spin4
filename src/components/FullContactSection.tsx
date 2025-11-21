@@ -1,6 +1,7 @@
 import React from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { cn } from '@/lib/utils';
+import ContactForm from './ContactForm'; // Import the new ContactForm component
 
 interface FullContactSectionProps {
   headingLevel?: 'h1' | 'h2'; // New prop for dynamic heading level
@@ -14,14 +15,8 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
   // Google Maps embed URL for the new specific address
   const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.0000000000005!2d39.1402466!3d21.5496663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3c5a4eb089e69%3A0x73e40d57917023a0!2sSidra%20Med!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"; // Updated to the new embed URL
 
-  // ClickUp embed URLs
-  const englishFormEmbedUrl = "https://forms.clickup.com/9012970926/f/8cke1de-24512/0FCNT5K2FLD76629CJ";
-  const arabicFormEmbedUrl = "https://forms.clickup.com/9012970926/f/8cke1de-24532/PJ7OL2LLEDO86QN869";
-
-  const currentFormEmbedUrl = language === 'ar' ? arabicFormEmbedUrl : englishFormEmbedUrl;
-
   return (
-    <section className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
+    <section id="contact" className="py-24 bg-gradient-to-br from-gray-50 via-white to-sidraLight relative overflow-hidden">
       {/* Animated background elements - REMOVED */}
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
@@ -38,17 +33,8 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
-          <div className="bg-white rounded-3xl p-2 sm:p-10 shadow-2xl border border-gray-100" data-aos="fade-right" data-aos-duration="1000"> {/* Adjusted padding for mobile to p-2 */}
-            {/* ClickUp Embed Form */}
-            <iframe 
-              className="clickup-embed clickup-dynamic-height w-full min-h-[800px]" // Increased min-h to 800px
-              src={currentFormEmbedUrl} 
-              onWheel={() => {}} 
-              width="100%" 
-              height="100%" // Ensure height is set for dynamic height to work
-              style={{ background: 'transparent', border: '1px solid #ccc' }}
-            ></iframe>
-            {/* The script tag is loaded once globally in index.html, so no need to duplicate here */}
+          <div data-aos="fade-right" data-aos-duration="1000">
+            <ContactForm /> {/* Render the new ContactForm component here */}
           </div>
 
           <div data-aos="fade-left" data-aos-duration="1000">
