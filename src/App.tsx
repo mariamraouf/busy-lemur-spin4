@@ -19,6 +19,7 @@ import ContactPage from "./pages/ContactPage";
 import PrivacyPolicyPage from "./pages/PrivacyPolicyPage";
 import TermsOfServicePage from "./pages/TermsOfServicePage";
 import ScrollToTopOnNavigate from "./components/ScrollToTopOnNavigate";
+import GoogleAnalyticsTracker from "./components/GoogleAnalyticsTracker"; // Import the new tracker
 
 const queryClient = new QueryClient();
 
@@ -31,6 +32,7 @@ const App = () => (
           <Sonner />
           <BrowserRouter>
             <ScrollToTopOnNavigate />
+            <GoogleAnalyticsTracker /> {/* Render the Google Analytics tracker here */}
             <div className="min-h-screen flex flex-col"> {/* Added a flex container for sticky footer */}
               <Navbar /> {/* Render Navbar here */}
               <main className="flex-grow"> {/* Main content area */}
