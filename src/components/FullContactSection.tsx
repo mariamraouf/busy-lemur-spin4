@@ -10,7 +10,7 @@ interface FullContactSectionProps {
 const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: Heading = 'h2' }) => {
   const { language, t } = useLanguage();
   const phoneNumber = "00966543197947"; // Saudi Arabia country code +966
-  const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`;
+  // const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber.replace('00', '')}`; // Removed whatsappLink
 
   // Google Maps embed URL for the new specific address
   const googleMapsEmbedUrl = "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3714.0000000000005!2d39.1402466!3d21.5496663!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15c3c5a4eb089e69%3A0x73e40d57917023a0!2sSidra%20Med!5e0!3m2!1sen!2ssa!4v1700000000000!5m2!1sen!2ssa"; // Updated to the new embed URL
@@ -72,9 +72,7 @@ const FullContactSection: React.FC<FullContactSectionProps> = ({ headingLevel: H
                 <div>
                   <h3 className="font-bold text-gray-900 mb-2 text-lg sm:text-xl break-words">{t('phoneNumber')}</h3>
                   <a href={`tel:${phoneNumber}`} className="text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold">{phoneNumber}</a>
-                  <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className="flex items-center text-sidraPrimary hover:text-sidraSecondary transition-colors text-lg font-semibold mt-1">
-                    <i className="fab fa-whatsapp mr-2"></i> {t('whatsapp')}
-                  </a>
+                  {/* Removed WhatsApp link */}
                 </div>
               </div>
 
