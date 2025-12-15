@@ -19,7 +19,7 @@ export const translations = {
     careers: "Careers", // New translation key
 
     // Hero Section
-    transformingHealthcare: "🚀 Building Excellence in Healthcare Sector",
+    transformingHealthcare: "Building Excellence in Healthcare Sector", // Removed emoji
     heroTitlePart1: "Building Healthier Futures",
     heroTitlePart2: "from Concept to Operation",
     heroTitlePart3: "to Sustainability",
@@ -170,7 +170,7 @@ export const translations = {
     // Who We Are Page - UPDATED
     aboutUsPageMainTitle: "Our Journey & Expertise",
     aboutUsPageMainDescription: "Sidra Med is a specialized medical services firm based in Saudi Arabia, acting as strategic enablers for healthcare projects from concept to execution.",
-    whoWeAreDescription1: "Sidra Med Ltd. is a specialized medical services firm based in Saudi Arabia. We act as strategic enablers for healthcare projects by providing comprehensive services across every project phase from concept to execution.",
+    whoWeAreDescription1: "In association with Seha Co., Sidra Med Ltd. is a specialized medical services firm based in Saudi Arabia. We act as strategic enablers for healthcare projects by providing comprehensive services across every project phase from concept to execution.", // Amended
     whoWeAreDescription2: "Whether supporting hospital development, clinics, laboratories, or digital health initiatives, we offer leading expertise tailored to the Saudi market and its unique regulatory landscape. We integrate medical knowledge, engineering excellence, and operational execution to deliver dependable, scalable healthcare solutions.",
     aboutUsMetaDescription: "Discover Sidra Med's story and expertise in healthcare project delivery across Saudi Arabia, from concept to operational readiness, ensuring seamless execution and regulatory alignment.",
 
@@ -259,7 +259,7 @@ export const translations = {
     approach2Description: "We team up with you to craft a custom roadmap for success.", // Corrected key
     approachStep3Title: "3. Implementation",
     approach3Description: "We execute plans with precision, staying flexible to adapt as needed.", // Corrected key
-    approachStep4Title: "4. Continuous Optimization",
+    approachStep4Title: "4. Performance Optimization", // Added missing key
     approach4Description: "We constantly fine-tune operations for peak efficiency and effectiveness.", // Corrected key
 
     needCustomSolution: "Got a unique healthcare project? We love a challenge!",
@@ -635,7 +635,7 @@ export const translations = {
     // Who We Are Page - UPDATED
     aboutUsPageMainTitle: "رحلتنا وخبرتنا",
     aboutUsPageMainDescription: "سدرة ميد شركة خدمات طبية متخصصة مقرها في السعودية، نشتغل كممكّن استراتيجي للمشاريع الصحية من الفكرة لين التنفيذ.",
-    whoWeAreDescription1: "سدرة ميد المحدودة هي شركة خدمات طبية متخصصة مقرها في السعودية. نشتغل كممكّنين استراتيجيين للمشاريع الصحية من خلال تقديم خدمات شاملة في كل مرحلة من مراحل المشروع، من الفكرة لين التنفيذ.",
+    whoWeAreDescription1: "بالتعاون مع شركة صحة، سدرة ميد المحدودة هي شركة خدمات طبية متخصصة مقرها في السعودية. نشتغل كممكّنين استراتيجيين للمشاريع الصحية من خلال تقديم خدمات شاملة في كل مرحلة من مراحل المشروع، من الفكرة لين التنفيذ.", // Amended
     whoWeAreDescription2: "سواء كان الدعم لتطوير المستشفيات، العيادات، المختبرات، أو مبادرات الصحة الرقمية، نقدم خبرة رائدة مصممة خصيصًا للسوق السعودي وبيئته التنظيمية الفريدة. ندمج المعرفة الطبية، التميز الهندسي، والتنفيذ التشغيلي عشان نقدم حلول رعاية صحية موثوقة وقابلة للتطوير.",
     aboutUsMetaDescription: "اكتشف قصة سدرة ميد وخبرتها في تنفيذ مشاريع الرعاية الصحية في السعودية، من الفكرة لين الجاهزية التشغيلية، مع ضمان التنفيذ السلس والالتزام بالأنظمة.",
 
@@ -724,6 +724,7 @@ export const translations = {
     approach2Description: "نتعاون معك عشان نصمم خطة عمل مخصصة للنجاح.",
     approachStep3Title: "3. التنفيذ",
     approach3Description: "ننفذ الخطط بدقة، ونكون مرنين عشان نتكيف حسب الحاجة.",
+    approachStep4Title: "4. تحسين الأداء", // Added missing key
     approach4Description: "نعدّل العمليات باستمرار عشان نوصل لأقصى كفاءة وفعالية.",
 
     needCustomSolution: "عندك مشروع رعاية صحية فريد؟ نحب التحديات!",

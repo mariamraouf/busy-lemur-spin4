@@ -31,12 +31,13 @@ const AboutUsPage = () => {
             <span className="inline-block px-4 py-2 bg-gradient-to-r from-sidraPrimary to-sidraSecondary text-white rounded-full text-sm font-bold uppercase tracking-wide mb-6">
               {t('whoWeAre')}
             </span>
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
+            {/* Removed main title and description */}
+            {/* <h1 className="text-4xl sm:text-5xl lg:text-6xl font-black text-gray-900 mb-8 break-words">
               {t('aboutUsPageMainTitle')}
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               {t('aboutUsPageMainDescription')}
-            </p>
+            </p> */}
           </div>
 
           <div className="grid lg:grid-cols-1 gap-16 items-center"> {/* Changed to single column */}
